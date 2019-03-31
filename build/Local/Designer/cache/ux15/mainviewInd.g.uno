@@ -50,7 +50,7 @@ public partial class mainviewInd: Fuse.Controls.Page
         temp3.Children.Add(temp4);
         temp3.Children.Add(temp5);
         temp3.Children.Add(temp6);
-        temp4.DefaultPath = "home";
+        temp4.DefaultPath = "contract";
         temp4.SourceLineNumber = 9;
         temp4.SourceFileName = "Pages/individual/mainviewInd.ux";
         temp4.Children.Add(home);

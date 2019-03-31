@@ -13,13 +13,13 @@ namespace Outracks.Simulator
 		public GeneratedApplication()
 			: base(
 				new [] 
-				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("169.254.159.6"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("192.168.0.55"), 12124)},"/Users/kbs/development/albachain/albachain.unoproj",new string[] 
+				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("169.254.221.55"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("192.168.0.55"), 12124)},"/Users/kbs/development/albachain-App/albachain.unoproj",new string[] 
 				{ })
 		{
 			Runtime.Bundle.Initialize("albachain");
 
 			if defined(DotNet)
-				Reflection = new DotNetReflectionWrapper(DotNetReflection.Load("/Users/kbs/development/albachain/build/Local/Designer"));
+				Reflection = new DotNetReflectionWrapper(DotNetReflection.Load("/Users/kbs/development/albachain-App/build/Local/Designer"));
 			if defined(CPLUSPLUS)
 				Reflection = new NativeReflection(new SimpleTypeMap());
 		}

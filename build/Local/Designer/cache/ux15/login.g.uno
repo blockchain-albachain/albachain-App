@@ -39,7 +39,7 @@ public partial class login: Fuse.Controls.Page
     };
     static login()
     {
-        RobotoMedium = new global::Fuse.Font(new global::Uno.UX.BundleFileSource(import("../../../../../Roboto-Medium.ttf")));
+        RobotoMedium = new global::Fuse.Font(new global::Uno.UX.BundleFileSource(import("../../../../../Assets/Fonts/Roboto-Medium.ttf")));
         global::Uno.UX.Resource.SetGlobalKey(RobotoMedium, "RobotoMedium");
     }
     [global::Uno.UX.UXConstructor]
