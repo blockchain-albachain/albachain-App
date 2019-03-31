@@ -1,0 +1,19 @@
+<Page ux:Class="mainviewInd">
+	<iOS.StatusBarConfig Style="Dark" />
+	<Android.StatusBarConfig Color="#000" />
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="mainviewInd.js" />
+
+	<DockPanel>
+		<Navigator DefaultPath="contract">
+			<home ux:Name="home" router="router" Color="#FFF"/>
+			<contract ux:Name="contract" router="router" Color="#FFF" />
+		</Navigator>
+
+		<BottomBar Dock="Bottom" />
+		<BottomBarBackground Dock="Bottom" />
+	</DockPanel>
+	
+
+</Page>

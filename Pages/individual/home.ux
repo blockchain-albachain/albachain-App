@@ -1,0 +1,7 @@
+<Page ux:Class="home">
+	<Router ux:Dependency="router" />
+	<!-- <JavaScript File="signupInd.js" /> -->
+
+	
+
+</Page>

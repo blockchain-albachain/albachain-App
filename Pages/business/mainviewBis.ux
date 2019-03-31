@@ -1,0 +1,5 @@
+<Page ux:Class="mainviewBis">
+	<Router ux:Dependency="router" />
+	<JavaScript File="mainviewBis.js" />
+
+</Page>
