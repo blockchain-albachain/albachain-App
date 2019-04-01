@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/HomeIcon.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/HomeIcon.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -155,11 +155,11 @@ void HomeIcon::InitializeUX1()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp3);
     temp1->Density(1.0f);
-    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home1xd13a7c7e()));
+    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home1xdcba1e68()));
     temp2->Density(2.0f);
-    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home2x4b71b2ad()));
+    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home2x2b9f634d()));
     temp3->Density(4.0f);
-    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home4xce4cf64f()));
+    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::home4xae7aa6ef()));
     Source(temp);
 }
 

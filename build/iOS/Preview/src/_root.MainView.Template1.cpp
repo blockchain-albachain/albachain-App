@@ -1,10 +1,12 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
 #include <_root.MainView.Template1.h>
 #include <_root.mainviewInd.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Elements.Alignment.h>
+#include <Fuse.Elements.Element.h>
 #include <Fuse.Navigation.Router.h>
 #include <Fuse.Node.h>
 #include <Uno.Bool.h>
@@ -67,6 +69,7 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     uStackFrame __("MainView.Template1", "New()");
     ::g::mainviewInd* __self1 = ::g::mainviewInd::New5(uPtr(__this->__parent1)->router);
     __self1->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    __self1->Alignment(0);
     __self1->Name(MainView__Template1::__selector0_);
     __self1->SourceLineNumber(5);
     __self1->SourceFileName(::STRINGS[1/*"MainView.ux"*/]);

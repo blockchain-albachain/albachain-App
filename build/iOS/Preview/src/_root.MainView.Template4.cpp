@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
@@ -18,9 +18,9 @@ static uString* STRINGS[2];
 
 namespace g{
 
-// public partial sealed class MainView.Template4 :101
+// public partial sealed class MainView.Template4 :102
 // {
-// static Template4() :110
+// static Template4() :111
 static void MainView__Template4__cctor__fn(uType* __type)
 {
     MainView__Template4::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"signupInd"*/]);
@@ -55,13 +55,13 @@ static void MainView__Template4_build(uType* type)
     return type;
 }
 
-// public Template4(MainView parent, MainView parentInstance) :105
+// public Template4(MainView parent, MainView parentInstance) :106
 void MainView__Template4__ctor_1_fn(MainView__Template4* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :113
+// public override sealed object New() :114
 void MainView__Template4__New1_fn(MainView__Template4* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template4", "New()");
@@ -73,7 +73,7 @@ void MainView__Template4__New1_fn(MainView__Template4* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template4 New(MainView parent, MainView parentInstance) :105
+// public Template4 New(MainView parent, MainView parentInstance) :106
 void MainView__Template4__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template4** __retval)
 {
     *__retval = MainView__Template4::New2(parent, parentInstance);
@@ -81,7 +81,7 @@ void MainView__Template4__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 
 ::g::Uno::UX::Selector MainView__Template4::__selector0_;
 
-// public Template4(MainView parent, MainView parentInstance) [instance] :105
+// public Template4(MainView parent, MainView parentInstance) [instance] :106
 void MainView__Template4::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(::STRINGS[0/*"signupInd"*/], false);
@@ -89,7 +89,7 @@ void MainView__Template4::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template4 New(MainView parent, MainView parentInstance) [static] :105
+// public Template4 New(MainView parent, MainView parentInstance) [static] :106
 MainView__Template4* MainView__Template4::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template4* obj1 = (MainView__Template4*)uNew(MainView__Template4_typeof());

@@ -1,17 +1,21 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/contract.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/contract.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.contract.h>
-#include <Fuse.Navigation.Router.h>
+#include <Fuse.Controls.Text.h>
+#include <Fuse.Controls.TextControl.h>
+#include <Uno.Float.h>
+#include <Uno.Float4.h>
 #include <Uno.Int.h>
 #include <Uno.String.h>
-static uString* STRINGS[1];
+static uString* STRINGS[2];
+static uType* TYPES[1];
 
 namespace g{
 
 // public partial sealed class contract :2
 // {
-// static contract() :5
+// static contract() :4
 static void contract__cctor_4_fn(uType* __type)
 {
 }
@@ -19,6 +23,8 @@ static void contract__cctor_4_fn(uType* __type)
 static void contract_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Pages/individual/contract.ux");
+    ::STRINGS[1] = uString::Const("contract");
+    ::TYPES[0] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface0),
         ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface1),
@@ -31,7 +37,7 @@ static void contract_build(uType* type)
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface8),
         ::g::Fuse::ITemplateSource_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface9),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface10),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface11),
+        ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Panel_type, interface11),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface12),
         ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface13),
         ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
@@ -39,10 +45,9 @@ static void contract_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface18));
-    type->SetFields(126,
-        ::g::Fuse::Navigation::Router_typeof(), offsetof(contract, router), 0);
+    type->SetFields(126);
     type->Reflection.SetFunctions(1,
-        new uFunction(".ctor", NULL, (void*)contract__New5_fn, 0, true, type, 1, ::g::Fuse::Navigation::Router_typeof()));
+        new uFunction(".ctor", NULL, (void*)contract__New5_fn, 0, true, type, 0));
 }
 
 ::g::Fuse::Controls::Panel_type* contract_typeof()
@@ -52,12 +57,13 @@ static void contract_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Page_typeof();
-    options.FieldCount = 127;
+    options.FieldCount = 126;
     options.InterfaceCount = 19;
     options.ObjectSize = sizeof(contract);
     options.TypeSize = sizeof(::g::Fuse::Controls::Panel_type);
     type = (::g::Fuse::Controls::Panel_type*)uClassType::New("contract", options);
     type->fp_build_ = contract_build;
+    type->fp_ctor_ = (void*)contract__New5_fn;
     type->fp_cctor_ = contract__cctor_4_fn;
     type->interface18.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
     type->interface18.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
@@ -103,44 +109,51 @@ static void contract_build(uType* type)
     return type;
 }
 
-// public contract(Fuse.Navigation.Router router) :9
-void contract__ctor_8_fn(contract* __this, ::g::Fuse::Navigation::Router* router1)
+// public contract() :8
+void contract__ctor_8_fn(contract* __this)
 {
-    __this->ctor_8(router1);
+    __this->ctor_8();
 }
 
-// private void InitializeUX() :15
+// private void InitializeUX() :12
 void contract__InitializeUX_fn(contract* __this)
 {
     __this->InitializeUX();
 }
 
-// public contract New(Fuse.Navigation.Router router) :9
-void contract__New5_fn(::g::Fuse::Navigation::Router* router1, contract** __retval)
+// public contract New() :8
+void contract__New5_fn(contract** __retval)
 {
-    *__retval = contract::New5(router1);
+    *__retval = contract::New5();
 }
 
-// public contract(Fuse.Navigation.Router router) [instance] :9
-void contract::ctor_8(::g::Fuse::Navigation::Router* router1)
+// public contract() [instance] :8
+void contract::ctor_8()
 {
+    uStackFrame __("contract", ".ctor()");
     ctor_7();
-    router = router1;
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :15
+// private void InitializeUX() [instance] :12
 void contract::InitializeUX()
 {
+    uStackFrame __("contract", "InitializeUX()");
+    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
     SourceLineNumber(1);
     SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
+    temp->Value(::STRINGS[1/*"contract"*/]);
+    temp->Color(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp->SourceLineNumber(4);
+    temp->SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
 }
 
-// public contract New(Fuse.Navigation.Router router) [static] :9
-contract* contract::New5(::g::Fuse::Navigation::Router* router1)
+// public contract New() [static] :8
+contract* contract::New5()
 {
     contract* obj1 = (contract*)uNew(contract_typeof());
-    obj1->ctor_8(router1);
+    obj1->ctor_8();
     return obj1;
 }
 // }

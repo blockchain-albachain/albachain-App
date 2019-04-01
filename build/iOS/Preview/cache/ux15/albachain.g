@@ -1,3 +1,4 @@
+build/iOS/Preview/cache/ux15/ColorPalette.g.uno
 build/iOS/Preview/cache/ux15/MainView.g.uno
 build/iOS/Preview/cache/ux15/StaticResources.g.uno
 build/iOS/Preview/cache/ux15/BaseText.g.uno
@@ -7,9 +8,6 @@ build/iOS/Preview/cache/ux15/HomeIcon.g.uno
 build/iOS/Preview/cache/ux15/LogsIcon.g.uno
 build/iOS/Preview/cache/ux15/GoalsIcon.g.uno
 build/iOS/Preview/cache/ux15/ProfileIcon.g.uno
-build/iOS/Preview/cache/ux15/BottomBar.g.uno
-build/iOS/Preview/cache/ux15/Divider.g.uno
-build/iOS/Preview/cache/ux15/IconAndLabel.g.uno
 build/iOS/Preview/cache/ux15/login.g.uno
 build/iOS/Preview/cache/ux15/Tab.g.uno
 build/iOS/Preview/cache/ux15/WelcomeText.g.uno
@@ -18,5 +16,8 @@ build/iOS/Preview/cache/ux15/signupBis.g.uno
 build/iOS/Preview/cache/ux15/contract.g.uno
 build/iOS/Preview/cache/ux15/home.g.uno
 build/iOS/Preview/cache/ux15/mainviewInd.g.uno
+build/iOS/Preview/cache/ux15/TabHeader.g.uno
+build/iOS/Preview/cache/ux15/TabIcon.g.uno
+build/iOS/Preview/cache/ux15/PagePlaceholder.g.uno
 build/iOS/Preview/cache/ux15/signupInd.g.uno
 build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno

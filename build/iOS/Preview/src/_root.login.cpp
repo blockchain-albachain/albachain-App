@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/login.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/login.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -94,7 +94,7 @@ static void login__cctor_4_fn(uType* __type)
     login::__selector8_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[6/*"loginArea1"*/]);
     login::__selector9_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[9/*"page2"*/]);
     login::__selector10_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[10/*"loginArea2"*/]);
-    login::RobotoMedium_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::RobotoMediumeb2239d0()));
+    login::RobotoMedium_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::RobotoMedium04a0b393()));
     ::g::Uno::UX::Resource::SetGlobalKey(login::RobotoMedium_, ::STRINGS[16/*"RobotoMedium"*/]);
 }
 
@@ -397,7 +397,7 @@ void login::InitializeUX()
     temp12->FileName(::STRINGS[25/*"Pages/login...*/]);
     temp12->SourceLineNumber(3);
     temp12->SourceFileName(::STRINGS[25/*"Pages/login...*/]);
-    temp12->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::login30c4c83e()));
+    temp12->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logine4821f94()));
     uPtr(indicator)->Color(::g::Uno::Float4__New2(0.007843138f, 0.1490196f, 0.7803922f, 1.0f));
     uPtr(indicator)->Height(::g::Uno::UX::Size__New1(4.0f, 1));
     uPtr(indicator)->Alignment(12);

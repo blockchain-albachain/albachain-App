@@ -1,6 +1,7 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
+#include <_root.ColorPalette.h>
 #include <_root.login.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
@@ -65,7 +66,7 @@ namespace g{
 
 // public partial sealed class MainView :2
 // {
-// static MainView() :142
+// static MainView() :143
 static void MainView__cctor_1_fn(uType* __type)
 {
     ::g::Uno::UX::Resource_typeof()->Init();
@@ -83,6 +84,7 @@ static void MainView__cctor_1_fn(uType* __type)
     ::g::Fuse::Resources::MemoryPolicy_typeof()->Init();
     ::g::Fuse::Font_typeof()->Init();
     ::g::Fuse::ScalingModes_typeof()->Init();
+    ::g::ColorPalette_typeof()->Init();
     ::g::StaticResources_typeof()->Init();
     ::g::login_typeof()->Init();
     MainView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("router"));
@@ -194,6 +196,11 @@ static void MainView__cctor_1_fn(uType* __type)
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::TranslationModes::ParentSize(), uString::Const("ParentSize"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::TranslationModes::Width(), uString::Const("Width"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::TranslationModes::Height(), uString::Const("Height"));
+    ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::ColorPalette::color0()), uString::Const("color0"));
+    ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::ColorPalette::color1()), uString::Const("color1"));
+    ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::ColorPalette::color2()), uString::Const("color2"));
+    ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::ColorPalette::color3()), uString::Const("color3"));
+    ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::ColorPalette::color4()), uString::Const("color4"));
     ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), ::g::StaticResources::BorderColor()), uString::Const("BorderColor"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::StaticResources::BaseFont(), uString::Const("BaseFont"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::StaticResources::BoldFont(), uString::Const("BoldFont"));
@@ -249,19 +256,19 @@ static void MainView_build(uType* type)
     return type;
 }
 
-// public MainView() :258
+// public MainView() :264
 void MainView__ctor_4_fn(MainView* __this)
 {
     __this->ctor_4();
 }
 
-// private void InitializeUX() :262
+// private void InitializeUX() :268
 void MainView__InitializeUX_fn(MainView* __this)
 {
     __this->InitializeUX();
 }
 
-// public MainView New() :258
+// public MainView New() :264
 void MainView__New2_fn(MainView** __retval)
 {
     *__retval = MainView::New2();
@@ -269,7 +276,7 @@ void MainView__New2_fn(MainView** __retval)
 
 ::g::Uno::UX::Selector MainView::__selector0_;
 
-// public MainView() [instance] :258
+// public MainView() [instance] :264
 void MainView::ctor_4()
 {
     uStackFrame __("MainView", ".ctor()");
@@ -277,7 +284,7 @@ void MainView::ctor_4()
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :262
+// private void InitializeUX() [instance] :268
 void MainView::InitializeUX()
 {
     uStackFrame __("MainView", "InitializeUX()");
@@ -320,7 +327,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), temp);
 }
 
-// public MainView New() [static] :258
+// public MainView New() [static] :264
 MainView* MainView::New2()
 {
     MainView* obj1 = (MainView*)uNew(MainView_typeof());

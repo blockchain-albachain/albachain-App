@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/StaticResources.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/StaticResources.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -25,8 +25,8 @@ static void StaticResources__cctor_4_fn(uType* __type)
     ::g::albachain_bundle_typeof()->Init();
     ::g::Uno::UX::Resource_typeof()->Init();
     StaticResources::BorderColor_ = ::g::Uno::Float4__New2(0.2f, 0.2f, 0.2f, 1.0f);
-    StaticResources::BaseFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBoldb5380727()));
-    StaticResources::BoldFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBlack56f90429()));
+    StaticResources::BaseFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBoldf950ad2f()));
+    StaticResources::BoldFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBlack7c869409()));
     ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), StaticResources::BorderColor_), ::STRINGS[0/*"BorderColor"*/]);
     ::g::Uno::UX::Resource::SetGlobalKey(StaticResources::BaseFont_, ::STRINGS[1/*"BaseFont"*/]);
     ::g::Uno::UX::Resource::SetGlobalKey(StaticResources::BoldFont_, ::STRINGS[2/*"BoldFont"*/]);

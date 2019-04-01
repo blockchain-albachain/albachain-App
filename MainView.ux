@@ -2,9 +2,10 @@
 	<Router ux:Name="router" />
 	<Navigator DefaultPath="login">
 		<login ux:Template="login" router="router" Color="#FFF" />
-		<mainviewInd ux:Template="mainviewInd" router="router" Color="#FFF" />	
+		<mainviewInd ux:Template="mainviewInd" router="router" Color="#FFF" Alignment="Default" />	
 		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF" />			
 		<signupBis ux:Template="signupBis" router="router" Color="#FFF" />	
-		<signupInd ux:Template="signupInd" router="router" Color="#FFF" />	
+		<signupInd ux:Template="signupInd" router="router" Color="#FFF" />
+
 	</Navigator>
 </App>

@@ -1,20 +1,23 @@
 [Uno.Compiler.UxGenerated]
 public partial class contract: Fuse.Controls.Page
 {
-    readonly Fuse.Navigation.Router router;
     static contract()
     {
     }
     [global::Uno.UX.UXConstructor]
-    public contract(
-		[global::Uno.UX.UXParameter("router")] Fuse.Navigation.Router router)
+    public contract()
     {
-        this.router = router;
         InitializeUX();
     }
     void InitializeUX()
     {
+        var temp = new global::Fuse.Controls.Text();
         this.SourceLineNumber = 1;
         this.SourceFileName = "Pages/individual/contract.ux";
+        temp.Value = "contract";
+        temp.Color = float4(0.6f, 0.6f, 0.6f, 1f);
+        temp.SourceLineNumber = 4;
+        temp.SourceFileName = "Pages/individual/contract.ux";
+        this.Children.Add(temp);
     }
 }

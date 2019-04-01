@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/LogsIcon.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/LogsIcon.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -155,11 +155,11 @@ void LogsIcon::InitializeUX1()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp3);
     temp1->Density(1.0f);
-    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs1x2995b326()));
+    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs1x58fa92a8()));
     temp2->Density(2.0f);
-    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs2xa5b46bc1()));
+    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs2xa9c759f9()));
     temp3->Density(4.0f);
-    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs4x22d9281f()));
+    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::logs4x26ec1657()));
     Source(temp);
 }
 

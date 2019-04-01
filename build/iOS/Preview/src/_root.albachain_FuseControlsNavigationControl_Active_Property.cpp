@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_FuseControlsNavigationControl_Active_Property.h>
@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class albachain_FuseControlsNavigationControl_Active_Property :30
+// internal sealed class albachain_FuseControlsNavigationControl_Active_Property :20
 // {
 static void albachain_FuseControlsNavigationControl_Active_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void albachain_FuseControlsNavigationControl_Active_Property_build(uType*
     return type;
 }
 
-// public albachain_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :33
+// public albachain_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :23
 void albachain_FuseControlsNavigationControl_Active_Property__ctor_3_fn(albachain_FuseControlsNavigationControl_Active_Property* __this, ::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Fuse.Visual Get(Uno.UX.PropertyObject obj) :35
+// public override sealed Fuse.Visual Get(Uno.UX.PropertyObject obj) :25
 void albachain_FuseControlsNavigationControl_Active_Property__Get1_fn(albachain_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Visual** __retval)
 {
     uStackFrame __("albachain_FuseControlsNavigationControl_Active_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::NavigationControl*>(obj, ::TYPES[0/*Fuse.Controls.NavigationControl*/]))->Active(), void();
 }
 
-// public albachain_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :33
+// public albachain_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :23
 void albachain_FuseControlsNavigationControl_Active_Property__New1_fn(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name, albachain_FuseControlsNavigationControl_Active_Property** __retval)
 {
     *__retval = albachain_FuseControlsNavigationControl_Active_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :34
+// public override sealed Uno.UX.PropertyObject get_Object() :24
 void albachain_FuseControlsNavigationControl_Active_Property__get_Object_fn(albachain_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Visual v, Uno.UX.IPropertyListener origin) :36
+// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Visual v, Uno.UX.IPropertyListener origin) :26
 void albachain_FuseControlsNavigationControl_Active_Property__Set1_fn(albachain_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Visual* v, uObject* origin)
 {
     uStackFrame __("albachain_FuseControlsNavigationControl_Active_Property", "Set(Uno.UX.PropertyObject,Fuse.Visual,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::NavigationControl*>(obj, ::TYPES[0/*Fuse.Controls.NavigationControl*/]))->Active(v);
 }
 
-// public albachain_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [instance] :33
+// public albachain_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [instance] :23
 void albachain_FuseControlsNavigationControl_Active_Property::ctor_3(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public albachain_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [static] :33
+// public albachain_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [static] :23
 albachain_FuseControlsNavigationControl_Active_Property* albachain_FuseControlsNavigationControl_Active_Property::New1(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector name)
 {
     albachain_FuseControlsNavigationControl_Active_Property* obj1 = (albachain_FuseControlsNavigationControl_Active_Property*)uNew(albachain_FuseControlsNavigationControl_Active_Property_typeof());

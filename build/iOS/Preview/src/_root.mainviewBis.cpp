@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/mainviewBis.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/mainviewBis.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -162,7 +162,7 @@ void mainviewBis::InitializeUX()
     temp->FileName(::STRINGS[1/*"Pages/busin...*/]);
     temp->SourceLineNumber(3);
     temp->SourceFileName(::STRINGS[1/*"Pages/busin...*/]);
-    temp->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::mainviewBis5fc20f6c()));
+    temp->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::mainviewBis4e639056()));
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[1/*Uno.Collections.ICollection<object>*/]), router);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);

@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_accessor_Tab_Text.h>
@@ -15,9 +15,9 @@ static uType* TYPES[3];
 
 namespace g{
 
-// internal sealed class albachain_accessor_Tab_Text :11
+// internal sealed class albachain_accessor_Tab_Text :1
 // {
-// static generated albachain_accessor_Tab_Text() :11
+// static generated albachain_accessor_Tab_Text() :1
 static void albachain_accessor_Tab_Text__cctor__fn(uType* __type)
 {
     albachain_accessor_Tab_Text::Singleton_ = albachain_accessor_Tab_Text::New1();
@@ -57,45 +57,45 @@ static void albachain_accessor_Tab_Text_build(uType* type)
     return type;
 }
 
-// public generated albachain_accessor_Tab_Text() :11
+// public generated albachain_accessor_Tab_Text() :1
 void albachain_accessor_Tab_Text__ctor_1_fn(albachain_accessor_Tab_Text* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :17
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :7
 void albachain_accessor_Tab_Text__GetAsObject_fn(albachain_accessor_Tab_Text* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     uStackFrame __("albachain_accessor_Tab_Text", "GetAsObject(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Tab*>(obj, ::TYPES[0/*Tab*/]))->Text(), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :14
+// public override sealed Uno.UX.Selector get_Name() :4
 void albachain_accessor_Tab_Text__get_Name_fn(albachain_accessor_Tab_Text* __this, ::g::Uno::UX::Selector* __retval)
 {
     return *__retval = albachain_accessor_Tab_Text::_name_, void();
 }
 
-// public generated albachain_accessor_Tab_Text New() :11
+// public generated albachain_accessor_Tab_Text New() :1
 void albachain_accessor_Tab_Text__New1_fn(albachain_accessor_Tab_Text** __retval)
 {
     *__retval = albachain_accessor_Tab_Text::New1();
 }
 
-// public override sealed Uno.Type get_PropertyType() :16
+// public override sealed Uno.Type get_PropertyType() :6
 void albachain_accessor_Tab_Text__get_PropertyType_fn(albachain_accessor_Tab_Text* __this, uType** __retval)
 {
     return *__retval = ::TYPES[1/*string*/], void();
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :18
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :8
 void albachain_accessor_Tab_Text__SetAsObject_fn(albachain_accessor_Tab_Text* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
     uStackFrame __("albachain_accessor_Tab_Text", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Tab*>(obj, ::TYPES[0/*Tab*/]))->SetText(uCast<uString*>(v, ::TYPES[1/*string*/]), origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :19
+// public override sealed bool get_SupportsOriginSetter() :9
 void albachain_accessor_Tab_Text__get_SupportsOriginSetter_fn(albachain_accessor_Tab_Text* __this, bool* __retval)
 {
     return *__retval = true, void();
@@ -104,13 +104,13 @@ void albachain_accessor_Tab_Text__get_SupportsOriginSetter_fn(albachain_accessor
 uSStrong< ::g::Uno::UX::PropertyAccessor*> albachain_accessor_Tab_Text::Singleton_;
 ::g::Uno::UX::Selector albachain_accessor_Tab_Text::_name_;
 
-// public generated albachain_accessor_Tab_Text() [instance] :11
+// public generated albachain_accessor_Tab_Text() [instance] :1
 void albachain_accessor_Tab_Text::ctor_1()
 {
     ctor_();
 }
 
-// public generated albachain_accessor_Tab_Text New() [static] :11
+// public generated albachain_accessor_Tab_Text New() [static] :1
 albachain_accessor_Tab_Text* albachain_accessor_Tab_Text::New1()
 {
     albachain_accessor_Tab_Text* obj1 = (albachain_accessor_Tab_Text*)uNew(albachain_accessor_Tab_Text_typeof());

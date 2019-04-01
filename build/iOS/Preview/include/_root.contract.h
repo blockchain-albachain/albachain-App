@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/contract.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/contract.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -21,7 +21,6 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
-namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{struct contract;}
 
 namespace g{
@@ -29,17 +28,15 @@ namespace g{
 // public partial sealed class contract :2
 // {
 ::g::Fuse::Controls::Panel_type* contract_typeof();
-void contract__ctor_8_fn(contract* __this, ::g::Fuse::Navigation::Router* router1);
+void contract__ctor_8_fn(contract* __this);
 void contract__InitializeUX_fn(contract* __this);
-void contract__New5_fn(::g::Fuse::Navigation::Router* router1, contract** __retval);
+void contract__New5_fn(contract** __retval);
 
 struct contract : ::g::Fuse::Controls::Page
 {
-    uStrong< ::g::Fuse::Navigation::Router*> router;
-
-    void ctor_8(::g::Fuse::Navigation::Router* router1);
+    void ctor_8();
     void InitializeUX();
-    static contract* New5(::g::Fuse::Navigation::Router* router1);
+    static contract* New5();
 };
 // }
 

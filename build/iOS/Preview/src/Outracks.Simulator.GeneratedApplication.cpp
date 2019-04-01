@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/preamble/$.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/preamble/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Outracks.Simulator.Client.ITypeMap.h>
@@ -11,7 +11,7 @@
 #include <Uno.Net.IPAddress.h>
 #include <Uno.Net.IPEndPoint.h>
 #include <Uno.String.h>
-static uString* STRINGS[5];
+static uString* STRINGS[4];
 static uType* TYPES[2];
 
 namespace g{
@@ -23,10 +23,9 @@ namespace Simulator{
 static void GeneratedApplication_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("127.0.0.1");
-    ::STRINGS[1] = uString::Const("169.254.159.6");
-    ::STRINGS[2] = uString::Const("192.168.0.55");
-    ::STRINGS[3] = uString::Const("/Users/kbs/development/albachain/albachain.unoproj");
-    ::STRINGS[4] = uString::Const("albachain");
+    ::STRINGS[1] = uString::Const("10.1.39.166");
+    ::STRINGS[2] = uString::Const("/Users/kbs/development/albachain-App/albachain.unoproj");
+    ::STRINGS[3] = uString::Const("albachain");
     ::TYPES[0] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
     ::TYPES[1] = ::g::Uno::String_typeof()->Array();
     type->SetDependencies(
@@ -80,8 +79,8 @@ void GeneratedApplication__New3_fn(GeneratedApplication** __retval)
 void GeneratedApplication::ctor_5()
 {
     uStackFrame __("Outracks.Simulator.GeneratedApplication", ".ctor()");
-    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 3, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"169.254.159.6"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[2/*"192.168.0.55"*/]), 12124)), ::STRINGS[3/*"/Users/kbs/...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
-    ::g::Outracks::Simulator::Runtime::Bundle::Initialize(::STRINGS[4/*"albachain"*/]);
+    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 2, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"10.1.39.166"*/]), 12124)), ::STRINGS[2/*"/Users/kbs/...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
+    ::g::Outracks::Simulator::Runtime::Bundle::Initialize(::STRINGS[3/*"albachain"*/]);
     Reflection((uObject*)::g::Outracks::Simulator::Client::NativeReflection::New1((uObject*)::g::Outracks::Simulator::Client::SimpleTypeMap::New1()));
 }
 

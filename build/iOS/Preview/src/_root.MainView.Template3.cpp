@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
@@ -18,9 +18,9 @@ static uString* STRINGS[2];
 
 namespace g{
 
-// public partial sealed class MainView.Template3 :77
+// public partial sealed class MainView.Template3 :78
 // {
-// static Template3() :86
+// static Template3() :87
 static void MainView__Template3__cctor__fn(uType* __type)
 {
     MainView__Template3::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"signupBis"*/]);
@@ -55,13 +55,13 @@ static void MainView__Template3_build(uType* type)
     return type;
 }
 
-// public Template3(MainView parent, MainView parentInstance) :81
+// public Template3(MainView parent, MainView parentInstance) :82
 void MainView__Template3__ctor_1_fn(MainView__Template3* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :89
+// public override sealed object New() :90
 void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template3", "New()");
@@ -73,7 +73,7 @@ void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) :81
+// public Template3 New(MainView parent, MainView parentInstance) :82
 void MainView__Template3__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template3** __retval)
 {
     *__retval = MainView__Template3::New2(parent, parentInstance);
@@ -81,7 +81,7 @@ void MainView__Template3__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 
 ::g::Uno::UX::Selector MainView__Template3::__selector0_;
 
-// public Template3(MainView parent, MainView parentInstance) [instance] :81
+// public Template3(MainView parent, MainView parentInstance) [instance] :82
 void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(::STRINGS[0/*"signupBis"*/], false);
@@ -89,7 +89,7 @@ void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) [static] :81
+// public Template3 New(MainView parent, MainView parentInstance) [static] :82
 MainView__Template3* MainView__Template3::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template3* obj1 = (MainView__Template3*)uNew(MainView__Template3_typeof());

@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{struct albachain_accessor_Tab_Text;}
 
 namespace g{
 
-// internal sealed class albachain_accessor_Tab_Text :11
+// internal sealed class albachain_accessor_Tab_Text :1
 // {
 ::g::Uno::UX::PropertyAccessor_type* albachain_accessor_Tab_Text_typeof();
 void albachain_accessor_Tab_Text__ctor_1_fn(albachain_accessor_Tab_Text* __this);

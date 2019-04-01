@@ -1,17 +1,21 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/home.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/home.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.home.h>
-#include <Fuse.Navigation.Router.h>
+#include <Fuse.Controls.Text.h>
+#include <Fuse.Controls.TextControl.h>
+#include <Uno.Float.h>
+#include <Uno.Float4.h>
 #include <Uno.Int.h>
 #include <Uno.String.h>
-static uString* STRINGS[1];
+static uString* STRINGS[2];
+static uType* TYPES[1];
 
 namespace g{
 
 // public partial sealed class home :2
 // {
-// static home() :5
+// static home() :4
 static void home__cctor_4_fn(uType* __type)
 {
 }
@@ -19,6 +23,8 @@ static void home__cctor_4_fn(uType* __type)
 static void home_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Pages/individual/home.ux");
+    ::STRINGS[1] = uString::Const("home");
+    ::TYPES[0] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface0),
         ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface1),
@@ -31,7 +37,7 @@ static void home_build(uType* type)
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface8),
         ::g::Fuse::ITemplateSource_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface9),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface10),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface11),
+        ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Panel_type, interface11),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface12),
         ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface13),
         ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
@@ -39,10 +45,9 @@ static void home_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface18));
-    type->SetFields(126,
-        ::g::Fuse::Navigation::Router_typeof(), offsetof(home, router), 0);
+    type->SetFields(126);
     type->Reflection.SetFunctions(1,
-        new uFunction(".ctor", NULL, (void*)home__New5_fn, 0, true, type, 1, ::g::Fuse::Navigation::Router_typeof()));
+        new uFunction(".ctor", NULL, (void*)home__New5_fn, 0, true, type, 0));
 }
 
 ::g::Fuse::Controls::Panel_type* home_typeof()
@@ -52,12 +57,13 @@ static void home_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Page_typeof();
-    options.FieldCount = 127;
+    options.FieldCount = 126;
     options.InterfaceCount = 19;
     options.ObjectSize = sizeof(home);
     options.TypeSize = sizeof(::g::Fuse::Controls::Panel_type);
     type = (::g::Fuse::Controls::Panel_type*)uClassType::New("home", options);
     type->fp_build_ = home_build;
+    type->fp_ctor_ = (void*)home__New5_fn;
     type->fp_cctor_ = home__cctor_4_fn;
     type->interface18.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
     type->interface18.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
@@ -103,44 +109,51 @@ static void home_build(uType* type)
     return type;
 }
 
-// public home(Fuse.Navigation.Router router) :9
-void home__ctor_8_fn(home* __this, ::g::Fuse::Navigation::Router* router1)
+// public home() :8
+void home__ctor_8_fn(home* __this)
 {
-    __this->ctor_8(router1);
+    __this->ctor_8();
 }
 
-// private void InitializeUX() :15
+// private void InitializeUX() :12
 void home__InitializeUX_fn(home* __this)
 {
     __this->InitializeUX();
 }
 
-// public home New(Fuse.Navigation.Router router) :9
-void home__New5_fn(::g::Fuse::Navigation::Router* router1, home** __retval)
+// public home New() :8
+void home__New5_fn(home** __retval)
 {
-    *__retval = home::New5(router1);
+    *__retval = home::New5();
 }
 
-// public home(Fuse.Navigation.Router router) [instance] :9
-void home::ctor_8(::g::Fuse::Navigation::Router* router1)
+// public home() [instance] :8
+void home::ctor_8()
 {
+    uStackFrame __("home", ".ctor()");
     ctor_7();
-    router = router1;
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :15
+// private void InitializeUX() [instance] :12
 void home::InitializeUX()
 {
+    uStackFrame __("home", "InitializeUX()");
+    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
     SourceLineNumber(1);
     SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
+    temp->Value(::STRINGS[1/*"home"*/]);
+    temp->Color(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp->SourceLineNumber(4);
+    temp->SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
 }
 
-// public home New(Fuse.Navigation.Router router) [static] :9
-home* home::New5(::g::Fuse::Navigation::Router* router1)
+// public home New() [static] :8
+home* home::New5()
 {
     home* obj1 = (home*)uNew(home_typeof());
-    obj1->ctor_8(router1);
+    obj1->ctor_8();
     return obj1;
 }
 // }

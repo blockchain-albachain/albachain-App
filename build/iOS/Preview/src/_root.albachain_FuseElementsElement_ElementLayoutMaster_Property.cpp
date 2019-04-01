@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_FuseElementsElement_ElementLayoutMaster_Property.h>
@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class albachain_FuseElementsElement_ElementLayoutMaster_Property :38
+// internal sealed class albachain_FuseElementsElement_ElementLayoutMaster_Property :28
 // {
 static void albachain_FuseElementsElement_ElementLayoutMaster_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void albachain_FuseElementsElement_ElementLayoutMaster_Property_build(uTy
     return type;
 }
 
-// public albachain_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :41
+// public albachain_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :31
 void albachain_FuseElementsElement_ElementLayoutMaster_Property__ctor_3_fn(albachain_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Fuse.Elements.Element Get(Uno.UX.PropertyObject obj) :43
+// public override sealed Fuse.Elements.Element Get(Uno.UX.PropertyObject obj) :33
 void albachain_FuseElementsElement_ElementLayoutMaster_Property__Get1_fn(albachain_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Elements::Element** __retval)
 {
     uStackFrame __("albachain_FuseElementsElement_ElementLayoutMaster_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = ::g::Fuse::Controls::LayoutControl::GetLayoutMaster(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/])), void();
 }
 
-// public albachain_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :41
+// public albachain_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :31
 void albachain_FuseElementsElement_ElementLayoutMaster_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, albachain_FuseElementsElement_ElementLayoutMaster_Property** __retval)
 {
     *__retval = albachain_FuseElementsElement_ElementLayoutMaster_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :42
+// public override sealed Uno.UX.PropertyObject get_Object() :32
 void albachain_FuseElementsElement_ElementLayoutMaster_Property__get_Object_fn(albachain_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Elements.Element v, Uno.UX.IPropertyListener origin) :44
+// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Elements.Element v, Uno.UX.IPropertyListener origin) :34
 void albachain_FuseElementsElement_ElementLayoutMaster_Property__Set1_fn(albachain_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Elements::Element* v, uObject* origin)
 {
     uStackFrame __("albachain_FuseElementsElement_ElementLayoutMaster_Property", "Set(Uno.UX.PropertyObject,Fuse.Elements.Element,Uno.UX.IPropertyListener)");
     ::g::Fuse::Controls::LayoutControl::SetLayoutMaster(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]), v);
 }
 
-// public albachain_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :41
+// public albachain_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :31
 void albachain_FuseElementsElement_ElementLayoutMaster_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public albachain_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :41
+// public albachain_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :31
 albachain_FuseElementsElement_ElementLayoutMaster_Property* albachain_FuseElementsElement_ElementLayoutMaster_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     albachain_FuseElementsElement_ElementLayoutMaster_Property* obj1 = (albachain_FuseElementsElement_ElementLayoutMaster_Property*)uNew(albachain_FuseElementsElement_ElementLayoutMaster_Property_typeof());

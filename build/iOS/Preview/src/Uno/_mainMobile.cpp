@@ -43,23 +43,28 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{uClassType* FuseScriptingJavaScript_bundle_typeof();}
 namespace g{uClassType* FuseText_bundle_typeof();}
 namespace g{uClassType* UnoCore_bundle_typeof();}
-namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* albachain_accessor_IconAndLabel_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* albachain_accessor_Tab_Text_typeof();}
 namespace g{uClassType* albachain_bundle_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseAnimationsAttractorfloat4_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsImage_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsNavigationControl_Active_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsShape_Color_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsTextControl_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsTextControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseControlsTextInputControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseElementsElement_Opacity_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseElementsElement_Width_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseLayoutsColumn_Width_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* albachain_FuseTriggersWhileBool_Value_Property_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* BaseText_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* BoldText_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* BottomBar_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* BottomBarIcon_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* ColorPalette_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* contract_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct Shape_type;}} ::g::Fuse::Controls::Shape_type* Divider_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* GoalsIcon_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* home_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* HomeIcon_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* IconAndLabel_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* login_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* LogsIcon_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template_typeof();}
@@ -69,12 +74,16 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template4_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* mainviewBis_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* mainviewInd__Template_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* mainviewInd_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* PagePlaceholder_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* ProfileIcon_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* signupBis_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* signupInd_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* StaticResources_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Tab_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* TabHeader_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* TabIcon_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* WelcomeText_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendEquation_typeof();}}
@@ -2721,23 +2730,28 @@ void uInitRtti()
         (uType*(*)())&::g::FuseScriptingJavaScript_bundle_typeof,
         (uType*(*)())&::g::FuseText_bundle_typeof,
         (uType*(*)())&::g::UnoCore_bundle_typeof,
-        (uType*(*)())&::g::albachain_accessor_IconAndLabel_Text_typeof,
         (uType*(*)())&::g::albachain_accessor_Tab_Text_typeof,
         (uType*(*)())&::g::albachain_bundle_typeof,
+        (uType*(*)())&::g::albachain_FuseAnimationsAttractorfloat4_Value_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseControlsImage_Color_Property_typeof,
         (uType*(*)())&::g::albachain_FuseControlsNavigationControl_Active_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseControlsShape_Color_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseControlsTextControl_Color_Property_typeof,
         (uType*(*)())&::g::albachain_FuseControlsTextControl_Value_Property_typeof,
         (uType*(*)())&::g::albachain_FuseControlsTextInputControl_Value_Property_typeof,
         (uType*(*)())&::g::albachain_FuseElementsElement_ElementLayoutMaster_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseElementsElement_Opacity_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseElementsElement_Width_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseLayoutsColumn_Width_Property_typeof,
+        (uType*(*)())&::g::albachain_FuseTriggersWhileBool_Value_Property_typeof,
         (uType*(*)())&::g::BaseText_typeof,
         (uType*(*)())&::g::BoldText_typeof,
-        (uType*(*)())&::g::BottomBar_typeof,
         (uType*(*)())&::g::BottomBarIcon_typeof,
+        (uType*(*)())&::g::ColorPalette_typeof,
         (uType*(*)())&::g::contract_typeof,
-        (uType*(*)())&::g::Divider_typeof,
         (uType*(*)())&::g::GoalsIcon_typeof,
         (uType*(*)())&::g::home_typeof,
         (uType*(*)())&::g::HomeIcon_typeof,
-        (uType*(*)())&::g::IconAndLabel_typeof,
         (uType*(*)())&::g::login_typeof,
         (uType*(*)())&::g::LogsIcon_typeof,
         (uType*(*)())&::g::MainView__Template_typeof,
@@ -2747,12 +2761,16 @@ void uInitRtti()
         (uType*(*)())&::g::MainView__Template4_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::mainviewBis_typeof,
+        (uType*(*)())&::g::mainviewInd__Template_typeof,
         (uType*(*)())&::g::mainviewInd_typeof,
+        (uType*(*)())&::g::PagePlaceholder_typeof,
         (uType*(*)())&::g::ProfileIcon_typeof,
         (uType*(*)())&::g::signupBis_typeof,
         (uType*(*)())&::g::signupInd_typeof,
         (uType*(*)())&::g::StaticResources_typeof,
         (uType*(*)())&::g::Tab_typeof,
+        (uType*(*)())&::g::TabHeader_typeof,
+        (uType*(*)())&::g::TabIcon_typeof,
         (uType*(*)())&::g::WelcomeText_typeof,
         (uType*(*)())&::g::OpenGL::GL_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendEquation_typeof,

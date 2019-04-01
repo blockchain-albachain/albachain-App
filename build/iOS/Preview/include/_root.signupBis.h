@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/signupBis.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/signupBis.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

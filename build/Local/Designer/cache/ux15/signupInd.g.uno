@@ -5,13 +5,13 @@ public partial class signupInd: Fuse.Controls.Page
     global::Uno.UX.Property<string> temp_Value_inst;
     global::Uno.UX.Property<string> temp1_Value_inst;
     global::Uno.UX.Property<string> temp2_Value_inst;
+    internal global::Fuse.Reactive.EventBinding temp_eb6;
     internal global::Fuse.Reactive.EventBinding temp_eb7;
-    internal global::Fuse.Reactive.EventBinding temp_eb8;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
         "router",
-        "temp_eb7",
-        "temp_eb8"
+        "temp_eb6",
+        "temp_eb7"
     };
     static signupInd()
     {
@@ -39,7 +39,7 @@ public partial class signupInd: Fuse.Controls.Page
         var temp7 = new global::Fuse.Reactive.Data("Save");
         var temp8 = new global::Fuse.Reactive.JavaScript(__g_nametable);
         var temp9 = new global::Fuse.Controls.Image();
-        temp_eb7 = new global::Fuse.Reactive.EventBinding(temp3);
+        temp_eb6 = new global::Fuse.Reactive.EventBinding(temp3);
         var temp10 = new global::Fuse.Controls.Rectangle();
         var temp11 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp4, Fuse.Reactive.BindingMode.Default);
         var temp12 = new global::Fuse.Controls.Rectangle();
@@ -51,7 +51,7 @@ public partial class signupInd: Fuse.Controls.Page
         var temp18 = new global::Fuse.Controls.Rectangle();
         var temp19 = new global::Fuse.Gestures.Clicked();
         var temp20 = new global::Fuse.Triggers.Actions.Callback();
-        temp_eb8 = new global::Fuse.Reactive.EventBinding(temp7);
+        temp_eb7 = new global::Fuse.Reactive.EventBinding(temp7);
         this.SourceLineNumber = 1;
         this.SourceFileName = "Pages/individual/signupInd.ux";
         temp8.LineNumber = 3;
@@ -67,9 +67,9 @@ public partial class signupInd: Fuse.Controls.Page
         temp9.Layer = Fuse.Layer.Layout;
         temp9.SourceLineNumber = 5;
         temp9.SourceFileName = "Pages/individual/signupInd.ux";
-        global::Fuse.Gestures.Clicked.AddHandler(temp9, temp_eb7.OnEvent);
+        global::Fuse.Gestures.Clicked.AddHandler(temp9, temp_eb6.OnEvent);
         temp9.File = new global::Uno.UX.BundleFileSource(import("../../../../../Assets/back.png"));
-        temp9.Bindings.Add(temp_eb7);
+        temp9.Bindings.Add(temp_eb6);
         temp3.SourceLineNumber = 5;
         temp3.SourceFileName = "Pages/individual/signupInd.ux";
         temp10.Color = float4(0.8862745f, 0.8862745f, 0.8862745f, 1f);
@@ -154,16 +154,16 @@ public partial class signupInd: Fuse.Controls.Page
         temp19.SourceLineNumber = 25;
         temp19.SourceFileName = "Pages/individual/signupInd.ux";
         temp19.Actions.Add(temp20);
-        temp19.Bindings.Add(temp_eb8);
+        temp19.Bindings.Add(temp_eb7);
         temp20.SourceLineNumber = 26;
         temp20.SourceFileName = "Pages/individual/signupInd.ux";
-        temp20.Handler += temp_eb8.OnEvent;
+        temp20.Handler += temp_eb7.OnEvent;
         temp7.SourceLineNumber = 26;
         temp7.SourceFileName = "Pages/individual/signupInd.ux";
         __g_nametable.This = this;
         __g_nametable.Objects.Add(router);
+        __g_nametable.Objects.Add(temp_eb6);
         __g_nametable.Objects.Add(temp_eb7);
-        __g_nametable.Objects.Add(temp_eb8);
         this.Children.Add(temp8);
         this.Children.Add(temp9);
         this.Children.Add(temp10);

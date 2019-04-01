@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/signupInd.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/signupInd.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -244,7 +244,7 @@ void signupInd::InitializeUX()
     temp8->FileName(::STRINGS[9/*"Pages/indiv...*/]);
     temp8->SourceLineNumber(3);
     temp8->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp8->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::signupIndd6326ffa()));
+    temp8->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::signupIndcb902260()));
     temp9->Width(::g::Uno::UX::Size__New1(30.0f, 1));
     temp9->Height(::g::Uno::UX::Size__New1(40.0f, 1));
     temp9->Alignment(5);
@@ -254,7 +254,7 @@ void signupInd::InitializeUX()
     temp9->SourceLineNumber(5);
     temp9->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
     ::g::Fuse::Gestures::Clicked::AddHandler(temp9, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb6)));
-    temp9->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::back2e409c1b()));
+    temp9->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::back582999d3()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb6);
     temp3->SourceLineNumber(5);
     temp3->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);

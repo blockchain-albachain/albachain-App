@@ -31,7 +31,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class Grid :59
+// public sealed class Grid :59
 // {
 ::g::Fuse::Controls::Panel_type* Grid_typeof();
 void Grid__ctor_7_fn(Grid* __this);

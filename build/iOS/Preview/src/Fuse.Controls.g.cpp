@@ -2481,7 +2481,7 @@ CommonNavigationPages* CommonNavigationPages::New1()
 // /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Container.uno
 // ---------------------------------------------------------------------------
 
-// public class Container :34
+// public sealed class Container :34
 // {
 static void Container_build(uType* type)
 {
@@ -8716,7 +8716,7 @@ GraphicsView* GraphicsView::New3()
 // /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Grid.uno
 // ----------------------------------------------------------------------
 
-// public class Grid :59
+// public sealed class Grid :59
 // {
 static void Grid_build(uType* type)
 {
@@ -22334,7 +22334,7 @@ RangeControl2D* RangeControl2D::New4()
 // /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Rectangle.Surface.uno
 // ----------------------------------------------------------------------------------------------
 
-// public partial class Rectangle :8
+// public partial sealed class Rectangle :8
 // {
 // static generated Rectangle() :8
 static void Rectangle__cctor_4_fn(uType* __type)

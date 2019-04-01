@@ -42,6 +42,7 @@ public partial class MainView: Fuse.App
         {
             var __self = new global::mainviewInd(__parent.router);
             __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Alignment = Fuse.Elements.Alignment.Default;
             __self.Name = __selector0;
             __self.SourceLineNumber = 5;
             __self.SourceFileName = "MainView.ux";
@@ -249,6 +250,11 @@ public partial class MainView: Fuse.App
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.TranslationModes.ParentSize, "ParentSize");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.TranslationModes.Width, "Width");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.TranslationModes.Height, "Height");
+        global::Uno.UX.Resource.SetGlobalKey(global::ColorPalette.color0, "color0");
+        global::Uno.UX.Resource.SetGlobalKey(global::ColorPalette.color1, "color1");
+        global::Uno.UX.Resource.SetGlobalKey(global::ColorPalette.color2, "color2");
+        global::Uno.UX.Resource.SetGlobalKey(global::ColorPalette.color3, "color3");
+        global::Uno.UX.Resource.SetGlobalKey(global::ColorPalette.color4, "color4");
         global::Uno.UX.Resource.SetGlobalKey(global::StaticResources.BorderColor, "BorderColor");
         global::Uno.UX.Resource.SetGlobalKey(global::StaticResources.BaseFont, "BaseFont");
         global::Uno.UX.Resource.SetGlobalKey(global::StaticResources.BoldFont, "BoldFont");

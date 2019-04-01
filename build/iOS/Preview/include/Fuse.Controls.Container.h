@@ -28,7 +28,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class Container :34
+// public sealed class Container :34
 // {
 ::g::Fuse::Controls::Panel_type* Container_typeof();
 void Container__ctor_7_fn(Container* __this);

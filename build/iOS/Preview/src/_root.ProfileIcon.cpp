@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/ProfileIcon.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/ProfileIcon.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -155,11 +155,11 @@ void ProfileIcon::InitializeUX1()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp3);
     temp1->Density(1.0f);
-    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile1x4331ab4a()));
+    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile1xaa2b8d04()));
     temp2->Density(2.0f);
-    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile2x43319f49()));
+    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile2xaa2b8901()));
     temp3->Density(4.0f);
-    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile4x43319747()));
+    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::profile4xaa2ba107()));
     Source(temp);
 }
 

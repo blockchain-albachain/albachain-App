@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain/build/iOS/Preview/cache/ux15/GoalsIcon.g.uno.
+// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/GoalsIcon.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -155,11 +155,11 @@ void GoalsIcon::InitializeUX1()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Sources()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), temp3);
     temp1->Density(1.0f);
-    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals1xe88cf64b()));
+    temp1->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals1x42498423()));
     temp2->Density(2.0f);
-    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals2xe88d0ace()));
+    temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals2x42499024()));
     temp3->Density(4.0f);
-    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals4xe88d12d0()));
+    temp3->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::goals4x4249781e()));
     Source(temp);
 }
 
