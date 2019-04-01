@@ -1,9 +1,9 @@
 var Observable = require('FuseJS/Observable');
 
-function LogsIcon() {
+function gocontract() {
 	router.goto("contract");
 }
 
 module.export = {
-	LogsIcon : LogsIcon
+	gocontract : gocontract
 };
