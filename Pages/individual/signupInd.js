@@ -3,6 +3,9 @@ var Observable = require('FuseJS/Observable');
 var newID = Observable("");
 var newPW = Observable("");
 var newName = Observable("");
+var dayOfbirth = Observable("");
+var sex = Observable("");
+var phoneNum = Observable("");
 
 function goBack()
 {
@@ -11,17 +14,18 @@ function goBack()
 }
 
 function Save(){
-    console.log('UPID'); //Sign_in 함수가 호출되었는지 확인
-
 	fetch('http://8dc06cfa.ngrok.io/users/signup',{
 	            method: "POST",
 	            headers: {
 	            	"Content-type": "application/json"
 	            },
 	            body : JSON.stringify({
-	            	'newid' : newID.value,
-	                'newpw' : newPW.value,
-	                'newname' : newName.value
+	            	'id' : newID.value,
+	                'password' : newPW.value,
+	                'name' : newName.value,
+	                'birth' : dayOfbirth.value,
+	                'gender' : sex,
+	                'phone_number' : phoneNum
 	              })
 	        }).then((res)=>{ return res.json()
 	        }).then((res)=>{
@@ -50,6 +54,9 @@ module.exports = {
 	newID : newID,
 	newPW : newPW,
 	newName : newName,
+	dayOfbirth : dayOfbirth,
+	sex : sex,
+	phoneNum : phoneNum,
 	Save : Save,
 	goBack : goBack
 };
