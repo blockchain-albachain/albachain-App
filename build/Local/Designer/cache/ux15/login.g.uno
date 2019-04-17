@@ -269,6 +269,7 @@ public partial class login: Fuse.Controls.Page
         temp1.IsPassword = true;
         temp1.PlaceholderText = "Password";
         temp1.PlaceholderColor = float4(0.6f, 0.6f, 0.6f, 1f);
+        temp1.ActionStyle = Fuse.Controls.TextInputActionStyle.Send;
         temp1.TextColor = float4(0f, 0f, 0f, 1f);
         temp1.CaretColor = float4(1f, 1f, 1f, 1f);
         temp1.Width = new Uno.UX.Size(240f, Uno.UX.Unit.Unspecified);
@@ -406,6 +407,7 @@ public partial class login: Fuse.Controls.Page
         temp3.IsPassword = true;
         temp3.PlaceholderText = "Password";
         temp3.PlaceholderColor = float4(0.6f, 0.6f, 0.6f, 1f);
+        temp3.ActionStyle = Fuse.Controls.TextInputActionStyle.Send;
         temp3.TextColor = float4(0f, 0f, 0f, 1f);
         temp3.CaretColor = float4(1f, 1f, 1f, 1f);
         temp3.Width = new Uno.UX.Size(240f, Uno.UX.Unit.Unspecified);

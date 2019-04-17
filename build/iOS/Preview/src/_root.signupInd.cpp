@@ -45,14 +45,14 @@
 #include <Uno.UX.Selector.h>
 #include <Uno.UX.Size.h>
 #include <Uno.UX.Unit.h>
-static uString* STRINGS[14];
+static uString* STRINGS[20];
 static uType* TYPES[7];
 
 namespace g{
 
 // public partial sealed class signupInd :2
 // {
-// static signupInd() :16
+// static signupInd() :19
 static void signupInd__cctor_4_fn(uType* __type)
 {
     signupInd::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb6"*/], ::STRINGS[2/*"temp_eb7"*/]);
@@ -69,12 +69,18 @@ static void signupInd_build(uType* type)
     ::STRINGS[5] = uString::Const("newID");
     ::STRINGS[6] = uString::Const("newPW");
     ::STRINGS[7] = uString::Const("newName");
-    ::STRINGS[8] = uString::Const("Save");
-    ::STRINGS[9] = uString::Const("Pages/individual/signupInd.ux");
-    ::STRINGS[10] = uString::Const("ID");
-    ::STRINGS[11] = uString::Const("Password");
-    ::STRINGS[12] = uString::Const("Name");
-    ::STRINGS[13] = uString::Const("\352\260\200\354\236\205\355\225\230\352\270\260");
+    ::STRINGS[8] = uString::Const("dayOfbirth");
+    ::STRINGS[9] = uString::Const("sex");
+    ::STRINGS[10] = uString::Const("phoneNum");
+    ::STRINGS[11] = uString::Const("Save");
+    ::STRINGS[12] = uString::Const("Pages/individual/signupInd.ux");
+    ::STRINGS[13] = uString::Const("\354\225\204\354\235\264\353\224\224");
+    ::STRINGS[14] = uString::Const("\353\271\204\353\260\200\353\262\210\355\230\270");
+    ::STRINGS[15] = uString::Const("\354\235\264\353\246\204");
+    ::STRINGS[16] = uString::Const("\354\203\235\353\205\204\354\233\224\354\235\274(6\354\236\220\353\246\254)");
+    ::STRINGS[17] = uString::Const("\353\202\250/\354\227\254");
+    ::STRINGS[18] = uString::Const("\355\234\264\353\214\200\355\217\260 \353\262\210\355\230\270('-' \354\240\234\354\231\270)");
+    ::STRINGS[19] = uString::Const("\352\260\200\354\236\205\355\225\230\352\270\260");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     ::TYPES[1] = ::g::Fuse::Gestures::ClickedHandler_typeof();
     ::TYPES[2] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
@@ -109,6 +115,9 @@ static void signupInd_build(uType* type)
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp_Value_inst), 0,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp1_Value_inst), 0,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp2_Value_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp3_Value_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp4_Value_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(signupInd, temp5_Value_inst), 0,
         ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(signupInd, temp_eb6), 0,
         ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(signupInd, temp_eb7), 0,
         ::g::Uno::UX::NameTable_typeof(), offsetof(signupInd, __g_nametable1), 0,
@@ -125,7 +134,7 @@ static void signupInd_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Page_typeof();
-    options.FieldCount = 135;
+    options.FieldCount = 138;
     options.InterfaceCount = 19;
     options.DependencyCount = 1;
     options.ObjectSize = sizeof(signupInd);
@@ -177,19 +186,19 @@ static void signupInd_build(uType* type)
     return type;
 }
 
-// public signupInd(Fuse.Navigation.Router router) :20
+// public signupInd(Fuse.Navigation.Router router) :23
 void signupInd__ctor_8_fn(signupInd* __this, ::g::Fuse::Navigation::Router* router1)
 {
     __this->ctor_8(router1);
 }
 
-// private void InitializeUX() :26
+// private void InitializeUX() :29
 void signupInd__InitializeUX_fn(signupInd* __this)
 {
     __this->InitializeUX();
 }
 
-// public signupInd New(Fuse.Navigation.Router router) :20
+// public signupInd New(Fuse.Navigation.Router router) :23
 void signupInd__New5_fn(::g::Fuse::Navigation::Router* router1, signupInd** __retval)
 {
     *__retval = signupInd::New5(router1);
@@ -198,7 +207,7 @@ void signupInd__New5_fn(::g::Fuse::Navigation::Router* router1, signupInd** __re
 uSStrong<uArray*> signupInd::__g_static_nametable1_;
 ::g::Uno::UX::Selector signupInd::__selector0_;
 
-// public signupInd(Fuse.Navigation.Router router) [instance] :20
+// public signupInd(Fuse.Navigation.Router router) [instance] :23
 void signupInd::ctor_8(::g::Fuse::Navigation::Router* router1)
 {
     uStackFrame __("signupInd", ".ctor(Fuse.Navigation.Router)");
@@ -207,158 +216,238 @@ void signupInd::ctor_8(::g::Fuse::Navigation::Router* router1)
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :26
+// private void InitializeUX() [instance] :29
 void signupInd::InitializeUX()
 {
     uStackFrame __("signupInd", "InitializeUX()");
     __g_nametable1 = ::g::Uno::UX::NameTable::New1(NULL, signupInd::__g_static_nametable1_);
-    ::g::Fuse::Reactive::Data* temp3 = ::g::Fuse::Reactive::Data::New1(::STRINGS[4/*"goBack"*/]);
+    ::g::Fuse::Reactive::Data* temp6 = ::g::Fuse::Reactive::Data::New1(::STRINGS[4/*"goBack"*/]);
     ::g::Fuse::Controls::TextInput* temp = ::g::Fuse::Controls::TextInput::New3();
     temp_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp, signupInd::__selector0_);
-    ::g::Fuse::Reactive::Data* temp4 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"newID"*/]);
+    ::g::Fuse::Reactive::Data* temp7 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"newID"*/]);
     ::g::Fuse::Controls::TextInput* temp1 = ::g::Fuse::Controls::TextInput::New3();
     temp1_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp1, signupInd::__selector0_);
-    ::g::Fuse::Reactive::Data* temp5 = ::g::Fuse::Reactive::Data::New1(::STRINGS[6/*"newPW"*/]);
+    ::g::Fuse::Reactive::Data* temp8 = ::g::Fuse::Reactive::Data::New1(::STRINGS[6/*"newPW"*/]);
     ::g::Fuse::Controls::TextInput* temp2 = ::g::Fuse::Controls::TextInput::New3();
     temp2_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp2, signupInd::__selector0_);
-    ::g::Fuse::Reactive::Data* temp6 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"newName"*/]);
-    ::g::Fuse::Reactive::Data* temp7 = ::g::Fuse::Reactive::Data::New1(::STRINGS[8/*"Save"*/]);
-    ::g::Fuse::Reactive::JavaScript* temp8 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
-    ::g::Fuse::Controls::Image* temp9 = ::g::Fuse::Controls::Image::New3();
-    temp_eb6 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp3);
-    ::g::Fuse::Controls::Rectangle* temp10 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Reactive::DataBinding* temp11 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp4, 3);
-    ::g::Fuse::Controls::Rectangle* temp12 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Reactive::DataBinding* temp13 = ::g::Fuse::Reactive::DataBinding::New1(temp1_Value_inst, (uObject*)temp5, 3);
-    ::g::Fuse::Controls::Rectangle* temp14 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Reactive::DataBinding* temp15 = ::g::Fuse::Reactive::DataBinding::New1(temp2_Value_inst, (uObject*)temp6, 3);
-    ::g::Fuse::Controls::Panel* temp16 = ::g::Fuse::Controls::Panel::New3();
-    ::g::Fuse::Controls::Text* temp17 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Reactive::Data* temp9 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"newName"*/]);
+    ::g::Fuse::Controls::TextInput* temp3 = ::g::Fuse::Controls::TextInput::New3();
+    temp3_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp3, signupInd::__selector0_);
+    ::g::Fuse::Reactive::Data* temp10 = ::g::Fuse::Reactive::Data::New1(::STRINGS[8/*"dayOfbirth"*/]);
+    ::g::Fuse::Controls::TextInput* temp4 = ::g::Fuse::Controls::TextInput::New3();
+    temp4_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp4, signupInd::__selector0_);
+    ::g::Fuse::Reactive::Data* temp11 = ::g::Fuse::Reactive::Data::New1(::STRINGS[9/*"sex"*/]);
+    ::g::Fuse::Controls::TextInput* temp5 = ::g::Fuse::Controls::TextInput::New3();
+    temp5_Value_inst = ::g::albachain_FuseControlsTextInputControl_Value_Property::New1(temp5, signupInd::__selector0_);
+    ::g::Fuse::Reactive::Data* temp12 = ::g::Fuse::Reactive::Data::New1(::STRINGS[10/*"phoneNum"*/]);
+    ::g::Fuse::Reactive::Data* temp13 = ::g::Fuse::Reactive::Data::New1(::STRINGS[11/*"Save"*/]);
+    ::g::Fuse::Reactive::JavaScript* temp14 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
+    ::g::Fuse::Controls::Image* temp15 = ::g::Fuse::Controls::Image::New3();
+    temp_eb6 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp6);
+    ::g::Fuse::Controls::Rectangle* temp16 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Reactive::DataBinding* temp17 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp7, 3);
     ::g::Fuse::Controls::Rectangle* temp18 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Gestures::Clicked* temp19 = ::g::Fuse::Gestures::Clicked::New2();
-    ::g::Fuse::Triggers::Actions::Callback* temp20 = ::g::Fuse::Triggers::Actions::Callback::New2();
-    temp_eb7 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp7);
+    ::g::Fuse::Reactive::DataBinding* temp19 = ::g::Fuse::Reactive::DataBinding::New1(temp1_Value_inst, (uObject*)temp8, 3);
+    ::g::Fuse::Controls::Rectangle* temp20 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Reactive::DataBinding* temp21 = ::g::Fuse::Reactive::DataBinding::New1(temp2_Value_inst, (uObject*)temp9, 3);
+    ::g::Fuse::Controls::Rectangle* temp22 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Reactive::DataBinding* temp23 = ::g::Fuse::Reactive::DataBinding::New1(temp3_Value_inst, (uObject*)temp10, 3);
+    ::g::Fuse::Controls::Rectangle* temp24 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Reactive::DataBinding* temp25 = ::g::Fuse::Reactive::DataBinding::New1(temp4_Value_inst, (uObject*)temp11, 3);
+    ::g::Fuse::Controls::Rectangle* temp26 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Reactive::DataBinding* temp27 = ::g::Fuse::Reactive::DataBinding::New1(temp5_Value_inst, (uObject*)temp12, 3);
+    ::g::Fuse::Controls::Panel* temp28 = ::g::Fuse::Controls::Panel::New3();
+    ::g::Fuse::Controls::Text* temp29 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Controls::Rectangle* temp30 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Gestures::Clicked* temp31 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Triggers::Actions::Callback* temp32 = ::g::Fuse::Triggers::Actions::Callback::New2();
+    temp_eb7 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp13);
     SourceLineNumber(1);
-    SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp8->LineNumber(3);
-    temp8->FileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp8->SourceLineNumber(3);
-    temp8->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp8->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::signupIndcb902260()));
-    temp9->Width(::g::Uno::UX::Size__New1(30.0f, 1));
-    temp9->Height(::g::Uno::UX::Size__New1(40.0f, 1));
-    temp9->Alignment(5);
-    temp9->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 0.0f));
-    temp9->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
-    temp9->Layer(2);
-    temp9->SourceLineNumber(5);
-    temp9->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp9, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb6)));
-    temp9->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::back582999d3()));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb6);
-    temp3->SourceLineNumber(5);
-    temp3->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp10->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
-    temp10->Width(::g::Uno::UX::Size__New1(250.0f, 1));
-    temp10->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp10->Y(::g::Uno::UX::Size__New1(190.0f, 1));
-    temp10->SourceLineNumber(8);
-    temp10->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp10->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
-    temp->PlaceholderText(::STRINGS[10/*"ID"*/]);
+    SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp14->LineNumber(3);
+    temp14->FileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp14->SourceLineNumber(3);
+    temp14->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp14->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::signupIndcb902260()));
+    temp15->Width(::g::Uno::UX::Size__New1(30.0f, 1));
+    temp15->Height(::g::Uno::UX::Size__New1(40.0f, 1));
+    temp15->Alignment(5);
+    temp15->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 0.0f));
+    temp15->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
+    temp15->Layer(2);
+    temp15->SourceLineNumber(5);
+    temp15->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp15, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb6)));
+    temp15->File(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::back582999d3()));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp15->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb6);
+    temp6->SourceLineNumber(5);
+    temp6->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp16->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp16->Width(::g::Uno::UX::Size__New1(250.0f, 1));
+    temp16->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp16->Y(::g::Uno::UX::Size__New1(100.0f, 1));
+    temp16->SourceLineNumber(8);
+    temp16->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
+    temp->PlaceholderText(::STRINGS[13/*"아이디"*/]);
     temp->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
     temp->FontSize(20.0f);
     temp->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp->Alignment(10);
     temp->SourceLineNumber(9);
-    temp->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
+    temp->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
     ::g::Fuse::Controls::Grid::SetRow(temp, 0);
     ::g::Fuse::Controls::Grid::SetColumn(temp, 1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp11);
-    temp4->SourceLineNumber(9);
-    temp4->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp12->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
-    temp12->Width(::g::Uno::UX::Size__New1(250.0f, 1));
-    temp12->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp12->Y(::g::Uno::UX::Size__New1(260.0f, 1));
-    temp12->SourceLineNumber(12);
-    temp12->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp17);
+    temp7->SourceLineNumber(9);
+    temp7->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp18->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp18->Width(::g::Uno::UX::Size__New1(250.0f, 1));
+    temp18->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp18->Y(::g::Uno::UX::Size__New1(170.0f, 1));
+    temp18->SourceLineNumber(12);
+    temp18->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp18->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
     temp1->IsPassword(true);
-    temp1->PlaceholderText(::STRINGS[11/*"Password"*/]);
+    temp1->PlaceholderText(::STRINGS[14/*"비밀번호"*/]);
     temp1->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
     temp1->FontSize(20.0f);
     temp1->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp1->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp1->Alignment(10);
     temp1->SourceLineNumber(13);
-    temp1->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
+    temp1->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
     ::g::Fuse::Controls::Grid::SetRow(temp1, 0);
     ::g::Fuse::Controls::Grid::SetColumn(temp1, 1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp13);
-    temp5->SourceLineNumber(13);
-    temp5->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp14->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
-    temp14->Width(::g::Uno::UX::Size__New1(250.0f, 1));
-    temp14->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp14->Y(::g::Uno::UX::Size__New1(330.0f, 1));
-    temp14->SourceLineNumber(16);
-    temp14->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp14->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
-    temp2->PlaceholderText(::STRINGS[12/*"Name"*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp19);
+    temp8->SourceLineNumber(13);
+    temp8->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp20->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp20->Width(::g::Uno::UX::Size__New1(250.0f, 1));
+    temp20->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp20->Y(::g::Uno::UX::Size__New1(240.0f, 1));
+    temp20->SourceLineNumber(16);
+    temp20->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp20->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
+    temp2->PlaceholderText(::STRINGS[15/*"이름"*/]);
     temp2->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
     temp2->FontSize(20.0f);
     temp2->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp2->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     temp2->Alignment(10);
     temp2->SourceLineNumber(17);
-    temp2->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
+    temp2->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
     ::g::Fuse::Controls::Grid::SetRow(temp2, 0);
     ::g::Fuse::Controls::Grid::SetColumn(temp2, 1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp15);
-    temp6->SourceLineNumber(17);
-    temp6->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp16->Width(::g::Uno::UX::Size__New1(150.0f, 1));
-    temp16->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp16->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    temp16->Y(::g::Uno::UX::Size__New1(400.0f, 1));
-    temp16->SourceLineNumber(22);
-    temp16->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp17);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp18);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp19);
-    temp17->Value(::STRINGS[13/*"가입하기"*/]);
-    temp17->FontSize(20.0f);
-    temp17->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp17->Alignment(10);
-    temp17->SourceLineNumber(23);
-    temp17->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp18->Color(::g::Uno::Float4__New2(0.3607843f, 0.6705883f, 0.9960784f, 1.0f));
-    temp18->SourceLineNumber(24);
-    temp18->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp19->SourceLineNumber(25);
-    temp19->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp20);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb7);
-    temp20->SourceLineNumber(26);
-    temp20->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
-    temp20->add_Handler(uDelegate::New(::TYPES[5/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb7)));
-    temp7->SourceLineNumber(26);
-    temp7->SourceFileName(::STRINGS[9/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp21);
+    temp9->SourceLineNumber(17);
+    temp9->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp22->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp22->Width(::g::Uno::UX::Size__New1(150.0f, 1));
+    temp22->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp22->X(::g::Uno::UX::Size__New1(63.0f, 1));
+    temp22->Y(::g::Uno::UX::Size__New1(310.0f, 1));
+    temp22->SourceLineNumber(20);
+    temp22->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp22->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp3);
+    temp3->PlaceholderText(::STRINGS[16/*"생년월일(6자리)"*/]);
+    temp3->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp3->FontSize(20.0f);
+    temp3->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp3->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp3->Alignment(10);
+    temp3->SourceLineNumber(21);
+    temp3->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Fuse::Controls::Grid::SetRow(temp3, 0);
+    ::g::Fuse::Controls::Grid::SetColumn(temp3, 1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp3->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp23);
+    temp10->SourceLineNumber(21);
+    temp10->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp24->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp24->Width(::g::Uno::UX::Size__New1(70.0f, 1));
+    temp24->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp24->X(::g::Uno::UX::Size__New1(242.0f, 1));
+    temp24->Y(::g::Uno::UX::Size__New1(310.0f, 1));
+    temp24->SourceLineNumber(24);
+    temp24->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp24->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
+    temp4->PlaceholderText(::STRINGS[17/*"남/여"*/]);
+    temp4->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp4->FontSize(20.0f);
+    temp4->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp4->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp4->Alignment(10);
+    temp4->SourceLineNumber(25);
+    temp4->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Fuse::Controls::Grid::SetRow(temp4, 0);
+    ::g::Fuse::Controls::Grid::SetColumn(temp4, 1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp25);
+    temp11->SourceLineNumber(25);
+    temp11->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp26->Color(::g::Uno::Float4__New2(0.8862745f, 0.8862745f, 0.8862745f, 1.0f));
+    temp26->Width(::g::Uno::UX::Size__New1(250.0f, 1));
+    temp26->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp26->Y(::g::Uno::UX::Size__New1(380.0f, 1));
+    temp26->SourceLineNumber(28);
+    temp26->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp26->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp5);
+    temp5->PlaceholderText(::STRINGS[18/*"휴대폰 번호('-' ...*/]);
+    temp5->PlaceholderColor(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp5->FontSize(20.0f);
+    temp5->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp5->CaretColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    temp5->Alignment(10);
+    temp5->SourceLineNumber(29);
+    temp5->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Fuse::Controls::Grid::SetRow(temp5, 0);
+    ::g::Fuse::Controls::Grid::SetColumn(temp5, 1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp27);
+    temp12->SourceLineNumber(29);
+    temp12->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp28->Width(::g::Uno::UX::Size__New1(150.0f, 1));
+    temp28->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp28->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
+    temp28->Y(::g::Uno::UX::Size__New1(450.0f, 1));
+    temp28->SourceLineNumber(34);
+    temp28->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp28->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp29);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp28->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp30);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp28->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp31);
+    temp29->Value(::STRINGS[19/*"가입하기"*/]);
+    temp29->FontSize(20.0f);
+    temp29->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp29->Alignment(10);
+    temp29->SourceLineNumber(35);
+    temp29->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp30->Color(::g::Uno::Float4__New2(0.3607843f, 0.6705883f, 0.9960784f, 1.0f));
+    temp30->SourceLineNumber(36);
+    temp30->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp31->SourceLineNumber(37);
+    temp31->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp31->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp32);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp31->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb7);
+    temp32->SourceLineNumber(38);
+    temp32->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
+    temp32->add_Handler(uDelegate::New(::TYPES[5/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb7)));
+    temp13->SourceLineNumber(38);
+    temp13->SourceFileName(::STRINGS[12/*"Pages/indiv...*/]);
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), router);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb6);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb7);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp8);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp9);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp10);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp12);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp14);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp15);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp16);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp18);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp20);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp22);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp24);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp26);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp28);
 }
 
-// public signupInd New(Fuse.Navigation.Router router) [static] :20
+// public signupInd New(Fuse.Navigation.Router router) [static] :23
 signupInd* signupInd::New5(::g::Fuse::Navigation::Router* router1)
 {
     signupInd* obj1 = (signupInd*)uNew(signupInd_typeof());

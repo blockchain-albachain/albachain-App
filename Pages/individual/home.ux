@@ -1,7 +1,30 @@
 <Page ux:Class="home">
 	<!-- <JavaScript File="signupInd.js" /> -->
+	<ScrollView LayoutMode="PreserveVisual">
+		<StackPanel Orientation="Vertical" ItemSpacing="10" Padding="0, 50, 0, 0" Margin="0, 190, 0, 0">
 
-	<Text Color="#999">home</Text>
+			<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
+				<Circle Color="#006CAA" Alignment="Default" Width="15" Height="15" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" Y="25" />
+				<DockPanel Margin="0, 0, 0, 0">
+					<Rectangle Alignment="Default"  Width="160" Height="70">						
+						<Text Value="{title}" Color="#434443"  FontSize="15" />
+						<Text Value="{content}" Color="#404140"  FontSize="15" Y="20" />
+						<Text Value="{expense}원" Color="#006EA8"   FontSize="25" Y="38" />
+					</Rectangle>
+				</DockPanel>
+			</Each>
+
+			<WhileTrue Value="{isLoading}">
+				<Panel LayoutRole="Placeholder" Height="100" Color="#F6FBFF">
+					<Text Alignment="Center" Value="Loading..." />
+				</Panel>
+			</WhileTrue>
+
+		</StackPanel>
+		<ScrollViewPager Each="theEach" ReachedEnd="{loadMore}" ux:Name="svp" />
+
+
+	</ScrollView> 
 	
 
 </Page>

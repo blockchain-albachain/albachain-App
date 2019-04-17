@@ -4,58 +4,58 @@
 
 	<Font ux:Global="RobotoMedium" File="../Assets/Fonts/Roboto-Medium.ttf" />
 
-    <Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#bdc3c7">
-        <string ux:Property="Text" />
-        <Text Value="{ReadProperty Text}" Color="#000" Font="RobotoMedium" Alignment="Center" />
-    </Panel>
+	<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#bdc3c7">
+		<string ux:Property="Text" />
+		<Text Value="{ReadProperty Text}" Color="#000" Font="RobotoMedium" Alignment="Center" />
+	</Panel>
 
-    <Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#0226C7">
-        <LayoutAnimation>
-            <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn" />
-        </LayoutAnimation>
-    </Rectangle>
+	<Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#0226C7">
+		<LayoutAnimation>
+			<Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn" />
+		</LayoutAnimation>
+	</Rectangle>
 
-    <Text ux:Class="WelcomeText" FontSize="30" Alignment="Center" />
+	<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center" />
 
-    <DockPanel>
-        <StatusBarBackground Dock="Top" />
-        <BottomBarBackground Dock="Bottom" />
+	<DockPanel>
+		<StatusBarBackground Dock="Top" />
+		<BottomBarBackground Dock="Bottom" />
 
-        <Grid Dock="Top" ColumnCount="2" Background="#bdc3c7" Alignment="TopCenter" Margin="0, 70, 0, 0" Width="300" Height="70">
-            <Panel ux:Name="page1Tab">
-                <Tab Text="개인회원">
-                    <Clicked>
-                        <Set navigation.Active="page1" />
-                    </Clicked>
-                </Tab>
-            </Panel>
-            <Panel ux:Name="page2Tab">
-                <Tab Text="기업회원">
-                    <Clicked>
-                        <Set navigation.Active="page2" />
-                    </Clicked>
-                </Tab>
-            </Panel>
-           
-        </Grid>
+		<Grid Dock="Top" ColumnCount="2" Background="#bdc3c7" Alignment="TopCenter" Margin="0, 70, 0, 0" Width="300" Height="70">
+			<Panel ux:Name="page1Tab">
+				<Tab Text="개인회원">
+					<Clicked>
+						<Set navigation.Active="page1" />
+					</Clicked>
+				</Tab>
+			</Panel>
+			<Panel ux:Name="page2Tab">
+				<Tab Text="기업회원">
+					<Clicked>
+						<Set navigation.Active="page2" />
+					</Clicked>
+				</Tab>
+			</Panel>
+			
+		</Grid>
 
-        <PageControl ux:Name="navigation">
-            <Page ux:Name="page1" Background="#fff">
-                <WhileActive Threshold="0.5">
-                    <Set indicator.LayoutMaster="page1Tab" />
-                </WhileActive>
-                <Panel Width="150" Height="50" Margin="20" Y="220">
-                	<Grid ux:Name="loginArea1" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
+		<PageControl ux:Name="navigation">
+			<Page ux:Name="page1" Background="#fff">
+				<WhileActive Threshold="0.5">
+					<Set indicator.LayoutMaster="page1Tab" />
+				</WhileActive>
+				<Panel Width="150" Height="50" Margin="20" Y="220">
+					<Grid ux:Name="loginArea1" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
 						<!-- <Image Row="0" Column="0" File="../Assets/user_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
 						<TextInput Row="0" Column="1" PlaceholderText="Username" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Width="240" Value="{individualID}" />
 						<Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
 
 						<!-- <Image Row="1" Column="0" File="../Assets/password_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-						<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{individualPW}" />
+						<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{individualPW}" ActionStyle="Send" />
 						<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
 					</Grid>
 				</Panel>
-<!-- sign in -->
+				<!-- sign in -->
 				<Panel Width="150" Height="50" Margin="20" Y="330">
 					<Text Value="Log IN" Color="#fff" Alignment="Center" FontSize="20" Font="RobotoMedium" />
 					<Rectangle Color="0.3607843, 0.6705883, 0.9960784, 1" Width="300" />
@@ -65,7 +65,7 @@
 					</Clicked>
 				</Panel>
 
-<!-- sign up -->
+				<!-- sign up -->
 				<Panel Width="150" Height="50" Margin="20" Y="430">
 					<Text Value="Sign UP" Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" />
 					<Rectangle Color="#fff" Alignment="Default" Margin="0, 0, 0, 0" />
@@ -74,19 +74,19 @@
 
 					</Clicked>
 				</Panel>
-            </Page>
-            <Page ux:Name="page2" Background="#fff">
-                <WhileActive Threshold="0.5">
-                    <Set indicator.LayoutMaster="page2Tab" />
-                </WhileActive>
-                <Panel Width="150" Height="50" Margin="20" Y="220">
-                	<Grid ux:Name="loginArea2" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
+			</Page>
+			<Page ux:Name="page2" Background="#fff">
+				<WhileActive Threshold="0.5">
+					<Set indicator.LayoutMaster="page2Tab" />
+				</WhileActive>
+				<Panel Width="150" Height="50" Margin="20" Y="220">
+					<Grid ux:Name="loginArea2" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
 						<!-- <Image Row="0" Column="0" File="../Assets/user_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
 						<TextInput Row="0" Column="1" PlaceholderText="Username" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Width="240" Value="{businessID}" />
 						<Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
 
 						<!-- <Image Row="1" Column="0" File="../Assets/password_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-						<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{businessPW}" />
+						<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{businessPW}" ActionStyle="Send"/>
 						<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
 					</Grid>
 				</Panel>
@@ -100,7 +100,7 @@
 					</Clicked>
 				</Panel>
 
-<!-- sign up -->
+				<!-- sign up -->
 				<Panel Width="150" Height="50" Margin="20" Y="430">
 					<Text Value="Sign UP" Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" />
 					<Rectangle Color="#fff" Alignment="Default" Margin="0, 0, 0, 0" />
@@ -109,9 +109,9 @@
 
 					</Clicked>
 				</Panel>
-            </Page>
-           
-        </PageControl>
+			</Page>
+			
+		</PageControl>
 
-    </DockPanel>
+	</DockPanel>
 </Page>

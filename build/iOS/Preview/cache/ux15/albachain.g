@@ -13,11 +13,13 @@ build/iOS/Preview/cache/ux15/Tab.g.uno
 build/iOS/Preview/cache/ux15/WelcomeText.g.uno
 build/iOS/Preview/cache/ux15/mainviewBis.g.uno
 build/iOS/Preview/cache/ux15/signupBis.g.uno
+build/iOS/Preview/cache/ux15/check.g.uno
 build/iOS/Preview/cache/ux15/contract.g.uno
 build/iOS/Preview/cache/ux15/home.g.uno
 build/iOS/Preview/cache/ux15/mainviewInd.g.uno
 build/iOS/Preview/cache/ux15/TabHeader.g.uno
 build/iOS/Preview/cache/ux15/TabIcon.g.uno
 build/iOS/Preview/cache/ux15/PagePlaceholder.g.uno
+build/iOS/Preview/cache/ux15/profile.g.uno
 build/iOS/Preview/cache/ux15/signupInd.g.uno
 build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno

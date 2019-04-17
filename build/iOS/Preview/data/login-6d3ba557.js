@@ -15,7 +15,7 @@ function individualSignin(){
 	router.push("mainviewInd");
 	// var opts = ({
  //            	'userid' : individualID.value,
- //                'password' : individualPW.value
+ //             'password' : individualPW.value
  //              });
 
 	// console.log(JSON.stringify(opts));

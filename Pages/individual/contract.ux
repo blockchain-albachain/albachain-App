@@ -1,5 +1,5 @@
 <Page ux:Class="contract">
 	<!-- <JavaScript File="signupInd.js" /> -->
 
-	<Text Color="#999">contract</Text>
+	<Text Color="#999" Alignment="Center">contract</Text>
 </Page>

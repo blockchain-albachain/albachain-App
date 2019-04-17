@@ -60,6 +60,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* BaseText_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* BoldText_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* BottomBarIcon_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* check_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* ColorPalette_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* contract_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* GoalsIcon_typeof();}
@@ -77,6 +78,7 @@ namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Co
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* mainviewInd__Template_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* mainviewInd_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* PagePlaceholder_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* profile_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Image_type;}} ::g::Fuse::Controls::Image_type* ProfileIcon_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* signupBis_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* signupInd_typeof();}
@@ -2747,6 +2749,7 @@ void uInitRtti()
         (uType*(*)())&::g::BaseText_typeof,
         (uType*(*)())&::g::BoldText_typeof,
         (uType*(*)())&::g::BottomBarIcon_typeof,
+        (uType*(*)())&::g::check_typeof,
         (uType*(*)())&::g::ColorPalette_typeof,
         (uType*(*)())&::g::contract_typeof,
         (uType*(*)())&::g::GoalsIcon_typeof,
@@ -2764,6 +2767,7 @@ void uInitRtti()
         (uType*(*)())&::g::mainviewInd__Template_typeof,
         (uType*(*)())&::g::mainviewInd_typeof,
         (uType*(*)())&::g::PagePlaceholder_typeof,
+        (uType*(*)())&::g::profile_typeof,
         (uType*(*)())&::g::ProfileIcon_typeof,
         (uType*(*)())&::g::signupBis_typeof,
         (uType*(*)())&::g::signupInd_typeof,

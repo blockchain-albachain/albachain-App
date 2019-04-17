@@ -1,0 +1,5 @@
+<Page ux:Class="check">
+	<!-- <JavaScript File="signupInd.js" /> -->
+
+	<Text Color="#999" Alignment="Center">check</Text>
+</Page>

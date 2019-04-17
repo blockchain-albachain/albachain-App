@@ -1,0 +1,5 @@
+<Page ux:Class="profile">
+	<!-- <JavaScript File="signupInd.js" /> -->
+
+	<Text Color="#999" Alignment="Center">profile</Text>
+</Page>

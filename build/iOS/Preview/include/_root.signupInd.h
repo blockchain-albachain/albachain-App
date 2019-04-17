@@ -43,6 +43,9 @@ struct signupInd : ::g::Fuse::Controls::Page
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Value_inst;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
     uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
