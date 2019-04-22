@@ -20,7 +20,7 @@
 				<Image File="../../Assets/search.png" Color="color4" Width="30" Height="30" Margin="10" />
 			</Grid>
 			
-			<Grid Color="#FBFCFB" ChildOrder="ColumnMajor" Alignment="Top" Height="70" Opacity="1" LayoutRole="Standard" RowCount="1" ColumnCount="4" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" Y="40">
+			<Grid Color="#FBFCFB" ChildOrder="ColumnMajor" Alignment="Top" Height="70" Opacity="1" LayoutRole="Standard" RowCount="1" ColumnCount="4" Y="40">
 				<Panel Alignment="Default">
 					<!-- <Image File="Assets/logoGray.png" Alignment="Default" Width="40" Y="10" /> -->
 					<Text Value="홈" FontSize="10" TextColor="#909191" Alignment="HorizontalCenter" Y="40" />
@@ -60,6 +60,7 @@
 
 		<Panel Margin="0, 110, 0, 0">
 			<PageControl ux:Name="nav">
+				<NavigationMotion GotoDurationExp="1"/>
 				<Page ux:Name="Page1">
 					<home />
 				</Page>
