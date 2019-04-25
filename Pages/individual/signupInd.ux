@@ -1,43 +1,82 @@
 <Page ux:Class="signupInd">
 	<Router ux:Dependency="router" />
 	<JavaScript File="signupInd.js" />
-
-	<Image File="../../Assets/back.png" Clicked="{goBack}" Alignment="TopLeft" Layer="Layout" Y=30 Height="40" Width="30" Padding="0, 0, 0, 0" Margin="20, 20, 0, 0" />
-
-	<!-- <StackPanel> -->
-	<Rectangle Width="250" Height="50" Color="#E2E2E2" Y="100">
-		<TextInput Row="0" Column="1" PlaceholderText="아이디" PlaceholderColor="#999" Value="{newID}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" TextAlignment="Center"/> 
-	</Rectangle>
-
-	<Rectangle Width="250" Height="50" Color="#E2E2E2" Y="170">
-		<TextInput Row="0" Column="1" PlaceholderText="비밀번호" PlaceholderColor="#999" Value="{newPW}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" IsPassword="true" TextAlignment="Center"/> 
-	</Rectangle>
-
-	<Rectangle Width="250" Height="50" Color="#E2E2E2" Y="240">
-		<TextInput Row="0" Column="1" PlaceholderText="이름" PlaceholderColor="#999" Value="{newName}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" TextAlignment="Center"/> 
-	</Rectangle>
-
-	<Rectangle Height="50" Color="#E2E2E2" Y="310" Width="150" X="63" >
-		<TextInput Row="0" Column="1" PlaceholderText="생년월일(6자리)" PlaceholderColor="#999" Value="{dayOfbirth}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" InputHint="Number" MaxLength=6 TextAlignment="Center"/> 
-	</Rectangle>
-
-	<Rectangle Height="50" Color="#E2E2E2" Y="310" Width="70" X="242">
-		<TextInput Row="0" Column="1" PlaceholderText="남/여" PlaceholderColor="#999" Value="{sex}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" ActionStyle="Next" TextAlignment="Center"/> 
-	</Rectangle>
 	
-	<Rectangle Width="250" Height="50" Color="#E2E2E2" Y="380">
-		<TextInput Row="0" Column="1" PlaceholderText="휴대폰 번호('-' 제외)" PlaceholderColor="#999" Value="{phoneNum}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" InputHint="Phone" MaxLength=11 ActionStyle="Send" TextAlignment="Center"/> 
-	</Rectangle>
-
-	
-	<!-- singup -->
-	<Panel Width="150" Height="50" Margin="20" Y="450">
-		<Text Value="가입하기" Color="#fff" Alignment="Center" FontSize="20" />
-		<Rectangle Color="0.3607843, 0.6705883, 0.9960784, 1" />
-		<Clicked>
-			<Callback Handler="{Save}" />
-		</Clicked>
-	</Panel>
-	<!-- </StackPanel> -->
+	<ClientPanel>
+		
+		<Image File="../../Assets/back.png" Clicked="{goBack}" Alignment="TopLeft" Layer="Layout" Height="40" Width="30" Padding="0, 0, 0, 0" Margin="20, 0, 0, 0" />
+		<ScrollView>
+			
+			<StackPanel Width="360" ItemSpacing="10" Margin="0, 50, 0, 0">
+				<Rectangle Height="100">
+					<Text TextAlignment="Center" Value="약관 동의란" Alignment="Center" />
+					<Stroke Color="#363436" Width="2" />
+				</Rectangle>
+				<Rectangle Height="2" Color="#525252" />
+				<Rectangle Height="30">
+					<Text Value="아이디" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{newID}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="6~16자 영문, 숫자" Margin="100, 0, 0, 0" Height="30" />
+					<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Margin="95, 0, 0, 0" Width="260" />
+				</Rectangle>
+				
+				<Rectangle Height="30">
+					<Text Value="비밀번호" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{newPW}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="6~16자 영문, 숫자, 특수문자" Margin="100, 0, 0, 0" Height="30" />
+					<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Width="260" Margin="95, 0, 0, 0" />
+				</Rectangle>
+				
+				<Rectangle Height="30">
+					<Text Value="비밀번호 확인" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{newPW}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="6~16자 영문, 숫자, 특수문자" Margin="100, 0, 0, 0" Height="30" />
+					<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Width="260" Margin="95, 0, 0, 0" />
+				</Rectangle>
+				
+				<Rectangle Height="30">
+					<Text Value="이름" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{newName}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="6~16자 영문, 숫자, 특수문자" Margin="100, 0, 0, 0" Height="30" />
+					<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Width="260" Margin="95, 0, 0, 0" />
+				</Rectangle>
+				
+				<Rectangle Height="30">
+					<Text Value="생년월일" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{dayOfbirth}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="6자리로 입력하세요. ex) 950621" Margin="100, 0, 0, 0" Height="30" InputHint="Number" MaxLength="6" />
+					<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Width="260" Margin="95, 0, 0, 0" />
+				</Rectangle>
+				
+				<Rectangle Height="30">
+					<Text Value="성별" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+					<!-- <Text Value="남성" Alignment="CenterLeft" TextAlignment="Center" Margin="100, 0, 0, 0" FontSize="13" /> -->
+					<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{sex}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="남성, 여성" Margin="100, 0, 0, 0" Height="30" MaxLength="3" />
+							<!-- <Panel Background="#F00" Width="30" Height="30">
+				<Clicked>
+					<Rotate Degrees="90" Duration=".4" DurationBack=".2" />
+				</Clicked>
+			</Panel> -->
+			<!-- <Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Width="260" Margin="95, 0, 0, 0" /> -->
+		</Rectangle>
+		
+					<!-- 	<Rectangle Height="50" Color="#E2E2E2" Width="70">
+			<TextInput Row="0" Column="1" PlaceholderText="남/여" PlaceholderColor="#999" Value="{sex}" TextColor="#000" CaretColor="#000" Alignment="Center" FontSize="20" ActionStyle="Next" TextAlignment="Center" /> 
+		</Rectangle> -->
+		
+		
+		
+		<Rectangle Height="30">
+			<Text Value="휴대폰 번호" Alignment="CenterLeft" TextAlignment="Center" Margin="0, 0, 0, 0" FontSize="13" />
+			<Text Value="010 - " Alignment="CenterLeft" TextAlignment="Center" Margin="100, 0, 0, 0" FontSize="13" />
+			<TextInput Row="0" Column="1" PlaceholderColor="#999" Value="{phoneNum}" TextColor="#000" CaretColor="#000" Alignment="Default" FontSize="13" TextAlignment="Left" PlaceholderText="휴대폰 번호 11자리" Margin="135, 0, 0, 0" Height="30" InputHint="Phone" MaxLength="11" />
+			<Rectangle Color="#E1E2E1" Height="2" Alignment="Bottom" Margin="95, 0, 0, 0" Width="200" />
+		</Rectangle>
+		
+		<Panel Height="40" Margin="0, 20, 0, 20">
+			<Text Value="가입하기" Color="#fff" Alignment="Center" FontSize="20" />
+			<Rectangle Color="#73AF22" />
+			<Clicked>
+				<Callback Handler="{Save}" />
+			</Clicked>
+		</Panel>
+	</StackPanel>
+</ScrollView>
+</ClientPanel>
 
 </Page>
