@@ -1,5 +1,59 @@
 <Page ux:Class="contract">
-	<!-- <JavaScript File="signupInd.js" /> -->
+	<Router ux:Dependency="router" />
+	<JavaScript File="contract.js" />
+	<Rectangle Alignment="Top" Color="#FEFFFE">
+		<Grid Columns="auto,1*" Dock="Top" Margin="5" Height="50" Y="0">
+				<Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" />
+		
+				<Text ux:Name="titleText" Value="Contract" Color="color0" FontSize="25" Alignment="Center" TextAlignment="Left" Margin="0, 0, 30, 0">
+					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+				</Text>
+			</Grid>
+		<Shadow Angle="132" />
+	</Rectangle>
 
-	<Text Color="#999" Alignment="Center">contract</Text>
+	
+	<ScrollView Margin="0, 60, 0, 0">
+		<StackPanel Margin="0, 0, 0, 0" ItemSpacing="20">
+			<Text TextAlignment="Center" FontSize="20" Margin="0, 20, 0, 0" Value="albaChain 계약서" />
+
+			<Rectangle>
+				<Text Value="1. 계약기간" FontSize="15" Alignment="Left" Margin="50, 0, 0, 0" />
+				<TextInput Alignment="Right" PlaceholderText="~ 일부터 ~일까지" />
+			</Rectangle>
+
+			<Rectangle>
+				<Text Value="2. 임    금" Alignment="Left" Margin="50, 0, 0, 0" FontSize="15" />
+				<TextInput PlaceholderText="시간, 일, 월 급 + 얼마" Alignment="Right" />
+			</Rectangle>
+
+			<Rectangle>
+				<Text Value="3. 근로시간" Alignment="Left" Margin="50, 0, 0, 0" FontSize="15" />
+				<TextInput Alignment="Right" PlaceholderText="시작~끝" />
+			</Rectangle>
+
+			<Rectangle>
+				<Text Value="4. 근로요일" FontSize="15" Alignment="Left" Margin="50, 0, 0, 0" />
+			</Rectangle>
+
+			<Rectangle>
+				<Text Value="5. 계좌" FontSize="15" Alignment="Left" Margin="50, 0, 0, 0" />
+				<TextInput Alignment="Right" PlaceholderText="계좌번호, 은행" />
+			</Rectangle>
+
+			<Rectangle Height="2" Color="#A2A2A2" Width="300" Margin="0, 10, 0, 0" />
+
+			<Rectangle>
+				<Text Value="* 매장 고유번호" Alignment="Left" Margin="50, 30, 0, 0" />
+			</Rectangle>
+
+			<Rectangle Width="130" Height="40" Color="#73AF22" CornerRadius="20" Alignment="Default" Margin="0, 100, 0, 0">
+				<Text Alignment="Center" Value="제출" TextColor="#FFF" />
+				<Clicked>
+					<Callback Handler="{submit}" />
+				</Clicked>
+			</Rectangle>
+		</StackPanel>
+	</ScrollView>
+
 </Page>

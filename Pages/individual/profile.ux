@@ -1,5 +1,16 @@
 <Page ux:Class="profile">
+	<Router ux:Dependency="router" />
 	<!-- <JavaScript File="signupInd.js" /> -->
 
-	<Text Color="#999" Alignment="Center">profile</Text>
+	<Panel Alignment="Top" Background="#FFF">
+		<Grid RowCount="1" ColumnCount="2" Height="50">
+			<Rectangle Alignment="CenterRight">
+				<Text Value="내정보" />
+			</Rectangle>
+			<Rectangle Alignment="CenterRight">
+				<Text Value="내정보 변경" Margin="0, 0, 30, 0" FontSize="10" />
+			</Rectangle>
+		</Grid>
+		<Shadow Angle="136" />
+	</Panel>
 </Page>

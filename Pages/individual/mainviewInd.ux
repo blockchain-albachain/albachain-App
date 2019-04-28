@@ -5,8 +5,82 @@
 	<Router ux:Dependency="router" />
 
 	<ClientPanel>
-		
 
+		<EdgeNavigator Alignment="Default">
+			<!-- sidebar -->
+			<Panel ux:Name="sidebar" Edge="Left" Width="100%" Background="#FEFFFE" Margin="0, 0, 40, 0">
+				<!-- <Rectangle ux:Name="sidebarFade" Layer="Overlay" Opacity="0" HitTestMode="None" />	 -->
+				<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
+				<ActivatingAnimation>
+					<Change shadow.Color="#0004" />
+					<Change sidebarFade.Opacity="1" />
+				</ActivatingAnimation>
+				<profile router="router" />
+			</Panel>
+
+			<Panel>
+				<Rectangle ux:Name="sidebarFade" Layer="Overlay" Color="#1E1D1E4E" Opacity="0" HitTestMode="None" />
+			<!-- top bar -->
+			<Rectangle Color="#FEFFFE" Alignment="Top">
+				<Grid Columns="auto,1*,auto" Dock="Top" Margin="5" Height="50" Y="0">
+					<Grid ColumnCount="2" RowCount="2" Width="22" Height="22" Margin="10" Background="#FEFFFE">
+						<Each Count="4">
+							<Circle Color="color4" Margin="1.5" />
+						</Each>
+						<Clicked>
+							<NavigateToggle Target="sidebar" />
+						</Clicked>
+					</Grid>
+					<Text ux:Name="titleText" Value="albaChain" Color="color0" FontSize="25" Alignment="Center">
+						<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+					</Text>
+					<Image File="../../Assets/search.png" Color="color4" Width="30" Height="30" Margin="10" />
+				</Grid>
+				<Shadow Angle="132" />
+			</Rectangle>
+
+			
+			<!-- main -->
+			<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 60, 0, 0">
+				<StackPanel Orientation="Vertical" ItemSpacing="10" Margin="0, 20, 0, 0">
+					<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
+						<DockPanel>
+							<Rectangle Alignment="Default" Height="65" Width="295" Color="#FEFFFE" Clicked="{gotoDetails}">		<Text Alignment="Left" Value="Logo" TextAlignment="Center" Width="90" Margin="20, 0, 0, 0" Padding="0, 0, 0, 0" Height="20" />				
+								<!-- <Image File="../../Assets/hansinlogo.png" Alignment="Left" Width="100" /> -->
+								<Text Value="매장명 : {title}" Color="#434443" FontSize="15" TextAlignment="Center" Margin="100, 3, 0, 0" Padding="0, 0, 0, 0" />
+								<Text Value="근무 요일 : {content}" Color="#404140" FontSize="15" TextAlignment="Center" Margin="100, 22, 0, 0" />
+								<Text Value="시급 : {expense}원" Color="#848886" FontSize="20" TextAlignment="Center" Margin="100, 40, 0, 0" />
+							</Rectangle>
+							<Rectangle Alignment="Default" Height="70" Width="300" Color="#71B006" />
+						</DockPanel>
+					</Each>
+
+					<WhileTrue Value="{isLoading}">
+						<Panel LayoutRole="Placeholder" Height="100" Color="#F6FBFF">
+							
+							<Text Alignment="Center" Value="Loading..." />
+						</Panel>
+					</WhileTrue>
+					<Rectangle Background="#73AF22" Height="30" Width="200">
+						<Text Value="계약 추가" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+						<Clicked>
+							<Callback Handler="{gocontract}" />
+						</Clicked>
+					</Rectangle>
+
+				</StackPanel>
+				<ScrollViewPager Each="theEach" ReachedEnd="{loadMore}" ux:Name="svp" />
+
+
+			</ScrollView> 
+		</Panel>
+		</EdgeNavigator>
+
+
+
+
+
+<!-- 
 		<Panel Alignment="Top" Height="110" Background="#FBFCFB">
 			<Grid Columns="auto,1*,auto" Dock="Top" Margin="5" Height="50" Y="0">
 				<Grid ColumnCount="2" RowCount="2" Width="22" Height="22" Margin="10">
@@ -22,10 +96,10 @@
 			
 			<Grid Color="#FBFCFB" ChildOrder="ColumnMajor" Alignment="Top" Height="70" Opacity="1" LayoutRole="Standard" RowCount="1" ColumnCount="4" Y="40">
 				<Panel Alignment="Default">
-					<!-- <Image File="Assets/logoGray.png" Alignment="Default" Width="40" Y="10" /> -->
+	
 					<Text Value="홈" FontSize="10" TextColor="#909191" Alignment="HorizontalCenter" Y="40" />
 					<Clicked>
-						<!-- <Callback Handler="{gotoHome}" />						 -->
+	
 						<Set nav.Active="Page1" />
 					</Clicked>
 				</Panel>
@@ -33,7 +107,7 @@
 				<Panel Alignment="Default">
 					<Text Value="계약" FontSize="10" TextColor="#979998" Alignment="HorizontalCenter" Y="40" />
 					<Clicked>
-						<!-- <Callback Handler="{gotoBoard}" /> -->
+				
 						<Set nav.Active="Page2" />
 					</Clicked>
 				</Panel>
@@ -41,7 +115,7 @@
 				<Panel Alignment="Default">
 					<Text FontSize="10" Value="관리" Alignment="HorizontalCenter" TextColor="#979A98" Y="40" />
 					<Clicked>
-						<!-- <Callback Handler="{gotoSchedule}" /> -->
+	
 						<Set nav.Active="Page3" />
 					</Clicked>
 				</Panel>
@@ -49,16 +123,16 @@
 				<Panel Alignment="Default">
 					<Text FontSize="10" Value="내정보" Alignment="HorizontalCenter" TextColor="#969A97" Y="40" />
 					<Clicked>
-						<!-- <Callback Handler="{gotoAccount}" /> -->
+					
 						<Set nav.Active="Page4" />
 					</Clicked>
 				</Panel>
 			</Grid>
 			<Shadow />
 
-		</Panel>
+		</Panel> -->
 
-		<Panel Margin="0, 110, 0, 0">
+		<!-- <Panel Margin="0, 110, 0, 0">
 			<PageControl ux:Name="nav">
 				<NavigationMotion GotoDurationExp="1"/>
 				<Page ux:Name="Page1">
@@ -77,7 +151,7 @@
 					<profile />
 				</Page>
 			</PageControl>
-		</Panel>
+		</Panel> -->
 		
 	</ClientPanel>
 
