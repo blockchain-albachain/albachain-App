@@ -1,0 +1,60 @@
+<Page ux:Class="detailContractPage">
+	<Router ux:Dependency="router" />
+
+
+	<JavaScript>
+	exports.title = this.Parameter.map(function(param) {
+		return param.title;
+	});
+
+	// exports.expense = this.Parameter.map(function(param) {
+	// 	return param.expense;
+	// });
+
+	exports.content = this.Parameter.map(function(param) {
+		return param.content;
+	});
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+	exports.cancel = function(){ router.goto("contractCan");};
+
+	</JavaScript>
+	<ClientPanel>
+		<Rectangle Alignment="Top" Color="#FEFFFE">
+			<Grid Columns="auto,1*" Dock="Top" Margin="5" Height="50" Y="0">
+				<Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" />
+
+				<Text ux:Name="titleText" Value="{title}" Color="color0" FontSize="25" Alignment="Center" TextAlignment="Left" Margin="0, 0, 30, 0">
+					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+				</Text>
+			</Grid>
+			<Shadow Angle="132" />
+		</Rectangle>
+
+
+		<ScrollView>
+			<StackPanel Margin="0, 80, 0, 0" ItemSpacing="20">
+				<Rectangle Margin="0, 0, 0, 0" Width="300" Height="80">
+					<Text Value="출석체크( QRcode? )" Alignment="Center" />
+					<Stroke Color="#73AF22" Width="2" />
+				</Rectangle>
+				<Rectangle Width="300" Height="300">
+					<Stroke Width="3" Color="#71B006" />
+					<Text Value="&lt;계약내용 들&gt;" Alignment="TopCenter" Margin="0, 30, 0, 0" />
+					<Text Value="근무일 = {content}" Alignment="Center" />					
+				</Rectangle>
+				<Rectangle Width="130" Color="#6FB10068" Height="40" CornerRadius="30" Alignment="Default" Margin="0, 100, 0, 0">
+					<Text Value="계약해지" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+					<Clicked>
+						<Callback Handler="{cancel}" />
+					</Clicked>
+				</Rectangle>
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
+	
+</Page>

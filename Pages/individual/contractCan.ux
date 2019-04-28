@@ -1,0 +1,72 @@
+<Page ux:Class="contractCan">
+	<Router ux:Dependency="router" />
+	<Rectangle Alignment="Top" Color="#FEFFFE" Height="50">
+		<!-- <Grid Columns="auto,1*" Dock="Top" Margin="5" Height="50" Y="0"> -->
+		<!-- <Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" /> -->
+
+		<Text ux:Name="titleText" Value="계약해지" FontSize="25" Alignment="Center" TextAlignment="Left" Margin="0, 0, 0, 0" TextColor="#FF3E4E">
+			<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+		</Text>
+		<!-- </Grid> -->
+		<Shadow Angle="132" />
+	</Rectangle>
+
+	<!-- 해지완료 메시지  -->
+	<WhileTrue Value="{cancelView}">
+		<Change popup.Opacity="1" Duration="1" />
+		<Rectangle ux:Name="popup" Width="400" Height="300" Background="#FEFFFE" Margin="0, 0, 0, 0" Opacity="1">
+			<Text Value="계약 해지 신청이 완료되었습니다." Alignment="TopCenter" Margin="0, 100, 0, 0" />
+			<Text Value="이 화면을 터치하면 홈으로 이동합니다." Alignment="Center" Margin="0, 30, 0, 0" />
+			<Stroke Width="3" Color="#f00" />
+			<Clicked>
+				<Callback Handler="{gotoHome}" />
+			</Clicked>
+		</Rectangle>
+	</WhileTrue>
+
+	<ScrollView>
+		<StackPanel Margin="0, 70, 0, 0" ItemSpacing="10">
+			<Text Value="해지사유" Alignment="Center" />
+			<Rectangle Margin="0, 0, 0, 0" Width="300" Height="100">
+				<TextInput PlaceholderText="사유를 적어주세요" PlaceholderColor="#B8B8B8" TextAlignment="Center" TextWrapping="Wrap" />
+				<Stroke Width="1" Color="#f00" />
+			</Rectangle>
+			<Rectangle Margin="0, 30, 0, 0" Width="300" Height="40">
+				<Stroke Width="2" Color="#f00" />
+				<Text Value="매장 평점 : 별 5개 or %" Alignment="Center" />
+			</Rectangle>
+
+			<DockPanel Margin="0, 100, 0, 0">
+				<Rectangle Width="130" Height="50" Dock="Left" Margin="35, 0, 0, 0" Color="#73AF22" CornerRadius="40" Opacity="0.639">
+					<Text Value="홈으로 가기" Alignment="Center" TextColor="#FFF" />
+					<Clicked>
+						<Callback Handler="{gotoHome}" />
+					</Clicked>
+				</Rectangle>
+
+				<Rectangle Width="130" Height="50" Dock="Right" Margin="0, 0, 35, 0" Color="#f00" CornerRadius="40" Opacity="0.607">
+					<Text Value="해지 하기" Alignment="Center" TextColor="#FFF" />
+					<Clicked>
+						<Callback Handler="{cancelToggle}" />
+					</Clicked>
+				</Rectangle>
+			</DockPanel>
+		</StackPanel>
+	</ScrollView>
+
+	<JavaScript>
+
+	var Observable = require('FuseJS/Observable');
+	exports.cancelView = Observable(false);
+
+	exports.gotoHome = function(){ 
+		exports.cancelView.value = false;
+		router.goto("mainviewInd");
+	}
+
+	exports.cancelToggle = function () {  exports.cancelView.value = true; }
+
+
+	</JavaScript>
+
+	</Page>
