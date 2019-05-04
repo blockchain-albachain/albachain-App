@@ -1,57 +1,114 @@
 <Page ux:Class="contractCan">
 	<Router ux:Dependency="router" />
-	<Rectangle Alignment="Top" Color="#FEFFFE" Height="50">
-		<!-- <Grid Columns="auto,1*" Dock="Top" Margin="5" Height="50" Y="0"> -->
-		<!-- <Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" /> -->
 
-		<Text ux:Name="titleText" Value="계약해지" FontSize="25" Alignment="Center" TextAlignment="Left" Margin="0, 0, 0, 0" TextColor="#FF3E4E">
-			<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
-		</Text>
-		<!-- </Grid> -->
-		<Shadow Angle="132" />
+	<Rectangle Alignment="Top" Color="#FEFFFE">
+		<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">
+			<!-- <Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" Alignment="Left" Margin="30, 0, 0, 0" /> -->
+
+			<Text />
+			<Text ux:Name="titleText" Value="계약해지" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+				<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+			</Text>
+		</Grid>
 	</Rectangle>
+	
 
 	<!-- 해지완료 메시지  -->
 	<WhileTrue Value="{cancelView}">
 		<Change popup.Opacity="1" Duration="1" />
-		<Rectangle ux:Name="popup" Width="400" Height="300" Background="#FEFFFE" Margin="0, 0, 0, 0" Opacity="1">
-			<Text Value="계약 해지 신청이 완료되었습니다." Alignment="TopCenter" Margin="0, 100, 0, 0" />
-			<Text Value="이 화면을 터치하면 홈으로 이동합니다." Alignment="Center" Margin="0, 30, 0, 0" />
-			<Stroke Width="3" Color="#f00" />
-			<Clicked>
-				<Callback Handler="{gotoHome}" />
-			</Clicked>
-		</Rectangle>
+		<Panel Width="500" Height="1000" Color="#FFFFFF7B">
+			<Rectangle ux:Name="popup" Width="330" Height="300" Background="#FEFFFE" Margin="0, 0, 0, 0" Opacity="1" CornerRadius="10">
+				<Text Value="계약 해지 신청이 완료되었습니다." Alignment="TopCenter" Margin="0, 30, 0, 0" />
+				<Text Value="이 화면을 터치하면 홈으로 이동합니다." Alignment="BottomCenter" Margin="0, 0, 0, 20" TextColor="#A0A0A0" FontSize="10" />
+				<Stroke Width="2" Color="#569BBF" />
+				<Clicked>
+					<Callback Handler="{gotoHome}" />
+				</Clicked>
+			</Rectangle>
+		</Panel>
 	</WhileTrue>
 
 	<ScrollView>
-		<StackPanel Margin="0, 70, 0, 0" ItemSpacing="10">
-			<Text Value="해지사유" Alignment="Center" />
-			<Rectangle Margin="0, 0, 0, 0" Width="300" Height="100">
-				<TextInput PlaceholderText="사유를 적어주세요" PlaceholderColor="#B8B8B8" TextAlignment="Center" TextWrapping="Wrap" />
-				<Stroke Width="1" Color="#f00" />
-			</Rectangle>
-			<Rectangle Margin="0, 30, 0, 0" Width="300" Height="40">
-				<Stroke Width="2" Color="#f00" />
-				<Text Value="매장 평점 : 별 5개 or %" Alignment="Center" />
+
+		<StackPanel Margin="0, 80, 0, 0">
+			<Rectangle Width="300" Height="550" CornerRadius="10" Color="#FEFFFE">
+				<StackPanel>
+					<Rectangle>
+						<Circle Width="80" Height="80" Color="#E2E3E2" Alignment="Left" Margin="30, 20, 0, 0" />
+						<Text Value="{title}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="140, 30, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" />
+						<!-- detailcontractPage에 mystar 정의 되어 있음. -->
+						<mystar Margin="1, 35, 1, 1">
+							<Stroke Width="1" Color="#5EA0C9" />
+						</mystar>
+						<mystar Margin="35, 35, 1, 1">
+							<Stroke Width="1" Color="#5EA0C9" />
+						</mystar>
+						<mystar Margin="70, 35, 1, 1">
+							<Stroke Width="1" Color="#5EA0C9" />
+						</mystar>
+						<mystar Margin="105, 35, 1, 1">
+							<Stroke Width="1" Color="#5EA0C9" />
+						</mystar>
+						<mystar Margin="140, 35, 1, 1">
+							<Stroke Width="1" Color="#5EA0C9" />
+						</mystar>
+
+
+					</Rectangle>
+					<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
+					<Rectangle Margin="0, 20, 0, 0">
+						<Text Margin="30, 0, 0, 0" TextColor="#000" Value="해지 사유" Padding="0, 0, 0, 0" Alignment="Top" />
+						<Rectangle Width="250" Height="150" Margin="0, 30, 0, 0" CornerRadius="10">
+							<TextInput Alignment="Default" Margin="0, 0, 0, 0" PlaceholderText="해지사유를 적어주세요.." FontSize="12" PlaceholderColor="#A7A7A7" TextWrapping="Wrap" />
+							<Stroke Width="1" Color="#999B99" />
+						</Rectangle>
+
+					</Rectangle>
+					<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
+					<Panel Margin="0, 0, 0, 0" Height="150">
+						<Text Value="매장평점" TextColor="#000" Margin="30, 20, 0, 0" Alignment="Top" />
+						<StackPanel Orientation="Horizontal" Margin="0, 60, 0, 0">
+							<mystar Margin="65, 0, 0, 0" Alignment="Center" Width="35" Height="35">
+								<Stroke Color="#5EA0C9" Width="2" />
+							</mystar>
+							<mystar Margin="0, 0, 0, 0" Width="35" Height="35">
+								<Stroke Width="2" Color="#5EA0C9" />
+							</mystar>
+							<mystar Margin="0, 0, 0, 0" Width="35" Height="35">
+								<Stroke Width="2" Color="#5EA0C9" />
+							</mystar>
+							<mystar Margin="0, 0, 0, 0" Width="35" Height="35">
+								<Stroke Width="2" Color="#5EA0C9" />
+							</mystar>
+							<mystar Margin="0, 0, 0, 0" Width="35" Height="35">
+								<Stroke Width="2" Color="#5EA0C9" />
+							</mystar>
+						</StackPanel>						
+					</Panel>
+				</StackPanel>
+				<Shadow Angle="107" />				
 			</Rectangle>
 
-			<DockPanel Margin="0, 100, 0, 0">
-				<Rectangle Width="130" Height="50" Dock="Left" Margin="35, 0, 0, 0" Color="#73AF22" CornerRadius="40" Opacity="0.639">
-					<Text Value="홈으로 가기" Alignment="Center" TextColor="#FFF" />
+			<Panel Margin="0, 30, 0, 50">
+				<Rectangle Width="130" Color="#64A4CD" Height="40" CornerRadius="30" Alignment="Left" Margin="40, 0, 0, 0">
+					<Text Value="홈으로" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
 					<Clicked>
 						<Callback Handler="{gotoHome}" />
 					</Clicked>
 				</Rectangle>
-
-				<Rectangle Width="130" Height="50" Dock="Right" Margin="0, 0, 35, 0" Color="#f00" CornerRadius="40" Opacity="0.607">
-					<Text Value="해지 하기" Alignment="Center" TextColor="#FFF" />
+				<Rectangle ux:Name="cancelbtn" Width="130" Color="#9A9B9A" Height="40" CornerRadius="30" Alignment="Right" Margin="0, 0, 40, 0">
+					<Text Value="계약해지" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+					<WhilePressed>
+						<Scale Target="cancelbtn" Factor="0.9" Duration="0.05" />
+					</WhilePressed>
 					<Clicked>
 						<Callback Handler="{cancelToggle}" />
 					</Clicked>
 				</Rectangle>
-			</DockPanel>
+			</Panel>
+
 		</StackPanel>
+
 	</ScrollView>
 
 	<JavaScript>
@@ -64,9 +121,18 @@
 		router.goto("mainviewInd");
 	}
 
-	exports.cancelToggle = function () {  exports.cancelView.value = true; }
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+	exports.title = this.Parameter.map(function(param) {
+		return param.title;
+	});
+
+	exports.cancelToggle = function () {  exports.cancelView.value = true; };
 
 
 	</JavaScript>
 
-	</Page>
+</Page>

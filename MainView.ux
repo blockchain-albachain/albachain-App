@@ -5,7 +5,11 @@
 		<mainviewInd ux:Template="mainviewInd" router="router" Color="#FFF" Alignment="Default" />	
 		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF" />			
 		<signupBis ux:Template="signupBis" router="router" Color="#FFF" />	
-		<signupInd ux:Template="signupInd" router="router" Color="#FFF" />
+		<signupInd ux:Template="signupInd" router="router" Color="#FFF" Alignment="Default" />
+		<contract ux:Template="contract" router="router" Color="#FFF" />
+		<detailContractPage ux:Template="detailContractPage" router="router" Color="#FFF" />
+		<contractCan ux:Template="contractCan" router="router" Color="#FFF" />
+		<profile ux:Template="profile" router="router" Color="#FFF" />
 
 	</Navigator>
 </App>

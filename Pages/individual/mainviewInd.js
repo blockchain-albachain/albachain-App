@@ -24,8 +24,8 @@ function loadSome() {
 		gotoDetails: function() {
 			title.value = "한신포차";
 			content.value = "화, 목, 일";
-		
-			router.push("detailContractPage", { title: title.value, content: content.value})
+			// expense.value = addComma(100000);
+			router.push("detailContractPage", { title: title.value, content: content.value, expense: addComma(100000)})
 		}
 	})
 
@@ -36,7 +36,7 @@ function loadSome() {
 		gotoDetails: function() {
 			title.value = "전통주막";
 			content.value = "월, 화, 금";
-			router.push("detailContractPage", { title: title.value ,content: content.value })
+			router.push("detailContractPage", { title: title.value ,content: content.value ,expense: addComma(120000) })
 		}
 	})
 

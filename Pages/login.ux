@@ -4,77 +4,85 @@
 
 	<Font ux:Global="RobotoMedium" File="../Assets/Fonts/Roboto-Medium.ttf" />
 
-	<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#C2C6C4" Alignment="Default">
-		<string ux:Property="Text" />
-		<Text Value="{ReadProperty Text}" Color="#000" Font="RobotoMedium" Alignment="Center" />
-	</Panel>
+	<ScrollView>
+		<StackPanel>
+			<Text Value="Hello" Alignment="Default" Margin="50, 100, 0, 0" TextColor="#000" />
+			<Text Value="Stranger !" Margin="50, 0, 0, 0" TextColor="#000" />
+			<Circle Color="#E3E8E6" Width="100" Height="100" Margin="0, 40, 0, 0" />
+			<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#5C99BF" Alignment="Default">
+				<string ux:Property="Text" />
+				<Text Value="{ReadProperty Text}" Font="RobotoMedium" Alignment="Center" FontSize="10" TextColor="#FEFFFE" />
+			</Panel>
 
-	<Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#73AF22">
+	<!-- <Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#73AF22">
 		<LayoutAnimation>
 			<Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn" />
 		</LayoutAnimation>
-	</Rectangle>
+	</Rectangle> -->
 
-	<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center" />
+	<!-- <Text ux:Class="WelcomeText" FontSize="30" Alignment="Center" /> -->
 
-	<DockPanel Margin="0, 0, 0, 0">
-		<StatusBarBackground Dock="Top" />
-		<BottomBarBackground Dock="Bottom" />
+	<!-- <DockPanel> -->
+	<!-- <StatusBarBackground Dock="Top" /> -->
+	<!-- <BottomBarBackground Dock="Bottom" /> -->
 
-		<Grid Dock="Top" ColumnCount="2" Background="#bdc3c7" Alignment="TopCenter" Margin="0, 70, 0, 0" Width="300" Height="70">
-			<Panel ux:Name="page1Tab">
-				<Tab Text="개인회원">
-					<Clicked>
-						<Set navigation.Active="page1" />
-					</Clicked>
-				</Tab>
-			</Panel>
-			<Panel ux:Name="page2Tab">
-				<Tab Text="기업회원">
-					<Clicked>
-						<Set navigation.Active="page2" />
-					</Clicked>
-				</Tab>
-			</Panel>
-			
-		</Grid>
+	<Grid Dock="Top" ColumnCount="2" Alignment="Default" Margin="0, 40, 0, 0" Width="200" Height="40">
+		<Panel ux:Name="page1Tab">
+			<Tab Text="개인회원">
+				<Clicked>
+					<Set navigation.Active="page1" />
+				</Clicked>
+			</Tab>
+		</Panel>
+		<Panel ux:Name="page2Tab">
+			<Tab Text="기업회원">
+				<Clicked>
+					<Set navigation.Active="page2" />
+				</Clicked>
+			</Tab>
+		</Panel>
+		
+	</Grid>
 
-		<PageControl ux:Name="navigation">
-			<Page ux:Name="page1" Background="#fff">
-				<WhileActive Threshold="0.5">
+	<PageControl ux:Name="navigation" Margin="0, 30, 0, 140">
+		<Page ux:Name="page1" Background="#fff">
+				<!-- <WhileActive Threshold="0.5">
 					<Set indicator.LayoutMaster="page1Tab" />
-				</WhileActive>
+				</WhileActive> -->
 				<ClientPanel>
-					<StackPanel ItemSpacing="20">
-						<Rectangle Height="200" Alignment="Top" Margin="0, 0, 0, 0" Width="300">
-							<Text Value="logo 들어갈 예정" TextAlignment="Center" Alignment="Center" />
-							<Stroke Width="3" Color="#71B006" />
-						</Rectangle>
-						<Panel Width="150" Height="50" Margin="20, 20, 20, 0">
-							<Grid ux:Name="loginArea1" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
-								<!-- <Image Row="0" Column="0" File="../Assets/user_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-								<TextInput Row="0" Column="1" PlaceholderText="Userid" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Width="240" Value="{individualID}" Alignment="Default" Height="20" Margin="0, 25, 0, 0" TextAlignment="Left" />
-								<Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
+					<StackPanel>
+						
+						<Panel Width="150" Margin="0, 0, 0, 0" Height="50">
+							
+							<Text Value="User ID" FontSize="12" TextColor="#C3C4C3" Alignment="Top" Margin="0, 0, 0, 0" Height="12" Width="280" />
+							<TextInput Row="0" Column="1" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Value="{individualID}" Alignment="Default" Height="20" Margin="0, 10, 0, 0" TextAlignment="Left" Width="280" />
+							<Rectangle Row="0" Column="0" Alignment="Default" ColumnSpan="2" Height="1" Color="#999" Margin="0, 30, 0, 0" Width="280" />
 
-								<!-- <Image Row="1" Column="0" File="../Assets/password_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-								<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{individualPW}" ActionStyle="Send" Margin="0, 25, 0, 0" Height="20" />
-								<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
-							</Grid>
+							
+							<Text Value="Password" FontSize="12" TextColor="#C3C4C3" Alignment="Default" Margin="0, 70, 0, 0" Height="12" Width="280" />
+							<TextInput Row="1" Column="1" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Value="{individualPW}" ActionStyle="Send" Margin="0, 95, 0, 0" Height="20" Width="280" />
+							<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="280" Margin="0, 110, 0, 0" />
+							
 						</Panel>
-						<Panel Width="150" Height="50" Margin="0, 30, 0, 0">
-							<Text Value="로그인" Color="#fff" Alignment="Center" FontSize="20" Font="RobotoMedium" />
-							<Rectangle Color="#73AF22" Width="300" Height="40" />
+						<Panel ux:Name="indisigninbtn" Width="150" Height="50" Margin="0, 100, 0, 0">
+							<Text Value="Log-in" Color="#fff" Alignment="Center" FontSize="18" Font="RobotoMedium" />
+							<Rectangle Color="#5998C0" Width="280" Height="40" CornerRadius="30" Margin="0, 0, 0, 0" />
+							<WhilePressed>
+								<Scale Target="indisigninbtn" Factor="0.9" Duration="0.05" />
+							</WhilePressed>
 							<Clicked>
 								<Callback Handler="{individualSignin}" />
 
 							</Clicked>
 						</Panel>
-						<Panel Width="300" Height="40" Margin="0, 0, 0, 0" Alignment="Default">
-							<Text Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" Value="회원가입" />
-							<Rectangle Alignment="Default" Margin="0, 0, 0, 0" Background="#71B0061C" />
+						<Panel Width="300" Margin="0, 0, 0, 0" Alignment="Default" Height="30">
+							<Text ux:Name="indisignupbtn" Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" Value="Sign-up" Margin="0, 0, 0, 0" />
+							<Rectangle Alignment="Default" Margin="0, 0, 0, 0" />
+							<WhilePressed>
+								<Scale Target="indisignupbtn" Factor="0.9" Duration="0.05" />
+							</WhilePressed>
 							<Clicked>
 								<Callback Handler="{individualSignup}" />
-
 							</Clicked>
 						</Panel>
 					</StackPanel>
@@ -85,47 +93,53 @@
 
 			<!-- sign up -->
 			<Page ux:Name="page2" Background="#fff">
-				<WhileActive Threshold="0.5">
+				<!-- <WhileActive Threshold="0.5">
 					<Set indicator.LayoutMaster="page2Tab" />
-				</WhileActive>
+				</WhileActive> -->
 				<ClientPanel>
-					<StackPanel ItemSpacing="20">
-						<Rectangle Height="200" Alignment="Top" Margin="0, 0, 0, 0" Width="300">
-							<Text Value="logo 들어갈 예정" TextAlignment="Center" Alignment="Center" />
-							<Stroke Width="3" Color="#71B006" />
-						</Rectangle>
-						<Panel Width="150" Height="50" Margin="20, 20, 20, 0">
-							<Grid ux:Name="loginArea2" Row="1" Padding="0,20" RowCount="2" Columns="auto,1*" Height="160" MaxWidth="400">
-								<!-- <Image Row="0" Column="0" File="../Assets/user_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-								<TextInput Row="0" Column="1" PlaceholderText="Username" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Width="240" Value="{businessID}" Height="20" Margin="0, 25, 0, 0" />
-								<Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
+					<StackPanel>
+						
+						<Panel Width="150" Margin="0, 0, 0, 0" Height="50">
+							
+							<Text Value="User ID" FontSize="12" TextColor="#C3C4C3" Alignment="Top" Margin="0, 0, 0, 0" Height="12" Width="280" />
+							<TextInput Row="0" Column="1" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" Value="{businessID}" Alignment="Default" Height="20" Margin="0, 10, 0, 0" TextAlignment="Left" Width="280" />
+							<Rectangle Row="0" Column="0" Alignment="Default" ColumnSpan="2" Height="1" Color="#999" Margin="0, 30, 0, 0" Width="280" />
 
-								<!-- <Image Row="1" Column="0" File="../Assets/password_icon.png" Width="20" Height="20" Margin="10,0,30,0" Alignment="Left" /> -->
-								<TextInput Row="1" Column="1" PlaceholderText="Password" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Width="240" Value="{businessPW}" ActionStyle="Send" Height="20" Margin="0, 25, 0, 0" />
-								<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="300" />
-							</Grid>
+							
+							<Text Value="Password" FontSize="12" TextColor="#C3C4C3" Alignment="Default" Margin="0, 70, 0, 0" Height="12" Width="280" />
+							<TextInput Row="1" Column="1" PlaceholderColor="#999" TextColor="#000" CaretColor="#fff" IsPassword="true" Value="{businessPW}" ActionStyle="Send" Margin="0, 95, 0, 0" Height="20" Width="280" />
+							<Rectangle Row="1" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#999" Width="280" Margin="0, 110, 0, 0" />
+							
 						</Panel>
-						<Panel Width="150" Height="50" Margin="0, 30, 0, 0">
-							<Text Value="로그인" Color="#fff" Alignment="Center" FontSize="20" Font="RobotoMedium" />
-							<Rectangle Color="#73AF22" Width="300" Height="40" />
+						<Panel ux:Name="busigninbtn" Width="150" Height="50" Margin="0, 100, 0, 0">
+							<Text Value="Log-in" Color="#fff" Alignment="Center" FontSize="18" Font="RobotoMedium" />
+							<Rectangle Color="#5998C0" Width="280" Height="40" CornerRadius="30" />
+							<WhilePressed>
+								<Scale Target="busigninbtn" Factor="0.9" Duration="0.05" />
+							</WhilePressed>
 							<Clicked>
 								<Callback Handler="{businessSignin}" />
 
 							</Clicked>
 						</Panel>
-						<Panel Width="300" Height="40" Margin="0, 0, 0, 0" Alignment="Default">
-							<Text Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" Value="회원가입" />
-							<Rectangle Alignment="Default" Margin="0, 0, 0, 0" Background="#71B0061C" />
+						<Panel Width="300" Margin="0, 0, 0, 0" Alignment="Default" Height="30">
+							<Text ux:Name="busignupbtn" Color="#999" Alignment="Center" FontSize="10" Font="RobotoMedium" Value="Sign-up" />
+							<Rectangle Alignment="Default" Margin="0, 0, 0, 0" />
+							<WhilePressed>
+								<Scale Target="busignupbtn" Factor="0.9" Duration="0.05" />
+							</WhilePressed>
 							<Clicked>
 								<Callback Handler="{businessSignup}" />
-
 							</Clicked>
 						</Panel>
 					</StackPanel>
+
 				</ClientPanel>
 			</Page>
 			
 		</PageControl>
 
-	</DockPanel>
+		<!-- </DockPanel> -->
+	</StackPanel>
+</ScrollView>
 </Page>

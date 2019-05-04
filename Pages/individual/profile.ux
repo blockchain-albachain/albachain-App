@@ -3,14 +3,18 @@
 	<!-- <JavaScript File="signupInd.js" /> -->
 
 	<Panel Alignment="Top" Background="#FFF">
-		<Grid RowCount="1" ColumnCount="2" Height="50">
-			<Rectangle Alignment="CenterRight">
-				<Text Value="내정보" />
+		<StackPanel Margin="0, 120, 0, 0">
+			<Rectangle>
+				<Circle Width="60" Alignment="Left" Color="#D1D1D1" Margin="60, 0, 0, 0" Height="60" />
+				<Text Value="사용자 님" Alignment="CenterRight" Margin="0, 0, 100, 0" FontSize="15" />
 			</Rectangle>
-			<Rectangle Alignment="CenterRight">
-				<Text Value="내정보 변경" Margin="0, 0, 30, 0" FontSize="10" />
+			<Rectangle Margin="0, 50, 0, 0" Width="200" Height="250">
+				<Stroke Width="1" Color="#E1E3E1" />
 			</Rectangle>
-		</Grid>
+			<Rectangle Background="#D0D1D089" Height="150" Margin="0, 40, 0, 0">
+				<Text Value="로그아웃" FontSize="10" Alignment="TopRight" Margin="0, 20, 20, 0" />
+			</Rectangle>
+		</StackPanel>
 		<Shadow Angle="136" />
 	</Panel>
 </Page>
