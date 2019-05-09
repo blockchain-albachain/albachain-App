@@ -1,15 +1,37 @@
 <App>
 	<Router ux:Name="router" />
-	<Navigator DefaultPath="login">
-		<login ux:Template="login" router="router" Color="#FFF" />
+	<Navigator DefaultPath="startPage">
+		<login ux:Template="login" router="router" Color="#FFF" Alignment="Default" />
 		<mainviewInd ux:Template="mainviewInd" router="router" Color="#FFF" Alignment="Default" />	
-		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF" />			
+				
 		<signupBis ux:Template="signupBis" router="router" Color="#FFF" />	
 		<signupInd ux:Template="signupInd" router="router" Color="#FFF" Alignment="Default" />
 		<contract ux:Template="contract" router="router" Color="#FFF" />
 		<detailContractPage ux:Template="detailContractPage" router="router" Color="#FFF" />
 		<contractCan ux:Template="contractCan" router="router" Color="#FFF" />
 		<profile ux:Template="profile" router="router" Color="#FFF" />
+		<startPage ux:Template="startPage" router="router" />
+
+		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF" >
+			<Transition>
+				<Move X="1" RelativeTo="ParentSize" />
+			</Transition>
+		</mainviewBis>
+		<registration ux:Template="registration" router="router" Color="#FFF" />
+		<contractCheck ux:Template="contractCheck" router="router" Color="#FFF" >
+			<Transition>
+				<Move X="1" RelativeTo="ParentSize" />
+			</Transition>
+		</contractCheck>
+
+		<manage ux:Template="manage" router="router" Color="#FFF" >
+			<Transition>
+				<Move X="1" RelativeTo="ParentSize" />
+			</Transition>
+		</manage>
+
+		<detailCheckPage ux:Template="detailCheckPage" router="router" Color="#FFF" />
+
 
 	</Navigator>
 </App>

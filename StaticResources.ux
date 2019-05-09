@@ -7,7 +7,7 @@
 	<Text ux:Class="BaseText" Font="BaseFont" FontSize="14" Color="#222" />
 	<BaseText ux:Class="BoldText" Font="BoldFont" />
 	
-	<Image ux:Class="BottomBarIcon" StretchMode="PixelPrecise" />
+	<!-- <Image ux:Class="BottomBarIcon" StretchMode="PixelPrecise" />
 
 	<BottomBarIcon ux:Class="HomeIcon">
 		<MultiDensityImageSource>
@@ -39,5 +39,5 @@
 			<FileImageSource File="Assets/profile@2x.png" Density="2" />
 			<FileImageSource File="Assets/profile@4x.png" Density="4" />
 		</MultiDensityImageSource>
-	</BottomBarIcon>
+	</BottomBarIcon> -->
 </Panel>

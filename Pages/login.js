@@ -59,43 +59,44 @@ function businessSignup(){
 }
 
 function businessSignin(){
-	var opts = ({
-		'username' : businessID.value,
-		'password' : businessPW.value
-	});
+	router.push("mainviewBis");
+	// var opts = ({
+	// 	'username' : businessID.value,
+	// 	'password' : businessPW.value
+	// });
 
-	console.log(JSON.stringify(opts));
-    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
+	// console.log(JSON.stringify(opts));
+ //    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
     
 
-    fetch('http://8dc06cfa.ngrok.io/users/login',{
-    	method: "POST",
-    	headers: {
-    		"Content-type": "application/JSON"
-    	},
-    	body : JSON.stringify(opts)
+ //    fetch('http://8dc06cfa.ngrok.io/users/login',{
+ //    	method: "POST",
+ //    	headers: {
+ //    		"Content-type": "application/JSON"
+ //    	},
+ //    	body : JSON.stringify(opts)
     	
-    }).then((res)=>{
-	            // console.log(JSON.stringify(res));
-	            // console.log(JSON.parse(res));
-	            return res.json()
-	        }).then((res)=>{
+ //    }).then((res)=>{
+	//             // console.log(JSON.stringify(res));
+	//             // console.log(JSON.parse(res));
+	//             return res.json()
+	//         }).then((res)=>{
 
-	        	console.log(res.success);
+	//         	console.log(res.success);
 
 
-	        	businessID = businessID.value;
+	//         	businessID = businessID.value;
 
-	        	if( JSON.parse(res.success) == true){
-	            	// router.push("Home", ID);
-	            	router.push("mainviewBis", businessID);
-	            	console.log("Move to mainviewBis");
-	            	console.log(businessID);
-	            }
-	            // JSON.parse(res._bodyInit).documents[1].address_name
-	        }).catch((err)=>{
-	        	console.log(err);
-	        });
+	//         	if( JSON.parse(res.success) == true){
+	//             	// router.push("Home", ID);
+	//             	router.push("mainviewBis", businessID);
+	//             	console.log("Move to mainviewBis");
+	//             	console.log(businessID);
+	//             }
+	//             // JSON.parse(res._bodyInit).documents[1].address_name
+	//         }).catch((err)=>{
+	//         	console.log(err);
+	//         });
 	    }
 
 

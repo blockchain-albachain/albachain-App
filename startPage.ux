@@ -1,0 +1,16 @@
+<Page ux:Class="startPage">
+	<Router ux:Dependency="router" />
+	<Text Value="Albachain" TextColor="#FFF" Alignment="Center" FontSize="30" Margin="0, 0, 80, 100" Font="Bold" />
+	<Text Value="Hello Stranger !" FontSize="15" TextColor="#FFF" Alignment="Center" Margin="0, 0, 115, 0" Font="Bold" />
+	<Text Value="성실한 알바를 원하는 사장님! 정당한 임금 보장을 원하는 알바님!" FontSize="10" Alignment="Center" Margin="20, 40, 0, 0" TextColor="#FFF" />
+	<Text Value="Albachain에 오신 것을 환영합니다" TextColor="#FFF" FontSize="10" Alignment="Center" Margin="0, 70, 94, 0" />
+	<Text Value="화면을 터치해 주세요" TextColor="#FFF" Alignment="BottomCenter" FontSize="10" Margin="0, 0, 0, 30" />
+	<Image File="Assets/albachain01.png" Clicked="{next}" />
+
+	<JavaScript>
+		exports.next = function () {
+			router.goto("login");
+		}
+	</JavaScript>
+
+</Page>

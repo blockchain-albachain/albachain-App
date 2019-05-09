@@ -8,7 +8,7 @@
 
 		<EdgeNavigator Alignment="Default">
 			<!-- sidebar -->
-			<Panel ux:Name="sidebar" Edge="Left" Width="100%" Background="#FEFFFE" Margin="0, 0, 40, 0">
+			<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0, 0, 80, 0" Background="#FEFFFE">
 				<!-- <Rectangle ux:Name="sidebarFade" Layer="Overlay" Opacity="0" HitTestMode="None" />	 -->
 				<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
 				<ActivatingAnimation>

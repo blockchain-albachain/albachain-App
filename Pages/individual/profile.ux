@@ -11,10 +11,9 @@
 			<Rectangle Margin="0, 50, 0, 0" Width="200" Height="250">
 				<Stroke Width="1" Color="#E1E3E1" />
 			</Rectangle>
-			<Rectangle Background="#D0D1D089" Height="150" Margin="0, 40, 0, 0">
+			<Rectangle Background="#D0D1D089" Margin="0, 40, 0, 0" Alignment="Default" Height="500">
 				<Text Value="로그아웃" FontSize="10" Alignment="TopRight" Margin="0, 20, 20, 0" />
 			</Rectangle>
 		</StackPanel>
-		<Shadow Angle="136" />
 	</Panel>
 </Page>

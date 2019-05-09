@@ -9,9 +9,9 @@
 			<Text Value="Hello" Alignment="Default" Margin="50, 100, 0, 0" TextColor="#000" />
 			<Text Value="Stranger !" Margin="50, 0, 0, 0" TextColor="#000" />
 			<Circle Color="#E3E8E6" Width="100" Height="100" Margin="0, 40, 0, 0" />
-			<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#5C99BF" Alignment="Default">
+			<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Alignment="Default">
 				<string ux:Property="Text" />
-				<Text Value="{ReadProperty Text}" Font="RobotoMedium" Alignment="Center" FontSize="10" TextColor="#FEFFFE" />
+				<Text Value="{ReadProperty Text}" Font="Bold" Alignment="Center" FontSize="10" TextColor="#FEFFFE" />
 			</Panel>
 
 	<!-- <Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#73AF22">
@@ -26,23 +26,25 @@
 	<!-- <StatusBarBackground Dock="Top" /> -->
 	<!-- <BottomBarBackground Dock="Bottom" /> -->
 
-	<Grid Dock="Top" ColumnCount="2" Alignment="Default" Margin="0, 40, 0, 0" Width="200" Height="40">
-		<Panel ux:Name="page1Tab">
-			<Tab Text="개인회원">
-				<Clicked>
-					<Set navigation.Active="page1" />
-				</Clicked>
-			</Tab>
-		</Panel>
-		<Panel ux:Name="page2Tab">
-			<Tab Text="기업회원">
-				<Clicked>
-					<Set navigation.Active="page2" />
-				</Clicked>
-			</Tab>
-		</Panel>
-		
-	</Grid>
+	<Rectangle Width="200" Height="40" Margin="0, 40, 0, 0" Color="#5C99BF" CornerRadius="30">
+		<Grid Dock="Top" ColumnCount="2" Alignment="Default" Margin="0, 0, 0, 0" Width="200" Height="40">
+			<Panel ux:Name="page1Tab">
+				<Tab Text="개인회원">
+					<Clicked>
+						<Set navigation.Active="page1" />
+					</Clicked>
+				</Tab>
+			</Panel>
+			<Panel ux:Name="page2Tab">
+				<Tab Text="기업회원">
+					<Clicked>
+						<Set navigation.Active="page2" />
+					</Clicked>
+				</Tab>
+			</Panel>
+			
+		</Grid>
+	</Rectangle>
 
 	<PageControl ux:Name="navigation" Margin="0, 30, 0, 140">
 		<Page ux:Name="page1" Background="#fff">
@@ -65,7 +67,7 @@
 							
 						</Panel>
 						<Panel ux:Name="indisigninbtn" Width="150" Height="50" Margin="0, 100, 0, 0">
-							<Text Value="Log-in" Color="#fff" Alignment="Center" FontSize="18" Font="RobotoMedium" />
+							<Text Value="Log-in" Color="#fff" Alignment="Center" FontSize="18" Font="Bold" />
 							<Rectangle Color="#5998C0" Width="280" Height="40" CornerRadius="30" Margin="0, 0, 0, 0" />
 							<WhilePressed>
 								<Scale Target="indisigninbtn" Factor="0.9" Duration="0.05" />
