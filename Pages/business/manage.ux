@@ -1,4 +1,4 @@
-<Page ux:Class="manage" >
+<Page ux:Class="manage">
 	<Router ux:Dependency="router" />
 	<JavaScript File="manage.js" />
 	<JavaScript File="mainviewBis.js" /> 
@@ -35,10 +35,13 @@
 					<Image File="../../Assets/search.png" Color="color4" Width="30" Height="30" Margin="10, 10, 0, 10" />
 				</Grid>
 			</Rectangle>
-			<maintopbar />
+			<maintopbar Margin="0, 0, 0, 0" />
+			<Rectangle Height="30" Alignment="Top" Margin="0, 100, 0, 0">
+				<Text Value="전체보기" Alignment="CenterRight" FontSize="12" Margin="0, 0, 50, 0" />
+			</Rectangle>
 			<!-- </StackPanel> -->
 			<!-- main -->
-			<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 100, 0, 0">
+			<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 130, 0, 0">
 				<StackPanel Orientation="Vertical" ItemSpacing="10" Margin="0, 20, 0, 0" Width="300">
 					<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
 						<DockPanel>

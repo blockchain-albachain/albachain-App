@@ -2,8 +2,6 @@
 	<Router ux:Dependency="router" />
 	<JavaScript File="signupInd.js" />
 
-	
-
 	<ScrollView>			
 		<StackPanel Width="360" Margin="0, 50, 0, 0">
 			<Rectangle Height="40">

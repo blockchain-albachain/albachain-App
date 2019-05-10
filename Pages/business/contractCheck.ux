@@ -40,9 +40,9 @@
 			<!-- main -->
 			<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 100, 0, 0">
 				<StackPanel Orientation="Vertical" ItemSpacing="10" Margin="0, 20, 0, 0" Width="300">
-					<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
+					<Each Items="{itemCon}" ux:Name="theEach" Reuse="Frame">
 						<DockPanel>
-							<Rectangle ux:Name="gotodetailsbtn" Alignment="Default" Width="300" Color="#FEFFFE" Clicked="{gotoDetails}" CornerRadius="10" Height="80">	
+							<Rectangle ux:Name="gotodetailsbtn" Alignment="Default" Width="300" Color="#FEFFFE" Clicked="{gotoDetailCon}" CornerRadius="10" Height="80">	
 								<WhilePressed>
 									<Scale Target="gotodetailsbtn" Factor="0.9" Duration="0.05" />
 								</WhilePressed>					
@@ -60,14 +60,14 @@
 						</DockPanel>
 					</Each>
 
-					<WhileTrue Value="{isLoading}">
+					<WhileTrue Value="{isLoadingCon}">
 						<Panel LayoutRole="Placeholder" Height="100" Color="#F6FBFF">
 							<Text Alignment="Center" Value="Loading..." />
 						</Panel>
 					</WhileTrue>
 
 				</StackPanel>
-				<ScrollViewPager Each="theEach" ReachedEnd="{loadMore}" ux:Name="svp" />
+				<ScrollViewPager Each="theEach" ReachedEnd="{loadMoreCon}" ux:Name="svpCon" />
 
 
 			</ScrollView>

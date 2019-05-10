@@ -1,0 +1,91 @@
+<Page ux:Class="detailContract">
+	<Router ux:Dependency="router" />
+	
+	<JavaScript>
+	var Observable = require('FuseJS/Observable');
+
+	var name = Observable("");
+
+	exports.name = this.Parameter.map(function(param) {
+		name.value = param.name;
+		return param.name;
+	});
+
+	exports.expense = this.Parameter.map(function(param) {
+		return param.expense;
+	});
+
+	exports.content = this.Parameter.map(function(param) {
+		return param.content;
+	});
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+	exports.cancel = function(){ router.goto("contractCan", {name: name.value}); };
+
+	</JavaScript>
+	<ClientPanel>
+
+		<Rectangle Alignment="Top" Color="#FEFFFE">
+			<Rectangle Color="#FFF" Alignment="Left" Margin="35, 0, 0, 23" Height="20" Width="20" />
+			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">			
+				<Image File="../../Assets/back.png" Clicked="{goBack}" Layer="Layout" Width="25" Height="25" Margin="30, 0, 0, 0" Alignment="Left" />
+
+				<Text ux:Name="titleText" Value="계약요청" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+				</Text>
+			</Grid>
+		</Rectangle>
+
+
+		<ScrollView>
+			<StackPanel Margin="0, 80, 0, 0" ItemSpacing="20">
+				<Rectangle Width="300" Height="500" CornerRadius="10" Color="#FEFFFE">
+					<StackPanel>
+						<Rectangle Alignment="Default" Margin="0, 20, 0, 0">
+							<Circle Width="50" Height="50" Color="#E2E3E2" Alignment="Left" Margin="20, 0, 0, 0" />
+							<Text Value="{name}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 70, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
+
+						</Rectangle>
+						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
+						<Rectangle Margin="0, 20, 0, 0">
+							<Text Value="계약내용" Margin="30, 0, 0, 0" TextColor="#000" />
+							<Text Value="근무요일" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
+							<Text Value="{content}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
+							<Text Value="근무시간" FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" />
+							<Text Value="PM 8:00 ~ AM 3:00" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
+							<Text Margin="30, 90, 0, 0" Value="시급" FontSize="15" TextColor="#67A5CC" ux:Name="time" />
+							<Text Value="{expense}원" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+						</Rectangle>
+					</StackPanel>
+					<Shadow Angle="107" />				
+				</Rectangle>
+
+				<Panel Margin="0, 20, 0, 50">
+					<Rectangle ux:Name="agreebtn" Width="130" Color="#64A4CD" Height="40" CornerRadius="30" Alignment="Left" Margin="40, 0, 0, 0">
+						<Text Value="수락" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+						<WhilePressed>
+							<Scale Target="agreebtn" Factor="0.9" Duration="0.05" />
+						</WhilePressed>
+						<!-- <Clicked>
+							<Callback Handler="{cancel}" />
+						</Clicked> -->
+					</Rectangle>
+					<Rectangle ux:Name="cancelbtn" Width="130" Color="#9A9B9A" Height="40" CornerRadius="30" Alignment="Right" Margin="0, 0, 40, 0">
+						<Text Value="거절" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+						<WhilePressed>
+							<Scale Target="cancelbtn" Factor="0.9" Duration="0.05" />
+						</WhilePressed>
+						<!-- <Clicked>
+							<Callback Handler="{cancel}" />
+						</Clicked> -->
+					</Rectangle>
+				</Panel>
+
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
+</Page>

@@ -1,5 +1,5 @@
 <Page ux:Class="maintopbar">
- <Panel Height="50" Alignment="Top" Margin="0, 40, 0, 0">
+	<Panel Height="50" Alignment="Top" Margin="0, 40, 0, 0">
 		<Grid ChildOrder="ColumnMajor" Opacity="1" LayoutRole="Standard" RowCount="1" ColumnCount="3" Height="70">
 			<Panel Alignment="Default">
 				<Rectangle ux:Name="homebtn" Height="70">

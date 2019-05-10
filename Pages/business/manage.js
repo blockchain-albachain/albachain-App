@@ -17,10 +17,10 @@ function loadSome() {
 		name : "김보성",
 		content : "화, 목, 일",
 		expense : addComma(10000),
-		gotoDetails: function() {
-			content.value = "화, 목, 일";
-			router.push("detailCheckPage", { name: "김보성", content: content.value, expense: addComma(100000)})
-		}
+		// gotoDetails: function() {
+		// 	content.value = "화, 목, 일";
+		// 	router.push("detailCheckPage", { name: "김보성", content: content.value, expense: addComma(100000)})
+		// }
 	})
 	
 	exports.isLoading.value = false	
