@@ -5,6 +5,16 @@ var individualPW = Observable("");
 var businessID = Observable("");
 var businessPW = Observable("");
 
+var loginColorChange = Observable(false);
+
+function indiChange(){
+	loginColorChange.value = false;
+}
+
+function busiChange(){
+	loginColorChange.value = true;
+}
+
 
 function individualSignup(){
 	router.push("signupInd");
@@ -108,6 +118,9 @@ function businessSignin(){
 	    	individualSignup : individualSignup,
 	    	individualSignin : individualSignin,
 	    	businessSignup : businessSignup,
-	    	businessSignin : businessSignin
+	    	businessSignin : businessSignin,
+	    	loginColorChange : loginColorChange,
+	    	indiChange : indiChange,
+	    	busiChange : busiChange
 
 	    };

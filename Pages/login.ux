@@ -9,45 +9,45 @@
 			<Text Value="Hello" Alignment="Default" Margin="50, 100, 0, 0" TextColor="#000" />
 			<Text Value="Stranger !" Margin="50, 0, 0, 0" TextColor="#000" />
 			<Circle Color="#E3E8E6" Width="100" Height="100" Margin="0, 40, 0, 0" />
-			<Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Alignment="Default">
-				<string ux:Property="Text" />
-				<Text Value="{ReadProperty Text}" Font="Bold" Alignment="Center" FontSize="10" TextColor="#FEFFFE" />
-			</Panel>
+			
 
-	<!-- <Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Bottom" Height="4" Color="#73AF22">
-		<LayoutAnimation>
-			<Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn" />
-		</LayoutAnimation>
-	</Rectangle> -->
+			<Rectangle Width="200" Height="40" Margin="0, 40, 0, 0" Color="#EEF0EE" CornerRadius="30">
+				<WhileTrue Value="{loginColorChange}">
+					<Rectangle ux:Name="page2Tab" Height="40" Color="#5C99BF" Alignment="Right" CornerRadius="30" Width="110">
+						<Text Value="기업회원" Font="Bold" Alignment="Center" FontSize="12" TextColor="#FEFFFE" />
+						<Clicked>
+							<Set navigation.Active="page2" />
+							<Callback Handler="{busiChange}" />
+						</Clicked>
+					</Rectangle>
+					<Rectangle ux:Name="page1Tab" Width="110" Height="40" Color="#EEF0EE" Alignment="Left" CornerRadius="30">
+						<Text Value="개인회원" Font="Bold" Alignment="Center" FontSize="12" TextColor="#666766" />
+						<Clicked>
+							<Set navigation.Active="page1" />
+							<Callback Handler="{indiChange}" />
+						</Clicked>
+					</Rectangle>					
+				</WhileTrue>
 
-	<!-- <Text ux:Class="WelcomeText" FontSize="30" Alignment="Center" /> -->
-
-	<!-- <DockPanel> -->
-	<!-- <StatusBarBackground Dock="Top" /> -->
-	<!-- <BottomBarBackground Dock="Bottom" /> -->
-
-	<Rectangle Width="200" Height="40" Margin="0, 40, 0, 0" Color="#5C99BF" CornerRadius="30">
-		<Grid Dock="Top" ColumnCount="2" Alignment="Default" Margin="0, 0, 0, 0" Width="200" Height="40">
-			<Panel ux:Name="page1Tab">
-				<Tab Text="개인회원">
+				<Rectangle Width="110" Height="40" Color="#5C99BF" Alignment="Left" CornerRadius="30">
+					<Text Value="개인회원" Font="Bold" Alignment="Center" FontSize="12" TextColor="#FEFFFE" />
 					<Clicked>
 						<Set navigation.Active="page1" />
+						<Callback Handler="{indiChange}" />
 					</Clicked>
-				</Tab>
-			</Panel>
-			<Panel ux:Name="page2Tab">
-				<Tab Text="기업회원">
+				</Rectangle>
+				<Rectangle Height="40" Color="#EEF0EE" Alignment="Right" CornerRadius="30" Width="110">
+					<Text Value="기업회원" Font="Bold" Alignment="Center" FontSize="12" TextColor="#666766" />
 					<Clicked>
 						<Set navigation.Active="page2" />
+						<Callback Handler="{busiChange}" />
 					</Clicked>
-				</Tab>
-			</Panel>
-			
-		</Grid>
-	</Rectangle>
+				</Rectangle>
+				<Shadow />
+			</Rectangle>
 
-	<PageControl ux:Name="navigation" Margin="0, 30, 0, 140">
-		<Page ux:Name="page1" Background="#fff">
+			<PageControl ux:Name="navigation" Margin="0, 30, 0, 140">
+				<Page ux:Name="page1" Background="#fff">
 				<!-- <WhileActive Threshold="0.5">
 					<Set indicator.LayoutMaster="page1Tab" />
 				</WhileActive> -->
