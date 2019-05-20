@@ -3,79 +3,81 @@
 	<JavaScript File="manage.js" />
 	<JavaScript File="mainviewBis.js" /> 
 
-	<EdgeNavigator Alignment="Default">
-		<!-- sidebar -->
-		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0, 0, 80, 0" Background="#FEFFFE">
-			<!-- <Rectangle ux:Name="sidebarFade" Layer="Overlay" Opacity="0" HitTestMode="None" />	 -->
-			<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
-			<ActivatingAnimation>
-				<Change shadow.Color="#0004" />
-				<Change sidebarFade.Opacity="1" />
-			</ActivatingAnimation>
-			<profile router="router" />
-		</Panel>
+	<ClientPanel>
+		<EdgeNavigator Alignment="Default">
+			<!-- sidebar -->
+			<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0, 0, 80, 0" Background="#FEFFFE">
+				<!-- <Rectangle ux:Name="sidebarFade" Layer="Overlay" Opacity="0" HitTestMode="None" />	 -->
+				<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
+				<ActivatingAnimation>
+					<Change shadow.Color="#0004" />
+					<Change sidebarFade.Opacity="1" />
+				</ActivatingAnimation>
+				<profile router="router" />
+			</Panel>
 
-		<Panel Color="#FEFFFE">
-			<!-- top bar -->
-			<!-- <StackPanel> -->
-			<Rectangle ux:Name="sidebarFade" Layer="Overlay" Color="#1E1D1E4E" Opacity="0" HitTestMode="None" />
-			<Rectangle Alignment="Top" Width="300">
-				<Grid Columns="auto,1*,auto" Dock="Top" Margin="5" Height="50" Y="0">
-					<Grid ColumnCount="2" RowCount="2" Width="22" Height="22" Margin="0, 10, 10, 10" Background="#FEFFFE">
-						<Each Count="4">
-							<Circle Color="color4" Margin="1.5" />
-						</Each>
-						<Clicked>
-							<NavigateToggle Target="sidebar" />
-						</Clicked>
+			<Panel Color="#FEFFFE">
+				<!-- top bar -->
+				<!-- <StackPanel> -->
+				<Rectangle ux:Name="sidebarFade" Layer="Overlay" Color="#1E1D1E4E" Opacity="0" HitTestMode="None" />
+				<Rectangle Alignment="Top" Width="300">
+					<Grid Columns="auto,1*,auto" Dock="Top" Margin="5" Height="50" Y="0">
+						<Grid ColumnCount="2" RowCount="2" Width="22" Height="22" Margin="0, 10, 10, 10" Background="#FEFFFE">
+							<Each Count="4">
+								<Circle Color="color4" Margin="1.5" />
+							</Each>
+							<Clicked>
+								<NavigateToggle Target="sidebar" />
+							</Clicked>
+						</Grid>
+						<Text ux:Name="titleText" Value="albaChain" FontSize="25" Alignment="Center">
+							<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+						</Text>
+						<Image File="../../Assets/search.png" Color="color4" Width="30" Height="30" Margin="10, 10, 0, 10" />
 					</Grid>
-					<Text ux:Name="titleText" Value="albaChain" FontSize="25" Alignment="Center">
-						<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
-					</Text>
-					<Image File="../../Assets/search.png" Color="color4" Width="30" Height="30" Margin="10, 10, 0, 10" />
-				</Grid>
-			</Rectangle>
-			<maintopbar Margin="0, 0, 0, 0" />
-			<Rectangle Height="30" Alignment="Top" Margin="0, 100, 0, 0">
-				<Text Value="전체보기" Alignment="CenterRight" FontSize="12" Margin="0, 0, 50, 0" />
-			</Rectangle>
-			<!-- </StackPanel> -->
-			<!-- main -->
-			<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 130, 0, 0">
-				<StackPanel Orientation="Vertical" ItemSpacing="10" Margin="0, 20, 0, 0" Width="300">
-					<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
-						<DockPanel>
-							<Rectangle ux:Name="gotodetailsbtn" Alignment="Default" Width="300" Color="#FEFFFE" Clicked="{gotoDetails}" CornerRadius="10" Height="80">	
-								<WhilePressed>
-									<Scale Target="gotodetailsbtn" Factor="0.9" Duration="0.05" />
-								</WhilePressed>					
-								
-								<Circle Width="50" Height="50" Color="#E2E3E2" Alignment="Left" Margin="20, 0, 0, 0" />
-								<Text Value="{name}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 70, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
-								<Text FontSize="10" Margin="50, 15, 0, 0" TextColor="#67A5CC" Alignment="TopCenter" Value="희망 요일" />
-								<Text Value="{content}" Color="#404140" FontSize="10" TextAlignment="Left" Margin="200, 15, 0, 0" Alignment="TopCenter" />
-								<Text Value="희망 시간" FontSize="10" Margin="50, 35, 0, 0" TextColor="#67A5CC" Alignment="TopCenter" />
-								<Text Value="PM 8:00 ~ AM 3:00" Color="#404140" FontSize="10" TextAlignment="Left" Margin="200, 35, 0, 0" Alignment="TopCenter" />
-								<Text Margin="50, 55, 0, 0" Value="희망 시급" FontSize="10" TextColor="#67A5CC" ux:Name="time" Alignment="TopCenter" />
-								<Text Value="{expense}원" Color="#848886" FontSize="10" TextAlignment="Left" Margin="200, 55, 0, 0" Alignment="TopCenter" />
-								<Shadow Angle="107" />
-							</Rectangle>
-						</DockPanel>
-					</Each>
+				</Rectangle>
+				<maintopbar Margin="0, 0, 0, 0" />
+				<Rectangle Height="30" Alignment="Top" Margin="0, 100, 0, 0">
+					<Text Value="전체보기" Alignment="CenterRight" FontSize="12" Margin="0, 0, 50, 0" />
+				</Rectangle>
+				<!-- </StackPanel> -->
+				<!-- main -->
+				<ScrollView LayoutMode="PreserveVisual" Alignment="Default" Margin="0, 130, 0, 0">
+					<StackPanel Orientation="Vertical" ItemSpacing="10" Margin="0, 20, 0, 0" Width="300">
+						<Each Items="{items}" ux:Name="theEach" Reuse="Frame">
+							<DockPanel>
+								<Rectangle ux:Name="gotodetailsbtn" Alignment="Default" Width="300" Color="#FEFFFE" Clicked="{gotoDetails}" CornerRadius="10" Height="80">	
+									<WhilePressed>
+										<Scale Target="gotodetailsbtn" Factor="0.9" Duration="0.05" />
+									</WhilePressed>					
+									
+									<Circle Width="50" Height="50" Color="#E2E3E2" Alignment="Left" Margin="20, 0, 0, 0" />
+									<Text Value="{name}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 70, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
+									<Text FontSize="10" Margin="50, 15, 0, 0" TextColor="#67A5CC" Alignment="TopCenter" Value="희망 요일" />
+									<Text Value="{content}" Color="#404140" FontSize="10" TextAlignment="Left" Margin="200, 15, 0, 0" Alignment="TopCenter" />
+									<Text Value="희망 시간" FontSize="10" Margin="50, 35, 0, 0" TextColor="#67A5CC" Alignment="TopCenter" />
+									<Text Value="PM 8:00 ~ AM 3:00" Color="#404140" FontSize="10" TextAlignment="Left" Margin="200, 35, 0, 0" Alignment="TopCenter" />
+									<Text Margin="50, 55, 0, 0" Value="희망 시급" FontSize="10" TextColor="#67A5CC" ux:Name="time" Alignment="TopCenter" />
+									<Text Value="{expense}원" Color="#848886" FontSize="10" TextAlignment="Left" Margin="200, 55, 0, 0" Alignment="TopCenter" />
+									<Shadow Angle="107" />
+								</Rectangle>
+							</DockPanel>
+						</Each>
 
-					<WhileTrue Value="{isLoading}">
-						<Panel LayoutRole="Placeholder" Height="100" Color="#F6FBFF">
-							<Text Alignment="Center" Value="Loading..." />
-						</Panel>
-					</WhileTrue>
+						<WhileTrue Value="{isLoading}">
+							<Panel LayoutRole="Placeholder" Height="100" Color="#F6FBFF">
+								<Text Alignment="Center" Value="Loading..." />
+							</Panel>
+						</WhileTrue>
 
-				</StackPanel>
-				<ScrollViewPager Each="theEach" ReachedEnd="{loadMore}" ux:Name="svp" />
+					</StackPanel>
+					<ScrollViewPager Each="theEach" ReachedEnd="{loadMore}" ux:Name="svp" />
 
 
-			</ScrollView>
+				</ScrollView>
 
-		</Panel>
-		
-	</EdgeNavigator>
+			</Panel>
+			
+		</EdgeNavigator>
+	</ClientPanel>
 </Page>

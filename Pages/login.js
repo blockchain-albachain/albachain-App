@@ -22,44 +22,41 @@ function individualSignup(){
 }
 
 function individualSignin(){
-	router.push("mainviewInd");
-	// var opts = ({
- //            	'userid' : individualID.value,
- //             'password' : individualPW.value
- //              });
+	// router.push("mainviewInd");
+	var opts = ({
+            	'username' : individualID.value,
+             'password' : individualPW.value
+              });
 
-	// console.log(JSON.stringify(opts));
- //    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
+	console.log(JSON.stringify(opts));
+    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
  
 
-	// fetch('http://8dc06cfa.ngrok.io/users/login',{
-	//             method: "POST",
-	//             headers: {
-	//             	"Content-type": "application/JSON"
-	//             },
-	//             body : JSON.stringify(opts)
+	fetch('http://75807977.ngrok.io/users/signin',{
+	            method: "POST",
+	            headers: {
+	            	"Content-type": "application/JSON"
+	            },
+	            body : JSON.stringify(opts)
 	
-	//         }).then((res)=>{
-	//             // console.log(JSON.stringify(res));
-	//             // console.log(JSON.parse(res));
-	//             return res.json()
-	// 		}).then((res)=>{
+	        }).then((res)=>{
+	            // console.log(JSON.stringify(res));
+	            // console.log(JSON.parse(res));
+	            return res.json()
+			}).then((res)=>{
 
-	//             console.log(res.success);
+	            console.log(res.success);
 
-
-	//             individualID = individualID.value;
-
-	//             if( JSON.parse(res.success) == true){
-	//             	// router.push("Home", ID);
-	//             	router.push("mainviewInd", individualID);
-	//             	console.log("Move to mainviewInd");
-	//             	console.log(individualID);
-	//             }
-	//             // JSON.parse(res._bodyInit).documents[1].address_name
-	//         }).catch((err)=>{
-	//             console.log(err);
-	//         });
+	            if( JSON.parse(res.success) == true){
+	            	// router.push("Home", ID);
+	            	router.push("mainviewInd");
+	            	console.log("Move to mainviewInd");
+	            	console.log(individualID);
+	            }
+	            // JSON.parse(res._bodyInit).documents[1].address_name
+	        }).catch((err)=>{
+	            console.log(err);
+	        });
 }
 
 
