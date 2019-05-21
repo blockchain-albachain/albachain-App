@@ -1,0 +1,74 @@
+<Page ux:Class="detailStore">
+	<Router ux:Dependency="router" />
+	
+	<JavaScript>
+	
+	var Observable = require('FuseJS/Observable');
+
+	var storename = Observable("");
+
+	exports.storename = this.Parameter.map(function(param) {
+		storename.value = param.storename;
+		return param.storename;
+	});
+
+	exports.callnumber = this.Parameter.map(function(param) {
+		return param.callnumber;
+	});
+
+	exports.storenumber = this.Parameter.map(function(param) {
+		return param.storenumber;
+	});
+
+	exports.address = this.Parameter.map(function(param) {
+		return param.address;
+	});
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+
+	</JavaScript>
+	<ClientPanel>
+
+		<Rectangle Alignment="Top" Color="#FEFFFE">
+			<Rectangle Color="#FFF" Alignment="Left" Margin="35, 0, 0, 23" Height="20" Width="20" />
+			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">			
+				<Image File="../../Assets/back.png" Clicked="{goBack}" Layer="Layout" Width="25" Height="25" Margin="30, 0, 0, 0" Alignment="Left" />
+
+				<Text ux:Name="titleText" Value="가게정보" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+				</Text>
+			</Grid>
+		</Rectangle>
+
+
+		<ScrollView>
+			<StackPanel Margin="0, 80, 0, 0" ItemSpacing="20">
+				<Rectangle Width="300" Height="500" CornerRadius="10" Color="#FEFFFE">
+					<StackPanel>
+						<Rectangle Alignment="Default" Margin="0, 20, 0, 0">
+							<Circle Width="50" Height="50" Color="#E2E3E2" Alignment="Left" Margin="20, 0, 0, 0" />
+							<Text Value="{storename}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
+
+						</Rectangle>
+						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
+						<Rectangle Margin="0, 20, 0, 0">
+							<Text Value="가게 세부내용" Margin="30, 0, 0, 0" TextColor="#000" />
+							<Text Value="전화번호" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
+							<Text Value="{callnumber}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
+							<Text Value="고유번호" FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" />
+							<Text Value="{storenumber}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
+							<Text Margin="30, 90, 0, 0" Value="주소" FontSize="15" TextColor="#67A5CC" ux:Name="time" />
+							<Text Value="{address}" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+						</Rectangle>
+					</StackPanel>
+					<Shadow Angle="107" />				
+				</Rectangle>
+
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
+</Page>

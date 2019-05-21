@@ -1,6 +1,6 @@
 var Observable = require('FuseJS/Observable');
 
-exports.items = Observable()
+exports.Items = Observable();
 exports.isLoading = Observable(false);
 
 function addComma(num) {
@@ -8,49 +8,66 @@ function addComma(num) {
 	return num.toString().replace(regexp, ',');
 }
 
-// svp.check()
-// function loadSome() {
+svp.check();
 
-// 	exports.items.add( {
-// 		title : "한신포차",
-// 		content : "화, 목, 일",
-// 		expense : addComma(100000),
-// 		gotoDetails: function() {
-// 			title.value = "한신포차";
-// 			content.value = "화, 목, 일";
-// 			// expense.value = addComma(100000);
-// 			router.push("detailContractPage", { title: title.value, content: content.value, expense: addComma(100000)})
-// 		}
-// 	})
+function loadSome(){
+	fetch('http://69e16e34.ngrok.io/mregistration/Mstorepush',{
+		// fetch('http://3ff05a06.ngrok.io/board/am',{
+			method: "GET",
+			headers: {
+				"Content-type": "application/JSON"
+			}
 
-// 	exports.items.add( {
-// 		title : "전통주막",
-// 		content : "월, 화, 금",
-// 		expense : addComma(120000),
-// 		gotoDetails: function() {
-// 			title.value = "전통주막";
-// 			content.value = "월, 화, 금";
-// 			router.push("detailContractPage", { title: title.value ,content: content.value ,expense: addComma(120000) })
-// 		}
-// 	})
+		}).then(function(res){
+			return res.json();
+		}).then(function(res){
 
+			for(var i in res){
+
+				exports.Items.add(createPage(res[i].store_name,res[i].call_number,res[i].store_number, res[i].address, res[i].business_number));		
+
+			}
+			
+			exports.isLoading.value = false;
+
+		}).catch((err)=>{
+			console.log(err);
+			if(err == "TypeError: Network request failed" ){
+				// NetworkError.value = true;
+				console.log("dsfadfas");
+				exports.isLoading.value = false;
+			}
+		});
+	}
+
+// for문과 합치게 되면 마지막 데이터만 들어가는 문제 발생하기 때문에 반드시 createPage로 분리 시켜줘야한다.
+function createPage(storename, callnumber, storenumber, address) {
+	return {
+		storename : storename,
+		callnumber: callnumber,
+		storenumber : storenumber,
+		
+		gotoDetails: function() {
+			router.push("detailStore", { storename : storename, callnumber : callnumber, storenumber : storenumber, address : address})
+		}
+	};
+}
+
+
+// 로딩창
+var maxSimulatedDelay = 1.5
+var minSimulatedDelay = 0.25
+exports.loadMore = function() {
+	if (exports.isLoading.value) {
+		return
+	}
+	exports.isLoading.value = true
 	
-// 	exports.isLoading.value = false	
-// }
+	//simulate a delay in loading data from a remote request
+	var delay = Math.random() * (maxSimulatedDelay - minSimulatedDelay) + minSimulatedDelay
+	setTimeout( loadSome, delay * 1000 )
+}
 
-
-// var maxSimulatedDelay = 1.5
-// var minSimulatedDelay = 0.25
-// exports.loadMore = function() {
-// 	if (exports.isLoading.value) {
-// 		return
-// 	}
-// 	exports.isLoading.value = true
-	
-// 	//simulate a delay in loading data from a remote request
-// 	var delay = Math.random() * (maxSimulatedDelay - minSimulatedDelay) + minSimulatedDelay
-// 	setTimeout( loadSome, delay * 1000 )
-// }
 
 exports.gocontract = function () {
 	router.push("registration");

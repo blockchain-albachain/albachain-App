@@ -38,7 +38,7 @@
 			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">			
 				<Image File="../../Assets/back.png" Clicked="{goBack}" Layer="Layout" Width="25" Height="25" Margin="30, 0, 0, 0" Alignment="Left" />
 
-				<Text ux:Name="titleText" Value="{name}" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+				<Text ux:Name="titleText" Value="{storename}" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
 					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
 				</Text>
 			</Grid>

@@ -22,44 +22,46 @@ function individualSignup(){
 }
 
 function individualSignin(){
-	router.push("mainviewInd");
-	// var opts = ({
- //            	'userid' : individualID.value,
- //             'password' : individualPW.value
- //              });
+	// router.push("mainviewInd");
+	var opts = ({
+             'username' : individualID.value,
+             'password' : individualPW.value
+              });
 
 	// console.log(JSON.stringify(opts));
- //    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
+    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
  
 
-	// fetch('http://8dc06cfa.ngrok.io/users/login',{
-	//             method: "POST",
-	//             headers: {
-	//             	"Content-type": "application/JSON"
-	//             },
-	//             body : JSON.stringify(opts)
-	
-	//         }).then((res)=>{
-	//             // console.log(JSON.stringify(res));
-	//             // console.log(JSON.parse(res));
-	//             return res.json()
-	// 		}).then((res)=>{
+	fetch('http://69e16e34.ngrok.io/users/signin',{
+	            method: "POST",
+	            headers: {
+	            	"Content-type": "application/JSON"
+	            },
+	            body : JSON.stringify(opts)
 
-	//             console.log(res.success);
+	        }).then((res)=>{
+	            return res.json()
+			}).then((res)=>{
+
+				console.log(JSON.stringify(res));
+
+	            console.log(res.success);
+
+	            console.log("gi");
 
 
-	//             individualID = individualID.value;
+	            // individualID = individualID.value;
 
-	//             if( JSON.parse(res.success) == true){
-	//             	// router.push("Home", ID);
-	//             	router.push("mainviewInd", individualID);
-	//             	console.log("Move to mainviewInd");
-	//             	console.log(individualID);
-	//             }
-	//             // JSON.parse(res._bodyInit).documents[1].address_name
-	//         }).catch((err)=>{
-	//             console.log(err);
-	//         });
+	            if( JSON.parse(res.success) == true){
+	            	// router.push("Home", ID);
+	            	router.push("mainviewInd");
+	            	console.log("Move to mainviewInd");
+	            	console.log(individualID);
+	            }
+	            // JSON.parse(res._bodyInit).documents[1].address_name
+	        }).catch((err)=>{
+	            console.log(err);
+	        });
 }
 
 
@@ -69,44 +71,45 @@ function businessSignup(){
 }
 
 function businessSignin(){
-	router.push("mainviewBis");
-	// var opts = ({
-	// 	'username' : businessID.value,
-	// 	'password' : businessPW.value
-	// });
+	// router.push("mainviewBis");
+	var opts = ({
+		'username' : businessID.value,
+		'password' : businessPW.value
+	});
 
 	// console.log(JSON.stringify(opts));
- //    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
+    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
     
 
- //    fetch('http://8dc06cfa.ngrok.io/users/login',{
- //    	method: "POST",
- //    	headers: {
- //    		"Content-type": "application/JSON"
- //    	},
- //    	body : JSON.stringify(opts)
+    fetch('http://69e16e34.ngrok.io/musers/Msignin',{
+    	method: "POST",
+    	headers: {
+    		"Content-type": "application/JSON"
+    	},
+    	body : JSON.stringify(opts)
+
     	
- //    }).then((res)=>{
-	//             // console.log(JSON.stringify(res));
-	//             // console.log(JSON.parse(res));
-	//             return res.json()
-	//         }).then((res)=>{
+    }).then((res)=>{
+	            // console.log(JSON.stringify(res));
+	            // console.log(JSON.parse(res));
+	            return res.json()
+	        }).then((res)=>{
 
-	//         	console.log(res.success);
+	        	console.log(res.success);
 
 
-	//         	businessID = businessID.value;
+	        	// businessID = businessID.value;
 
-	//         	if( JSON.parse(res.success) == true){
-	//             	// router.push("Home", ID);
-	//             	router.push("mainviewBis", businessID);
-	//             	console.log("Move to mainviewBis");
-	//             	console.log(businessID);
-	//             }
-	//             // JSON.parse(res._bodyInit).documents[1].address_name
-	//         }).catch((err)=>{
-	//         	console.log(err);
-	//         });
+	        	if( JSON.parse(res.success) == true){
+	            	// router.push("Home", ID);
+	            	router.push("mainviewBis");
+	            	console.log("Move to mainviewBis");
+	            	console.log(businessID);
+	            }
+	            // JSON.parse(res._bodyInit).documents[1].address_name
+	        }).catch((err)=>{
+	        	console.log(err);
+	        });
 	    }
 
 
@@ -121,6 +124,7 @@ function businessSignin(){
 	    	businessSignin : businessSignin,
 	    	loginColorChange : loginColorChange,
 	    	indiChange : indiChange,
-	    	busiChange : busiChange
+	    	busiChange : busiChange,
+
 
 	    };

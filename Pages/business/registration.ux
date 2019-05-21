@@ -26,20 +26,27 @@
 						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
 						<Rectangle Margin="0, 20, 0, 0">
 							<Text Value="등록항목" Margin="30, 0, 0, 0" TextColor="#000" Alignment="Top" />
-							<!-- <Text FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" Value="계약기간" Alignment="TopLeft" Height="15" />
-							<Text Value="계약기간 선택란" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" Alignment="Top" />
-							<Text FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" Value="임        금" Alignment="TopLeft" />
-							<Text Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" Alignment="Top" Value="임금 입력란" />
-							<Text Margin="30, 90, 0, 0" Value="근로요일" FontSize="15" TextColor="#67A5CC" ux:Name="time" Alignment="TopLeft" />
-							<Text Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" Alignment="Top" Value="일월화수목금토일" />
-							<Text Alignment="TopLeft" Value="근로시간" Margin="30, 115, 0, 0" TextColor="#67A5CC" FontSize="15" />
-							<Text Value="PM, AM 시간 선택" FontSize="15" Margin="110, 115, 0, 0" />
-							<Text Value="계        좌" Margin="30, 140, 0, 0" FontSize="15" TextColor="#67A5CC" /> -->
-							<Text Margin="110, 140, 0, 0" Value="무엇을 넣을까요??" />
+							<Text FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" Value="사업자번호" Alignment="TopLeft" Height="15" />
+							<TextInput Value="{BusinessNumber}"  FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" Alignment="Top" />
+							<Text FontSize="15" Margin="36, 65, 0, 0" TextColor="#67A5CC" Value="매장이름" Alignment="TopLeft" />
+							<TextInput  FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" Alignment="Top" Value="{StoreName}" />
+							<Text Margin="36, 90, 0, 0" Value="전화번호" FontSize="15" TextColor="#67A5CC" ux:Name="time" Alignment="TopLeft" />
+							<TextInput  FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" Alignment="Top" Value="{StoreNumber}" />
+							<Text Alignment="TopLeft" Value="주       소" Margin="36, 115, 0, 0" TextColor="#67A5CC" FontSize="15" />
+							<TextInput Value="{Address}" FontSize="15" Margin="110, 115, 0, 0" />
+						<!-- 	<Text Value="계        좌" Margin="30, 140, 0, 0" FontSize="15" TextColor="#67A5CC" /> -->
+<!-- 							<Text Margin="110, 140, 0, 0" Value="무엇을 넣을까요??" /> -->
 						</Rectangle>
 						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
-						<Text Value="매장 고유 번호 (자동으로 할당되도록 함.)" Margin="30, 20, 0, 0" TextColor="#000" />
-						<Text Alignment="HorizontalCenter" Value="123-4567-8901" Margin="0, 50, 0, 0" />
+						<Text Value="매장 고유 번호" Margin="30, 20, 0, 0" TextColor="#000" />
+						<Text Alignment="HorizontalCenter" Value="{RandomNumber}" Margin="0, 30, 0, 0" ux:Name="RandomNum" TextColor="#000" />
+						<Rectangle Margin="0, 30, 0, 0" Width="100" Height="30" Color="#6A99BC" CornerRadius="30">
+							<Text Value="랜덤번호" TextColor="#FFF" Alignment="HorizontalCenter" TextAlignment="Center" Font="RobotoMedium" Margin="0, 5, 0, 0" />
+							<Clicked>
+								<Callback Handler="{clickRandom}" />
+								<Set Target="RandomNum.Value" Value="{RandomNumber}" /> 
+							</Clicked>
+						</Rectangle>
 					</StackPanel>
 					<Shadow Angle="107" />				
 				</Rectangle>
@@ -55,7 +62,7 @@
 						</Clicked>
 					</Rectangle>
 				</Panel>
-		</StackPanel>
-	</ScrollView>
-</ClientPanel>
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
 </Page>

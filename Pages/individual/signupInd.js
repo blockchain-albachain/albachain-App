@@ -14,7 +14,7 @@ function goBack()
 
 function Save(){
 	
-	fetch('http://3a3584bf.ngrok.io/users/signup',{
+	fetch('http://69e16e34.ngrok.io/users/signup',{
 		method: "POST",
 		headers: {
 			"Content-type": "application/json"
@@ -25,7 +25,7 @@ function Save(){
 			'name' : newName.value,
 			'gender' : sex.value,
 			'birth' : dayOfbirth.value,
-			'phonenumber' : phoneNum.value
+			'phone_number' : phoneNum.value
 		})
 	}).then((res)=>{ return res.json()
 	}).then((res)=>{

@@ -12,19 +12,19 @@
 		<profile ux:Template="profile" router="router" Color="#FFF" />
 		<startPage ux:Template="startPage" router="router" />
 
-		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF" >
+		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF">
 			<Transition>
 				<Move X="1" RelativeTo="ParentSize" />
 			</Transition>
 		</mainviewBis>
 		<registration ux:Template="registration" router="router" Color="#FFF" />
-		<contractCheck ux:Template="contractCheck" router="router" Color="#FFF" >
+		<contractCheck ux:Template="contractCheck" router="router" Color="#FFF">
 			<Transition>
 				<Move X="1" RelativeTo="ParentSize" />
 			</Transition>
 		</contractCheck>
 
-		<manage ux:Template="manage" router="router" Color="#FFF" >
+		<manage ux:Template="manage" router="router" Color="#FFF">
 			<Transition>
 				<Move X="1" RelativeTo="ParentSize" />
 			</Transition>
@@ -32,6 +32,7 @@
 
 		<detailCheckPage ux:Template="detailCheckPage" router="router" Color="#FFF" />
 		<detailContract ux:Template="detailContract" router="router" Color="#FFF" />
+		<detailStore ux:Template="detailStore" router="router" Color="#FFF" />
 
 
 	</Navigator>
