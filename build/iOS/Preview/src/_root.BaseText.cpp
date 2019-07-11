@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/BaseText.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/BaseText.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.BaseText.h>
@@ -21,7 +21,7 @@ static void BaseText__cctor_4_fn(uType* __type)
 
 static void BaseText_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("StsticResources.ux");
+    ::STRINGS[0] = uString::Const("StaticResources.ux");
     type->SetDependencies(
         ::g::StaticResources_typeof());
     type->SetInterfaces(
@@ -142,7 +142,7 @@ void BaseText::InitializeUX1()
     FontSize(14.0f);
     Color(::g::Uno::Float4__New2(0.1333333f, 0.1333333f, 0.1333333f, 1.0f));
     SourceLineNumber(7);
-    SourceFileName(::STRINGS[0/*"StsticResou...*/]);
+    SourceFileName(::STRINGS[0/*"StaticResou...*/]);
     Font(::g::StaticResources::BaseFont());
 }
 

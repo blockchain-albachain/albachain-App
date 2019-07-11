@@ -1,51 +1,72 @@
 var Observable = require('FuseJS/Observable');
 
+var period = Observable("");
+var pay = Observable();
+var workingday = Observable("");
+var workinghour = Observable("");
+var accountNum = Observable();
+var storeNum = Observable();
+
+console.log("Contract : " + userID);
+
+
 function goBack() {
 	router.goBack();
 }
 
 function submit(){
-	router.push("mainviewInd");
-	// var opts = ({
- //            	'userid' : individualID.value,
- //             'password' : individualPW.value
- //              });
+	// router.push("mainviewInd");
+	var opts = ({
+            	'pay' : pay.value,
+             	'workingDay' : workingday.value,
+             	'workingTime' : workinghour.value,
+             	'account' : accountNum.value,
+             	'store_number' : storeNum.value,
+             	'period' : period.value,
+             	'userid' : userID
+              });
 
-	// console.log(JSON.stringify(opts));
- //    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
+	console.log(JSON.stringify(opts));
+    console.log('sign'); //Sign_in 함수가 호출되었는지 확인
  
 
-	// fetch('http://8dc06cfa.ngrok.io/users/login',{
-	//             method: "POST",
-	//             headers: {
-	//             	"Content-type": "application/JSON"
-	//             },
-	//             body : JSON.stringify(opts)
+	// fetch('http://6b66903f.ngrok.io/contract/contractUp',{
+	fetch('http://97e78588.ngrok.io/contract/contractUp',{
+
+	            method: "POST",
+	            headers: {
+	            	"Content-type": "application/JSON"
+	            },
+	            body : JSON.stringify(opts)
 	
-	//         }).then((res)=>{
-	//             // console.log(JSON.stringify(res));
-	//             // console.log(JSON.parse(res));
-	//             return res.json()
-	// 		}).then((res)=>{
+	        }).then((res)=>{
+	            // console.log(JSON.stringify(res));
+	            // console.log(JSON.parse(res));
+	            return res.json()
+			}).then((res)=>{
 
-	//             console.log(res.success);
+	            console.log(res.success);
 
 
-	//             individualID = individualID.value;
-
-	//             if( JSON.parse(res.success) == true){
-	//             	// router.push("Home", ID);
-	//             	router.push("mainviewInd", individualID);
-	//             	console.log("Move to mainviewInd");
-	//             	console.log(individualID);
-	//             }
-	//             // JSON.parse(res._bodyInit).documents[1].address_name
-	//         }).catch((err)=>{
-	//             console.log(err);
-	//         });
+	            
+	            if( JSON.parse(res.success) == true){
+	            	// router.push("Home", ID);
+	            	router.push("mainviewInd", userID);
+	            	console.log("Move to mainviewInd");
+	            }
+	            // JSON.parse(res._bodyInit).documents[1].address_name
+	        }).catch((err)=>{
+	            console.log(err);
+	        });
 }
 
 module.exports = {
 	submit : submit,
-	goBack : goBack
+	goBack : goBack,
+	period : period,
+	pay : pay,
+	workingday : workingday,
+	workinghour : workinghour,
+	accountNum : accountNum,
+	storeNum : storeNum
 };

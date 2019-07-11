@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{struct MainView__Template3;}
 
 namespace g{
 
-// public partial sealed class MainView.Template3 :78
+// public partial sealed class MainView.Template3 :79
 // {
 ::g::Uno::UX::Template_type* MainView__Template3_typeof();
 void MainView__Template3__ctor_1_fn(MainView__Template3* __this, ::g::MainView* parent, ::g::MainView* parentInstance);

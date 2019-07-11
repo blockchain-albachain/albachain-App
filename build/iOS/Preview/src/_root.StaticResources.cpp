@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/StaticResources.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/StaticResources.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_bundle.h>
@@ -25,8 +25,8 @@ static void StaticResources__cctor_4_fn(uType* __type)
     ::g::albachain_bundle_typeof()->Init();
     ::g::Uno::UX::Resource_typeof()->Init();
     StaticResources::BorderColor_ = ::g::Uno::Float4__New2(0.2f, 0.2f, 0.2f, 1.0f);
-    StaticResources::BaseFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBoldf950ad2f()));
-    StaticResources::BoldFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBlack7c869409()));
+    StaticResources::BaseFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBold7f7d3450()));
+    StaticResources::BoldFont_ = ::g::Fuse::Font::New2(::g::Uno::UX::BundleFileSource::New1(::g::albachain_bundle::NunitoBlack890b1e1e()));
     ::g::Uno::UX::Resource::SetGlobalKey(uBox(::g::Uno::Float4_typeof(), StaticResources::BorderColor_), ::STRINGS[0/*"BorderColor"*/]);
     ::g::Uno::UX::Resource::SetGlobalKey(StaticResources::BaseFont_, ::STRINGS[1/*"BaseFont"*/]);
     ::g::Uno::UX::Resource::SetGlobalKey(StaticResources::BoldFont_, ::STRINGS[2/*"BoldFont"*/]);
@@ -37,7 +37,7 @@ static void StaticResources_build(uType* type)
     ::STRINGS[0] = uString::Const("BorderColor");
     ::STRINGS[1] = uString::Const("BaseFont");
     ::STRINGS[2] = uString::Const("BoldFont");
-    ::STRINGS[3] = uString::Const("StsticResources.ux");
+    ::STRINGS[3] = uString::Const("StaticResources.ux");
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface0),
         ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface1),
@@ -162,7 +162,7 @@ void StaticResources::ctor_7()
 void StaticResources::InitializeUX()
 {
     SourceLineNumber(1);
-    SourceFileName(::STRINGS[3/*"StsticResou...*/]);
+    SourceFileName(::STRINGS[3/*"StaticResou...*/]);
 }
 
 // public StaticResources New() [static] :17

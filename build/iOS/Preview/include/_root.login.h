@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/login.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/login.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -21,11 +21,10 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
-namespace g{namespace Fuse{namespace Controls{struct Grid;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
 namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
-namespace g{namespace Fuse{namespace Elements{struct Element;}}}
+namespace g{namespace Fuse{namespace Controls{struct Text;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
 namespace g{namespace Fuse{struct Font;}}
@@ -47,25 +46,30 @@ struct login : ::g::Fuse::Controls::Page
 {
     uStrong< ::g::Fuse::Navigation::Router*> router;
     uStrong< ::g::Uno::UX::Property1*> navigation_Active_inst;
-    uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
     static uSStrong< ::g::Fuse::Font*> RobotoMedium_;
     static uSStrong< ::g::Fuse::Font*>& RobotoMedium() { return login_typeof()->Init(), RobotoMedium_; }
-    uStrong< ::g::Fuse::Controls::Rectangle*> indicator;
-    uStrong< ::g::Fuse::Controls::Panel*> page1Tab;
-    uStrong< ::g::Fuse::Controls::Panel*> page2Tab;
-    uStrong< ::g::Fuse::Controls::PageControl*> navigation;
-    uStrong< ::g::Fuse::Controls::Page*> page1;
-    uStrong< ::g::Fuse::Controls::Grid*> loginArea1;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
+    uStrong< ::g::Fuse::Controls::Rectangle*> page2Tab;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
-    uStrong< ::g::Fuse::Controls::Page*> page2;
-    uStrong< ::g::Fuse::Controls::Grid*> loginArea2;
+    uStrong< ::g::Fuse::Controls::Rectangle*> page1Tab;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb2;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb3;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb4;
+    uStrong< ::g::Fuse::Controls::PageControl*> navigation;
+    uStrong< ::g::Fuse::Controls::Page*> page1;
+    uStrong< ::g::Fuse::Controls::Panel*> indisigninbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb5;
+    uStrong< ::g::Fuse::Controls::Text*> indisignupbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
+    uStrong< ::g::Fuse::Controls::Page*> page2;
+    uStrong< ::g::Fuse::Controls::Panel*> busigninbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
+    uStrong< ::g::Fuse::Controls::Text*> busignupbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb8;
     uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
     static uSStrong<uArray*> __g_static_nametable1_;
     static uSStrong<uArray*>& __g_static_nametable1() { return login_typeof()->Init(), __g_static_nametable1_; }

@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_FuseTriggersWhileBool_Value_Property.h>
@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class albachain_FuseTriggersWhileBool_Value_Property :71
+// internal sealed class albachain_FuseTriggersWhileBool_Value_Property :1
 // {
 static void albachain_FuseTriggersWhileBool_Value_Property_build(uType* type)
 {
@@ -38,32 +38,32 @@ static void albachain_FuseTriggersWhileBool_Value_Property_build(uType* type)
     return type;
 }
 
-// public albachain_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :74
+// public albachain_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :4
 void albachain_FuseTriggersWhileBool_Value_Property__ctor_3_fn(albachain_FuseTriggersWhileBool_Value_Property* __this, ::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed bool Get(Uno.UX.PropertyObject obj) :76
+// public override sealed bool Get(Uno.UX.PropertyObject obj) :6
 void albachain_FuseTriggersWhileBool_Value_Property__Get1_fn(albachain_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* __retval)
 {
     uStackFrame __("albachain_FuseTriggersWhileBool_Value_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[0/*Fuse.Triggers.WhileBool*/]))->Value1(), void();
 }
 
-// public albachain_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :74
+// public albachain_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :4
 void albachain_FuseTriggersWhileBool_Value_Property__New1_fn(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name, albachain_FuseTriggersWhileBool_Value_Property** __retval)
 {
     *__retval = albachain_FuseTriggersWhileBool_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :75
+// public override sealed Uno.UX.PropertyObject get_Object() :5
 void albachain_FuseTriggersWhileBool_Value_Property__get_Object_fn(albachain_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :77
+// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :7
 void albachain_FuseTriggersWhileBool_Value_Property__Set1_fn(albachain_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* v, uObject* origin)
 {
     uStackFrame __("albachain_FuseTriggersWhileBool_Value_Property", "Set(Uno.UX.PropertyObject,bool,Uno.UX.IPropertyListener)");
@@ -71,14 +71,14 @@ void albachain_FuseTriggersWhileBool_Value_Property__Set1_fn(albachain_FuseTrigg
     uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[0/*Fuse.Triggers.WhileBool*/]))->Value1(v_);
 }
 
-// public albachain_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [instance] :74
+// public albachain_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [instance] :4
 void albachain_FuseTriggersWhileBool_Value_Property::ctor_3(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public albachain_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [static] :74
+// public albachain_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [static] :4
 albachain_FuseTriggersWhileBool_Value_Property* albachain_FuseTriggersWhileBool_Value_Property::New1(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
 {
     albachain_FuseTriggersWhileBool_Value_Property* obj1 = (albachain_FuseTriggersWhileBool_Value_Property*)uNew(albachain_FuseTriggersWhileBool_Value_Property_typeof());

@@ -12,7 +12,7 @@ public partial class BoldText: BaseText
     void InitializeUX()
     {
         this.SourceLineNumber = 8;
-        this.SourceFileName = "StsticResources.ux";
+        this.SourceFileName = "StaticResources.ux";
         this.Font = global::StaticResources.BoldFont;
     }
 }

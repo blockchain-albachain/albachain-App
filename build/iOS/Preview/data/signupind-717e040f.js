@@ -3,9 +3,9 @@ var Observable = require('FuseJS/Observable');
 var newID = Observable("");
 var newPW = Observable("");
 var newName = Observable("");
-var dayOfbirth = Observable("");
-var sex = Observable("");
-var phoneNum = Observable("");
+var dayOfbirth = Observable();
+var sex = Observable();
+var phoneNum = Observable();
 
 function goBack()
 {
@@ -14,23 +14,24 @@ function goBack()
 
 function Save(){
 	
-	fetch('http://8dc06cfa.ngrok.io/users/signup',{
-	            method: "POST",
-	            headers: {
-	            	"Content-type": "application/json"
-	            },
-	            body : JSON.stringify({
-	            	'id' : newID.value,
-	                'password' : newPW.value,
-	                'name' : newName.value,
-	                'birth' : dayOfbirth.value,
-	                'gender' : sex,
-	                'phone_number' : phoneNum
-	              })
-	        }).then((res)=>{ return res.json()
-	        }).then((res)=>{
+	// fetch('http://18.224.213.239:8000/users/signup',{
+	fetch('http://020b116e.ngrok.io/users/signup',{
+		method: "POST",
+		headers: {
+			"Content-type": "application/json"
+		},
+		body : JSON.stringify({
+			'id' : newID.value,
+			'password' : newPW.value,
+			'name' : newName.value,
+			'gender' : sex.value,
+			'birth' : dayOfbirth.value,
+			'phone_number' : phoneNum.value
+		})
+	}).then((res)=>{ return res.json()
+	}).then((res)=>{
 	            // console.log( JSON.parse(res._bodyInit).documents[1].address_name )
-	            console.log(JSON.stringify(res));
+	            console.log("received the JSON" + JSON.stringify(res));
 	            console.log(res.success);
 
 	            if( JSON.parse(res.success) == true){
@@ -41,22 +42,22 @@ function Save(){
 
 	            // JSON.parse(res._bodyInit).documents[1].address_name
 	        }).catch((err)=>{
-	            console.log(err);
+	        	console.log(err);
 	        });
 
 
 
 
-}
+	    }
 
 
-module.exports = {
-	newID : newID,
-	newPW : newPW,
-	newName : newName,
-	dayOfbirth : dayOfbirth,
-	sex : sex,
-	phoneNum : phoneNum,
-	Save : Save,
-	goBack : goBack
-};
+	    module.exports = {
+	    	newID : newID,
+	    	newPW : newPW,
+	    	newName : newName,
+	    	dayOfbirth : dayOfbirth,
+	    	sex : sex,
+	    	phoneNum : phoneNum,
+	    	Save : Save,
+	    	goBack : goBack
+	    };

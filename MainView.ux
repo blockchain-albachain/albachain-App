@@ -10,6 +10,7 @@
 		<detailContractPage ux:Template="detailContractPage" router="router" Color="#FFF" />
 		<contractCan ux:Template="contractCan" router="router" Color="#FFF" />
 		<profile ux:Template="profile" router="router" Color="#FFF" />
+		<profileInd ux:Template="profileInd" router="router" Color="#FFF" />
 		<startPage ux:Template="startPage" router="router" />
 
 		<mainviewBis ux:Template="mainviewBis" router="router" Color="#FFF">
@@ -33,6 +34,7 @@
 		<detailCheckPage ux:Template="detailCheckPage" router="router" Color="#FFF" />
 		<detailContract ux:Template="detailContract" router="router" Color="#FFF" />
 		<detailStore ux:Template="detailStore" router="router" Color="#FFF" />
+		<detailManage ux:Template="detailManage" router="router" Color="#FFF" />
 
 
 	</Navigator>

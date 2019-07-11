@@ -1,22 +1,24 @@
 <Page ux:Class="maintopbar">
+
 	<Panel Height="50" Alignment="Top" Margin="0, 40, 0, 0">
 		<Grid ChildOrder="ColumnMajor" Opacity="1" LayoutRole="Standard" RowCount="1" ColumnCount="3" Height="70">
 			<Panel Alignment="Default">
 				<Rectangle ux:Name="homebtn" Height="70">
 					<!-- <Image File="Assets/bottombar/home_off.png" Alignment="Default" Width="25" Y="10" Height="25" /> -->
 					<Text Value="홈" FontSize="10" TextColor="#909191" Alignment="HorizontalCenter" Y="40" />
-					<WhilePressed>
-						<Scale Target="homebtn" Factor="0.9" Duration="0.05" />
-					</WhilePressed>
 					<Clicked>
 						<Callback Handler="{gotoHome}" />						
 					</Clicked>
+					<WhilePressed>
+						<Scale Target="homebtn" Factor="0.9" Duration="0.05" />
+					</WhilePressed>
+					
 				</Rectangle>				
 			</Panel>
 
 			<Panel Alignment="Default">
 				<Rectangle ux:Name="boardbtn">
-				<!-- 	<WhileTrue Value="{change}" >
+						<!-- 	<WhileTrue Value="{change}" >
 						<Image File="Assets/bottombar/notice.png" Alignment="Default" Width="25" Y="10" Height="25" />
 					</WhileTrue> -->
 					<!-- <Image File="Assets/bottombar/notice_off.png" Alignment="Default" Width="25" Y="10" Height="25" /> -->

@@ -4,19 +4,33 @@
 	<JavaScript>
 	var Observable = require('FuseJS/Observable');
 
-	var name = Observable("");
+	var userid = Observable("");
+	var storeNum = Observable();
 
-	exports.name = this.Parameter.map(function(param) {
-		name.value = param.name;
-		return param.name;
+	exports.userid = this.Parameter.map(function(param) {
+		userid.value = param.userid;
+		return param.userid;
 	});
 
-	exports.expense = this.Parameter.map(function(param) {
-		return param.expense;
+	exports.workingDay = this.Parameter.map(function(param) {
+		return param.workingDay;
 	});
 
-	exports.content = this.Parameter.map(function(param) {
-		return param.content;
+	exports.workingTime = this.Parameter.map(function(param) {
+		return param.workingTime;
+	});
+
+	exports.account = this.Parameter.map(function(param) {
+		return param.account;
+	});
+
+	exports.store_number = this.Parameter.map(function(param) {
+		storeNum.value = param.store_number;
+		return param.store_number;
+	});
+
+	exports.pay = this.Parameter.map(function(param) {
+		return param.pay;
 	});
 
 	exports.goBack = function()
@@ -24,7 +38,48 @@
 		router.goBack();
 	};
 
-	exports.cancel = function(){ router.goto("contractCan", {name: name.value}); };
+	exports.cancel = function(){ router.goto("contractCan", {userid: userid.value}); };
+
+
+	exports.prove = function(){
+			var opts = ({
+	             	'store_number' : storeNum.value
+	              });
+		 	console.log(JSON.stringify(opts));
+
+			// fetch('http://18.224.213.239:8000/contract/contractSuccess',{
+				fetch('http://97e78588.ngrok.io/contract/contractSuccess',{
+		            method: "PUT",
+			            headers: {
+			            	"Content-type": "application/JSON"
+			            },
+			            body : JSON.stringify(opts)
+			
+			        }).then((res)=>{
+			            // console.log(JSON.stringify(res));
+			            // console.log(JSON.parse(res));
+			            return res.json()
+					}).then((res)=>{
+
+			            console.log(res.success);
+
+
+			            // individualID = individualID.value;
+
+			            if( JSON.parse(res.success) == true){
+			            	// router.push("Home", ID);
+			            	router.push("manage");
+			            	console.log("Move to manage");
+			            	// console.log(individualID);
+			            }
+			            // JSON.parse(res._bodyInit).documents[1].address_name
+			        }).catch((err)=>{
+			            console.log(err);
+			        });
+				};
+
+
+
 
 	</JavaScript>
 	<ClientPanel>
@@ -38,7 +93,7 @@
 			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">			
 				<Image File="../../Assets/back.png" Clicked="{goBack}" Layer="Layout" Width="25" Height="25" Margin="30, 0, 0, 0" Alignment="Left" />
 
-				<Text ux:Name="titleText" Value="{storename}" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+				<Text ux:Name="titleText" Value="{userid}" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
 					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
 				</Text>
 			</Grid>
@@ -78,11 +133,13 @@
 				<Rectangle Margin="0, 20, 0, 0">
 					<Text Value="계약내용" Margin="30, 0, 0, 0" TextColor="#000" />
 					<Text Value="근무요일" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
-					<Text Value="{content}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
+					<Text Value="{workingDay}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
 					<Text Value="근무시간" FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" />
-					<Text Value="PM 8:00 ~ AM 3:00" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
-					<Text Margin="30, 90, 0, 0" Value="시급" FontSize="15" TextColor="#67A5CC" ux:Name="time" />
-					<Text Value="{expense}원" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+					<Text Value="{workingTime}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
+					<Text Value="시급" FontSize="15" TextColor="#67A5CC" ux:Name="time" Margin="30, 90, 0, 0" />
+					<Text Value="{pay}원" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+					<Text Value="계좌" FontSize="15" TextColor="#67A5CC" Margin="30, 115, 0, 0" />
+					<Text Value="{account}" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 115, 0, 0" TextColor="#787878" />
 				</Rectangle>
 			</StackPanel>
 			<Shadow Angle="107" />				
@@ -90,13 +147,13 @@
 
 		<Panel Margin="0, 20, 0, 50">
 			<Rectangle Width="130" Color="#64A4CD" Height="40" CornerRadius="30" Alignment="Left" Margin="40, 0, 0, 0">
-				<Text Value="계약연장" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
-						<!-- <Clicked>
-							<Callback Handler="{cancel}" />
-						</Clicked> -->
+				<Text Value="계약승인" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+						<Clicked>
+							<Callback Handler="{prove}" />
+						</Clicked>
 					</Rectangle>
 					<Rectangle ux:Name="cancelbtn" Width="130" Color="#9A9B9A" Height="40" CornerRadius="30" Alignment="Right" Margin="0, 0, 40, 0">
-						<Text Value="계약해지" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
+						<Text Value="계약거절" TextAlignment="Center" Alignment="Center" TextColor="#FFF" />
 						<WhilePressed>
 							<Scale Target="cancelbtn" Factor="0.9" Duration="0.05" />
 						</WhilePressed>

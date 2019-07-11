@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/BoldText.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/BoldText.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.BoldText.h>
@@ -19,7 +19,7 @@ static void BoldText__cctor_5_fn(uType* __type)
 
 static void BoldText_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("StsticResources.ux");
+    ::STRINGS[0] = uString::Const("StaticResources.ux");
     type->SetDependencies(
         ::g::StaticResources_typeof());
     type->SetInterfaces(
@@ -138,7 +138,7 @@ void BoldText::InitializeUX2()
 {
     uStackFrame __("BoldText", "InitializeUX()");
     SourceLineNumber(8);
-    SourceFileName(::STRINGS[0/*"StsticResou...*/]);
+    SourceFileName(::STRINGS[0/*"StaticResou...*/]);
     Font(::g::StaticResources::BoldFont());
 }
 

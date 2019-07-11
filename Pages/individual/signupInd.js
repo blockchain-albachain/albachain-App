@@ -3,9 +3,9 @@ var Observable = require('FuseJS/Observable');
 var newID = Observable("");
 var newPW = Observable("");
 var newName = Observable("");
-var dayOfbirth = Observable("");
-var sex = Observable("");
-var phoneNum = Observable("");
+var dayOfbirth = Observable();
+var sex = Observable();
+var phoneNum = Observable();
 
 function goBack()
 {
@@ -14,7 +14,8 @@ function goBack()
 
 function Save(){
 	
-	fetch('http://69e16e34.ngrok.io/users/signup',{
+	// fetch('http://18.224.213.239:8000/users/signup',{
+	fetch('http://97e78588.ngrok.io/users/signup',{
 		method: "POST",
 		headers: {
 			"Content-type": "application/json"

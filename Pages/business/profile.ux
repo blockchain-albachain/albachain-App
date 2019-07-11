@@ -1,0 +1,36 @@
+<Page ux:Class="profile">
+	<Router ux:Dependency="router" />
+	<JavaScript File="profile.js" />
+
+	<Panel Alignment="Top" Background="#FFF">
+		<StackPanel Margin="0, 120, 0, 0">
+			<Rectangle>
+				<Circle Width="60" Alignment="Left" Color="#D1D1D1" Margin="60, 0, 0, 0" Height="60" Clicked="{restart}" />
+				<Text Value="사용자 님" Alignment="CenterRight" Margin="0, 0, 100, 0" FontSize="15" />
+			</Rectangle>
+			<Rectangle Margin="0, 50, 0, 0" Width="200" Height="200">
+				<StackPanel Alignment="Center" ItemSpacing="20">
+					<Text Value="내 코인 현황 : {coin} ether" Alignment="Center" FontSize="14" />
+					<Text Value="스마트 컨트렉트 코인 : {upCoin}" Alignment="Center" FontSize="14" />
+				</StackPanel>
+				<Stroke Width="1" Color="#E1E3E1" />
+				
+			</Rectangle>
+			<Rectangle Width="200" Height="30" Margin="0, 20, 0, 0" Alignment="Default">
+				<Rectangle Color="#E2E2E2" Width="70" Height="30" Alignment="CenterRight">
+					<Text Value="올리기" TextAlignment="Center" Alignment="Center" FontSize="14" />
+					<Clicked>
+						<Callback Handler="{coinUp}" />
+					</Clicked>
+				</Rectangle>
+				<Rectangle Width="120" Height="30" Alignment="CenterLeft">
+					<TextInput Value="{sendCoin}" PlaceholderText="알바코인 입력란 " FontSize="14" TextAlignment="Left" Margin="0, 0, 0, 0" Alignment="HorizontalCenter" PlaceholderColor="#787878" TextColor="#000" />
+					<Stroke Color="#E1E3E1" Width="1" />
+				</Rectangle>
+			</Rectangle>
+			<Rectangle Background="#D0D1D089" Margin="0, 40, 0, 0" Alignment="Default" Height="500">
+				<Text Value="로그아웃" FontSize="10" Alignment="TopRight" Margin="0, 20, 20, 0" />
+			</Rectangle>
+		</StackPanel>
+	</Panel>
+</Page>

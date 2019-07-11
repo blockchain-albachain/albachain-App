@@ -1,5 +1,8 @@
 #pragma once
 
+#include <uBase/Config.h>
+#include <Uno/Uno.h>
+
 #include <Uno.Byte.h>
 #include <Uno.Int2.h>
 #include <Uno.Float2.h>

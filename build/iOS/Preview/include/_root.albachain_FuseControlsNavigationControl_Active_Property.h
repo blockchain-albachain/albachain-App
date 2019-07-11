@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{struct albachain_FuseControlsNavigationControl_Active_Property;}
 
 namespace g{
 
-// internal sealed class albachain_FuseControlsNavigationControl_Active_Property :20
+// internal sealed class albachain_FuseControlsNavigationControl_Active_Property :9
 // {
 ::g::Uno::UX::Property1_type* albachain_FuseControlsNavigationControl_Active_Property_typeof();
 void albachain_FuseControlsNavigationControl_Active_Property__ctor_3_fn(albachain_FuseControlsNavigationControl_Active_Property* __this, ::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name);

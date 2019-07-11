@@ -21,6 +21,6 @@ public partial class StaticResources: Fuse.Controls.Panel
     void InitializeUX()
     {
         this.SourceLineNumber = 1;
-        this.SourceFileName = "StsticResources.ux";
+        this.SourceFileName = "StaticResources.ux";
     }
 }

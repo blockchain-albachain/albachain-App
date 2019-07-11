@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/contract.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/contract.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -21,6 +21,13 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
+namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
+namespace g{namespace Fuse{namespace Controls{struct Text;}}}
+namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
+namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
+namespace g{namespace Uno{namespace UX{struct NameTable;}}}
+namespace g{namespace Uno{namespace UX{struct Property1;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct contract;}
 
 namespace g{
@@ -28,15 +35,39 @@ namespace g{
 // public partial sealed class contract :2
 // {
 ::g::Fuse::Controls::Panel_type* contract_typeof();
-void contract__ctor_8_fn(contract* __this);
+void contract__ctor_8_fn(contract* __this, ::g::Fuse::Navigation::Router* router1);
 void contract__InitializeUX_fn(contract* __this);
-void contract__New5_fn(contract** __retval);
+void contract__New5_fn(::g::Fuse::Navigation::Router* router1, contract** __retval);
 
 struct contract : ::g::Fuse::Controls::Page
 {
-    void ctor_8();
+    uStrong< ::g::Fuse::Navigation::Router*> router;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Value_inst;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb32;
+    uStrong< ::g::Fuse::Controls::Text*> titleText;
+    uStrong< ::g::Fuse::Controls::Text*> time;
+    uStrong< ::g::Fuse::Controls::Rectangle*> submitbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb33;
+    uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
+    static uSStrong<uArray*> __g_static_nametable1_;
+    static uSStrong<uArray*>& __g_static_nametable1() { return contract_typeof()->Init(), __g_static_nametable1_; }
+    static ::g::Uno::UX::Selector __selector0_;
+    static ::g::Uno::UX::Selector& __selector0() { return contract_typeof()->Init(), __selector0_; }
+    static ::g::Uno::UX::Selector __selector1_;
+    static ::g::Uno::UX::Selector& __selector1() { return contract_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return contract_typeof()->Init(), __selector2_; }
+    static ::g::Uno::UX::Selector __selector3_;
+    static ::g::Uno::UX::Selector& __selector3() { return contract_typeof()->Init(), __selector3_; }
+
+    void ctor_8(::g::Fuse::Navigation::Router* router1);
     void InitializeUX();
-    static contract* New5();
+    static contract* New5(::g::Fuse::Navigation::Router* router1);
 };
 // }
 

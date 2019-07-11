@@ -1,9 +1,9 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
 #include <_root.MainView.Template2.h>
-#include <_root.mainviewBis.h>
+#include <_root.signupBis.h>
 #include <Fuse.Controls.Panel.h>
 #include <Fuse.Navigation.Router.h>
 #include <Fuse.Node.h>
@@ -18,17 +18,17 @@ static uString* STRINGS[2];
 
 namespace g{
 
-// public partial sealed class MainView.Template2 :54
+// public partial sealed class MainView.Template2 :55
 // {
-// static Template2() :63
+// static Template2() :64
 static void MainView__Template2__cctor__fn(uType* __type)
 {
-    MainView__Template2::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"mainviewBis"*/]);
+    MainView__Template2::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"signupBis"*/]);
 }
 
 static void MainView__Template2_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("mainviewBis");
+    ::STRINGS[0] = uString::Const("signupBis");
     ::STRINGS[1] = uString::Const("MainView.ux");
     type->SetFields(2,
         ::g::MainView_typeof(), offsetof(MainView__Template2, __parent1), uFieldFlagsWeak,
@@ -55,25 +55,25 @@ static void MainView__Template2_build(uType* type)
     return type;
 }
 
-// public Template2(MainView parent, MainView parentInstance) :58
+// public Template2(MainView parent, MainView parentInstance) :59
 void MainView__Template2__ctor_1_fn(MainView__Template2* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :66
+// public override sealed object New() :67
 void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template2", "New()");
-    ::g::mainviewBis* __self1 = ::g::mainviewBis::New5(uPtr(__this->__parent1)->router);
+    ::g::signupBis* __self1 = ::g::signupBis::New5(uPtr(__this->__parent1)->router);
     __self1->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     __self1->Name(MainView__Template2::__selector0_);
-    __self1->SourceLineNumber(6);
+    __self1->SourceLineNumber(7);
     __self1->SourceFileName(::STRINGS[1/*"MainView.ux"*/]);
     return *__retval = __self1, void();
 }
 
-// public Template2 New(MainView parent, MainView parentInstance) :58
+// public Template2 New(MainView parent, MainView parentInstance) :59
 void MainView__Template2__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template2** __retval)
 {
     *__retval = MainView__Template2::New2(parent, parentInstance);
@@ -81,15 +81,15 @@ void MainView__Template2__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 
 ::g::Uno::UX::Selector MainView__Template2::__selector0_;
 
-// public Template2(MainView parent, MainView parentInstance) [instance] :58
+// public Template2(MainView parent, MainView parentInstance) [instance] :59
 void MainView__Template2::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
-    ctor_(::STRINGS[0/*"mainviewBis"*/], false);
+    ctor_(::STRINGS[0/*"signupBis"*/], false);
     __parent1 = parent;
     __parentInstance1 = parentInstance;
 }
 
-// public Template2 New(MainView parent, MainView parentInstance) [static] :58
+// public Template2 New(MainView parent, MainView parentInstance) [static] :59
 MainView__Template2* MainView__Template2::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template2* obj1 = (MainView__Template2*)uNew(MainView__Template2_typeof());

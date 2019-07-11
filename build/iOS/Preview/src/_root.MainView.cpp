@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.ColorPalette.h>
@@ -6,9 +6,22 @@
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
 #include <_root.MainView.Template1.h>
+#include <_root.MainView.Template10.h>
+#include <_root.MainView.Template11.h>
+#include <_root.MainView.Template12.h>
+#include <_root.MainView.Template13.h>
+#include <_root.MainView.Template14.h>
+#include <_root.MainView.Template15.h>
+#include <_root.MainView.Template16.h>
+#include <_root.MainView.Template17.h>
 #include <_root.MainView.Template2.h>
 #include <_root.MainView.Template3.h>
 #include <_root.MainView.Template4.h>
+#include <_root.MainView.Template5.h>
+#include <_root.MainView.Template6.h>
+#include <_root.MainView.Template7.h>
+#include <_root.MainView.Template8.h>
+#include <_root.MainView.Template9.h>
 #include <_root.StaticResources.h>
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Animations.IResizeMode.h>
@@ -66,7 +79,7 @@ namespace g{
 
 // public partial sealed class MainView :2
 // {
-// static MainView() :143
+// static MainView() :480
 static void MainView__cctor_1_fn(uType* __type)
 {
     ::g::Uno::UX::Resource_typeof()->Init();
@@ -87,7 +100,7 @@ static void MainView__cctor_1_fn(uType* __type)
     ::g::ColorPalette_typeof()->Init();
     ::g::StaticResources_typeof()->Init();
     ::g::login_typeof()->Init();
-    MainView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("router"));
+    MainView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("router"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Reactive::DeviceCaps::Device(), uString::Const("Device"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Animations::Easing::Linear(), uString::Const("Linear"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Animations::Easing::QuadraticIn(), uString::Const("QuadraticIn"));
@@ -256,19 +269,19 @@ static void MainView_build(uType* type)
     return type;
 }
 
-// public MainView() :264
+// public MainView() :601
 void MainView__ctor_4_fn(MainView* __this)
 {
     __this->ctor_4();
 }
 
-// private void InitializeUX() :268
+// private void InitializeUX() :605
 void MainView__InitializeUX_fn(MainView* __this)
 {
     __this->InitializeUX();
 }
 
-// public MainView New() :264
+// public MainView New() :601
 void MainView__New2_fn(MainView** __retval)
 {
     *__retval = MainView::New2();
@@ -276,7 +289,7 @@ void MainView__New2_fn(MainView** __retval)
 
 ::g::Uno::UX::Selector MainView::__selector0_;
 
-// public MainView() [instance] :264
+// public MainView() [instance] :601
 void MainView::ctor_4()
 {
     uStackFrame __("MainView", ".ctor()");
@@ -284,7 +297,7 @@ void MainView::ctor_4()
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :268
+// private void InitializeUX() [instance] :605
 void MainView::InitializeUX()
 {
     uStackFrame __("MainView", "InitializeUX()");
@@ -309,25 +322,51 @@ void MainView::InitializeUX()
     ::g::Fuse::Controls::Navigator* temp = ::g::Fuse::Controls::Navigator::New4();
     MainView__Template* login = MainView__Template::New2(this, this);
     MainView__Template1* mainviewInd = MainView__Template1::New2(this, this);
-    MainView__Template2* mainviewBis = MainView__Template2::New2(this, this);
-    MainView__Template3* signupBis = MainView__Template3::New2(this, this);
-    MainView__Template4* signupInd = MainView__Template4::New2(this, this);
+    MainView__Template2* signupBis = MainView__Template2::New2(this, this);
+    MainView__Template3* signupInd = MainView__Template3::New2(this, this);
+    MainView__Template4* contract = MainView__Template4::New2(this, this);
+    MainView__Template5* detailContractPage = MainView__Template5::New2(this, this);
+    MainView__Template6* contractCan = MainView__Template6::New2(this, this);
+    MainView__Template7* profile = MainView__Template7::New2(this, this);
+    MainView__Template8* profileInd = MainView__Template8::New2(this, this);
+    MainView__Template9* startPage = MainView__Template9::New2(this, this);
+    MainView__Template10* mainviewBis = MainView__Template10::New2(this, this);
+    MainView__Template11* registration = MainView__Template11::New2(this, this);
+    MainView__Template12* contractCheck = MainView__Template12::New2(this, this);
+    MainView__Template13* manage = MainView__Template13::New2(this, this);
+    MainView__Template14* detailCheckPage = MainView__Template14::New2(this, this);
+    MainView__Template15* detailContract = MainView__Template15::New2(this, this);
+    MainView__Template16* detailStore = MainView__Template16::New2(this, this);
+    MainView__Template17* detailManage = MainView__Template17::New2(this, this);
     uPtr(router)->Name(MainView::__selector0_);
     uPtr(router)->SourceLineNumber(2);
     uPtr(router)->SourceFileName(uString::Const("MainView.ux"));
-    temp->DefaultPath(uString::Const("login"));
+    temp->DefaultPath(uString::Const("startPage"));
     temp->SourceLineNumber(3);
     temp->SourceFileName(uString::Const("MainView.ux"));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), login);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), mainviewInd);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), mainviewBis);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), signupBis);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), signupInd);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), contract);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), detailContractPage);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), contractCan);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), profile);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), profileInd);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), startPage);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), mainviewBis);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), registration);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), contractCheck);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), manage);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), detailCheckPage);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), detailContract);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), detailStore);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), detailManage);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), router);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), temp);
 }
 
-// public MainView New() [static] :264
+// public MainView New() [static] :601
 MainView* MainView::New2()
 {
     MainView* obj1 = (MainView*)uNew(MainView_typeof());

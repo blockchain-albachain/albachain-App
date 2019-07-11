@@ -1,6 +1,6 @@
 var Observable = require('FuseJS/Observable');
 
-exports.Items = Observable();
+exports.items = Observable();
 exports.isLoading = Observable(false);
 
 function addComma(num) {
@@ -8,11 +8,13 @@ function addComma(num) {
 	return num.toString().replace(regexp, ',');
 }
 
+
 svp.check();
 
+
 function loadSome(){
-	fetch('http://69e16e34.ngrok.io/mregistration/Mstorepush',{
-		// fetch('http://3ff05a06.ngrok.io/board/am',{
+	// fetch('http://18.224.213.239:8000/mregistration/Mstorepush',{
+	fetch('http://97e78588.ngrok.io/mregistration/Mstorepush',{
 			method: "GET",
 			headers: {
 				"Content-type": "application/JSON"
@@ -24,7 +26,7 @@ function loadSome(){
 
 			for(var i in res){
 
-				exports.Items.add(createPage(res[i].store_name,res[i].call_number,res[i].store_number, res[i].address, res[i].business_number));		
+				exports.items.add(createPage(res[i].store_name,res[i].call_number,res[i].store_number, res[i].address, res[i].business_number));		
 
 			}
 			
@@ -39,6 +41,8 @@ function loadSome(){
 			}
 		});
 	}
+
+
 
 // for문과 합치게 되면 마지막 데이터만 들어가는 문제 발생하기 때문에 반드시 createPage로 분리 시켜줘야한다.
 function createPage(storename, callnumber, storenumber, address) {
@@ -74,13 +78,18 @@ exports.gocontract = function () {
 }
 
 exports.gotoHome = function (){
+	console.log("goto mainviewBis")
 	router.goto("mainviewBis");
+	svp.check();
+
 }
 
 exports.gotocontract = function (){
+	console.log("goto contractCheck")
 	router.goto("contractCheck");
 }
 
 exports.gotomanage = function (){
+	console.log("goto manage")	
 	router.goto("manage");
 }

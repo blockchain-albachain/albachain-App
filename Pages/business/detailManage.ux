@@ -1,0 +1,207 @@
+<Page ux:Class="detailManage">
+	<Router ux:Dependency="router" />
+	
+	<JavaScript>
+	var Observable = require('FuseJS/Observable');
+
+	var userid = Observable("");
+	var storeNum = Observable();
+
+	exports.userid = this.Parameter.map(function(param) {
+		userid.value = param.userid;
+		return param.userid;
+	});
+
+	exports.workingDay = this.Parameter.map(function(param) {
+		return param.workingDay;
+	});
+
+	exports.workingTime = this.Parameter.map(function(param) {
+		return param.workingTime;
+	});
+
+	exports.account = this.Parameter.map(function(param) {
+		return param.account;
+	});
+
+	exports.store_number = this.Parameter.map(function(param) {
+		storeNum.value = param.store_number;
+		return param.store_number;
+	});
+
+	exports.pay = this.Parameter.map(function(param) {
+		return param.pay;
+	});
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+	exports.cancel = function(){ router.goto("contractCan", {userid: userid.value}); };
+
+
+	exports.send = function(){
+				// fetch('http://18.224.213.239:8000/smartContract/tfcoin',{
+					fetch('http://97e78588.ngrok.io/smartContract/tfcoin',{
+					method: "GET",
+					headers: {
+						"Content-type": "application/JSON"
+					}
+
+				}).then(function(res){
+					return res.json();
+				}).then(function(res){
+
+					if(res.result==true){
+						console.log("send success");
+						router.push("manage");
+					}
+				}).catch((err)=>{
+					console.log("err: " + err);
+					if(err == "TypeError: Network request failed" ){
+						// NetworkError.value = true;
+						console.log("dsfadfas");
+					}
+				});
+			};
+
+exports.sendCoin = Observable();
+// coinUpState();
+function coinUpState(){
+	// fetch('http://18.224.213.239:8000/smartContract/coin',{
+	fetch('http://97e78588.ngrok.io/smartContract/coin',{
+			method: "GET",
+			headers: {
+				"Content-type": "application/JSON"
+			}
+
+		}).then(function(res){
+			return res.json();
+		}).then(function(res){
+
+			console.log(res);
+			// upCoin.value = res;
+			exports.sendCoin.value = res
+
+		}).catch((err)=>{
+			console.log(err);
+			if(err == "TypeError: Network request failed" ){
+				// NetworkError.value = true;
+				console.log("dsfadfas");
+			}
+		});
+	}
+
+exports.coinAccount = Observable();
+accountState();
+function accountState(){
+	// fetch('http://18.224.213.239:8000/smartContract/alaccount',{
+	fetch('http://97e78588.ngrok.io/smartContract/alaccount',{
+			method: "GET",
+			headers: {
+				"Content-type": "application/JSON"
+			}
+
+		}).then(function(res){
+			return res.json();
+		}).then(function(res){
+			coinUpState();
+			console.log(res);
+
+			exports.coinAccount.value = res.result;
+
+		}).catch((err)=>{
+			console.log(err);
+			if(err == "TypeError: Network request failed" ){
+				// NetworkError.value = true;
+				console.log("dsfadfas");
+			}
+		});
+	}
+
+
+
+
+	</JavaScript>
+	<ClientPanel>
+
+		<!-- <Star ux:Class="mystar" Width="15" Height="15" HitTestMode="LocalBounds">
+			<Stroke Width="1" Brush="#ff0" />
+		</Star> -->
+
+		<Rectangle Alignment="Top" Color="#FEFFFE">
+			<Rectangle Color="#FFF" Alignment="Left" Margin="35, 0, 0, 23" Height="20" Width="20" />
+			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">			
+				<Image File="../../Assets/back.png" Clicked="{goBack}" Layer="Layout" Width="25" Height="25" Margin="30, 0, 0, 0" Alignment="Left" />
+
+				<Text ux:Name="titleText" Value="{userid}" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
+					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
+				</Text>
+			</Grid>
+		</Rectangle>
+
+
+		<ScrollView>
+			<StackPanel Margin="0, 80, 0, 0" ItemSpacing="20">
+				<!-- <Rectangle Margin="0, 0, 0, 0" Width="300" Height="80">
+					<Text Value="출석체크( QRcode? )" Alignment="Center" />
+					<Stroke Color="#73AF22" Width="2" />
+				</Rectangle>
+			-->				<Rectangle Width="300" Height="500" CornerRadius="10" Color="#FEFFFE">
+			<StackPanel>
+				<!-- <Rectangle>
+					<Circle Width="80" Height="80" Color="#E2E3E2" Alignment="Left" Margin="30, 20, 0, 0" />
+					<Text Value="{name}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="140, 30, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" />
+					<mystar Margin="1, 35, 1, 1">
+						<Stroke Width="1" Color="#5EA0C9" />
+					</mystar>
+					<mystar Margin="35, 35, 1, 1">
+						<Stroke Width="1" Color="#5EA0C9" />
+					</mystar>
+					<mystar Margin="70, 35, 1, 1">
+						<Stroke Width="1" Color="#5EA0C9" />
+					</mystar>
+					<mystar Margin="105, 35, 1, 1">
+						<Stroke Width="1" Color="#5EA0C9" />
+					</mystar>
+					<mystar Margin="140, 35, 1, 1">
+						<Stroke Width="1" Color="#5EA0C9" />
+					</mystar>
+
+
+				</Rectangle> -->
+				<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
+				<Rectangle Margin="0, 20, 0, 0">
+					<Text Value="계약내용" Margin="30, 0, 0, 0" TextColor="#000" />
+					<Text Value="근무요일" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
+					<Text Value="{workingDay}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
+					<Text Value="근무시간" FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" />
+					<Text Value="{workingTime}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
+					<Text Value="시급" FontSize="15" TextColor="#67A5CC" ux:Name="time" Margin="30, 90, 0, 0" />
+					<Text Value="{pay}원" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+					<Text Value="계좌" FontSize="15" TextColor="#67A5CC" Margin="30, 115, 0, 0" />
+					<Text Value="{account}" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 115, 0, 0" TextColor="#787878" />
+				</Rectangle>
+				<Rectangle Margin="0, 50, 0, 0" Alignment="Center">
+					<Text Value="albaChain 계좌   {coinAccount}" FontSize="12" TextWrapping="Wrap" Alignment="Default" />
+					<Text Margin="0, 40, 0, 0" Value="전송 할 코인 :  {sendCoin} ether" FontSize="15" />
+				</Rectangle>
+			</StackPanel>
+			<Shadow Angle="107" />				
+		</Rectangle>
+
+		<Panel Margin="0, 0, 0, 0">
+			<Rectangle Width="130" Color="#64A4CD" Height="40" CornerRadius="30" Alignment="Center" Margin="0, 0, 0, 0">
+				<Text TextAlignment="Center" Alignment="Center" TextColor="#FFF" Margin="0, 0, 0, 0" Value="코인 지급" />
+						<Clicked>
+							<Callback Handler="{send}" />
+						</Clicked>
+					</Rectangle>
+					
+				</Panel>
+
+			</StackPanel>
+		</ScrollView>
+	</ClientPanel>
+</Page>

@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Star.Surface.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Star.Surface.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -30,7 +30,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Star :8
+// public partial class Star :8
 // {
 ::g::Fuse::Controls::Shape_type* Star_typeof();
 void Star__ctor_7_fn(Star* __this);

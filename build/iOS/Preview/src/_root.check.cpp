@@ -1,9 +1,11 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/check.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/check.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.check.h>
 #include <Fuse.Controls.Text.h>
 #include <Fuse.Controls.TextControl.h>
+#include <Fuse.Elements.Alignment.h>
+#include <Fuse.Elements.Element.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
 #include <Uno.Int.h>
@@ -144,6 +146,7 @@ void check::InitializeUX()
     SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
     temp->Value(::STRINGS[1/*"check"*/]);
     temp->Color(::g::Uno::Float4__New2(0.6f, 0.6f, 0.6f, 1.0f));
+    temp->Alignment(10);
     temp->SourceLineNumber(4);
     temp->SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);

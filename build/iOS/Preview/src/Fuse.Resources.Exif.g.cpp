@@ -8,7 +8,6 @@
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
 #include <Uno.Int.h>
-#include <Uno.Object.h>
 #include <Uno.String.h>
 static uString* STRINGS[3];
 static uType* TYPES[1];
@@ -18,15 +17,15 @@ namespace Fuse{
 namespace Resources{
 namespace Exif{
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/Exif/Exif.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/Exif/Exif.uno
+// -------------------------------------------------------------------------
 
 // public struct ExifData :21
 // {
 static void ExifData_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Reserved Exif orientation {0}, assuming identity");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/Exif/Exif.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/Exif/Exif.uno");
     ::STRINGS[2] = uString::Const(".ctor");
     ::TYPES[0] = uObject_typeof()->Array();
     type->SetFields(0,
@@ -43,7 +42,6 @@ uStructType* ExifData_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.Alignment = alignof(ExifData);
     options.ValueSize = sizeof(ExifData);
@@ -54,9 +52,9 @@ uStructType* ExifData_typeof()
 }
 
 // internal ExifData(int orientation) :42
-void ExifData__ctor_1_fn(ExifData* __this, int32_t* orientation)
+void ExifData__ctor__fn(ExifData* __this, int32_t* orientation)
 {
-    __this->ctor_1(*orientation);
+    __this->ctor_(*orientation);
 }
 
 // public static Fuse.Resources.Exif.ExifData FromByteArray(byte[] buffer) :25
@@ -72,7 +70,7 @@ void ExifData__New1_fn(int32_t* orientation, ExifData* __retval)
 }
 
 // internal ExifData(int orientation) [instance] :42
-void ExifData::ctor_1(int32_t orientation)
+void ExifData::ctor_(int32_t orientation)
 {
     uStackFrame __("Fuse.Resources.Exif.ExifData", ".ctor(int)");
 
@@ -144,13 +142,13 @@ ExifData ExifData__FromByteArray(uArray* buffer)
 ExifData ExifData__New1(int32_t orientation)
 {
     ExifData obj1;
-    obj1.ctor_1(orientation);
+    obj1.ctor_(orientation);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/Exif/Exif.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/Exif/Exif.uno
+// -------------------------------------------------------------------------
 
 // public enum ImageOrientation :12
 uEnumType* ImageOrientation_typeof()

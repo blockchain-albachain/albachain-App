@@ -18,28 +18,28 @@
 
 				<Rectangle Width="300" Height="500" CornerRadius="10" Color="#FEFFFE">
 					<StackPanel>
-						<Rectangle>
-							<Circle Width="80" Height="80" Color="#E2E3E2" Alignment="Left" Margin="30, 20, 0, 0" />
+						<Rectangle Alignment="CenterLeft">
+							<Circle Width="80" Height="80" Color="#E2E3E2" Alignment="CenterLeft" Margin="20, 20, 0, 0" />
 							<Text Value="albaChain 계약서" Color="#434443" FontSize="20" TextAlignment="Left" Margin="120, 30, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
 
 						</Rectangle>
 						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
-						<Rectangle Margin="0, 20, 0, 0">
+						<Rectangle Margin="0, 20, 0, 10">
 							<Text Value="계약확인" Margin="30, 0, 0, 0" TextColor="#000" Alignment="Top" />
 							<Text FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" Value="계약기간" Alignment="TopLeft" Height="15" />
-							<Text Value="계약기간 선택란" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" Alignment="Top" />
+							<TextInput Value="{period}" PlaceholderText="계약기간 선택란 " FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" Alignment="Top" PlaceholderColor="#787878" TextColor="#000" />
 							<Text FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" Value="임        금" Alignment="TopLeft" />
-							<Text Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" Alignment="Top" Value="임금 입력란" />
+							<TextInput Value="{pay}" PlaceholderText="임금 입력란 " FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" Alignment="Top" PlaceholderColor="#787878" TextColor="#000" />
 							<Text Margin="30, 90, 0, 0" Value="근로요일" FontSize="15" TextColor="#67A5CC" ux:Name="time" Alignment="TopLeft" />
-							<Text Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" Alignment="Top" Value="일월화수목금토일" />
+							<TextInput Value="{workingday}" PlaceholderText="월화수목금토일 " FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" Alignment="Top" PlaceholderColor="#787878" TextColor="#000" />
 							<Text Alignment="TopLeft" Value="근로시간" Margin="30, 115, 0, 0" TextColor="#67A5CC" FontSize="15" />
-							<Text Value="PM, AM 시간 선택" FontSize="15" Margin="110, 115, 0, 0" />
-							<Text Value="계        좌" Margin="30, 140, 0, 0" FontSize="15" TextColor="#67A5CC" />
-							<Text Margin="110, 140, 0, 0" Value="계좌입력란" />
+							<TextInput Value="{workinghour}" PlaceholderText="근무 시간 입력 " FontSize="15" TextAlignment="Left" Margin="110, 115, 0, 0" Alignment="Top" PlaceholderColor="#787878" TextColor="#000" />
+							<Text Value="계        좌" Margin="30, 140, 0, 0" FontSize="15" TextColor="#67A5CC" Alignment="TopLeft" />
+							<TextInput Value="{accountNum}" PlaceholderText="계좌 입력란 " FontSize="15" TextAlignment="Left" Margin="110, 140, 0, 0" Alignment="Top" PlaceholderColor="#787878" TextColor="#000" />
 						</Rectangle>
 						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
 						<Text Value="매장 고유 번호" Margin="30, 20, 0, 0" TextColor="#000" />
-						<Text Alignment="HorizontalCenter" Value="123-4567-8901" Margin="0, 50, 0, 0" />
+						<TextInput Value="{storeNum}" PlaceholderText="_ _ _ _ _ _ _" Alignment="HorizontalCenter" Margin="0, 50, 0, 0" PlaceholderColor="#787878" TextColor="#000" />
 					</StackPanel>
 					<Shadow Angle="107" />				
 				</Rectangle>

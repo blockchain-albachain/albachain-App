@@ -1,4 +1,4 @@
-$: -866674555
+$: 2027410306
 BuildCommand: "bash build.sh"
 RunCommand: "bash run.sh"
 Product: build/Release-iphoneos/albachain.app/albachain

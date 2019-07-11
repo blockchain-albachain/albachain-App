@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_FuseControlsShape_Color_Property.h>
@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class albachain_FuseControlsShape_Color_Property :45
+// internal sealed class albachain_FuseControlsShape_Color_Property :76
 // {
 static void albachain_FuseControlsShape_Color_Property_build(uType* type)
 {
@@ -40,32 +40,32 @@ static void albachain_FuseControlsShape_Color_Property_build(uType* type)
     return type;
 }
 
-// public albachain_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) :48
+// public albachain_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) :79
 void albachain_FuseControlsShape_Color_Property__ctor_3_fn(albachain_FuseControlsShape_Color_Property* __this, ::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :50
+// public override sealed float4 Get(Uno.UX.PropertyObject obj) :81
 void albachain_FuseControlsShape_Color_Property__Get1_fn(albachain_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
 {
     uStackFrame __("albachain_FuseControlsShape_Color_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::Shape*>(obj, ::TYPES[0/*Fuse.Controls.Shape*/]))->Color(), void();
 }
 
-// public albachain_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) :48
+// public albachain_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) :79
 void albachain_FuseControlsShape_Color_Property__New1_fn(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector* name, albachain_FuseControlsShape_Color_Property** __retval)
 {
     *__retval = albachain_FuseControlsShape_Color_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :49
+// public override sealed Uno.UX.PropertyObject get_Object() :80
 void albachain_FuseControlsShape_Color_Property__get_Object_fn(albachain_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :51
+// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :82
 void albachain_FuseControlsShape_Color_Property__Set1_fn(albachain_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
 {
     uStackFrame __("albachain_FuseControlsShape_Color_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
@@ -73,20 +73,20 @@ void albachain_FuseControlsShape_Color_Property__Set1_fn(albachain_FuseControlsS
     uPtr(uCast< ::g::Fuse::Controls::Shape*>(obj, ::TYPES[0/*Fuse.Controls.Shape*/]))->SetColor(v_, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :52
+// public override sealed bool get_SupportsOriginSetter() :83
 void albachain_FuseControlsShape_Color_Property__get_SupportsOriginSetter_fn(albachain_FuseControlsShape_Color_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public albachain_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) [instance] :48
+// public albachain_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) [instance] :79
 void albachain_FuseControlsShape_Color_Property::ctor_3(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public albachain_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) [static] :48
+// public albachain_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) [static] :79
 albachain_FuseControlsShape_Color_Property* albachain_FuseControlsShape_Color_Property::New1(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector name)
 {
     albachain_FuseControlsShape_Color_Property* obj1 = (albachain_FuseControlsShape_Color_Property*)uNew(albachain_FuseControlsShape_Color_Property_typeof());

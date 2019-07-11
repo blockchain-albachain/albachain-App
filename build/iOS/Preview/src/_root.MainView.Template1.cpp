@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
@@ -20,12 +20,12 @@ static uString* STRINGS[2];
 
 namespace g{
 
-// public partial sealed class MainView.Template1 :29
+// public partial sealed class MainView.Template1 :30
 // {
-// static Template1() :38
+// static Template1() :39
 static void MainView__Template1__cctor__fn(uType* __type)
 {
-    MainView__Template1::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"mainviewInd"*/]);
+    MainView__Template1::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"mainviewInd"*/]);
 }
 
 static void MainView__Template1_build(uType* type)
@@ -57,13 +57,13 @@ static void MainView__Template1_build(uType* type)
     return type;
 }
 
-// public Template1(MainView parent, MainView parentInstance) :33
+// public Template1(MainView parent, MainView parentInstance) :34
 void MainView__Template1__ctor_1_fn(MainView__Template1* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :41
+// public override sealed object New() :42
 void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template1", "New()");
@@ -76,7 +76,7 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template1 New(MainView parent, MainView parentInstance) :33
+// public Template1 New(MainView parent, MainView parentInstance) :34
 void MainView__Template1__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template1** __retval)
 {
     *__retval = MainView__Template1::New2(parent, parentInstance);
@@ -84,7 +84,7 @@ void MainView__Template1__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 
 ::g::Uno::UX::Selector MainView__Template1::__selector0_;
 
-// public Template1(MainView parent, MainView parentInstance) [instance] :33
+// public Template1(MainView parent, MainView parentInstance) [instance] :34
 void MainView__Template1::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(::STRINGS[0/*"mainviewInd"*/], false);
@@ -92,7 +92,7 @@ void MainView__Template1::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template1 New(MainView parent, MainView parentInstance) [static] :33
+// public Template1 New(MainView parent, MainView parentInstance) [static] :34
 MainView__Template1* MainView__Template1::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template1* obj1 = (MainView__Template1*)uNew(MainView__Template1_typeof());

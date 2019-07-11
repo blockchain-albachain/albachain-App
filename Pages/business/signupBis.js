@@ -3,10 +3,10 @@ var Observable = require('FuseJS/Observable');
 var newID = Observable("");
 var newPW = Observable("");
 var newName = Observable("");
-var dayOfbirth = Observable("");
-var sex = Observable("");
-var phoneNum = Observable("");
-var businessNum = Observable("");
+var dayOfbirth = Observable();
+var sex = Observable();
+var phoneNum = Observable();
+var businessNum = Observable();
 
 function goBack()
 {
@@ -17,7 +17,8 @@ function goBack()
 function Save(){
     console.log('UPID'); //Sign_in 함수가 호출되었는지 확인
 
-	fetch('http://69e16e34.ngrok.io/musers/Msignup',{
+	// fetch('http://18.224.213.239:8000/musers/Msignup',{
+	fetch('http://97e78588.ngrok.io/musers/Msignup',{
 	            method: "POST",
 	            headers: {
 	            	"Content-type": "application/json"
@@ -49,7 +50,7 @@ function Save(){
 	        });
 
 
-
+	
 
 }
 

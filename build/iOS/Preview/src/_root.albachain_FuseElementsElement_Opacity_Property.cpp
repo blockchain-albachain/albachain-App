@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/albachain.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.albachain_FuseElementsElement_Opacity_Property.h>
@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class albachain_FuseElementsElement_Opacity_Property :87
+// internal sealed class albachain_FuseElementsElement_Opacity_Property :34
 // {
 static void albachain_FuseElementsElement_Opacity_Property_build(uType* type)
 {
@@ -40,32 +40,32 @@ static void albachain_FuseElementsElement_Opacity_Property_build(uType* type)
     return type;
 }
 
-// public albachain_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :90
+// public albachain_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :37
 void albachain_FuseElementsElement_Opacity_Property__ctor_3_fn(albachain_FuseElementsElement_Opacity_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float Get(Uno.UX.PropertyObject obj) :92
+// public override sealed float Get(Uno.UX.PropertyObject obj) :39
 void albachain_FuseElementsElement_Opacity_Property__Get1_fn(albachain_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* __retval)
 {
     uStackFrame __("albachain_FuseElementsElement_Opacity_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->Opacity(), void();
 }
 
-// public albachain_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :90
+// public albachain_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :37
 void albachain_FuseElementsElement_Opacity_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, albachain_FuseElementsElement_Opacity_Property** __retval)
 {
     *__retval = albachain_FuseElementsElement_Opacity_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :91
+// public override sealed Uno.UX.PropertyObject get_Object() :38
 void albachain_FuseElementsElement_Opacity_Property__get_Object_fn(albachain_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :93
+// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :40
 void albachain_FuseElementsElement_Opacity_Property__Set1_fn(albachain_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* v, uObject* origin)
 {
     uStackFrame __("albachain_FuseElementsElement_Opacity_Property", "Set(Uno.UX.PropertyObject,float,Uno.UX.IPropertyListener)");
@@ -73,20 +73,20 @@ void albachain_FuseElementsElement_Opacity_Property__Set1_fn(albachain_FuseEleme
     uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->SetOpacity(v_, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :94
+// public override sealed bool get_SupportsOriginSetter() :41
 void albachain_FuseElementsElement_Opacity_Property__get_SupportsOriginSetter_fn(albachain_FuseElementsElement_Opacity_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public albachain_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :90
+// public albachain_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :37
 void albachain_FuseElementsElement_Opacity_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public albachain_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :90
+// public albachain_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :37
 albachain_FuseElementsElement_Opacity_Property* albachain_FuseElementsElement_Opacity_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     albachain_FuseElementsElement_Opacity_Property* obj1 = (albachain_FuseElementsElement_Opacity_Property*)uNew(albachain_FuseElementsElement_Opacity_Property_typeof());

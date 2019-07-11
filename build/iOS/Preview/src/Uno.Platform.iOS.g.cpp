@@ -11,8 +11,8 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/iOS/Support.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/iOS/Support.uno
+// -------------------------------------------------------------------------------
 
 // public extern struct uCGPoint :21
 // {
@@ -26,7 +26,6 @@ uStructType* uCGPoint1_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(CGPoint);
     options.ValueSize = sizeof(CGPoint);
     options.TypeSize = sizeof(uStructType);
@@ -36,8 +35,8 @@ uStructType* uCGPoint1_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/iOS/Support.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/iOS/Support.uno
+// -------------------------------------------------------------------------------
 
 // public extern struct uCGRect :10
 // {
@@ -53,7 +52,6 @@ uStructType* uCGRect1_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(CGRect);
     options.ValueSize = sizeof(CGRect);
     options.TypeSize = sizeof(uStructType);
@@ -75,8 +73,8 @@ CGRect uCGRect1::Zero()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/iOS/Support.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/iOS/Support.uno
+// -------------------------------------------------------------------------------
 
 // public extern struct uCGSize :16
 // {
@@ -90,7 +88,6 @@ uStructType* uCGSize1_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(CGSize);
     options.ValueSize = sizeof(CGSize);
     options.TypeSize = sizeof(uStructType);
@@ -100,8 +97,8 @@ uStructType* uCGSize1_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/iOS/Support.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/iOS/Support.uno
+// -------------------------------------------------------------------------------
 
 // public extern struct UIImage :26
 // {
@@ -115,7 +112,6 @@ uStructType* UIImage_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(::UIImage *);
     options.ValueSize = sizeof(::UIImage *);
     options.TypeSize = sizeof(uStructType);

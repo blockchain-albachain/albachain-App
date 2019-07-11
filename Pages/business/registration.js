@@ -1,9 +1,9 @@
 var Observable = require('FuseJS/Observable');
 
 var RandomNumber = Observable("- - - - - - -");
-var BusinessNumber = Observable("");
+var BusinessNumber = Observable();
 var StoreName = Observable("");
-var StoreNumber = Observable("");
+var StoreNumber = Observable();
 var Address = Observable("");
 
 function goBack() {
@@ -24,7 +24,8 @@ function submit(){
     console.log('submit'); //Sign_in 함수가 호출되었는지 확인
  
 
-	fetch('http://69e16e34.ngrok.io/mregistration/Mstoreup',{
+	// fetch('http://18.224.213.239:8000/mregistration/Mstoreup',{
+		fetch('http://97e78588.ngrok.io/mregistration/Mstoreup',{		
 	            method: "POST",
 	            headers: {
 	            	"Content-type": "application/JSON"

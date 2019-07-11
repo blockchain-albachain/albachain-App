@@ -71,10 +71,10 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// internal struct Dictionary<TKey, TValue>.Bucket :15
+// internal struct Dictionary<TKey, TValue>.Bucket :16
 // {
 static void Dictionary__Bucket_build(uType* type)
 {
@@ -90,7 +90,6 @@ uStructType* Dictionary__Bucket_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 3;
     options.GenericCount = 2;
     options.TypeSize = sizeof(uStructType);
@@ -100,8 +99,8 @@ uStructType* Dictionary__Bucket_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
 // internal enum Dictionary<TKey, TValue>.BucketState :8
 uEnumType* Dictionary__BucketState_typeof()
@@ -117,8 +116,8 @@ uEnumType* Dictionary__BucketState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Dictionary<TKey, TValue> :6
 // {
@@ -194,19 +193,19 @@ Dictionary_type* Dictionary_typeof()
     return type;
 }
 
-// public Dictionary() :264
+// public Dictionary() :265
 void Dictionary__ctor__fn(Dictionary* __this)
 {
     __this->ctor_();
 }
 
-// public Dictionary(Uno.Collections.IDictionary<TKey, TValue> dictionary) :271
+// public Dictionary(Uno.Collections.IDictionary<TKey, TValue> dictionary) :272
 void Dictionary__ctor_1_fn(Dictionary* __this, uObject* dictionary)
 {
     __this->ctor_1(dictionary);
 }
 
-// public void Add(TKey key, TValue value) :326
+// public void Add(TKey key, TValue value) :327
 void Dictionary__Add_fn(Dictionary* __this, void* key, void* value)
 {
     uType* __types[] = {
@@ -254,13 +253,13 @@ void Dictionary__Add_fn(Dictionary* __this, void* key, void* value)
     }
 }
 
-// public void Clear() :312
+// public void Clear() :313
 void Dictionary__Clear_fn(Dictionary* __this)
 {
     __this->Clear();
 }
 
-// public bool ContainsKey(TKey key) :425
+// public bool ContainsKey(TKey key) :426
 void Dictionary__ContainsKey_fn(Dictionary* __this, void* key, bool* __retval)
 {
     uType* __types[] = {
@@ -287,13 +286,13 @@ void Dictionary__ContainsKey_fn(Dictionary* __this, void* key, bool* __retval)
     }
 }
 
-// public int get_Count() :296
+// public int get_Count() :297
 void Dictionary__get_Count_fn(Dictionary* __this, int32_t* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() :279
+// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() :280
 void Dictionary__GetEnumerator_fn(Dictionary* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -304,13 +303,13 @@ void Dictionary__GetEnumerator_fn(Dictionary* __this, uTRef __retval)
     return __retval.Store((Dictionary__Enumerator__New1_fn(__types[0], __this, &ret8), ret8)), void();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() :279
+// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() :280
 void Dictionary__GetEnumerator_boxed_fn(Dictionary* __this, uObject** __retval)
 {
     *__retval = __this->GetEnumerator_boxed();
 }
 
-// public TValue get_Item(TKey key) :452
+// public TValue get_Item(TKey key) :453
 void Dictionary__get_Item_fn(Dictionary* __this, void* key, uTRef __retval)
 {
     uType* __types[] = {
@@ -337,7 +336,7 @@ void Dictionary__get_Item_fn(Dictionary* __this, void* key, uTRef __retval)
     }
 }
 
-// public void set_Item(TKey key, TValue value) :476
+// public void set_Item(TKey key, TValue value) :477
 void Dictionary__set_Item_fn(Dictionary* __this, void* key, void* value)
 {
     uType* __types[] = {
@@ -371,31 +370,31 @@ void Dictionary__set_Item_fn(Dictionary* __this, void* key, void* value)
     }
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection get_Keys() :286
+// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection get_Keys() :287
 void Dictionary__get_Keys_fn(Dictionary* __this, Dictionary__KeyCollection** __retval)
 {
     *__retval = __this->Keys();
 }
 
-// public Dictionary New() :264
+// public Dictionary New() :265
 void Dictionary__New1_fn(uType* __type, Dictionary** __retval)
 {
     *__retval = Dictionary::New1(__type);
 }
 
-// public Dictionary New(Uno.Collections.IDictionary<TKey, TValue> dictionary) :271
+// public Dictionary New(Uno.Collections.IDictionary<TKey, TValue> dictionary) :272
 void Dictionary__New2_fn(uType* __type, uObject* dictionary, Dictionary** __retval)
 {
     *__retval = Dictionary::New2(__type, dictionary);
 }
 
-// private void Rehash() :299
+// private void Rehash() :300
 void Dictionary__Rehash_fn(Dictionary* __this)
 {
     __this->Rehash();
 }
 
-// public bool Remove(TKey key) :394
+// public bool Remove(TKey key) :395
 void Dictionary__Remove_fn(Dictionary* __this, void* key, bool* __retval)
 {
     uType* __types[] = {
@@ -430,7 +429,7 @@ void Dictionary__Remove_fn(Dictionary* __this, void* key, bool* __retval)
     }
 }
 
-// public bool TryGetValue(TKey key, TValue& value) :367
+// public bool TryGetValue(TKey key, TValue& value) :368
 void Dictionary__TryGetValue_fn(Dictionary* __this, void* key, uTRef value, bool* __retval)
 {
     uType* __types[] = {
@@ -463,7 +462,7 @@ void Dictionary__TryGetValue_fn(Dictionary* __this, void* key, uTRef value, bool
     }
 }
 
-// private void Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Add(Uno.Collections.KeyValuePair<TKey, TValue> item) :505
+// private void Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Add(Uno.Collections.KeyValuePair<TKey, TValue> item) :506
 void Dictionary__UnoCollectionsICollectionUnoCollectionsKeyValuePairTKeyTValueAdd_fn(Dictionary* __this, void* item)
 {
     uType* __types[] = {
@@ -477,27 +476,27 @@ void Dictionary__UnoCollectionsICollectionUnoCollectionsKeyValuePairTKeyTValueAd
     Dictionary__Add_fn(__this, (::g::Uno::Collections::KeyValuePair__get_Key_fn(&item_, __types[0], &ret11), ret11), (::g::Uno::Collections::KeyValuePair__get_Value_fn(&item_, __types[0], &ret12), ret12));
 }
 
-// private bool Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Contains(Uno.Collections.KeyValuePair<TKey, TValue> item) :515
+// private bool Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Contains(Uno.Collections.KeyValuePair<TKey, TValue> item) :516
 void Dictionary__UnoCollectionsICollectionUnoCollectionsKeyValuePairTKeyTValueContains_fn(Dictionary* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2", "Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Contains(Uno.Collections.KeyValuePair<TKey, TValue>)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private bool Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Remove(Uno.Collections.KeyValuePair<TKey, TValue> item) :510
+// private bool Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Remove(Uno.Collections.KeyValuePair<TKey, TValue> item) :511
 void Dictionary__UnoCollectionsICollectionUnoCollectionsKeyValuePairTKeyTValueRemove_fn(Dictionary* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2", "Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>.Remove(Uno.Collections.KeyValuePair<TKey, TValue>)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection get_Values() :291
+// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection get_Values() :292
 void Dictionary__get_Values_fn(Dictionary* __this, Dictionary__ValueCollection** __retval)
 {
     *__retval = __this->Values();
 }
 
-// public Dictionary() [instance] :264
+// public Dictionary() [instance] :265
 void Dictionary::ctor_()
 {
     uType* __types[] = {
@@ -508,7 +507,7 @@ void Dictionary::ctor_()
     _dummies = 0;
 }
 
-// public Dictionary(Uno.Collections.IDictionary<TKey, TValue> dictionary) [instance] :271
+// public Dictionary(Uno.Collections.IDictionary<TKey, TValue> dictionary) [instance] :272
 void Dictionary::ctor_1(uObject* dictionary)
 {
     uType* __types[] = {
@@ -552,7 +551,7 @@ void Dictionary::ctor_1(uObject* dictionary)
     }
 }
 
-// public void Clear() [instance] :312
+// public void Clear() [instance] :313
 void Dictionary::Clear()
 {
     uStackFrame __("Uno.Collections.Dictionary`2", "Clear()");
@@ -569,13 +568,13 @@ void Dictionary::Clear()
     _version++;
 }
 
-// public int get_Count() [instance] :296
+// public int get_Count() [instance] :297
 int32_t Dictionary::Count()
 {
     return _count;
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() [instance] :279
+// public Uno.Collections.Dictionary<TKey, TValue>.Enumerator GetEnumerator() [instance] :280
 uObject* Dictionary::GetEnumerator_boxed()
 {
     uType* __types[] = {
@@ -585,7 +584,7 @@ uObject* Dictionary::GetEnumerator_boxed()
     return uBoxPtr(__types[0], (Dictionary__GetEnumerator_fn(this, &ret15), ret15));
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection get_Keys() [instance] :286
+// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection get_Keys() [instance] :287
 Dictionary__KeyCollection* Dictionary::Keys()
 {
     uType* __types[] = {
@@ -594,7 +593,7 @@ Dictionary__KeyCollection* Dictionary::Keys()
     return Dictionary__KeyCollection::New1(__types[0], this);
 }
 
-// private void Rehash() [instance] :299
+// private void Rehash() [instance] :300
 void Dictionary::Rehash()
 {
     uType* __types[] = {
@@ -611,7 +610,7 @@ void Dictionary::Rehash()
             Dictionary__Add_fn(this, uPtr(oldBuckets)->TItem(i)[0/*Key*/], uPtr(oldBuckets)->TItem(i)[1/*Value*/]);
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection get_Values() [instance] :291
+// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection get_Values() [instance] :292
 Dictionary__ValueCollection* Dictionary::Values()
 {
     uType* __types[] = {
@@ -620,7 +619,7 @@ Dictionary__ValueCollection* Dictionary::Values()
     return Dictionary__ValueCollection::New1(__types[0], this);
 }
 
-// public Dictionary New() [static] :264
+// public Dictionary New() [static] :265
 Dictionary* Dictionary::New1(uType* __type)
 {
     Dictionary* obj1 = (Dictionary*)uNew(__type);
@@ -628,7 +627,7 @@ Dictionary* Dictionary::New1(uType* __type)
     return obj1;
 }
 
-// public Dictionary New(Uno.Collections.IDictionary<TKey, TValue> dictionary) [static] :271
+// public Dictionary New(Uno.Collections.IDictionary<TKey, TValue> dictionary) [static] :272
 Dictionary* Dictionary::New2(uType* __type, uObject* dictionary)
 {
     Dictionary* obj2 = (Dictionary*)uNew(__type);
@@ -637,8 +636,8 @@ Dictionary* Dictionary::New2(uType* __type, uObject* dictionary)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/EmptyEnumerable.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/EmptyEnumerable.uno
+// ----------------------------------------------------------------------------------
 
 // public sealed class EmptyEnumerable<T> :3
 // {
@@ -714,8 +713,8 @@ EmptyEnumerable* EmptyEnumerable::New1(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/EmptyEnumerable.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/EmptyEnumerable.uno
+// ----------------------------------------------------------------------------------
 
 // internal sealed class EmptyEnumerator<T> :11
 // {
@@ -814,8 +813,8 @@ EmptyEnumerator* EmptyEnumerator::New1(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/EnumerableExtensions.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/EnumerableExtensions.uno
+// ---------------------------------------------------------------------------------------
 
 // public static class EnumerableExtensions :3
 // {
@@ -1407,8 +1406,8 @@ uObject* EnumerableExtensions::Union(uType* __type, uObject* self, uObject* othe
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Stack.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Stack.uno
+// ----------------------------------------------------------------------------
 
 // public struct Stack<T>.Enumerator :32
 // {
@@ -1460,7 +1459,6 @@ Stack__Enumerator_type* Stack__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
@@ -1475,7 +1473,7 @@ Stack__Enumerator_type* Stack__Enumerator_typeof()
 }
 
 // internal Enumerator(Uno.Collections.Stack<T> source) :39
-void Stack__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Stack* source)
+void Stack__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Stack* source)
 {
     uStackFrame __("Uno.Collections.Stack`1.Enumerator", ".ctor(Uno.Collections.Stack<T>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Stack*>() = source;
@@ -1517,7 +1515,7 @@ void Stack__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 void Stack__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Stack* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    Stack__Enumerator__ctor_1_fn(&obj1, __type, source);
+    Stack__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
@@ -1531,30 +1529,30 @@ void Stack__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* _
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// public struct Dictionary<TKey, TValue>.ValueCollection.Enumerator :169
+// public struct Dictionary<TKey, TValue>.ValueCollection.Enumerator :170
 // {
-// private void Uno.Collections.IEnumerator.Reset() [adapter] :193
+// private void Uno.Collections.IEnumerator.Reset() [adapter] :194
 static void Dictionary__ValueCollection__Enumerator__UnoCollectionsIEnumeratorReset_ex(uObject* __this)
 {
     Dictionary__ValueCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public TValue get_Current() [adapter] :185
+// public TValue get_Current() [adapter] :186
 static void Dictionary__ValueCollection__Enumerator__get_Current_ex(uObject* __this, uTRef __retval)
 {
     Dictionary__ValueCollection__Enumerator__get_Current_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public void Dispose() [adapter] :188
+// public void Dispose() [adapter] :189
 static void Dictionary__ValueCollection__Enumerator__Dispose_ex(uObject* __this)
 {
     Dictionary__ValueCollection__Enumerator__Dispose_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public bool MoveNext() [adapter] :200
+// public bool MoveNext() [adapter] :201
 static void Dictionary__ValueCollection__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 {
     Dictionary__ValueCollection__Enumerator__MoveNext_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -1587,7 +1585,6 @@ Dictionary__ValueCollection__Enumerator_type* Dictionary__ValueCollection__Enume
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 2;
     options.InterfaceCount = 3;
@@ -1602,8 +1599,8 @@ Dictionary__ValueCollection__Enumerator_type* Dictionary__ValueCollection__Enume
     return type;
 }
 
-// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :176
-void Dictionary__ValueCollection__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
+// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :177
+void Dictionary__ValueCollection__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection.Enumerator", ".ctor(Uno.Collections.Dictionary<TKey, TValue>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Dictionary*>() = source;
@@ -1611,18 +1608,18 @@ void Dictionary__ValueCollection__Enumerator__ctor_1_fn(uTRef __this, uType* __t
     __type->Field(__this, 2/*_iterator*/).Value<int32_t>() = -1;
 }
 
-// public TValue get_Current() :185
+// public TValue get_Current() :186
 void Dictionary__ValueCollection__Enumerator__get_Current_fn(uTRef __this, uType* __type, uTRef __retval)
 {
     return __retval.Store(__type->Field(__this, 1/*_current*/)), void();
 }
 
-// public void Dispose() :188
+// public void Dispose() :189
 void Dictionary__ValueCollection__Enumerator__Dispose_fn(uTRef __this, uType* __type)
 {
 }
 
-// public bool MoveNext() :200
+// public bool MoveNext() :201
 void Dictionary__ValueCollection__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 {
     uType* __types[] = {
@@ -1648,15 +1645,15 @@ void Dictionary__ValueCollection__Enumerator__MoveNext_fn(uTRef __this, uType* _
     return *__retval = true, void();
 }
 
-// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :176
+// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :177
 void Dictionary__ValueCollection__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    Dictionary__ValueCollection__Enumerator__ctor_1_fn(&obj1, __type, source);
+    Dictionary__ValueCollection__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
-// private void Uno.Collections.IEnumerator.Reset() :193
+// private void Uno.Collections.IEnumerator.Reset() :194
 void Dictionary__ValueCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* __type)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection.Enumerator", "Uno.Collections.IEnumerator.Reset()");
@@ -1666,8 +1663,8 @@ void Dictionary__ValueCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/HashSet.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/HashSet.uno
+// ------------------------------------------------------------------------------
 
 // public struct HashSet<T>.Enumerator :8
 // {
@@ -1722,7 +1719,6 @@ HashSet__Enumerator_type* HashSet__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
@@ -1738,7 +1734,7 @@ HashSet__Enumerator_type* HashSet__Enumerator_typeof()
 }
 
 // internal Enumerator(Uno.Collections.Dictionary<T, bool> source) :15
-void HashSet__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
+void HashSet__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     uStackFrame __("Uno.Collections.HashSet`1.Enumerator", ".ctor(Uno.Collections.Dictionary<T, bool>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Dictionary*>() = source;
@@ -1787,7 +1783,7 @@ void HashSet__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retva
 void HashSet__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    HashSet__Enumerator__ctor_1_fn(&obj1, __type, source);
+    HashSet__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
@@ -1801,8 +1797,8 @@ void HashSet__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType*
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/List.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/List.uno
+// ---------------------------------------------------------------------------
 
 // public struct List<T>.Enumerator :12
 // {
@@ -1854,7 +1850,6 @@ List__Enumerator_type* List__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
@@ -1869,7 +1864,7 @@ List__Enumerator_type* List__Enumerator_typeof()
 }
 
 // internal Enumerator(Uno.Collections.List<T> source) :19
-void List__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::List* source)
+void List__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::List* source)
 {
     uStackFrame __("Uno.Collections.List`1.Enumerator", ".ctor(Uno.Collections.List<T>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::List*>() = source;
@@ -1911,7 +1906,7 @@ void List__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 void List__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::List* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    List__Enumerator__ctor_1_fn(&obj1, __type, source);
+    List__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
@@ -1925,8 +1920,8 @@ void List__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* __
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/LinkedList.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/LinkedList.uno
+// ---------------------------------------------------------------------------------
 
 // public struct LinkedList<T>.Enumerator :26
 // {
@@ -1977,7 +1972,6 @@ LinkedList__Enumerator_type* LinkedList__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 3;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
@@ -1994,9 +1988,9 @@ LinkedList__Enumerator_type* LinkedList__Enumerator_typeof()
 }
 
 // internal Enumerator(Uno.Collections.LinkedList<T> list) :31
-void LinkedList__Enumerator__ctor_1_fn(LinkedList__Enumerator* __this, uType* __type, ::g::Uno::Collections::LinkedList* list)
+void LinkedList__Enumerator__ctor__fn(LinkedList__Enumerator* __this, uType* __type, ::g::Uno::Collections::LinkedList* list)
 {
-    __this->ctor_1(__type, list);
+    __this->ctor_(__type, list);
 }
 
 // public T get_Current() :37
@@ -2032,7 +2026,7 @@ void LinkedList__Enumerator__Reset_fn(LinkedList__Enumerator* __this, uType* __t
 }
 
 // internal Enumerator(Uno.Collections.LinkedList<T> list) [instance] :31
-void LinkedList__Enumerator::ctor_1(uType* __type, ::g::Uno::Collections::LinkedList* list)
+void LinkedList__Enumerator::ctor_(uType* __type, ::g::Uno::Collections::LinkedList* list)
 {
     uStackFrame __("Uno.Collections.LinkedList`1.Enumerator", ".ctor(Uno.Collections.LinkedList<T>)");
     _list = list;
@@ -2068,35 +2062,35 @@ void LinkedList__Enumerator::Reset(uType* __type)
 LinkedList__Enumerator LinkedList__Enumerator__New1(uType* __type, ::g::Uno::Collections::LinkedList* list)
 {
     LinkedList__Enumerator obj1;
-    obj1.ctor_1(__type, list);
+    obj1.ctor_(__type, list);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// public struct Dictionary<TKey, TValue>.Enumerator :22
+// public struct Dictionary<TKey, TValue>.Enumerator :23
 // {
-// private void Uno.Collections.IEnumerator.Reset() [adapter] :46
+// private void Uno.Collections.IEnumerator.Reset() [adapter] :47
 static void Dictionary__Enumerator__UnoCollectionsIEnumeratorReset_ex(uObject* __this)
 {
     Dictionary__Enumerator__UnoCollectionsIEnumeratorReset_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public Uno.Collections.KeyValuePair<TKey, TValue> get_Current() [adapter] :38
+// public Uno.Collections.KeyValuePair<TKey, TValue> get_Current() [adapter] :39
 static void Dictionary__Enumerator__get_Current_ex(uObject* __this, uTRef __retval)
 {
     Dictionary__Enumerator__get_Current_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public void Dispose() [adapter] :41
+// public void Dispose() [adapter] :42
 static void Dictionary__Enumerator__Dispose_ex(uObject* __this)
 {
     Dictionary__Enumerator__Dispose_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public bool MoveNext() [adapter] :53
+// public bool MoveNext() [adapter] :54
 static void Dictionary__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 {
     Dictionary__Enumerator__MoveNext_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -2131,7 +2125,6 @@ Dictionary__Enumerator_type* Dictionary__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 2;
     options.InterfaceCount = 3;
@@ -2146,8 +2139,8 @@ Dictionary__Enumerator_type* Dictionary__Enumerator_typeof()
     return type;
 }
 
-// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :29
-void Dictionary__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
+// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :30
+void Dictionary__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.Enumerator", ".ctor(Uno.Collections.Dictionary<TKey, TValue>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Dictionary*>() = source;
@@ -2155,18 +2148,18 @@ void Dictionary__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Co
     __type->Field(__this, 2/*_iterator*/).Value<int32_t>() = -1;
 }
 
-// public Uno.Collections.KeyValuePair<TKey, TValue> get_Current() :38
+// public Uno.Collections.KeyValuePair<TKey, TValue> get_Current() :39
 void Dictionary__Enumerator__get_Current_fn(uTRef __this, uType* __type, uTRef __retval)
 {
     return __retval.Store(__type->Field(__this, 1/*_current*/)), void();
 }
 
-// public void Dispose() :41
+// public void Dispose() :42
 void Dictionary__Enumerator__Dispose_fn(uTRef __this, uType* __type)
 {
 }
 
-// public bool MoveNext() :53
+// public bool MoveNext() :54
 void Dictionary__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 {
     uType* __types[] = {
@@ -2194,15 +2187,15 @@ void Dictionary__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __re
     return *__retval = true, void();
 }
 
-// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :29
+// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :30
 void Dictionary__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    Dictionary__Enumerator__ctor_1_fn(&obj1, __type, source);
+    Dictionary__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
-// private void Uno.Collections.IEnumerator.Reset() :46
+// private void Uno.Collections.IEnumerator.Reset() :47
 void Dictionary__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* __type)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.Enumerator", "Uno.Collections.IEnumerator.Reset()");
@@ -2212,30 +2205,30 @@ void Dictionary__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uTy
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// public struct Dictionary<TKey, TValue>.KeyCollection.Enumerator :76
+// public struct Dictionary<TKey, TValue>.KeyCollection.Enumerator :77
 // {
-// private void Uno.Collections.IEnumerator.Reset() [adapter] :101
+// private void Uno.Collections.IEnumerator.Reset() [adapter] :102
 static void Dictionary__KeyCollection__Enumerator__UnoCollectionsIEnumeratorReset_ex(uObject* __this)
 {
     Dictionary__KeyCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public TKey get_Current() [adapter] :93
+// public TKey get_Current() [adapter] :94
 static void Dictionary__KeyCollection__Enumerator__get_Current_ex(uObject* __this, uTRef __retval)
 {
     Dictionary__KeyCollection__Enumerator__get_Current_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public void Dispose() [adapter] :96
+// public void Dispose() [adapter] :97
 static void Dictionary__KeyCollection__Enumerator__Dispose_ex(uObject* __this)
 {
     Dictionary__KeyCollection__Enumerator__Dispose_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public bool MoveNext() [adapter] :108
+// public bool MoveNext() [adapter] :109
 static void Dictionary__KeyCollection__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 {
     Dictionary__KeyCollection__Enumerator__MoveNext_fn((void**)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -2268,7 +2261,6 @@ Dictionary__KeyCollection__Enumerator_type* Dictionary__KeyCollection__Enumerato
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 2;
     options.InterfaceCount = 3;
@@ -2283,8 +2275,8 @@ Dictionary__KeyCollection__Enumerator_type* Dictionary__KeyCollection__Enumerato
     return type;
 }
 
-// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :84
-void Dictionary__KeyCollection__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
+// internal Enumerator(Uno.Collections.Dictionary<TKey, TValue> source) :85
+void Dictionary__KeyCollection__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection.Enumerator", ".ctor(Uno.Collections.Dictionary<TKey, TValue>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Dictionary*>() = source;
@@ -2292,18 +2284,18 @@ void Dictionary__KeyCollection__Enumerator__ctor_1_fn(uTRef __this, uType* __typ
     __type->Field(__this, 2/*_iterator*/).Value<int32_t>() = -1;
 }
 
-// public TKey get_Current() :93
+// public TKey get_Current() :94
 void Dictionary__KeyCollection__Enumerator__get_Current_fn(uTRef __this, uType* __type, uTRef __retval)
 {
     return __retval.Store(__type->Field(__this, 1/*_current*/)), void();
 }
 
-// public void Dispose() :96
+// public void Dispose() :97
 void Dictionary__KeyCollection__Enumerator__Dispose_fn(uTRef __this, uType* __type)
 {
 }
 
-// public bool MoveNext() :108
+// public bool MoveNext() :109
 void Dictionary__KeyCollection__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 {
     uType* __types[] = {
@@ -2329,15 +2321,15 @@ void Dictionary__KeyCollection__Enumerator__MoveNext_fn(uTRef __this, uType* __t
     return *__retval = true, void();
 }
 
-// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :84
+// internal Enumerator New(Uno.Collections.Dictionary<TKey, TValue> source) :85
 void Dictionary__KeyCollection__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    Dictionary__KeyCollection__Enumerator__ctor_1_fn(&obj1, __type, source);
+    Dictionary__KeyCollection__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
-// private void Uno.Collections.IEnumerator.Reset() :101
+// private void Uno.Collections.IEnumerator.Reset() :102
 void Dictionary__KeyCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* __type)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection.Enumerator", "Uno.Collections.IEnumerator.Reset()");
@@ -2347,8 +2339,8 @@ void Dictionary__KeyCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(uT
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Queue.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Queue.uno
+// ----------------------------------------------------------------------------
 
 // public struct Queue<T>.Enumerator :8
 // {
@@ -2401,7 +2393,6 @@ Queue__Enumerator_type* Queue__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
@@ -2416,7 +2407,7 @@ Queue__Enumerator_type* Queue__Enumerator_typeof()
 }
 
 // internal Enumerator(Uno.Collections.Queue<T> source) :15
-void Queue__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Queue* source)
+void Queue__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Queue* source)
 {
     uStackFrame __("Uno.Collections.Queue`1.Enumerator", ".ctor(Uno.Collections.Queue<T>)");
     __type->Field(__this, 0/*_source*/).Strong< ::g::Uno::Collections::Queue*>() = source;
@@ -2465,7 +2456,7 @@ void Queue__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval)
 void Queue__Enumerator__New1_fn(uType* __type, ::g::Uno::Collections::Queue* source, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    Queue__Enumerator__ctor_1_fn(&obj1, __type, source);
+    Queue__Enumerator__ctor__fn(&obj1, __type, source);
     return __retval.Store(obj1), void();
 }
 
@@ -2479,8 +2470,8 @@ void Queue__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* _
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/HashSet.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/HashSet.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class HashSet<T> :6
 // {
@@ -2800,8 +2791,8 @@ HashSet* HashSet::New2(uType* __type, uObject* items)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/ICollection.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/ICollection.uno
+// ----------------------------------------------------------------------------------
 
 // public abstract interface ICollection<T> :6
 // {
@@ -2821,8 +2812,8 @@ uInterfaceType* ICollection_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/IDictionary.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/IDictionary.uno
+// ----------------------------------------------------------------------------------
 
 // public abstract interface IDictionary<TKey, TValue> :6
 // {
@@ -2845,8 +2836,8 @@ uInterfaceType* IDictionary_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/IEnumerable.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/IEnumerable.uno
+// ----------------------------------------------------------------------------------
 
 // public abstract interface IEnumerable<T> :6
 // {
@@ -2862,8 +2853,8 @@ uInterfaceType* IEnumerable_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/IEnumerator.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/IEnumerator.uno
+// ----------------------------------------------------------------------------------
 
 // public abstract interface IEnumerator :6
 // {
@@ -2880,8 +2871,8 @@ uInterfaceType* IEnumerator_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/IEnumerator.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/IEnumerator.uno
+// ----------------------------------------------------------------------------------
 
 // public abstract interface IEnumerator<T> :13
 // {
@@ -2897,8 +2888,8 @@ uInterfaceType* IEnumerator1_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/IList.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/IList.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IList<T> :6
 // {
@@ -2916,8 +2907,8 @@ uInterfaceType* IList_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/IListExtensions.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/IListExtensions.uno
+// ----------------------------------------------------------------------------------
 
 // public static class IListExtensions :4
 // {
@@ -3025,10 +3016,10 @@ void IListExtensions::AddRange(uType* __type, uObject* self, uObject* collection
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// public sealed class Dictionary<TKey, TValue>.KeyCollection :74
+// public sealed class Dictionary<TKey, TValue>.KeyCollection :75
 // {
 static void Dictionary__KeyCollection_build(uType* type)
 {
@@ -3068,19 +3059,19 @@ Dictionary__KeyCollection_type* Dictionary__KeyCollection_typeof()
     return type;
 }
 
-// internal KeyCollection(Uno.Collections.Dictionary<TKey, TValue> source) :131
+// internal KeyCollection(Uno.Collections.Dictionary<TKey, TValue> source) :132
 void Dictionary__KeyCollection__ctor__fn(Dictionary__KeyCollection* __this, ::g::Uno::Collections::Dictionary* source)
 {
     __this->ctor_(source);
 }
 
-// public int get_Count() :163
+// public int get_Count() :164
 void Dictionary__KeyCollection__get_Count_fn(Dictionary__KeyCollection* __this, int32_t* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() :136
+// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() :137
 void Dictionary__KeyCollection__GetEnumerator_fn(Dictionary__KeyCollection* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -3091,60 +3082,60 @@ void Dictionary__KeyCollection__GetEnumerator_fn(Dictionary__KeyCollection* __th
     return __retval.Store((Dictionary__KeyCollection__Enumerator__New1_fn(__types[0], __this->_source, &ret2), ret2)), void();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() :136
+// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() :137
 void Dictionary__KeyCollection__GetEnumerator_boxed_fn(Dictionary__KeyCollection* __this, uObject** __retval)
 {
     *__retval = __this->GetEnumerator_boxed();
 }
 
-// internal KeyCollection New(Uno.Collections.Dictionary<TKey, TValue> source) :131
+// internal KeyCollection New(Uno.Collections.Dictionary<TKey, TValue> source) :132
 void Dictionary__KeyCollection__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, Dictionary__KeyCollection** __retval)
 {
     *__retval = Dictionary__KeyCollection::New1(__type, source);
 }
 
-// private void Uno.Collections.ICollection<TKey>.Add(TKey item) :146
+// private void Uno.Collections.ICollection<TKey>.Add(TKey item) :147
 void Dictionary__KeyCollection__UnoCollectionsICollectionTKeyAdd_fn(Dictionary__KeyCollection* __this, void* item)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection", "Uno.Collections.ICollection<TKey>.Add(TKey)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private void Uno.Collections.ICollection<TKey>.Clear() :141
+// private void Uno.Collections.ICollection<TKey>.Clear() :142
 void Dictionary__KeyCollection__UnoCollectionsICollectionTKeyClear_fn(Dictionary__KeyCollection* __this)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection", "Uno.Collections.ICollection<TKey>.Clear()");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private bool Uno.Collections.ICollection<TKey>.Contains(TKey item) :156
+// private bool Uno.Collections.ICollection<TKey>.Contains(TKey item) :157
 void Dictionary__KeyCollection__UnoCollectionsICollectionTKeyContains_fn(Dictionary__KeyCollection* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection", "Uno.Collections.ICollection<TKey>.Contains(TKey)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private bool Uno.Collections.ICollection<TKey>.Remove(TKey item) :151
+// private bool Uno.Collections.ICollection<TKey>.Remove(TKey item) :152
 void Dictionary__KeyCollection__UnoCollectionsICollectionTKeyRemove_fn(Dictionary__KeyCollection* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection", "Uno.Collections.ICollection<TKey>.Remove(TKey)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// internal KeyCollection(Uno.Collections.Dictionary<TKey, TValue> source) [instance] :131
+// internal KeyCollection(Uno.Collections.Dictionary<TKey, TValue> source) [instance] :132
 void Dictionary__KeyCollection::ctor_(::g::Uno::Collections::Dictionary* source)
 {
     _source = source;
 }
 
-// public int get_Count() [instance] :163
+// public int get_Count() [instance] :164
 int32_t Dictionary__KeyCollection::Count()
 {
     uStackFrame __("Uno.Collections.Dictionary`2.KeyCollection", "get_Count()");
     return uPtr(_source)->Count();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() [instance] :136
+// public Uno.Collections.Dictionary<TKey, TValue>.KeyCollection.Enumerator GetEnumerator() [instance] :137
 uObject* Dictionary__KeyCollection::GetEnumerator_boxed()
 {
     uType* __types[] = {
@@ -3154,7 +3145,7 @@ uObject* Dictionary__KeyCollection::GetEnumerator_boxed()
     return uBoxPtr(__types[0], (Dictionary__KeyCollection__GetEnumerator_fn(this, &ret3), ret3));
 }
 
-// internal KeyCollection New(Uno.Collections.Dictionary<TKey, TValue> source) [static] :131
+// internal KeyCollection New(Uno.Collections.Dictionary<TKey, TValue> source) [static] :132
 Dictionary__KeyCollection* Dictionary__KeyCollection::New1(uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     Dictionary__KeyCollection* obj1 = (Dictionary__KeyCollection*)uNew(__type);
@@ -3163,8 +3154,8 @@ Dictionary__KeyCollection* Dictionary__KeyCollection::New1(uType* __type, ::g::U
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/KeyValuePair.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/KeyValuePair.uno
+// -----------------------------------------------------------------------------------
 
 // public struct KeyValuePair<TKey, TValue> :6
 // {
@@ -3185,7 +3176,6 @@ uStructType* KeyValuePair_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.GenericCount = 2;
     options.TypeSize = sizeof(uStructType);
@@ -3195,7 +3185,7 @@ uStructType* KeyValuePair_typeof()
 }
 
 // public KeyValuePair(TKey key, TValue value) :11
-void KeyValuePair__ctor_1_fn(uTRef __this, uType* __type, void* key, void* value)
+void KeyValuePair__ctor__fn(uTRef __this, uType* __type, void* key, void* value)
 {
     __type->Field(__this, 0/*_key*/) = key;
     __type->Field(__this, 1/*_value*/) = value;
@@ -3211,7 +3201,7 @@ void KeyValuePair__get_Key_fn(uTRef __this, uType* __type, uTRef __retval)
 void KeyValuePair__New1_fn(uType* __type, void* key, void* value, uTRef __retval)
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
-    KeyValuePair__ctor_1_fn(&obj1, __type, key, value);
+    KeyValuePair__ctor__fn(&obj1, __type, key, value);
     return __retval.Store(obj1), void();
 }
 
@@ -3222,8 +3212,8 @@ void KeyValuePair__get_Value_fn(uTRef __this, uType* __type, uTRef __retval)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/EnumerableExtensions.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/EnumerableExtensions.uno
+// ---------------------------------------------------------------------------------------
 
 // private sealed class EnumerableExtensions.LinkedList<T> :56
 // {
@@ -3265,8 +3255,8 @@ void EnumerableExtensions__LinkedList__New1_fn(uType* __type, void* item, Enumer
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/LinkedList.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/LinkedList.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class LinkedList<T> :20
 // {
@@ -3768,8 +3758,8 @@ LinkedList* LinkedList::New1(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/LinkedList.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/LinkedList.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class LinkedListNode<T> :6
 // {
@@ -3902,8 +3892,8 @@ void LinkedListNode::Previous(LinkedListNode* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/List.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/List.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class List<T> :6
 // {
@@ -4338,8 +4328,8 @@ List* List::New2(uType* __type, int32_t capacity)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/ObservableList.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/ObservableList.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ObservableList<T> :6
 // {
@@ -4616,8 +4606,8 @@ ObservableList* ObservableList::New1(uType* __type, uDelegate* added, uDelegate*
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/OfType.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/OfType.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class OfTypeEnumerable<T, U> :3
 // {
@@ -4696,8 +4686,8 @@ OfTypeEnumerable* OfTypeEnumerable::New1(uType* __type, uObject* source)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/OfType.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/OfType.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class OfTypeEnumerator<T, U> :18
 // {
@@ -4826,8 +4816,8 @@ OfTypeEnumerator* OfTypeEnumerator::New1(uType* __type, uObject* source)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/PriorityQueue.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/PriorityQueue.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class PriorityQueue<T> :23
 // {
@@ -5038,8 +5028,8 @@ PriorityQueue* PriorityQueue::New1(uType* __type, int32_t type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/PriorityQueue.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/PriorityQueue.uno
+// --------------------------------------------------------------------------
 
 // internal struct PriorityQueueItem<T> :5
 // {
@@ -5056,7 +5046,6 @@ uStructType* PriorityQueueItem_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.GenericCount = 1;
     options.TypeSize = sizeof(uStructType);
@@ -5066,8 +5055,8 @@ uStructType* PriorityQueueItem_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/PriorityQueue.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/PriorityQueue.uno
+// --------------------------------------------------------------------------
 
 // internal enum PriorityQueueType :11
 uEnumType* PriorityQueueType_typeof()
@@ -5082,8 +5071,8 @@ uEnumType* PriorityQueueType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Queue.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Queue.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class Queue<T> :6
 // {
@@ -5345,8 +5334,8 @@ Queue* Queue::New2(uType* __type, int32_t capacity)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/ReadOnlyCollection.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/ReadOnlyCollection.uno
+// -----------------------------------------------------------------------------------------
 
 // public sealed class ReadOnlyCollection<T> :6
 // {
@@ -5425,8 +5414,8 @@ ReadOnlyCollection* ReadOnlyCollection::New1(uType* __type, uObject* list)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/RootableList.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/RootableList.uno
+// -------------------------------------------------------------------------
 
 // public sealed class RootableList<T> :12
 // {
@@ -5812,8 +5801,8 @@ RootableList* RootableList::New1(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/Select.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/Select.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class SelectEnumerable<T, TRet> :3
 // {
@@ -5894,8 +5883,8 @@ SelectEnumerable* SelectEnumerable::New1(uType* __type, uObject* source, uDelega
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/Select.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/Select.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class SelectEnumerator<T, TRet> :20
 // {
@@ -6012,8 +6001,8 @@ SelectEnumerator* SelectEnumerator::New1(uType* __type, uObject* source, uDelega
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Stack.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Stack.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class Stack<T> :6
 // {
@@ -6239,8 +6228,8 @@ Stack* Stack::New2(uType* __type, int32_t capacity)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/Union.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/Union.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class UnionEnumerable<T> :3
 // {
@@ -6321,8 +6310,8 @@ UnionEnumerable* UnionEnumerable::New1(uType* __type, uObject* first, uObject* s
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/Union.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/Union.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class UnionEnumerator<T> :20
 // {
@@ -6452,10 +6441,10 @@ UnionEnumerator* UnionEnumerator::New1(uType* __type, uObject* first, uObject* s
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno
+// ---------------------------------------------------------------------------------
 
-// public sealed class Dictionary<TKey, TValue>.ValueCollection :167
+// public sealed class Dictionary<TKey, TValue>.ValueCollection :168
 // {
 static void Dictionary__ValueCollection_build(uType* type)
 {
@@ -6495,19 +6484,19 @@ Dictionary__ValueCollection_type* Dictionary__ValueCollection_typeof()
     return type;
 }
 
-// internal ValueCollection(Uno.Collections.Dictionary<TKey, TValue> source) :223
+// internal ValueCollection(Uno.Collections.Dictionary<TKey, TValue> source) :224
 void Dictionary__ValueCollection__ctor__fn(Dictionary__ValueCollection* __this, ::g::Uno::Collections::Dictionary* source)
 {
     __this->ctor_(source);
 }
 
-// public int get_Count() :255
+// public int get_Count() :256
 void Dictionary__ValueCollection__get_Count_fn(Dictionary__ValueCollection* __this, int32_t* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() :228
+// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() :229
 void Dictionary__ValueCollection__GetEnumerator_fn(Dictionary__ValueCollection* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -6518,60 +6507,60 @@ void Dictionary__ValueCollection__GetEnumerator_fn(Dictionary__ValueCollection* 
     return __retval.Store((Dictionary__ValueCollection__Enumerator__New1_fn(__types[0], __this->_source, &ret2), ret2)), void();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() :228
+// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() :229
 void Dictionary__ValueCollection__GetEnumerator_boxed_fn(Dictionary__ValueCollection* __this, uObject** __retval)
 {
     *__retval = __this->GetEnumerator_boxed();
 }
 
-// internal ValueCollection New(Uno.Collections.Dictionary<TKey, TValue> source) :223
+// internal ValueCollection New(Uno.Collections.Dictionary<TKey, TValue> source) :224
 void Dictionary__ValueCollection__New1_fn(uType* __type, ::g::Uno::Collections::Dictionary* source, Dictionary__ValueCollection** __retval)
 {
     *__retval = Dictionary__ValueCollection::New1(__type, source);
 }
 
-// private void Uno.Collections.ICollection<TValue>.Add(TValue item) :238
+// private void Uno.Collections.ICollection<TValue>.Add(TValue item) :239
 void Dictionary__ValueCollection__UnoCollectionsICollectionTValueAdd_fn(Dictionary__ValueCollection* __this, void* item)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection", "Uno.Collections.ICollection<TValue>.Add(TValue)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private void Uno.Collections.ICollection<TValue>.Clear() :233
+// private void Uno.Collections.ICollection<TValue>.Clear() :234
 void Dictionary__ValueCollection__UnoCollectionsICollectionTValueClear_fn(Dictionary__ValueCollection* __this)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection", "Uno.Collections.ICollection<TValue>.Clear()");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private bool Uno.Collections.ICollection<TValue>.Contains(TValue item) :248
+// private bool Uno.Collections.ICollection<TValue>.Contains(TValue item) :249
 void Dictionary__ValueCollection__UnoCollectionsICollectionTValueContains_fn(Dictionary__ValueCollection* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection", "Uno.Collections.ICollection<TValue>.Contains(TValue)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// private bool Uno.Collections.ICollection<TValue>.Remove(TValue item) :243
+// private bool Uno.Collections.ICollection<TValue>.Remove(TValue item) :244
 void Dictionary__ValueCollection__UnoCollectionsICollectionTValueRemove_fn(Dictionary__ValueCollection* __this, void* item, bool* __retval)
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection", "Uno.Collections.ICollection<TValue>.Remove(TValue)");
     U_THROW(::g::Uno::InvalidOperationException::New4());
 }
 
-// internal ValueCollection(Uno.Collections.Dictionary<TKey, TValue> source) [instance] :223
+// internal ValueCollection(Uno.Collections.Dictionary<TKey, TValue> source) [instance] :224
 void Dictionary__ValueCollection::ctor_(::g::Uno::Collections::Dictionary* source)
 {
     _source = source;
 }
 
-// public int get_Count() [instance] :255
+// public int get_Count() [instance] :256
 int32_t Dictionary__ValueCollection::Count()
 {
     uStackFrame __("Uno.Collections.Dictionary`2.ValueCollection", "get_Count()");
     return uPtr(_source)->Count();
 }
 
-// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() [instance] :228
+// public Uno.Collections.Dictionary<TKey, TValue>.ValueCollection.Enumerator GetEnumerator() [instance] :229
 uObject* Dictionary__ValueCollection::GetEnumerator_boxed()
 {
     uType* __types[] = {
@@ -6581,7 +6570,7 @@ uObject* Dictionary__ValueCollection::GetEnumerator_boxed()
     return uBoxPtr(__types[0], (Dictionary__ValueCollection__GetEnumerator_fn(this, &ret3), ret3));
 }
 
-// internal ValueCollection New(Uno.Collections.Dictionary<TKey, TValue> source) [static] :223
+// internal ValueCollection New(Uno.Collections.Dictionary<TKey, TValue> source) [static] :224
 Dictionary__ValueCollection* Dictionary__ValueCollection::New1(uType* __type, ::g::Uno::Collections::Dictionary* source)
 {
     Dictionary__ValueCollection* obj1 = (Dictionary__ValueCollection*)uNew(__type);

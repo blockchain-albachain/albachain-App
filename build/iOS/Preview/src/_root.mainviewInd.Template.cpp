@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/mainviewInd.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/mainviewInd.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.mainviewInd.h>
@@ -64,7 +64,7 @@ void mainviewInd__Template__New1_fn(mainviewInd__Template* __this, uObject** __r
     ::g::Fuse::Controls::Circle* __self1 = ::g::Fuse::Controls::Circle::New3();
     __self1->Color(::g::Uno::Float4__New2(0.5215687f, 0.5333334f, 0.5294118f, 1.0f));
     __self1->Margin(::g::Uno::Float4__New2(1.5f, 1.5f, 1.5f, 1.5f));
-    __self1->SourceLineNumber(11);
+    __self1->SourceLineNumber(28);
     __self1->SourceFileName(::STRINGS[0/*"Pages/indiv...*/]);
     return *__retval = __self1, void();
 }

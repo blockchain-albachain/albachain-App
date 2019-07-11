@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Bool.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Bool.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.ValueType.h>
+#include <Uno.Object.h>
 
 namespace g{
 namespace Uno{
 
-// public intrinsic struct Bool :9
+// public intrinsic struct Bool :11
 // {
 uStructType* Bool_typeof();
 void Bool__Equals_fn(bool* __this, uType* __type, uObject* o, bool* __retval);

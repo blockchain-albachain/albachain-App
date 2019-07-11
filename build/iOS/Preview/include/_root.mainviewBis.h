@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/mainviewBis.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/mainviewBis.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,9 +20,19 @@
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
+#include <Uno.Float4.h>
 #include <Uno.UX.IPropertyListener.h>
+namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
+namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
+namespace g{namespace Fuse{namespace Controls{struct ScrollViewPager;}}}
+namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
+namespace g{namespace Fuse{namespace Controls{struct Text;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
+namespace g{namespace Fuse{namespace Reactive{struct Each;}}}
+namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
+namespace g{namespace Uno{namespace UX{struct Property1;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct mainviewBis;}
 
 namespace g{
@@ -37,9 +47,44 @@ void mainviewBis__New5_fn(::g::Fuse::Navigation::Router* router1, mainviewBis** 
 struct mainviewBis : ::g::Fuse::Controls::Page
 {
     uStrong< ::g::Fuse::Navigation::Router*> router;
+    uStrong< ::g::Uno::UX::Property1*> shadow_Color_inst;
+    uStrong< ::g::Uno::UX::Property1*> sidebarFade_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> theEach_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> sidebar;
+    uStrong< ::g::Fuse::Controls::Shadow*> shadow;
+    uStrong< ::g::Fuse::Controls::Rectangle*> sidebarFade;
+    uStrong< ::g::Fuse::Controls::Text*> titleText;
+    uStrong< ::g::Fuse::Reactive::Each*> theEach;
+    uStrong< ::g::Fuse::Controls::Rectangle*> gocontractbtn;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb21;
+    uStrong< ::g::Fuse::Controls::ScrollViewPager*> svp;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb22;
     uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
     static uSStrong<uArray*> __g_static_nametable1_;
     static uSStrong<uArray*>& __g_static_nametable1() { return mainviewBis_typeof()->Init(), __g_static_nametable1_; }
+    static ::g::Uno::UX::Selector __selector0_;
+    static ::g::Uno::UX::Selector& __selector0() { return mainviewBis_typeof()->Init(), __selector0_; }
+    static ::g::Uno::UX::Selector __selector1_;
+    static ::g::Uno::UX::Selector& __selector1() { return mainviewBis_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return mainviewBis_typeof()->Init(), __selector2_; }
+    static ::g::Uno::UX::Selector __selector3_;
+    static ::g::Uno::UX::Selector& __selector3() { return mainviewBis_typeof()->Init(), __selector3_; }
+    static ::g::Uno::UX::Selector __selector4_;
+    static ::g::Uno::UX::Selector& __selector4() { return mainviewBis_typeof()->Init(), __selector4_; }
+    static ::g::Uno::UX::Selector __selector5_;
+    static ::g::Uno::UX::Selector& __selector5() { return mainviewBis_typeof()->Init(), __selector5_; }
+    static ::g::Uno::UX::Selector __selector6_;
+    static ::g::Uno::UX::Selector& __selector6() { return mainviewBis_typeof()->Init(), __selector6_; }
+    static ::g::Uno::UX::Selector __selector7_;
+    static ::g::Uno::UX::Selector& __selector7() { return mainviewBis_typeof()->Init(), __selector7_; }
+    static ::g::Uno::UX::Selector __selector8_;
+    static ::g::Uno::UX::Selector& __selector8() { return mainviewBis_typeof()->Init(), __selector8_; }
+    static ::g::Uno::UX::Selector __selector9_;
+    static ::g::Uno::UX::Selector& __selector9() { return mainviewBis_typeof()->Init(), __selector9_; }
+    static ::g::Uno::UX::Selector __selector10_;
+    static ::g::Uno::UX::Selector& __selector10() { return mainviewBis_typeof()->Init(), __selector10_; }
 
     void ctor_8(::g::Fuse::Navigation::Router* router1);
     void InitializeUX();

@@ -1,4 +1,4 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/profile.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/profile.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -21,6 +21,11 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
+namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
+namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
+namespace g{namespace Uno{namespace UX{struct NameTable;}}}
+namespace g{namespace Uno{namespace UX{struct Property1;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct profile;}
 
 namespace g{
@@ -28,15 +33,27 @@ namespace g{
 // public partial sealed class profile :2
 // {
 ::g::Fuse::Controls::Panel_type* profile_typeof();
-void profile__ctor_8_fn(profile* __this);
+void profile__ctor_8_fn(profile* __this, ::g::Fuse::Navigation::Router* router1);
 void profile__InitializeUX_fn(profile* __this);
-void profile__New5_fn(profile** __retval);
+void profile__New5_fn(::g::Fuse::Navigation::Router* router1, profile** __retval);
 
 struct profile : ::g::Fuse::Controls::Page
 {
-    void ctor_8();
+    uStrong< ::g::Fuse::Navigation::Router*> router;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb25;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb26;
+    uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
+    static uSStrong<uArray*> __g_static_nametable1_;
+    static uSStrong<uArray*>& __g_static_nametable1() { return profile_typeof()->Init(), __g_static_nametable1_; }
+    static ::g::Uno::UX::Selector __selector0_;
+    static ::g::Uno::UX::Selector& __selector0() { return profile_typeof()->Init(), __selector0_; }
+
+    void ctor_8(::g::Fuse::Navigation::Router* router1);
     void InitializeUX();
-    static profile* New5();
+    static profile* New5(::g::Fuse::Navigation::Router* router1);
 };
 // }
 

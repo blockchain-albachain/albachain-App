@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Image.ScriptClass.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Image.ScriptClass.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -40,7 +40,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class Image :8
+// public partial sealed class Image :8
 // {
 struct Image_type : ::g::Fuse::Controls::Control_type
 {

@@ -5,23 +5,35 @@
 	
 	var Observable = require('FuseJS/Observable');
 
-	var storename = Observable("");
+	var storeName = Observable("");
 
-	exports.storename = this.Parameter.map(function(param) {
-		storename.value = param.storename;
-		return param.storename;
+	exports.storeName = this.Parameter.map(function(param) {
+		storeName.value = param.storeName;
+		return param.storeName;
 	});
 
-	exports.callnumber = this.Parameter.map(function(param) {
-		return param.callnumber;
+	exports.pay = this.Parameter.map(function(param) {
+		return param.pay;
 	});
 
 	exports.storenumber = this.Parameter.map(function(param) {
 		return param.storenumber;
 	});
 
-	exports.address = this.Parameter.map(function(param) {
-		return param.address;
+	exports.workingDay = this.Parameter.map(function(param) {
+		return param.workingDay;
+	});
+
+	exports.workingTime = this.Parameter.map(function(param) {
+		return param.workingTime;
+	});
+
+	exports.account = this.Parameter.map(function(param) {
+		return param.account;
+	});
+
+	exports.period = this.Parameter.map(function(param) {
+		return param.period;
 	});
 
 	exports.goBack = function()
@@ -51,18 +63,22 @@
 					<StackPanel>
 						<Rectangle Alignment="Default" Margin="0, 20, 0, 0">
 							<Circle Width="50" Height="50" Color="#E2E3E2" Alignment="Left" Margin="20, 0, 0, 0" />
-							<Text Value="{storename}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
+							<Text Value="{storeName}" Color="#434443" FontSize="20" TextAlignment="Left" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" TextColor="#000" Alignment="Center" />
 
 						</Rectangle>
 						<Rectangle Height="1" Width="280" Color="#E1E3E1" Margin="0, 20, 0, 0" />
 						<Rectangle Margin="0, 20, 0, 0">
-							<Text Value="가게 세부내용" Margin="30, 0, 0, 0" TextColor="#000" />
-							<Text Value="전화번호" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
-							<Text Value="{callnumber}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
+							<Text Value="계약 세부내용" Margin="30, 0, 0, 0" TextColor="#000" />
+							<Text Value="시급" FontSize="15" Margin="30, 40, 0, 0" TextColor="#67A5CC" />
+							<Text Value="{pay}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 40, 0, 0" TextColor="#787878" />
 							<Text Value="고유번호" FontSize="15" Margin="30, 65, 0, 0" TextColor="#67A5CC" />
 							<Text Value="{storenumber}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 65, 0, 0" TextColor="#787878" />
-							<Text Margin="30, 90, 0, 0" Value="주소" FontSize="15" TextColor="#67A5CC" ux:Name="time" />
-							<Text Value="{address}" Color="#848886" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+							<Text  Value="근무요일" FontSize="15" TextColor="#67A5CC"  Margin="30, 90, 0, 0"/>
+							<Text Value="{workingDay}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 90, 0, 0" TextColor="#787878" />
+							<Text  Value="근무시간" FontSize="15" TextColor="#67A5CC"  Margin="30, 115, 0, 0"/>
+							<Text Value="{workingDay}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 115, 0, 0" TextColor="#787878" />
+							<Text  Value="계좌" FontSize="15" TextColor="#67A5CC"  Margin="30, 140, 0, 0"/>
+							<Text Value="{account}" Color="#404140" FontSize="15" TextAlignment="Left" Margin="110, 140, 0, 0" TextColor="#787878" />
 						</Rectangle>
 					</StackPanel>
 					<Shadow Angle="107" />				

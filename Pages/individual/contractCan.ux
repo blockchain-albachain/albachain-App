@@ -1,12 +1,46 @@
 <Page ux:Class="contractCan">
 	<Router ux:Dependency="router" />
+
+	<JavaScript>
+
+	var Observable = require('FuseJS/Observable');
+	exports.cancelView = Observable(false);
+
+	exports.gotoHome = function(){ 
+		exports.cancelView.value = false;
+		router.goto("mainviewInd");
+	}
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+	exports.title = this.Parameter.map(function(param) {
+		return param.title;
+	});
+
+	exports.cancelToggle = function () {  exports.cancelView.value = true; };
+
+	exports.goBack = function()
+	{
+		router.goBack();
+	};
+
+
+	</JavaScript>
+
 	<ClientPanel>
 
 		<Rectangle Alignment="Top" Color="#FEFFFE">
 			<Grid Dock="Top" Margin="5, 5, 5, 5" Height="50" Y="0" RowCount="1" ColumnCount="3">
-				<!-- <Image File="../../Assets/back.png" Width="25" Height="25" Clicked="{goBack}" Alignment="Left" Margin="30, 0, 0, 0" /> -->
+				<Image File="../../Assets/back.png" Width="25" Height="25" Alignment="Left" Margin="30, 0, 0, 0">
+					<Clicked>
+							<Callback Handler="{goBack}" />
+						</Clicked>
+					</Image>
 
-				<Text />
+<!-- 				<Text /> -->
 				<Text ux:Name="titleText" Value="계약해지" FontSize="25" Alignment="Center" TextAlignment="Center" Margin="0, 0, 0, 0" TextColor="#000">
 					<Font File="../../Assets/Fonts/Roboto-Black.ttf" />
 				</Text>
@@ -17,7 +51,7 @@
 		<!-- 해지완료 메시지  -->
 		<WhileTrue Value="{cancelView}">
 			<Change popup.Opacity="1" Duration="1" />
-			<Panel Width="500" Height="1000" Color="#FFFFFF7B">
+			<Panel Width="500" Height="1000" Color="#FFFFFF7B" Margin="0, 0, 0, 0">
 				<Rectangle ux:Name="popup" Width="330" Height="300" Background="#FEFFFE" Margin="0, 0, 0, 0" Opacity="1" CornerRadius="10">
 					<Text Value="계약 해지 신청이 완료되었습니다." Alignment="TopCenter" Margin="0, 30, 0, 0" />
 					<Text Value="이 화면을 터치하면 홈으로 이동합니다." Alignment="BottomCenter" Margin="0, 0, 0, 20" TextColor="#A0A0A0" FontSize="10" />
@@ -71,31 +105,31 @@
 							<StackPanel Orientation="Horizontal" Margin="0, 60, 0, 0">
 								<mystar ux:Name="Za" Margin="65, 0, 0, 0" Alignment="Center" Width="35" Height="35">
 									<Clicked>
-										<Set stateGroup.Active="Stars1"/>
+										<Set stateGroup.Active="Stars1" />
 									</Clicked>
 									<Stroke Color="#5EA0C9" Width="2" />
 								</mystar>
 								<mystar ux:Name="ba" Margin="0, 0, 0, 0" Width="35" Height="35">
 									<Clicked>
-										<Set stateGroup.Active="Stars2"/>
+										<Set stateGroup.Active="Stars2" />
 									</Clicked>
 									<Stroke Width="2" Color="#5EA0C9" />
 								</mystar>
 								<mystar ux:Name="va" Margin="0, 0, 0, 0" Width="35" Height="35">
 									<Clicked>
-										<Set stateGroup.Active="Stars3"/>
+										<Set stateGroup.Active="Stars3" />
 									</Clicked>
 									<Stroke Width="2" Color="#5EA0C9" />
 								</mystar>
 								<mystar ux:Name="pa" Margin="0, 0, 0, 0" Width="35" Height="35">
 									<Clicked>
-										<Set stateGroup.Active="Stars4"/>
+										<Set stateGroup.Active="Stars4" />
 									</Clicked>
 									<Stroke Width="2" Color="#5EA0C9" />
 								</mystar>
 								<mystar ux:Name="ka" Margin="0, 0, 0, 0" Width="35" Height="35">
 									<Clicked>
-										<Set stateGroup.Active="Stars5"/>
+										<Set stateGroup.Active="Stars5" />
 									</Clicked>
 									<Stroke Width="2" Color="#5EA0C9" />
 								</mystar>
@@ -129,56 +163,33 @@
 	</ClientPanel>
 
 	<StateGroup ux:Name="stateGroup" Active="noStars">
-		<State ux:Name="noStars"/>
+		<State ux:Name="noStars" />
 		<State ux:Name="Stars1">
-			<Change Za.Color="#5EA0C9" Easing="ElasticIn"/>
+			<Change Za.Color="#5EA0C9" Easing="ElasticIn" />
 		</State>
 		<State ux:Name="Stars2">
-			<Change Za.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change ba.Color="#5EA0C9" Easing="ElasticIn"/>
+			<Change Za.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change ba.Color="#5EA0C9" Easing="ElasticIn" />
 		</State>
 		<State ux:Name="Stars3">
-			<Change Za.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change ba.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change va.Color="#5EA0C9" Easing="ElasticIn"/>
+			<Change Za.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change ba.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change va.Color="#5EA0C9" Easing="ElasticIn" />
 		</State>
 		<State ux:Name="Stars4">
-			<Change Za.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change ba.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change va.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change pa.Color="#5EA0C9" Easing="ElasticIn"/>
+			<Change Za.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change ba.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change va.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change pa.Color="#5EA0C9" Easing="ElasticIn" />
 		</State>
 		<State ux:Name="Stars5">
-			<Change Za.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change ba.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change va.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change pa.Color="#5EA0C9" Easing="ElasticIn"/>
-			<Change ka.Color="#5EA0C9" Easing="ElasticIn"/>
+			<Change Za.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change ba.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change va.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change pa.Color="#5EA0C9" Easing="ElasticIn" />
+			<Change ka.Color="#5EA0C9" Easing="ElasticIn" />
 		</State>
 	</StateGroup>
 
-	<JavaScript>
-
-	var Observable = require('FuseJS/Observable');
-	exports.cancelView = Observable(false);
-
-	exports.gotoHome = function(){ 
-		exports.cancelView.value = false;
-		router.goto("mainviewInd");
-	}
-
-	exports.goBack = function()
-	{
-		router.goBack();
-	};
-
-	exports.title = this.Parameter.map(function(param) {
-		return param.title;
-	});
-
-	exports.cancelToggle = function () {  exports.cancelView.value = true; };
-
-
-	</JavaScript>
 
 </Page>

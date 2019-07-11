@@ -1,10 +1,12 @@
-// This file was generated based on /Users/kbs/development/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
+// This file was generated based on /Users/jaeyounchae/Desktop/albachain-App/build/iOS/Preview/cache/ux15/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.login.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Elements.Alignment.h>
+#include <Fuse.Elements.Element.h>
 #include <Fuse.Navigation.Router.h>
 #include <Fuse.Node.h>
 #include <Uno.Bool.h>
@@ -23,7 +25,7 @@ namespace g{
 // static Template() :14
 static void MainView__Template__cctor__fn(uType* __type)
 {
-    MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"login"*/]);
+    MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"login"*/]);
 }
 
 static void MainView__Template_build(uType* type)
@@ -67,6 +69,7 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     uStackFrame __("MainView.Template", "New()");
     ::g::login* __self1 = ::g::login::New5(uPtr(__this->__parent1)->router);
     __self1->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    __self1->Alignment(0);
     __self1->Name(MainView__Template::__selector0_);
     __self1->SourceLineNumber(4);
     __self1->SourceFileName(::STRINGS[1/*"MainView.ux"*/]);

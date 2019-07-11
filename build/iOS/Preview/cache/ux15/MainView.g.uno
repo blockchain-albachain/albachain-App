@@ -18,6 +18,7 @@ public partial class MainView: Fuse.App
         {
             var __self = new global::login(__parent.router);
             __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Alignment = Fuse.Elements.Alignment.Default;
             __self.Name = __selector0;
             __self.SourceLineNumber = 4;
             __self.SourceFileName = "MainView.ux";
@@ -55,36 +56,12 @@ public partial class MainView: Fuse.App
     {
         [Uno.WeakReference] internal readonly MainView __parent;
         [Uno.WeakReference] internal readonly MainView __parentInstance;
-        public Template2(MainView parent, MainView parentInstance): base("mainviewBis", false)
+        public Template2(MainView parent, MainView parentInstance): base("signupBis", false)
         {
             __parent = parent;
             __parentInstance = parentInstance;
         }
         static Template2()
-        {
-        }
-        public override object New()
-        {
-            var __self = new global::mainviewBis(__parent.router);
-            __self.Color = float4(1f, 1f, 1f, 1f);
-            __self.Name = __selector0;
-            __self.SourceLineNumber = 6;
-            __self.SourceFileName = "MainView.ux";
-            return __self;
-        }
-        static global::Uno.UX.Selector __selector0 = "mainviewBis";
-    }
-    [Uno.Compiler.UxGenerated]
-    public partial class Template3: Uno.UX.Template
-    {
-        [Uno.WeakReference] internal readonly MainView __parent;
-        [Uno.WeakReference] internal readonly MainView __parentInstance;
-        public Template3(MainView parent, MainView parentInstance): base("signupBis", false)
-        {
-            __parent = parent;
-            __parentInstance = parentInstance;
-        }
-        static Template3()
         {
         }
         public override object New()
@@ -99,11 +76,36 @@ public partial class MainView: Fuse.App
         static global::Uno.UX.Selector __selector0 = "signupBis";
     }
     [Uno.Compiler.UxGenerated]
+    public partial class Template3: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template3(MainView parent, MainView parentInstance): base("signupInd", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template3()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::signupInd(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Alignment = Fuse.Elements.Alignment.Default;
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 8;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "signupInd";
+    }
+    [Uno.Compiler.UxGenerated]
     public partial class Template4: Uno.UX.Template
     {
         [Uno.WeakReference] internal readonly MainView __parent;
         [Uno.WeakReference] internal readonly MainView __parentInstance;
-        public Template4(MainView parent, MainView parentInstance): base("signupInd", false)
+        public Template4(MainView parent, MainView parentInstance): base("contract", false)
         {
             __parent = parent;
             __parentInstance = parentInstance;
@@ -113,14 +115,349 @@ public partial class MainView: Fuse.App
         }
         public override object New()
         {
-            var __self = new global::signupInd(__parent.router);
+            var __self = new global::contract(__parent.router);
             __self.Color = float4(1f, 1f, 1f, 1f);
             __self.Name = __selector0;
-            __self.SourceLineNumber = 8;
+            __self.SourceLineNumber = 9;
             __self.SourceFileName = "MainView.ux";
             return __self;
         }
-        static global::Uno.UX.Selector __selector0 = "signupInd";
+        static global::Uno.UX.Selector __selector0 = "contract";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template5: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template5(MainView parent, MainView parentInstance): base("detailContractPage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template5()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::detailContractPage(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 10;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "detailContractPage";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template6: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template6(MainView parent, MainView parentInstance): base("contractCan", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template6()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::contractCan(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 11;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "contractCan";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template7: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template7(MainView parent, MainView parentInstance): base("profile", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template7()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::profile(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 12;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "profile";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template8: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template8(MainView parent, MainView parentInstance): base("profileInd", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template8()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::profileInd(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 13;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "profileInd";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template9: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template9(MainView parent, MainView parentInstance): base("startPage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template9()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::startPage(__parent.router);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 14;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "startPage";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template10: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template10(MainView parent, MainView parentInstance): base("mainviewBis", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template10()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::mainviewBis(__parent.router);
+            var temp = new global::Fuse.Triggers.Transition();
+            var temp1 = new global::Fuse.Animations.Move();
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 16;
+            __self.SourceFileName = "MainView.ux";
+            temp.SourceLineNumber = 17;
+            temp.SourceFileName = "MainView.ux";
+            temp.Animators.Add(temp1);
+            temp1.X = 1f;
+            temp1.RelativeTo = Fuse.TranslationModes.ParentSize;
+            __self.Children.Add(temp);
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "mainviewBis";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template11: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template11(MainView parent, MainView parentInstance): base("registration", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template11()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::registration(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 21;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "registration";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template12: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template12(MainView parent, MainView parentInstance): base("contractCheck", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template12()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::contractCheck(__parent.router);
+            var temp = new global::Fuse.Triggers.Transition();
+            var temp1 = new global::Fuse.Animations.Move();
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 22;
+            __self.SourceFileName = "MainView.ux";
+            temp.SourceLineNumber = 23;
+            temp.SourceFileName = "MainView.ux";
+            temp.Animators.Add(temp1);
+            temp1.X = 1f;
+            temp1.RelativeTo = Fuse.TranslationModes.ParentSize;
+            __self.Children.Add(temp);
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "contractCheck";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template13: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template13(MainView parent, MainView parentInstance): base("manage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template13()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::manage(__parent.router);
+            var temp = new global::Fuse.Triggers.Transition();
+            var temp1 = new global::Fuse.Animations.Move();
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 28;
+            __self.SourceFileName = "MainView.ux";
+            temp.SourceLineNumber = 29;
+            temp.SourceFileName = "MainView.ux";
+            temp.Animators.Add(temp1);
+            temp1.X = 1f;
+            temp1.RelativeTo = Fuse.TranslationModes.ParentSize;
+            __self.Children.Add(temp);
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "manage";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template14: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template14(MainView parent, MainView parentInstance): base("detailCheckPage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template14()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::detailCheckPage(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 34;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "detailCheckPage";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template15: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template15(MainView parent, MainView parentInstance): base("detailContract", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template15()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::detailContract(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 35;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "detailContract";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template16: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template16(MainView parent, MainView parentInstance): base("detailStore", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template16()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::detailStore(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 36;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "detailStore";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template17: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template17(MainView parent, MainView parentInstance): base("detailManage", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template17()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::detailManage(__parent.router);
+            __self.Color = float4(1f, 1f, 1f, 1f);
+            __self.Name = __selector0;
+            __self.SourceLineNumber = 37;
+            __self.SourceFileName = "MainView.ux";
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "detailManage";
     }
     internal global::Fuse.Navigation.Router router;
     internal global::Fuse.Reactive.FuseJS.DiagnosticsImplModule FuseReactiveFuseJSDiagnosticsImplModule;
@@ -288,20 +625,46 @@ public partial class MainView: Fuse.App
         var temp = new global::Fuse.Controls.Navigator();
         var login = new Template(this, this);
         var mainviewInd = new Template1(this, this);
-        var mainviewBis = new Template2(this, this);
-        var signupBis = new Template3(this, this);
-        var signupInd = new Template4(this, this);
+        var signupBis = new Template2(this, this);
+        var signupInd = new Template3(this, this);
+        var contract = new Template4(this, this);
+        var detailContractPage = new Template5(this, this);
+        var contractCan = new Template6(this, this);
+        var profile = new Template7(this, this);
+        var profileInd = new Template8(this, this);
+        var startPage = new Template9(this, this);
+        var mainviewBis = new Template10(this, this);
+        var registration = new Template11(this, this);
+        var contractCheck = new Template12(this, this);
+        var manage = new Template13(this, this);
+        var detailCheckPage = new Template14(this, this);
+        var detailContract = new Template15(this, this);
+        var detailStore = new Template16(this, this);
+        var detailManage = new Template17(this, this);
         router.Name = __selector0;
         router.SourceLineNumber = 2;
         router.SourceFileName = "MainView.ux";
-        temp.DefaultPath = "login";
+        temp.DefaultPath = "startPage";
         temp.SourceLineNumber = 3;
         temp.SourceFileName = "MainView.ux";
         temp.Templates.Add(login);
         temp.Templates.Add(mainviewInd);
-        temp.Templates.Add(mainviewBis);
         temp.Templates.Add(signupBis);
         temp.Templates.Add(signupInd);
+        temp.Templates.Add(contract);
+        temp.Templates.Add(detailContractPage);
+        temp.Templates.Add(contractCan);
+        temp.Templates.Add(profile);
+        temp.Templates.Add(profileInd);
+        temp.Templates.Add(startPage);
+        temp.Templates.Add(mainviewBis);
+        temp.Templates.Add(registration);
+        temp.Templates.Add(contractCheck);
+        temp.Templates.Add(manage);
+        temp.Templates.Add(detailCheckPage);
+        temp.Templates.Add(detailContract);
+        temp.Templates.Add(detailStore);
+        temp.Templates.Add(detailManage);
         this.Children.Add(router);
         this.Children.Add(temp);
     }

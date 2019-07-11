@@ -553,8 +553,8 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno
+// --------------------------------------------------------------------------------------
 
 // private sealed class CommonNavigationPages.AddedPage :88
 // {
@@ -608,8 +608,8 @@ CommonNavigationPages__AddedPage* CommonNavigationPages__AddedPage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/MobileTextEdit.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/MobileTextEdit.uno
+// --------------------------------------------------------------------------------------------
 
 // private sealed class MobileTextEdit.AndroidTemplate :175
 // {
@@ -672,8 +672,8 @@ MobileTextEdit__AndroidTemplate* MobileTextEdit__AndroidTemplate::New2(::g::Fuse
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Arc.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Arc.uno
+// ---------------------------------------------------------------------------
 
 // public partial sealed class Arc :16
 // {
@@ -801,8 +801,8 @@ Arc* Arc::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum AutoCapitalizationHint :50
 uEnumType* AutoCapitalizationHint_typeof()
@@ -819,8 +819,8 @@ uEnumType* AutoCapitalizationHint_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum AutoCorrectHint :43
 uEnumType* AutoCorrectHint_typeof()
@@ -836,16 +836,16 @@ uEnumType* AutoCorrectHint_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/BackButton.ux.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/BackButton.ux.uno
+// ------------------------------------------------------------------------------
 
 // public partial sealed class BackButton :17
 // {
 // static BackButton() :7
 static void BackButton__cctor_4_fn(uType* __type)
 {
-    BackButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    BackButton::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"btn"*/]);
+    BackButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    BackButton::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[3/*"btn"*/]);
 }
 
 static void BackButton_build(uType* type)
@@ -1014,8 +1014,8 @@ BackButton* BackButton::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/BottomFrameBackground.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/BottomFrameBackground.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class BottomBarBackground :35
 // {
@@ -1127,8 +1127,8 @@ BottomBarBackground* BottomBarBackground::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/BottomFrameBackground.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/BottomFrameBackground.uno
+// ----------------------------------------------------------------------------------------------
 
 // public class BottomFrameBackground :38
 // {
@@ -1242,7 +1242,7 @@ void BottomFrameBackground__GetContentSize_fn(BottomFrameBackground* __this, ::g
     bool ret2;
     ::g::Uno::Float4 v = ::g::Uno::Float4__New1(0.0f);
 
-    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(__this->_caps)->Item(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &v, &ret2), ret2))
+    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(__this->_caps)->Item(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &v, &ret2), ret2))
         return *__retval = ::g::Uno::Float2__New1(0.0f), void();
 
     if (__this->IncludesKeyboard() || (v.W < __this->KeyboardVisibleThreshold()))
@@ -1364,8 +1364,8 @@ BottomFrameBackground* BottomFrameBackground::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // internal abstract interface BufferedWebViewCall :456
 // {
@@ -1379,8 +1379,8 @@ uInterfaceType* BufferedWebViewCall_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Button.ux.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Button.ux.uno
+// --------------------------------------------------------------------------
 
 // public partial sealed class Button :67
 // {
@@ -1525,8 +1525,8 @@ Button* Button::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/ButtonBase.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/ButtonBase.uno
+// ---------------------------------------------------------------------------
 
 // public class ButtonBase :26
 // {
@@ -1689,7 +1689,7 @@ void ButtonBase::SetText(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _text))
     {
         _text = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[6/*"Text"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[6/*"Text"*/]), origin);
         uObject* l = LabelView();
 
         if (l != NULL)
@@ -1719,8 +1719,8 @@ ButtonBase* ButtonBase::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Circle.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Circle.uno
+// ------------------------------------------------------------------------------
 
 // public partial sealed class Circle :57
 // {
@@ -1951,15 +1951,15 @@ Circle* Circle::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/ClientPanel.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/ClientPanel.uno
+// ------------------------------------------------------------------------
 
 // public partial sealed class ClientPanel :11
 // {
 // static ClientPanel() :7
 static void ClientPanel__cctor_4_fn(uType* __type)
 {
-    ClientPanel::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[7/*"Padding"*/]);
+    ClientPanel::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[7/*"Padding"*/]);
 }
 
 static void ClientPanel_build(uType* type)
@@ -2108,8 +2108,8 @@ ClientPanel* ClientPanel::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigation.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigation.uno
+// ---------------------------------------------------------------------------------
 
 // internal static class CommonNavigation :10
 // {
@@ -2117,7 +2117,7 @@ static void CommonNavigation_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("Can not navigate to '");
     ::STRINGS[11] = uString::Const("', not found!");
-    ::STRINGS[12] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigation.uno");
+    ::STRINGS[12] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigation.uno");
     ::STRINGS[13] = uString::Const("FindPath");
     ::STRINGS[14] = uString::Const("");
     ::STRINGS[15] = uString::Const("\"\"");
@@ -2198,6 +2198,8 @@ int32_t CommonNavigation::CompareCurrent(::g::Fuse::Visual* parent, ::g::Fuse::V
 // public static bool CompatibleParameter(string a, string b) [static] :62
 bool CommonNavigation::CompatibleParameter(uString* a, uString* b)
 {
+    uStackFrame __("Fuse.Controls.CommonNavigation", "CompatibleParameter(string,string)");
+
     if (::g::Uno::String::op_Equality(a, b))
         return true;
 
@@ -2211,7 +2213,7 @@ bool CommonNavigation::CompatibleParameter(uString* a, uString* b)
     ::g::Fuse::Visual* useVisual = NULL;
 
     for (::g::Fuse::Visual* n = (::g::Fuse::Visual*)uPtr(parent)->FirstChild(::TYPES[4/*Fuse.Visual.FirstChild<Fuse.Visual>*/]); n != NULL; n = (::g::Fuse::Visual*)uPtr(n)->NextSibling(::TYPES[5/*Fuse.Node.NextSibling<Fuse.Visual>*/]))
-        if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(uPtr(n)->Name()), path))
+        if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(uPtr(n)->Name()), path))
         {
             useVisual = n;
             break;
@@ -2251,12 +2253,13 @@ int32_t CommonNavigation::Goto(::g::Fuse::Controls::NavigationControl* nav, ::g:
 // public static bool IsEmptyParameter(string a) [static] :55
 bool CommonNavigation::IsEmptyParameter(uString* a)
 {
+    uStackFrame __("Fuse.Controls.CommonNavigation", "IsEmptyParameter(string)");
     return (((::g::Uno::String::op_Equality(a, NULL) || ::g::Uno::String::op_Equality(a, ::STRINGS[14/*""*/])) || ::g::Uno::String::op_Equality(a, ::STRINGS[15/*"\"\""*/])) || ::g::Uno::String::op_Equality(a, ::STRINGS[16/*"{}"*/])) || ::g::Uno::String::op_Equality(a, ::STRINGS[17/*"null"*/]);
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno
+// --------------------------------------------------------------------------------------
 
 // internal sealed class CommonNavigationPages :9
 // {
@@ -2411,7 +2414,7 @@ void CommonNavigationPages::UpdatePages()
 
         if (uPtr(mp)->Data == NULL)
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("null page in list"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno"), 112, uString::Const("UpdatePages"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("null page in list"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno"), 112, uString::Const("UpdatePages"), NULL);
             continue;
         }
 
@@ -2419,7 +2422,7 @@ void CommonNavigationPages::UpdatePages()
 
         if (::g::Uno::String::op_Equality(mp->Template, NULL))
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("Model is missing a $template or $page property"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno"), 119, uString::Const("UpdatePages"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("Model is missing a $template or $page property"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno"), 119, uString::Const("UpdatePages"), NULL);
             continue;
         }
 
@@ -2427,7 +2430,7 @@ void CommonNavigationPages::UpdatePages()
 
         if (f == NULL)
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("No matching template path: "), uPtr(mp)->Template), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno"), 126, uString::Const("UpdatePages"), NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("No matching template path: "), uPtr(mp)->Template), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno"), 126, uString::Const("UpdatePages"), NULL);
             continue;
         }
 
@@ -2437,7 +2440,7 @@ void CommonNavigationPages::UpdatePages()
 
             if (mp->Visual == NULL)
             {
-                ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Template is not a Visual: "), uPtr(mp)->Template), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno"), 135, uString::Const("UpdatePages"), NULL);
+                ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Template is not a Visual: "), uPtr(mp)->Template), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno"), 135, uString::Const("UpdatePages"), NULL);
                 continue;
             }
         }
@@ -2478,8 +2481,8 @@ CommonNavigationPages* CommonNavigationPages::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Container.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Container.uno
+// ----------------------------------------------------------------------
 
 // public sealed class Container :34
 // {
@@ -2714,8 +2717,8 @@ Container* Container::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/ContentControl.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/ContentControl.uno
+// --------------------------------------------------------------------
 
 // public class ContentControl :18
 // {
@@ -2935,15 +2938,15 @@ ContentControl* ContentControl::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Control.Background.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Control.Background.uno
+// ------------------------------------------------------------------------
 
 // public interfacemodifiers class Control :9
 // {
 static void Control_build(uType* type)
 {
     ::STRINGS[19] = uString::Const("Background must be a solid color");
-    ::STRINGS[20] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Control.Background.uno");
+    ::STRINGS[20] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Control.Background.uno");
     ::STRINGS[21] = uString::Const("SetBackground");
     ::TYPES[10] = ::g::Fuse::Elements::ITreeRenderer_typeof();
     ::TYPES[11] = ::g::Fuse::Drawing::DynamicBrush_typeof();
@@ -3416,8 +3419,8 @@ void Control::UnrootBackground()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.uno
+// ----------------------------------------------------------------------------------
 
 // public sealed class NavigationControl.ControlPageData :326
 // {
@@ -3480,8 +3483,8 @@ NavigationControl__ControlPageData* NavigationControl__ControlPageData::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Curve :242
 // {
@@ -4084,8 +4087,8 @@ Curve* Curve::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // public enum CurveClose :18
 uEnumType* CurveClose_typeof()
@@ -4101,8 +4104,8 @@ uEnumType* CurveClose_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // public enum CurveExtrude :205
 uEnumType* CurveExtrude_typeof()
@@ -4122,19 +4125,19 @@ uEnumType* CurveExtrude_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class CurvePoint :40
 // {
 // static generated CurvePoint() :40
 static void CurvePoint__cctor_1_fn(uType* __type)
 {
-    CurvePoint::NameAt_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("At"));
-    CurvePoint::NameTangentIn_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("TangentIn"));
-    CurvePoint::NameTangentOut_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("TangentOut"));
-    CurvePoint::NameControlIn_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("ControlIn"));
-    CurvePoint::NameControlOut_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("ControlOut"));
+    CurvePoint::NameAt_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("At"));
+    CurvePoint::NameTangentIn_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("TangentIn"));
+    CurvePoint::NameTangentOut_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("TangentOut"));
+    CurvePoint::NameControlIn_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("ControlIn"));
+    CurvePoint::NameControlOut_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("ControlOut"));
 }
 
 static void CurvePoint_build(uType* type)
@@ -4546,8 +4549,8 @@ CurvePoint* CurvePoint::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // public enum CurveStyle :12
 uEnumType* CurveStyle_typeof()
@@ -4562,15 +4565,15 @@ uEnumType* CurveStyle_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/DatePicker.Docs.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/DatePicker.Docs.uno
+// --------------------------------------------------------------------------------
 
 // public partial sealed class DatePicker :63
 // {
 // static DatePicker() :86
 static void DatePicker__cctor_5_fn(uType* __type)
 {
-    DatePicker::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("self"));
+    DatePicker::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("self"));
 }
 
 static void DatePicker_build(uType* type)
@@ -4712,17 +4715,17 @@ DatePicker* DatePicker::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/DatePicker.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/DatePicker.uno
+// ---------------------------------------------------------------------------
 
 // public interfacemodifiers class DatePickerBase :24
 // {
 // static generated DatePickerBase() :24
 static void DatePickerBase__cctor_4_fn(uType* __type)
 {
-    DatePickerBase::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    DatePickerBase::_minValueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[22/*"MinValue"*/]);
-    DatePickerBase::_maxValueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[23/*"MaxValue"*/]);
+    DatePickerBase::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    DatePickerBase::_minValueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[22/*"MinValue"*/]);
+    DatePickerBase::_maxValueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[23/*"MaxValue"*/]);
 }
 
 static void DatePickerBase_build(uType* type)
@@ -5093,8 +5096,8 @@ void DatePickerBase::Value(::g::Uno::DateTime value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed class DefaultTreeRenderer :11
 // {
@@ -5372,15 +5375,15 @@ DefaultTreeRenderer* DefaultTreeRenderer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/.uno/ux15/Fuse.Controls.ScrollView.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/.uno/ux15/Fuse.Controls.ScrollView.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class ScrollView.DefaultTrigger :45
 // {
 // static DefaultTrigger() :48
 static void ScrollView__DefaultTrigger__cctor_2_fn(uType* __type)
 {
-    ScrollView__DefaultTrigger::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
+    ScrollView__DefaultTrigger::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
 }
 
 static void ScrollView__DefaultTrigger_build(uType* type)
@@ -5511,8 +5514,8 @@ ScrollView__DefaultTrigger* ScrollView__DefaultTrigger::New3(::g::Fuse::Controls
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno
+// --------------------------------------------------------------------------
 
 // private sealed class Navigator.DeferSwitch :642
 // {
@@ -5565,8 +5568,8 @@ Navigator__DeferSwitch* Navigator__DeferSwitch::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SingleViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SingleViewHost.uno
+// ---------------------------------------------------------------------------
 
 // private sealed class SingleViewHost.Disable :43
 // {
@@ -5656,8 +5659,8 @@ SingleViewHost__Disable* SingleViewHost__Disable::New1(::g::Fuse::Controls::Sing
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno
+// ---------------------------------------------------------------------------
 
 // private sealed class NativeViewHost.Disable :95
 // {
@@ -5755,8 +5758,8 @@ NativeViewHost__Disable* NativeViewHost__Disable::New1(::g::Fuse::Controls::Nati
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.Layout.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.Layout.uno
+// ----------------------------------------------------------------------------------
 
 // internal enum ScrollViewBase.DistanceFromViewTarget :232
 uEnumType* ScrollViewBase__DistanceFromViewTarget_typeof()
@@ -5771,8 +5774,8 @@ uEnumType* ScrollViewBase__DistanceFromViewTarget_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/DockPanel.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/DockPanel.uno
+// ----------------------------------------------------------------------
 
 // public class DockPanel :29
 // {
@@ -5936,8 +5939,8 @@ void DockPanel::SetDock(::g::Fuse::Elements::Element* elm, int32_t dock)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/EdgeNavigator.ScriptClass.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/EdgeNavigator.ScriptClass.uno
+// ------------------------------------------------------------------------------------------
 
 // public partial sealed class EdgeNavigator :8
 // {
@@ -5956,7 +5959,7 @@ static void EdgeNavigator_build(uType* type)
     ::STRINGS[27] = uString::Const("open");
     ::STRINGS[14] = uString::Const("");
     ::STRINGS[28] = uString::Const("EdgeNaviagator.open requires 1 parameter (edge)");
-    ::STRINGS[29] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/EdgeNavigator.ScriptClass.uno");
+    ::STRINGS[29] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/EdgeNavigator.ScriptClass.uno");
     ::TYPES[20] = ::g::Uno::Type_typeof();
     ::TYPES[21] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[22] = ::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(type, NULL);
@@ -6390,8 +6393,8 @@ void EdgeNavigator::open(EdgeNavigator* e, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class Element_Opacity_Property :811
 // {
@@ -6466,7 +6469,7 @@ void Element_Opacity_Property__get_SupportsOriginSetter_fn(Element_Opacity_Prope
 void Element_Opacity_Property::ctor_3(::g::Fuse::Elements::Element* obj)
 {
     uStackFrame __("Fuse.Controls.Element_Opacity_Property", ".ctor(Fuse.Elements.Element)");
-    ctor_2(::g::Uno::UX::Selector__op_Implicit(::STRINGS[30/*"Opacity"*/]));
+    ctor_2(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[30/*"Opacity"*/]));
     _obj = obj;
 }
 
@@ -6479,8 +6482,8 @@ Element_Opacity_Property* Element_Opacity_Property::New1(::g::Fuse::Elements::El
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Ellipse.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Ellipse.uno
+// -------------------------------------------------------------------------------
 
 // public partial sealed class Ellipse :27
 // {
@@ -6642,8 +6645,8 @@ Ellipse* Ellipse::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/EllipticalShape.Surface.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/EllipticalShape.Surface.uno
+// -----------------------------------------------------------------------------------------------
 
 // public interfacemodifiers class EllipticalShape :8
 // {
@@ -7036,8 +7039,8 @@ bool EllipticalShape::UseAngle()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno
+// ---------------------------------------------------------------------------
 
 // private sealed class NativeViewHost.Enable :69
 // {
@@ -7127,8 +7130,8 @@ NativeViewHost__Enable* NativeViewHost__Enable::New1(::g::Fuse::Controls::Native
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SingleViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SingleViewHost.uno
+// ---------------------------------------------------------------------------
 
 // private sealed class SingleViewHost.Enable :18
 // {
@@ -7218,15 +7221,15 @@ SingleViewHost__Enable* SingleViewHost__Enable::New1(::g::Fuse::Controls::Single
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/TreeRenderer.iOS.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/TreeRenderer.iOS.uno
+// -----------------------------------------------------------------------------
 
 // internal static extern class Extensions :197
 // {
 static void Extensions_build(uType* type)
 {
     ::STRINGS[34] = uString::Const("Cannot convert to a color");
-    ::STRINGS[35] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/TreeRenderer.iOS.uno");
+    ::STRINGS[35] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/TreeRenderer.iOS.uno");
     ::STRINGS[36] = uString::Const("GetColor");
     ::TYPES[28] = ::g::Fuse::Drawing::SolidColor_typeof();
     ::TYPES[29] = ::g::Fuse::Drawing::StaticSolidColor_typeof();
@@ -7276,8 +7279,8 @@ void Extensions__GetColor_fn(::g::Fuse::Drawing::Brush* brush, ::g::Uno::Float4*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class FallbackWebViewClient :501
 // {
@@ -7868,8 +7871,8 @@ FallbackWebViewClient* FallbackWebViewClient::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/Video.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/Video.uno
+// -----------------------------------------------------------------
 
 // public sealed class FileVideoSource :23
 // {
@@ -7952,8 +7955,8 @@ FileVideoSource* FileVideoSource::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Path.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Path.uno
+// ----------------------------------------------------------------------------
 
 // public enum FitMode :14
 uEnumType* FitMode_typeof()
@@ -7969,8 +7972,8 @@ uEnumType* FitMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno
+// ----------------------------------------------------------------------------
 
 // public partial class GraphicsView :107
 // {
@@ -8190,7 +8193,7 @@ void GraphicsView__FuseControlsIProxyHostInsert_fn(GraphicsView* __this, ::g::Fu
     if (vh != NULL)
         ::g::Fuse::Controls::Native::IViewHost::Insert(uInterface(uPtr(vh), ::g::Fuse::Controls::Native::IViewHost_typeof()), viewHandle);
     else
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have a NativeView: IViewHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno"), 147, uString::Const("Fuse.Controls.IProxyHost.Insert"));
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have a NativeView: IViewHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno"), 147, uString::Const("Fuse.Controls.IProxyHost.Insert"));
 }
 
 // private void Fuse.Controls.IProxyHost.Remove(Fuse.Controls.Native.ViewHandle viewHandle) :151
@@ -8202,7 +8205,7 @@ void GraphicsView__FuseControlsIProxyHostRemove_fn(GraphicsView* __this, ::g::Fu
     if (vh != NULL)
         ::g::Fuse::Controls::Native::IViewHost::Remove(uInterface(uPtr(vh), ::g::Fuse::Controls::Native::IViewHost_typeof()), viewHandle);
     else
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have a NativeView: IViewHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno"), 159, uString::Const("Fuse.Controls.IProxyHost.Remove"));
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have a NativeView: IViewHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno"), 159, uString::Const("Fuse.Controls.IProxyHost.Remove"));
 }
 
 // private float4x4 Fuse.Controls.IProxyHost.get_WorldTransformInverse() :136
@@ -8713,15 +8716,15 @@ GraphicsView* GraphicsView::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Grid.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Grid.uno
+// -----------------------------------------------------------------
 
 // public sealed class Grid :59
 // {
 static void Grid_build(uType* type)
 {
     ::STRINGS[37] = uString::Const("Grid.ColumnData has been deprecated. Use Grid.Columns instead");
-    ::STRINGS[38] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Grid.uno");
+    ::STRINGS[38] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Grid.uno");
     ::STRINGS[39] = uString::Const("get_ColumnData");
     ::STRINGS[40] = uString::Const("set_ColumnData");
     ::STRINGS[41] = uString::Const("Grid.RowData has been deprecated. Use Grid.Rows instead");
@@ -9351,8 +9354,8 @@ void Grid::SetRowSpan(::g::Fuse::Elements::Element* elm, int32_t span)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Curve.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Curve.uno
+// -----------------------------------------------------------------------------
 
 // private enum CurvePoint.HasFlags :67
 uEnumType* CurvePoint__HasFlags_typeof()
@@ -9372,8 +9375,8 @@ uEnumType* CurvePoint__HasFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // public sealed class HTML :64
 // {
@@ -9457,8 +9460,8 @@ HTML* HTML::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/DatePicker.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/DatePicker.uno
+// ---------------------------------------------------------------------------
 
 // internal abstract interface IDatePickerView :14
 // {
@@ -9472,10 +9475,10 @@ uInterfaceType* IDatePickerView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Image.ScriptClass.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Image.ScriptClass.uno
+// ----------------------------------------------------------------------------------
 
-// public partial class Image :8
+// public partial sealed class Image :8
 // {
 // static Image() :10
 static void Image__cctor_3_fn(uType* __type)
@@ -10533,8 +10536,8 @@ void Image::retry(Image* img)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Image.Visual.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Image.Visual.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class ImageElementDraw :175
 // {
@@ -10636,8 +10639,8 @@ ImageElementDraw* ImageElementDraw::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/TreeRendererPanel.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/TreeRendererPanel.uno
+// ------------------------------------------------------------------------------
 
 // internal abstract interface INativeViewRoot :9
 // {
@@ -10651,8 +10654,8 @@ uInterfaceType* INativeViewRoot_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno
+// ---------------------------------------------------------------------------
 
 // public enum NativeViewHost.InitialState :63
 uEnumType* NativeViewHost__InitialState_typeof()
@@ -10667,8 +10670,8 @@ uEnumType* NativeViewHost__InitialState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/MobileTextEdit.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/MobileTextEdit.uno
+// --------------------------------------------------------------------------------------------
 
 // private sealed class MobileTextEdit.iOSTemplate :193
 // {
@@ -10734,8 +10737,8 @@ MobileTextEdit__iOSTemplate* MobileTextEdit__iOSTemplate::New2(::g::Fuse::Contro
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno
+// ----------------------------------------------------------------------------
 
 // internal abstract interface IProxyHost :65
 // {
@@ -10749,8 +10752,8 @@ uInterfaceType* IProxyHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/GraphicsView.ux.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/GraphicsView.ux.uno
+// ----------------------------------------------------------------------------
 
 // internal static class IProxyHostExtensions :72
 // {
@@ -10797,8 +10800,8 @@ uObject* IProxyHostExtensions::FindProxyHost(::g::Fuse::Visual* visual)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // public abstract interface ISourceReceiver :15
 // {
@@ -10815,8 +10818,8 @@ uInterfaceType* ISourceReceiver_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextEdit.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextEdit.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract interface ITextEditControl :18
 // {
@@ -10835,8 +10838,8 @@ uInterfaceType* ITextEditControl_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextControl.GraphicsText.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextControl.GraphicsText.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface ITextRenderer :6
 // {
@@ -10850,8 +10853,8 @@ uInterfaceType* ITextRenderer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/TimePicker.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/TimePicker.uno
+// ---------------------------------------------------------------------------
 
 // internal abstract interface ITimePickerView :14
 // {
@@ -10865,8 +10868,8 @@ uInterfaceType* ITimePickerView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // public abstract interface IWebView :20
 // {
@@ -10907,8 +10910,8 @@ uInterfaceType* IWebView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class JavaScriptCall :476
 // {
@@ -10983,8 +10986,8 @@ JavaScriptCall* JavaScriptCall::New1(uString* script, uDelegate* handler)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/KeyframeAccessors.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/KeyframeAccessors.uno
+// -----------------------------------------------------------------------
 
 // public static class KeyframeAccessors :9
 // {
@@ -11034,15 +11037,15 @@ void KeyframeAccessors::SetVisibility1(::g::Fuse::Animations::Keyframe* kf, int3
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/LayoutControl.Canvas.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/LayoutControl.Canvas.uno
+// ---------------------------------------------------------------------------------
 
 // public partial class LayoutControl :62
 // {
 static void LayoutControl_build(uType* type)
 {
     ::STRINGS[50] = uString::Const("LayoutControl not properly rooted in Surface");
-    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/LayoutControl.Canvas.uno");
+    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/LayoutControl.Canvas.uno");
     ::STRINGS[52] = uString::Const("ISurfaceDrawableDraw");
     ::STRINGS[53] = uString::Const("Mismatched surface");
     ::STRINGS[54] = uString::Const("Surface contains a non-drawable child");
@@ -11509,15 +11512,15 @@ void LayoutControl::SetLayoutMaster(::g::Fuse::Elements::Element* elm, ::g::Fuse
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/LayoutControl.Canvas.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/LayoutControl.Canvas.uno
+// ---------------------------------------------------------------------------------
 
 // internal sealed class LayoutControlSurface :12
 // {
 static void LayoutControlSurface_build(uType* type)
 {
     ::STRINGS[55] = uString::Const("Prepare without surface");
-    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/LayoutControl.Canvas.uno");
+    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/LayoutControl.Canvas.uno");
     ::STRINGS[56] = uString::Const("Fuse.Drawing.IDrawObjectWatcherFeedback.Prepare");
     ::STRINGS[57] = uString::Const("Fuse.Drawing.IDrawObjectWatcherFeedback.Unprepare");
     ::TYPES[44] = ::g::Fuse::Drawing::Stroke_typeof();
@@ -11623,8 +11626,8 @@ LayoutControlSurface* LayoutControlSurface::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class LoadHtmlCall :461
 // {
@@ -11695,8 +11698,8 @@ LoadHtmlCall* LoadHtmlCall::New1(uString* html1, uString* baseUrl1)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/MobileTextEdit.Forwarding.uno
-// ------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/MobileTextEdit.Forwarding.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal partial sealed class MobileTextEdit :7
 // {
@@ -12203,8 +12206,8 @@ MobileTextEdit* MobileTextEdit::New3(bool multiline)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/MultiLayoutPanel.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/MultiLayoutPanel.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class MultiLayout :11
 // {
@@ -12355,8 +12358,8 @@ MultiLayout* MultiLayout::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/MultiLayoutPanel.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/MultiLayoutPanel.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class MultiLayoutPanel :99
 // {
@@ -12505,8 +12508,8 @@ MultiLayoutPanel* MultiLayoutPanel::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class NativeViewHost :61
 // {
@@ -12861,7 +12864,7 @@ void NativeViewHost__OnRooted_fn(NativeViewHost* __this)
         __this->_proxyHost = ::g::Fuse::Controls::IProxyHostExtensions::FindProxyHost(__this);
 
         if (__this->_proxyHost == NULL)
-            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" could not find an IProxyHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno"), 324, ::STRINGS[60/*"OnRooted"*/]);
+            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" could not find an IProxyHost")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno"), 324, ::STRINGS[60/*"OnRooted"*/]);
 
         __this->_nativeRenderer = (uObject*)::g::Fuse::Controls::TreeRenderer::New1(uDelegate::New(::TYPES[101/*Uno.Action<Fuse.Controls.Native.ViewHandle>*/], (void*)NativeViewHost__SetRoot_fn, __this), uDelegate::New(::TYPES[101/*Uno.Action<Fuse.Controls.Native.ViewHandle>*/], (void*)NativeViewHost__ClearRoot_fn, __this));
 
@@ -12871,7 +12874,7 @@ void NativeViewHost__OnRooted_fn(NativeViewHost* __this)
                 ::g::Fuse::Controls::IProxyHost::Insert(uInterface(uPtr(__this->_proxyHost), ::TYPES[41/*Fuse.Controls.IProxyHost*/]), __this->_root);
         }
         else
-            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have an IProxyHost and will malfunction")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/NativeViewHost.uno"), 334, ::STRINGS[60/*"OnRooted"*/]);
+            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition(__this, uString::Const(" does not have an IProxyHost and will malfunction")), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/NativeViewHost.uno"), 334, ::STRINGS[60/*"OnRooted"*/]);
     }
 
     ::g::Fuse::Controls::LayoutControl__OnRooted_fn(__this);
@@ -13094,8 +13097,8 @@ NativeViewHost* NativeViewHost::New4(int32_t initialState)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigation.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigation.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class NavigationBar :11
 // {
@@ -13211,8 +13214,8 @@ NavigationBar* NavigationBar::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.BlockInput.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.BlockInput.uno
+// ---------------------------------------------------------------------------------------------
 
 // public interfacemodifiers class NavigationControl :13
 // {
@@ -14201,7 +14204,7 @@ void NavigationControl::FullUpdatePages(int32_t flags)
     if (pageNdx >= uPtr(uPtr(AncestorRouterPage())->ChildRouterPages())->Count())
     {
         rPage = ::g::Fuse::Navigation::RouterPage::CreateDefault();
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Inconsistent navigation history"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.Pages.uno"), 101, uString::Const("FullUpdatePages"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Inconsistent navigation history"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.Pages.uno"), 101, uString::Const("FullUpdatePages"));
     }
     else if (pageNdx >= 0)
         rPage = (::g::Fuse::Navigation::RouterPage*)uPtr(uPtr(AncestorRouterPage())->ChildRouterPages())->Item(pageNdx);
@@ -14213,7 +14216,7 @@ void NavigationControl::FullUpdatePages(int32_t flags)
     if (navRequest != NULL)
     {
         if (!uPtr(rr)->AddArguments(navRequest, 152))
-            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid $navigationRequest, visual result may not match expectation"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.Pages.uno"), 121, uString::Const("FullUpdatePages"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid $navigationRequest, visual result may not match expectation"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.Pages.uno"), 121, uString::Const("FullUpdatePages"), NULL);
     }
 
     ::g::Fuse::Visual* ignore;
@@ -14341,7 +14344,7 @@ void NavigationControl::OnPageHistoryChanged()
     if (obs != NULL)
         uPtr(uPtr(AncestorRouterPage())->ChildRouterPages())->Attach(obs, (uObject*)this);
     else
-        ::g::Fuse::Diagnostics::UserError(uString::Const("PageHistory expects an observable array. It will not work correctly otherwise"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.Pages.uno"), 54, uString::Const("OnPageHistoryChanged"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("PageHistory expects an observable array. It will not work correctly otherwise"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.Pages.uno"), 54, uString::Const("OnPageHistoryChanged"), NULL);
 
     _curPageIndex = -1;
 }
@@ -14570,7 +14573,7 @@ void NavigationControl::UpdateChild(::g::Fuse::Elements::Element* c)
     ::g::Fuse::Navigation::PageData* pd = ::g::Fuse::Navigation::PageData::GetOrCreate(c, true);
 
     if (uPtr(pd)->RouterPage() == NULL)
-        uPtr(pd)->AttachRouterPage(::g::Fuse::Navigation::RouterPage::New1(::g::Uno::UX::Selector__op_Implicit1(uPtr(c)->Name()), uPtr(c)->Parameter(), NULL));
+        uPtr(pd)->AttachRouterPage(::g::Fuse::Navigation::RouterPage::New1(::g::Uno::UX::Selector__op_Implicit2(uPtr(c)->Name()), uPtr(c)->Parameter(), NULL));
 }
 
 // private static void alterPath(Fuse.Controls.NavigationControl nav, object[] args, string opName, Fuse.Navigation.NavigationGotoMode gotoMode) [static] :47
@@ -14582,7 +14585,7 @@ void NavigationControl::alterPath(NavigationControl* nav, uArray* args, uString*
 
     if ((uPtr(args)->Length() < 1) || (uPtr(args)->Length() > 2))
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("NavigationControl."), opName), uString::Const(" requires 1 or 2 arguments")), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 52, uString::Const("alterPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("NavigationControl."), opName), uString::Const(" requires 1 or 2 arguments")), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 52, uString::Const("alterPath"), NULL);
         return;
     }
 
@@ -14590,7 +14593,7 @@ void NavigationControl::alterPath(NavigationControl* nav, uArray* args, uString*
 
     if (outlet == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Must be an IRouterOutlet"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 59, uString::Const("alterPath"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Must be an IRouterOutlet"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 59, uString::Const("alterPath"));
         return;
     }
 
@@ -14652,7 +14655,7 @@ void NavigationControl::modifyPath(NavigationControl* nav, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` takes on argument"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 106, uString::Const("modifyPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` takes on argument"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 106, uString::Const("modifyPath"), NULL);
         return;
     }
 
@@ -14660,7 +14663,7 @@ void NavigationControl::modifyPath(NavigationControl* nav, uArray* args)
 
     if (obj == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` should be passed an object"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 113, uString::Const("modifyPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` should be passed an object"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 113, uString::Const("modifyPath"), NULL);
         return;
     }
 
@@ -14668,13 +14671,13 @@ void NavigationControl::modifyPath(NavigationControl* nav, uArray* args)
 
     if (!rr->AddArguments(obj, 89))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` unrecognized arguments"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 122, uString::Const("modifyPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` unrecognized arguments"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 122, uString::Const("modifyPath"), NULL);
         return;
     }
 
     if ((rr->Route != NULL) && (uPtr(rr->Route)->SubRoute != NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` expects one route component"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 128, uString::Const("modifyPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` expects one route component"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 128, uString::Const("modifyPath"), NULL);
         return;
     }
 
@@ -14689,7 +14692,7 @@ void NavigationControl::modifyPath(NavigationControl* nav, uArray* args)
 
     if (page == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` unable to find route component"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 140, uString::Const("modifyPath"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`modifyPath` unable to find route component"), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 140, uString::Const("modifyPath"), NULL);
         return;
     }
 
@@ -14749,7 +14752,7 @@ void NavigationControl::modifyPath(NavigationControl* nav, uArray* args)
         }
         default:
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(uString::Const("Unsupported `How`: "), uBox<int32_t>(::g::Fuse::Navigation::ModifyRouteHow_typeof(), uPtr(rr)->How)), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.ScriptClass.uno"), 188, uString::Const("modifyPath"), NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(uString::Const("Unsupported `How`: "), uBox<int32_t>(::g::Fuse::Navigation::ModifyRouteHow_typeof(), uPtr(rr)->How)), nav, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.ScriptClass.uno"), 188, uString::Const("modifyPath"), NULL);
             return;
         }
     }
@@ -14776,8 +14779,8 @@ void NavigationControl::SetTransition(::g::Fuse::Visual* elm, int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.BlockInput.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.BlockInput.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum NavigationControlBlockInput :5
 uEnumType* NavigationControlBlockInput_typeof()
@@ -14792,8 +14795,8 @@ uEnumType* NavigationControlBlockInput_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.uno
+// ----------------------------------------------------------------------------------
 
 // public enum NavigationControlInactiveState :17
 uEnumType* NavigationControlInactiveState_typeof()
@@ -14809,8 +14812,8 @@ uEnumType* NavigationControlInactiveState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.uno
+// ----------------------------------------------------------------------------------
 
 // public enum NavigationControlInteraction :30
 uEnumType* NavigationControlInteraction_typeof()
@@ -14825,8 +14828,8 @@ uEnumType* NavigationControlInteraction_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.uno
+// ----------------------------------------------------------------------------------
 
 // public enum NavigationControlTransition :41
 uEnumType* NavigationControlTransition_typeof()
@@ -14842,8 +14845,8 @@ uEnumType* NavigationControlTransition_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Types.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Types.uno
+// --------------------------------------------------------------------------------
 
 // internal delegate void NavigationSwitchedHandler(object sender, Fuse.Controls.NavigatorSwitchedArgs args) :30
 uDelegateType* NavigationSwitchedHandler_typeof()
@@ -14858,8 +14861,8 @@ uDelegateType* NavigationSwitchedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Interaction.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Interaction.uno
+// --------------------------------------------------------------------------------------
 
 // public partial class Navigator :13
 // {
@@ -15195,7 +15198,7 @@ void Navigator__FuseNavigationIRouterOutletCancelPrepare_fn(Navigator* __this)
 
     if (__this->_prepared == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("PartialPrepareGoto without Prepare"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 168, uString::Const("Fuse.Navigation.IRouterOutlet.CancelPrepare"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("PartialPrepareGoto without Prepare"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 168, uString::Const("Fuse.Navigation.IRouterOutlet.CancelPrepare"));
         return;
     }
 
@@ -15259,7 +15262,7 @@ void Navigator__FuseNavigationIRouterOutletPartialPrepareGoto_fn(Navigator* __th
 
     if (__this->_prepared == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("PartialPrepareGoto without Prepare"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 147, uString::Const("Fuse.Navigation.IRouterOutlet.PartialPrepareGoto"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("PartialPrepareGoto without Prepare"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 147, uString::Const("Fuse.Navigation.IRouterOutlet.PartialPrepareGoto"));
         return;
     }
 
@@ -15372,13 +15375,13 @@ void Navigator__OnChildRemoved_fn(Navigator* __this, ::g::Fuse::Node* elm)
     uStackFrame __("Fuse.Controls.Navigator", "OnChildRemoved(Fuse.Node)");
 
     if (elm == uPtr(__this->_current)->Visual)
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Removing child!"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 795, uString::Const("OnChildRemoved"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Removing child!"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 795, uString::Const("OnChildRemoved"));
 
     if ((__this->_deferred != NULL) && (uPtr(uPtr(__this->_deferred)->Page)->Visual == elm))
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("removing deferred child"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 797, uString::Const("OnChildRemoved"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("removing deferred child"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 797, uString::Const("OnChildRemoved"));
 
     if ((__this->_prepared != NULL) && (uPtr(__this->_prepared)->Visual == elm))
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("removing prepared child"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 799, uString::Const("OnChildRemoved"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("removing prepared child"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 799, uString::Const("OnChildRemoved"));
 
     ::g::Fuse::Controls::NavigationControl__OnChildRemoved_fn(__this, elm);
 }
@@ -15689,7 +15692,7 @@ uString* Navigator::DefaultTemplate()
 void Navigator::DefaultTemplate(uString* value)
 {
     DefaultPath(value);
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use `DefaultPath` instead of `DefaultTemplate`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 29, uString::Const("set_DefaultTemplate"));
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use `DefaultPath` instead of `DefaultTemplate`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 29, uString::Const("set_DefaultTemplate"));
 }
 
 // public Fuse.Triggers.BusyTaskActivity get_DeferPageSwitch() [instance] :564
@@ -15781,7 +15784,7 @@ void Navigator::EnablePageSwipeBack()
     if (q != NULL)
         return q;
 
-    ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"Can not nav...*/], path), ::STRINGS[11/*"', not found!"*/]), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 430, uString::Const("GetVisual"));
+    ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"Can not nav...*/], path), ::STRINGS[11/*"', not found!"*/]), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 430, uString::Const("GetVisual"));
     return NULL;
 }
 
@@ -15827,7 +15830,7 @@ int32_t Navigator::GotoImpl(::g::Fuse::Navigation::RouterPage* routerPage, int32
 
     if (result.Page == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null page"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 402, uString::Const("GotoImpl"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null page"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 402, uString::Const("GotoImpl"));
         return 3;
     }
 
@@ -15864,11 +15867,11 @@ void Navigator::GotoState(int32_t value)
 
     if (useVisual == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("Result of '"), path), uString::Const("' template is not a Visual!")), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno"), 439, uString::Const("InstantiateTemplate"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("Result of '"), path), uString::Const("' template is not a Visual!")), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno"), 439, uString::Const("InstantiateTemplate"), NULL);
         return NULL;
     }
 
-    uPtr(useVisual)->Name(::g::Uno::UX::Selector__op_Implicit(path));
+    uPtr(useVisual)->Name(::g::Uno::UX::Selector__op_Implicit1(path));
     uPtr(::g::Fuse::Controls::NavigationControl::GetControlPageData(useVisual, true))->FromTemplate = true;
     return useVisual;
 }
@@ -16196,7 +16199,7 @@ void Navigator::RootInteraction()
 
     if (_router == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Navigator requires a Router for interaction"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Interaction.uno"), 67, uString::Const("RootInteraction"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Navigator requires a Router for interaction"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Interaction.uno"), 67, uString::Const("RootInteraction"), NULL);
         return;
     }
 
@@ -16401,8 +16404,8 @@ void Navigator::SetSwipeBack(::g::Fuse::Visual* elm, int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Types.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Types.uno
+// --------------------------------------------------------------------------------
 
 // public enum NavigatorGotoState :7
 uEnumType* NavigatorGotoState_typeof()
@@ -16417,15 +16420,15 @@ uEnumType* NavigatorGotoState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigatorSwipe.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigatorSwipe.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class NavigatorSwipe :77
 // {
 static void NavigatorSwipe_build(uType* type)
 {
     ::STRINGS[58] = uString::Const("SwipeNavigator requires a Router for interaction");
-    ::STRINGS[59] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigatorSwipe.uno");
+    ::STRINGS[59] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigatorSwipe.uno");
     ::STRINGS[60] = uString::Const("OnRooted");
     ::STRINGS[61] = uString::Const("SwipeNavigator requires an Element parent");
     ::TYPES[48] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Triggers::Actions::TriggerAction_typeof(), NULL);
@@ -16763,8 +16766,8 @@ NavigatorSwipe* NavigatorSwipe::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigatorSwipe.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigatorSwipe.uno
+// -------------------------------------------------------------------------------
 
 // public enum NavigatorSwipeDirection :12
 uEnumType* NavigatorSwipeDirection_typeof()
@@ -16783,8 +16786,8 @@ uEnumType* NavigatorSwipeDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigatorSwipe.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigatorSwipe.uno
+// -------------------------------------------------------------------------------
 
 // public enum NavigatorSwipeHow :24
 uEnumType* NavigatorSwipeHow_typeof()
@@ -16800,8 +16803,8 @@ uEnumType* NavigatorSwipeHow_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Types.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Types.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class NavigatorSwitchedArgs :15
 // {
@@ -16866,8 +16869,8 @@ NavigatorSwitchedArgs* NavigatorSwitchedArgs::New3(::g::Fuse::Visual* v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno
+// --------------------------------------------------------------------------
 
 // private sealed class Navigator.NavPage :463
 // {
@@ -16920,15 +16923,15 @@ Navigator__NavPage* Navigator__NavPage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/Number.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/Number.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Number :10
 // {
 // static generated Number() :10
 static void Number__cctor_4_fn(uType* __type)
 {
-    Number::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
+    Number::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
 }
 
 static void Number_build(uType* type)
@@ -16937,7 +16940,7 @@ static void Number_build(uType* type)
     ::STRINGS[62] = uString::Const("F0");
     ::STRINGS[63] = uString::Const("{0:F0}");
     ::STRINGS[64] = uString::Const("The Number control has been deprecated. Use a Text control instead and do the formatting inside JavaScript.");
-    ::STRINGS[65] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/Number.uno");
+    ::STRINGS[65] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/Number.uno");
     ::STRINGS[66] = uString::Const(".ctor");
     ::STRINGS[67] = uString::Const("{0:");
     ::STRINGS[68] = uString::Const("}");
@@ -17257,8 +17260,8 @@ Number* Number::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Page.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Page.uno
+// ---------------------------------------------------------------------
 
 // public class Page :46
 // {
@@ -17654,7 +17657,7 @@ void Page::Title(uString* value)
     if (::g::Uno::String::op_Inequality(Title(), value))
     {
         SetResource(::STRINGS[69/*"Title"*/], value);
-        OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[69/*"Title"*/]));
+        OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[69/*"Title"*/]));
     }
 }
 
@@ -17667,8 +17670,8 @@ Page* Page::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/PageControl.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/PageControl.uno
+// ----------------------------------------------------------------------------
 
 // public partial sealed class PageControl :80
 // {
@@ -17676,7 +17679,7 @@ Page* Page::New4()
 static void PageControl__cctor_5_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    PageControl::ActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[70/*"ActiveIndex"*/]);
+    PageControl::ActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[70/*"ActiveIndex"*/]);
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[21/*Fuse.Scripting.ScriptMember[]*/], 1, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::TYPES[55/*Fuse.Scripting.ScriptMethod<Fuse.Controls.PageControl>*/], ::STRINGS[71/*"goto"*/], uDelegate::New(::TYPES[56/*Uno.Action<Fuse.Controls.PageControl, object[]>*/], (void*)PageControl__gotoPage_fn))));
 }
 
@@ -17686,7 +17689,7 @@ static void PageControl_build(uType* type)
     ::STRINGS[71] = uString::Const("goto");
     ::STRINGS[14] = uString::Const("");
     ::STRINGS[72] = uString::Const("PageControl.goto() : Argument must be a node object");
-    ::STRINGS[73] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/PageControl.uno");
+    ::STRINGS[73] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/PageControl.uno");
     ::STRINGS[74] = uString::Const("gotoPage");
     ::TYPES[20] = ::g::Uno::Type_typeof();
     ::TYPES[21] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -18345,8 +18348,8 @@ PageControl* PageControl::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Page.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Page.uno
+// ---------------------------------------------------------------------
 
 // public enum PageFreeze :7
 uEnumType* PageFreeze_typeof()
@@ -18361,8 +18364,8 @@ uEnumType* PageFreeze_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/PageIndicator.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/PageIndicator.uno
+// ------------------------------------------------------------------------------
 
 // public partial sealed class PageIndicator :45
 // {
@@ -18597,16 +18600,16 @@ PageIndicator* PageIndicator::New5(uObject* navigation)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.PageIndicatorDot.g.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.PageIndicatorDot.g.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public partial sealed class PageIndicatorDot :4
 // {
 // static PageIndicatorDot() :8
 static void PageIndicatorDot__cctor_4_fn(uType* __type)
 {
-    PageIndicatorDot::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
-    PageIndicatorDot::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[78/*"TheCircle"*/]);
+    PageIndicatorDot::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
+    PageIndicatorDot::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[78/*"TheCircle"*/]);
 }
 
 static void PageIndicatorDot_build(uType* type)
@@ -18771,8 +18774,8 @@ PageIndicatorDot* PageIndicatorDot::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/PageIndicator.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/PageIndicator.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class PageIndicatorDotTemplate :107
 // {
@@ -18832,8 +18835,8 @@ PageIndicatorDotTemplate* PageIndicatorDotTemplate::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Page.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Page.uno
+// ---------------------------------------------------------------------
 
 // public enum PagePrepareBusy :15
 uEnumType* PagePrepareBusy_typeof()
@@ -18848,8 +18851,8 @@ uEnumType* PagePrepareBusy_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/CommonNavigationPages.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/CommonNavigationPages.uno
+// --------------------------------------------------------------------------------------
 
 // private sealed class CommonNavigationPages.PagesMap :12
 // {
@@ -18971,8 +18974,8 @@ CommonNavigationPages__PagesMap* CommonNavigationPages__PagesMap::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/PageView.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/PageView.uno
+// -------------------------------------------------------------------------
 
 // public sealed class PageView :13
 // {
@@ -19135,15 +19138,15 @@ PageView* PageView::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Panel.Freeze.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Panel.Freeze.uno
+// -------------------------------------------------------------------------
 
 // public partial class Panel :10
 // {
 // static generated Panel() :10
 static void Panel__cctor_3_fn(uType* __type)
 {
-    Panel::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
+    Panel::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
 }
 
 static void Panel_build(uType* type)
@@ -19151,7 +19154,7 @@ static void Panel_build(uType* type)
     ::STRINGS[77] = uString::Const("Color");
     ::STRINGS[14] = uString::Const("");
     ::STRINGS[79] = uString::Const("unable to freeze non-flat or infinite element");
-    ::STRINGS[80] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Panel.Freeze.uno");
+    ::STRINGS[80] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Panel.Freeze.uno");
     ::STRINGS[81] = uString::Const("OnPrepared");
     ::STRINGS[82] = uString::Const("unable to freeze element");
     ::STRINGS[83] = uString::Const("Panel.IsFrozen cannot be used when a Panel is in a Surface");
@@ -19719,8 +19722,8 @@ Panel* Panel::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Path.Surface.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Path.Surface.uno
+// ------------------------------------------------------------------------------------
 
 // public partial sealed class Path :8
 // {
@@ -20245,8 +20248,8 @@ Path* Path::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract class PathExpression :10
 // {
@@ -20315,8 +20318,8 @@ void PathExpression::ctor_1(::g::Fuse::Reactive::Expression* path, ::g::Fuse::Re
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/SegmentedShape.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/SegmentedShape.uno
+// --------------------------------------------------------------------------------------
 
 // public enum PathMeasureMode :11
 uEnumType* PathMeasureMode_typeof()
@@ -20331,8 +20334,8 @@ uEnumType* PathMeasureMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class PathPointAtDistance :118
 // {
@@ -20404,8 +20407,8 @@ PathPointAtDistance* PathPointAtDistance::New1(::g::Fuse::Reactive::Expression* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class PathPointAtTime :157
 // {
@@ -20477,15 +20480,15 @@ PathPointAtTime* PathPointAtTime::New1(::g::Fuse::Reactive::Expression* path, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // private sealed class PathExpression.PathSubscription :35
 // {
 static void PathExpression__PathSubscription_build(uType* type)
 {
     ::STRINGS[87] = uString::Const(" requires a SegmentedShape as first argument");
-    ::STRINGS[88] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno");
+    ::STRINGS[88] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno");
     ::STRINGS[89] = uString::Const("OnArguments");
     ::TYPES[69] = ::g::Fuse::Reactive::Expression_typeof()->Array();
     ::TYPES[19] = ::g::Uno::Action_typeof();
@@ -20655,8 +20658,8 @@ PathExpression__PathSubscription* PathExpression__PathSubscription::New1(::g::Fu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class PathTangentAngleAtDistance :137
 // {
@@ -20732,8 +20735,8 @@ PathTangentAngleAtDistance* PathTangentAngleAtDistance::New1(::g::Fuse::Reactive
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/PathExpression.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/PathExpression.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class PathTangentAngleAtTime :176
 // {
@@ -20809,15 +20812,15 @@ PathTangentAngleAtTime* PathTangentAngleAtTime::New1(::g::Fuse::Reactive::Expres
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/MultiLayoutPanel.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/MultiLayoutPanel.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Placeholder :117
 // {
 static void Placeholder_build(uType* type)
 {
     ::STRINGS[92] = uString::Const("ContentFactory is deprecated, use ContentTemplate instead");
-    ::STRINGS[93] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/MultiLayoutPanel.uno");
+    ::STRINGS[93] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/MultiLayoutPanel.uno");
     ::STRINGS[94] = uString::Const("set_ContentFactory");
     ::TYPES[9] = ::g::Fuse::Elements::Element_typeof();
     type->SetInterfaces(
@@ -21095,8 +21098,8 @@ Placeholder* Placeholder::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Path.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Path.uno
+// ----------------------------------------------------------------------------
 
 // private struct Path.Positioning :211
 // {
@@ -21115,7 +21118,6 @@ uStructType* Path__Positioning_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.Alignment = alignof(Path__Positioning);
     options.ValueSize = sizeof(Path__Positioning);
@@ -21126,8 +21128,8 @@ uStructType* Path__Positioning_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.uno
+// --------------------------------------------------------------------------
 
 // private struct Navigator.PrepareResult :177
 // {
@@ -21145,7 +21147,6 @@ uStructType* Navigator__PrepareResult_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 3;
     options.Alignment = alignof(Navigator__PrepareResult);
     options.ValueSize = sizeof(Navigator__PrepareResult);
@@ -21156,17 +21157,17 @@ uStructType* Navigator__PrepareResult_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/RangeControls/RangeControl.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/RangeControls/RangeControl.uno
+// -------------------------------------------------------------------------------------------
 
 // public class RangeControl :42
 // {
 // static generated RangeControl() :42
 static void RangeControl__cctor_4_fn(uType* __type)
 {
-    RangeControl::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    RangeControl::_relativeValueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[95/*"RelativeValue"*/]);
-    RangeControl::_progressName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[96/*"Progress"*/]);
+    RangeControl::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    RangeControl::_relativeValueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[95/*"RelativeValue"*/]);
+    RangeControl::_progressName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[96/*"Progress"*/]);
 }
 
 static void RangeControl_build(uType* type)
@@ -21757,17 +21758,17 @@ RangeControl* RangeControl::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/RangeControls/RangeControl2D.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/RangeControls/RangeControl2D.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class RangeControl2D :11
 // {
 // static generated RangeControl2D() :11
 static void RangeControl2D__cctor_4_fn(uType* __type)
 {
-    RangeControl2D::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    RangeControl2D::_valueXName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[97/*"ValueX"*/]);
-    RangeControl2D::_valueYName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[98/*"ValueY"*/]);
+    RangeControl2D::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    RangeControl2D::_valueXName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[97/*"ValueX"*/]);
+    RangeControl2D::_valueYName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[98/*"ValueY"*/]);
 }
 
 static void RangeControl2D_build(uType* type)
@@ -22331,15 +22332,15 @@ RangeControl2D* RangeControl2D::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Rectangle.Surface.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Rectangle.Surface.uno
+// -----------------------------------------------------------------------------------------
 
 // public partial sealed class Rectangle :8
 // {
 // static generated Rectangle() :8
 static void Rectangle__cctor_4_fn(uType* __type)
 {
-    Rectangle::CornerRadiusPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[99/*"CornerRadius"*/]);
+    Rectangle::CornerRadiusPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[99/*"CornerRadius"*/]);
 }
 
 static void Rectangle_build(uType* type)
@@ -22644,8 +22645,8 @@ Rectangle* Rectangle::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/RegularPolygon.Surface.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/RegularPolygon.Surface.uno
+// ----------------------------------------------------------------------------------------------
 
 // public partial sealed class RegularPolygon :8
 // {
@@ -22819,7 +22820,7 @@ void RegularPolygon::Sides(int32_t value)
 
     _sides = value;
     InvalidateSurfacePath();
-    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[100/*"Sides"*/]));
+    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[100/*"Sides"*/]));
 }
 
 // public generated RegularPolygon New() [static] :8
@@ -22831,8 +22832,8 @@ RegularPolygon* RegularPolygon::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Types.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Types.uno
+// --------------------------------------------------------------------------------
 
 // public enum RemoveType :54
 uEnumType* RemoveType_typeof()
@@ -22849,8 +22850,8 @@ uEnumType* RemoveType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SingleViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SingleViewHost.uno
+// ---------------------------------------------------------------------------
 
 // public enum SingleViewHost.RenderState :12
 uEnumType* SingleViewHost__RenderState_typeof()
@@ -22865,8 +22866,8 @@ uEnumType* SingleViewHost__RenderState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.Resources.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.Resources.uno
+// ---------------------------------------------------------------------------------------
 
 // private sealed class Shape.ResourceWatcher :23
 // {
@@ -22917,8 +22918,8 @@ Shape__ResourceWatcher* Shape__ResourceWatcher::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Navigator.Types.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Navigator.Types.uno
+// --------------------------------------------------------------------------------
 
 // public enum ReuseType :35
 uEnumType* ReuseType_typeof()
@@ -22937,15 +22938,15 @@ uEnumType* ReuseType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/RightFrameBackground.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/RightFrameBackground.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class RightFrameBackground :8
 // {
 static void RightFrameBackground_build(uType* type)
 {
     ::STRINGS[101] = uString::Const("Fuse.Controls.RightFrameBackground has been deprecated, as it's no longer needed, and does nothing. Please remove the usage");
-    ::STRINGS[102] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/RightFrameBackground.uno");
+    ::STRINGS[102] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/RightFrameBackground.uno");
     ::STRINGS[66] = uString::Const(".ctor");
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface0),
@@ -23061,8 +23062,8 @@ RightFrameBackground* RightFrameBackground::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigatorSwipe.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigatorSwipe.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class Router_PrepareProgress_Property :219
 // {
@@ -23137,7 +23138,7 @@ void Router_PrepareProgress_Property__get_SupportsOriginSetter_fn(Router_Prepare
 void Router_PrepareProgress_Property::ctor_3(::g::Fuse::Navigation::Router* obj)
 {
     uStackFrame __("Fuse.Controls.Router_PrepareProgress_Property", ".ctor(Fuse.Navigation.Router)");
-    ctor_2(::g::Uno::UX::Selector__op_Implicit(::STRINGS[103/*"PrepareProg...*/]));
+    ctor_2(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[103/*"PrepareProg...*/]));
     _obj = obj;
 }
 
@@ -23150,15 +23151,15 @@ Router_PrepareProgress_Property* Router_PrepareProgress_Property::New1(::g::Fuse
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SafeEdgePanel.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SafeEdgePanel.uno
+// --------------------------------------------------------------------------
 
 // public sealed class SafeEdgePanel :42
 // {
 static void SafeEdgePanel_build(uType* type)
 {
     ::STRINGS[104] = uString::Const(" `Padding` should not be set explicitly on a `SafeEdgePanel`, use `ExtraPadding` instead.");
-    ::STRINGS[105] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SafeEdgePanel.uno");
+    ::STRINGS[105] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SafeEdgePanel.uno");
     ::STRINGS[106] = uString::Const("set_Padding");
     ::TYPES[2] = ::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<float4>*/, ::g::Uno::Float4_typeof(), NULL);
     type->SetDependencies(
@@ -23447,7 +23448,7 @@ void SafeEdgePanel::UpdatePadding()
     bool ret2;
     ::g::Uno::Float4 m = ::g::Uno::Float4__New1(0.0f);
 
-    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &m, &ret2), ret2))
+    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &m, &ret2), ret2))
         m = ::g::Uno::Float4__New1(0.0f);
 
     ::g::Uno::Float4 edgePad = ::g::Uno::Float4__New2(((PadEdges() & 1) == 1) ? m.Item(0) : 0.0f, ((PadEdges() & 2) == 2) ? m.Item(1) : 0.0f, ((PadEdges() & 4) == 4) ? m.Item(2) : 0.0f, ((PadEdges() & 8) == 8) ? m.Item(3) : 0.0f);
@@ -23463,8 +23464,8 @@ SafeEdgePanel* SafeEdgePanel::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SafeEdgePanel.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SafeEdgePanel.uno
+// --------------------------------------------------------------------------
 
 // public enum SafeEdgePanelEdges :12
 uEnumType* SafeEdgePanelEdges_typeof()
@@ -23493,8 +23494,8 @@ uEnumType* SafeEdgePanelEdges_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Enums.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Enums.uno
+// ------------------------------------------------------------------
 
 // public enum ScrollDirections :9
 uEnumType* ScrollDirections_typeof()
@@ -23515,8 +23516,8 @@ uEnumType* ScrollDirections_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class ScrollPositionChangedArgs :13
 // {
@@ -23694,8 +23695,8 @@ ScrollPositionChangedArgs* ScrollPositionChangedArgs::New3(::g::Uno::Float2 scro
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.uno
+// ---------------------------------------------------------------------------
 
 // public delegate void ScrollPositionChangedHandler(object sender, Fuse.Controls.ScrollPositionChangedArgs args) :40
 uDelegateType* ScrollPositionChangedHandler_typeof()
@@ -23710,15 +23711,15 @@ uDelegateType* ScrollPositionChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.ux.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.ux.uno
+// ------------------------------------------------------------------------------
 
 // public partial sealed class ScrollView :58
 // {
 // static ScrollView() :77
 static void ScrollView__cctor_4_fn(uType* __type)
 {
-    ScrollView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("s"));
+    ScrollView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("s"));
 }
 
 static void ScrollView_build(uType* type)
@@ -23881,8 +23882,8 @@ ScrollView* ScrollView::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.Layout.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.Layout.uno
+// ----------------------------------------------------------------------------------
 
 // public partial class ScrollViewBase :21
 // {
@@ -23890,12 +23891,12 @@ ScrollView* ScrollView::New4()
 static void ScrollViewBase__cctor_3_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    ScrollViewBase::SizingChanged_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("SizingChanged"));
-    ScrollViewBase::UserScrollName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("UserScroll"));
-    ScrollViewBase::GesturePriorityName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("GesturePriority"));
-    ScrollViewBase::_keepFocusInViewName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("KeepFocusInView"));
-    ScrollViewBase::_allowedScrollDirectionsName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("AllowedScrollDirections"));
-    ScrollViewBase::ScrollPositionName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("ScrollPosition"));
+    ScrollViewBase::SizingChanged_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("SizingChanged"));
+    ScrollViewBase::UserScrollName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("UserScroll"));
+    ScrollViewBase::GesturePriorityName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("GesturePriority"));
+    ScrollViewBase::_keepFocusInViewName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("KeepFocusInView"));
+    ScrollViewBase::_allowedScrollDirectionsName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("AllowedScrollDirections"));
+    ScrollViewBase::ScrollPositionName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("ScrollPosition"));
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[21/*Fuse.Scripting.ScriptMember[]*/], 4, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), ::STRINGS[71/*"goto"*/], uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, ::TYPES[52/*object[]*/], NULL), (void*)ScrollViewBase__goto__fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("gotoRelative"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, ::TYPES[52/*object[]*/], NULL), (void*)ScrollViewBase__gotoRelative_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("seekTo"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, ::TYPES[52/*object[]*/], NULL), (void*)ScrollViewBase__seekTo_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("seekToRelative"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, ::TYPES[52/*object[]*/], NULL), (void*)ScrollViewBase__seekToRelative_fn))));
 }
 
@@ -24613,7 +24614,7 @@ void ScrollViewBase::ArrangeContent(::g::Fuse::LayoutParams lp)
         setHeight = true;
     }
     else
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(uString::Const("AllowedScrollDirections is not valid: "), uBox<int32_t>(::g::Fuse::Controls::ScrollDirections_typeof(), AllowedScrollDirections())), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.Layout.uno"), 171, uString::Const("ArrangeContent"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(uString::Const("AllowedScrollDirections is not valid: "), uBox<int32_t>(::g::Fuse::Controls::ScrollDirections_typeof(), AllowedScrollDirections())), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.Layout.uno"), 171, uString::Const("ArrangeContent"), NULL);
 
     int32_t hAlign = 0;
 
@@ -24894,7 +24895,7 @@ void ScrollViewBase::Motion(::g::Fuse::Motion::MotionConfig* value)
     _motion = value;
 
     if (IsRootingCompleted())
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.uno"), 210, uString::Const("set_Motion"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.uno"), 210, uString::Const("set_Motion"), NULL);
 }
 
 // private Fuse.Controls.Native.IScrollView get_NativeScrollView() [instance] :12
@@ -25136,7 +25137,7 @@ bool ScrollViewBase::getParams(ScrollViewBase* s, uArray* args, uString* func, :
 
     if ((uPtr(args)->Length() == 0) || (uPtr(args)->Length() > 2))
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("ScrollViewBase."), func), uString::Const(" requires 1 or 2 arguments")), s, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.ScriptClass.uno"), 23, uString::Const("getParams"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("ScrollViewBase."), func), uString::Const(" requires 1 or 2 arguments")), s, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.ScriptClass.uno"), 23, uString::Const("getParams"), NULL);
         *pos = ::g::Uno::Float2__New1(0.0f);
         return false;
     }
@@ -25206,8 +25207,8 @@ void ScrollViewBase::seekToRelative(ScrollViewBase* s, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.Layout.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.Layout.uno
+// ----------------------------------------------------------------------------------
 
 // public enum ScrollViewLayoutMode :11
 uEnumType* ScrollViewLayoutMode_typeof()
@@ -25222,8 +25223,8 @@ uEnumType* ScrollViewLayoutMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.ScriptClass.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.ScriptClass.uno
+// --------------------------------------------------------------------------------------------
 
 // public partial sealed class ScrollViewPager :7
 // {
@@ -25385,7 +25386,7 @@ void ScrollViewPager__OnRooted_fn(ScrollViewPager* __this)
 
     if (__this->Each() == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Require an Each"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.uno"), 90, ::STRINGS[60/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Require an Each"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.uno"), 90, ::STRINGS[60/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -25396,13 +25397,13 @@ void ScrollViewPager__OnRooted_fn(ScrollViewPager* __this)
 
     if (__this->_scrollable == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Could not find a Scrollable control."), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.uno"), 100, ::STRINGS[60/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Could not find a Scrollable control."), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.uno"), 100, ::STRINGS[60/*"OnRooted"*/], NULL);
         return;
     }
 
     if (uPtr(__this->_scrollable)->LayoutMode() == 0)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("The ScrollView should have `LayoutMode=\"PreserveVisual\"` for paging to work correctly"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.uno"), 107, ::STRINGS[60/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("The ScrollView should have `LayoutMode=\"PreserveVisual\"` for paging to work correctly"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.uno"), 107, ::STRINGS[60/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -25728,8 +25729,8 @@ ScrollViewPager* ScrollViewPager::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class ScrollViewPagerArgs :8
 // {
@@ -25781,8 +25782,8 @@ ScrollViewPagerArgs* ScrollViewPagerArgs::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollViewPager.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollViewPager.uno
+// --------------------------------------------------------------------------------
 
 // public delegate void ScrollViewPager.ScrollViewPagerHandler(object s, Fuse.Controls.ScrollViewPagerArgs args) :166
 uDelegateType* ScrollViewPager__ScrollViewPagerHandler_typeof()
@@ -25797,17 +25798,17 @@ uDelegateType* ScrollViewPager__ScrollViewPagerHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/SegmentedShape.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/SegmentedShape.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract class SegmentedShape :21
 // {
 // static generated SegmentedShape() :21
 static void SegmentedShape__cctor_4_fn(uType* __type)
 {
-    SegmentedShape::NamePathStart_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[109/*"PathStart"*/]);
-    SegmentedShape::NamePathEnd_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[110/*"PathEnd"*/]);
-    SegmentedShape::NamePathLength_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[111/*"PathLength"*/]);
+    SegmentedShape::NamePathStart_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[109/*"PathStart"*/]);
+    SegmentedShape::NamePathEnd_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[110/*"PathEnd"*/]);
+    SegmentedShape::NamePathLength_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[111/*"PathLength"*/]);
 }
 
 static void SegmentedShape_build(uType* type)
@@ -25817,7 +25818,7 @@ static void SegmentedShape_build(uType* type)
     ::STRINGS[111] = uString::Const("PathLength");
     ::STRINGS[112] = uString::Const("Unsupported Path start=");
     ::STRINGS[113] = uString::Const(", end=");
-    ::STRINGS[114] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/SegmentedShape.uno");
+    ::STRINGS[114] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/SegmentedShape.uno");
     ::STRINGS[115] = uString::Const("CreatePartialSurfacePath");
     ::TYPES[74] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Drawing::LineSegment_typeof(), NULL);
     ::TYPES[19] = ::g::Uno::Action_typeof();
@@ -26267,8 +26268,8 @@ void SegmentedShape::remove_SegmentsChanged(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Behaviors/Shadow.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Behaviors/Shadow.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Shadow :27
 // {
@@ -26656,8 +26657,8 @@ Shadow* Shadow::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Behaviors/Shadow.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Behaviors/Shadow.uno
+// ---------------------------------------------------------------------------------
 
 // public enum Shadow.ShadowMode :30
 uEnumType* Shadow__ShadowMode_typeof()
@@ -26672,8 +26673,8 @@ uEnumType* Shadow__ShadowMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.Resources.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.Resources.uno
+// ---------------------------------------------------------------------------------------
 
 // public interfacemodifiers class Shape :17
 // {
@@ -26682,9 +26683,9 @@ static void Shape__cctor_3_fn(uType* __type)
 {
     ::g::Fuse::Properties_typeof()->Init();
     Shape::_loadingResourcesHandle_ = ::g::Fuse::Properties::CreateHandle();
-    Shape::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
-    Shape::_widthName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Width"));
-    Shape::_offsetName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Offset"));
+    Shape::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
+    Shape::_widthName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Width"));
+    Shape::_offsetName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Offset"));
 }
 
 static void Shape_build(uType* type)
@@ -27072,7 +27073,7 @@ void Shape__FuseDrawingIDrawObjectWatcherFeedbackPrepare_fn(Shape* __this, uObje
 
     if (__this->_surface1 == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[55/*"Prepare wit...*/], __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.Surface.uno"), 57, ::STRINGS[56/*"Fuse.Drawin...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[55/*"Prepare wit...*/], __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.Surface.uno"), 57, ::STRINGS[56/*"Fuse.Drawin...*/]);
         return;
     }
 
@@ -27089,7 +27090,7 @@ void Shape__FuseDrawingIDrawObjectWatcherFeedbackUnprepare_fn(Shape* __this, uOb
 
     if (__this->_surface1 == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[55/*"Prepare wit...*/], __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.Surface.uno"), 70, ::STRINGS[57/*"Fuse.Drawin...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[55/*"Prepare wit...*/], __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.Surface.uno"), 70, ::STRINGS[57/*"Fuse.Drawin...*/]);
         return;
     }
 
@@ -27816,7 +27817,7 @@ void Shape::OnFillAdded(::g::Fuse::Drawing::Brush* f)
 
     if (f == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null brush"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.uno"), 131, uString::Const("OnFillAdded"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null brush"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.uno"), 131, uString::Const("OnFillAdded"));
         return;
     }
 
@@ -27838,7 +27839,7 @@ void Shape::OnFillRemoved(::g::Fuse::Drawing::Brush* f)
 
     if (f == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null brush"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.uno"), 154, uString::Const("OnFillRemoved"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null brush"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.uno"), 154, uString::Const("OnFillRemoved"));
         return;
     }
 
@@ -27964,7 +27965,7 @@ void Shape::OnStrokeAdded(::g::Fuse::Drawing::Stroke* s)
 
     if (s == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null stroke"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.uno"), 295, uString::Const("OnStrokeAdded"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null stroke"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.uno"), 295, uString::Const("OnStrokeAdded"));
         return;
     }
 
@@ -27982,7 +27983,7 @@ void Shape::OnStrokeRemoved(::g::Fuse::Drawing::Stroke* s)
 
     if (s == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null stroke"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Shape.uno"), 311, uString::Const("OnStrokeRemoved"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null stroke"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Shape.uno"), 311, uString::Const("OnStrokeRemoved"));
         return;
     }
 
@@ -28196,8 +28197,8 @@ void Shape::UpdateNativeShape()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/SingleViewHost.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/SingleViewHost.uno
+// ---------------------------------------------------------------------------
 
 // public sealed extern class SingleViewHost :10
 // {
@@ -28664,8 +28665,8 @@ SingleViewHost* SingleViewHost::New2(int32_t initialState, ::g::Fuse::Controls::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/RangeControls/Slider.ux.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/RangeControls/Slider.ux.uno
+// ----------------------------------------------------------------------------------------
 
 // public partial sealed class Slider :20
 // {
@@ -28821,8 +28822,8 @@ Slider* Slider::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/StackPanel.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/StackPanel.uno
+// -----------------------------------------------------------------------
 
 // public class StackPanel :30
 // {
@@ -29053,10 +29054,10 @@ StackPanel* StackPanel::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Shapes/Star.Surface.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Shapes/Star.Surface.uno
+// ------------------------------------------------------------------------------------
 
-// public partial sealed class Star :8
+// public partial class Star :8
 // {
 static void Star_build(uType* type)
 {
@@ -29305,7 +29306,7 @@ void Star::Points(int32_t value)
 
     _points = value;
     InvalidateSurfacePath();
-    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[116/*"Points"*/]));
+    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[116/*"Points"*/]));
 }
 
 // public float get_Ratio() [instance] :41
@@ -29324,7 +29325,7 @@ void Star::Ratio(float value)
 
     _ratio = value;
     InvalidateSurfacePath();
-    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[117/*"Ratio"*/]));
+    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[117/*"Ratio"*/]));
 }
 
 // public float get_RotationDegrees() [instance] :69
@@ -29343,7 +29344,7 @@ void Star::RotationDegrees(float value)
 
     _degrees = value;
     InvalidateSurfacePath();
-    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[118/*"RotationDeg...*/]));
+    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[118/*"RotationDeg...*/]));
 }
 
 // internal float get_RotationRadians() [instance] :82
@@ -29368,7 +29369,7 @@ void Star::RoundRatio(float value)
 
     _roundRatio = value;
     InvalidateSurfacePath();
-    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit(::STRINGS[119/*"RoundRatio"*/]));
+    OnPropertyChanged(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[119/*"RoundRatio"*/]));
 }
 
 // public generated Star New() [static] :8
@@ -29380,8 +29381,8 @@ Star* Star::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/TopFrameBackground.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/TopFrameBackground.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class StatusBarBackground :29
 // {
@@ -29493,8 +29494,8 @@ StatusBarBackground* StatusBarBackground::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/ToggleControls/Switch.ux.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/ToggleControls/Switch.ux.uno
+// -----------------------------------------------------------------------------------------
 
 // public partial sealed class Switch :22
 // {
@@ -29651,8 +29652,8 @@ Switch* Switch::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.TextControl.g.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.TextControl.g.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public partial sealed class TextControl.Template :7
 // {
@@ -29724,8 +29725,8 @@ TextControl__Template* TextControl__Template::New2(::g::Fuse::Controls::TextCont
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/.uno/ux15/Fuse.Controls.ScrollView.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/.uno/ux15/Fuse.Controls.ScrollView.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class ScrollView.Template :7
 // {
@@ -29798,15 +29799,15 @@ ScrollView__Template* ScrollView__Template::New2(::g::Fuse::Controls::ScrollView
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.TimePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/.uno/ux15/Fuse.Controls.TimePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class TimePicker.Template :7
 // {
 // static Template() :16
 static void TimePicker__Template__cctor__fn(uType* __type)
 {
-    TimePicker__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[24/*"GraphicsApp...*/]);
+    TimePicker__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[24/*"GraphicsApp...*/]);
 }
 
 static void TimePicker__Template_build(uType* type)
@@ -29902,15 +29903,15 @@ TimePicker__Template* TimePicker__Template::New2(::g::Fuse::Controls::TimePicker
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.DatePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/.uno/ux15/Fuse.Controls.DatePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class DatePicker.Template :7
 // {
 // static Template() :16
 static void DatePicker__Template__cctor__fn(uType* __type)
 {
-    DatePicker__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[24/*"GraphicsApp...*/]);
+    DatePicker__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[24/*"GraphicsApp...*/]);
 }
 
 static void DatePicker__Template_build(uType* type)
@@ -30006,22 +30007,22 @@ DatePicker__Template* DatePicker__Template::New2(::g::Fuse::Controls::DatePicker
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Switch.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Switch.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Switch.Template :7
 // {
 // static Template() :30
 static void Switch__Template__cctor__fn(uType* __type)
 {
-    Switch__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[124/*"IsActive"*/]);
-    Switch__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
-    Switch__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[125/*"Size"*/]);
-    Switch__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[126/*"Distance"*/]);
-    Switch__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[24/*"GraphicsApp...*/]);
-    Switch__Template::__selector5_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[127/*"swipe"*/]);
-    Switch__Template::__selector6_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[128/*"thumb"*/]);
-    Switch__Template::__selector7_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[129/*"switch_thum...*/]);
+    Switch__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[124/*"IsActive"*/]);
+    Switch__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
+    Switch__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[125/*"Size"*/]);
+    Switch__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[126/*"Distance"*/]);
+    Switch__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[24/*"GraphicsApp...*/]);
+    Switch__Template::__selector5_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[127/*"swipe"*/]);
+    Switch__Template::__selector6_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[128/*"thumb"*/]);
+    Switch__Template::__selector7_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[129/*"switch_thum...*/]);
 }
 
 static void Switch__Template_build(uType* type)
@@ -30264,8 +30265,8 @@ Switch__Template* Switch__Template::New2(::g::Fuse::Controls::Switch* parent, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/.uno/ux15/Fuse.Controls.GraphicsView.g.uno
-// --------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/.uno/ux15/Fuse.Controls.GraphicsView.g.uno
+// ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class GraphicsView.Template :7
 // {
@@ -30337,19 +30338,19 @@ GraphicsView__Template* GraphicsView__Template::New2(::g::Fuse::Controls::Graphi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Button.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Button.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Button.Template :7
 // {
 // static Template() :20
 static void Button__Template__cctor__fn(uType* __type)
 {
-    Button__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    Button__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[131/*"TextColor"*/]);
-    Button__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[30/*"Opacity"*/]);
-    Button__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[24/*"GraphicsApp...*/]);
-    Button__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[132/*"Button_Text"*/]);
+    Button__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    Button__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[131/*"TextColor"*/]);
+    Button__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[30/*"Opacity"*/]);
+    Button__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[24/*"GraphicsApp...*/]);
+    Button__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[132/*"Button_Text"*/]);
 }
 
 static void Button__Template_build(uType* type)
@@ -30481,26 +30482,26 @@ Button__Template* Button__Template::New2(::g::Fuse::Controls::Button* parent, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Slider.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Slider.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Slider.Template :7
 // {
 // static Template() :29
 static void Slider__Template__cctor__fn(uType* __type)
 {
-    Slider__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[30/*"Opacity"*/]);
-    Slider__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[134/*"Fill"*/]);
-    Slider__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[135/*"Brush"*/]);
-    Slider__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[126/*"Distance"*/]);
-    Slider__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[125/*"Size"*/]);
-    Slider__Template::__selector5_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[24/*"GraphicsApp...*/]);
-    Slider__Template::__selector6_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[128/*"thumb"*/]);
-    Slider__Template::__selector7_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[136/*"thumb_circle"*/]);
-    Slider__Template::__selector8_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[137/*"thumb_shadow"*/]);
-    Slider__Template::__selector9_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[138/*"halo"*/]);
-    Slider__Template::__selector10_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[139/*"scrubber_ri...*/]);
-    Slider__Template::__selector11_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[140/*"scrubber_left"*/]);
+    Slider__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[30/*"Opacity"*/]);
+    Slider__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[134/*"Fill"*/]);
+    Slider__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[135/*"Brush"*/]);
+    Slider__Template::__selector3_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[126/*"Distance"*/]);
+    Slider__Template::__selector4_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[125/*"Size"*/]);
+    Slider__Template::__selector5_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[24/*"GraphicsApp...*/]);
+    Slider__Template::__selector6_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[128/*"thumb"*/]);
+    Slider__Template::__selector7_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[136/*"thumb_circle"*/]);
+    Slider__Template::__selector8_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[137/*"thumb_shadow"*/]);
+    Slider__Template::__selector9_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[138/*"halo"*/]);
+    Slider__Template::__selector10_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[139/*"scrubber_ri...*/]);
+    Slider__Template::__selector11_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[140/*"scrubber_left"*/]);
 }
 
 static void Slider__Template_build(uType* type)
@@ -30751,8 +30752,8 @@ Slider__Template* Slider__Template::New2(::g::Fuse::Controls::Slider* parent, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Switch.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Switch.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Switch.Template1 :173
 // {
@@ -30825,8 +30826,8 @@ Switch__Template1* Switch__Template1::New2(::g::Fuse::Controls::Switch* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Slider.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Slider.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Slider.Template1 :177
 // {
@@ -30899,8 +30900,8 @@ Slider__Template1* Slider__Template1::New2(::g::Fuse::Controls::Slider* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.TextControl.g.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.TextControl.g.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public partial sealed class TextControl.Template1 :26
 // {
@@ -30972,8 +30973,8 @@ TextControl__Template1* TextControl__Template1::New2(::g::Fuse::Controls::TextCo
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Button.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Button.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Button.Template1 :72
 // {
@@ -31045,8 +31046,8 @@ Button__Template1* Button__Template1::New2(::g::Fuse::Controls::Button* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/.uno/ux15/Fuse.Controls.GraphicsView.g.uno
-// --------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/.uno/ux15/Fuse.Controls.GraphicsView.g.uno
+// ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class GraphicsView.Template1 :26
 // {
@@ -31118,8 +31119,8 @@ GraphicsView__Template1* GraphicsView__Template1::New2(::g::Fuse::Controls::Grap
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.DatePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/.uno/ux15/Fuse.Controls.DatePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class DatePicker.Template1 :49
 // {
@@ -31192,8 +31193,8 @@ DatePicker__Template1* DatePicker__Template1::New2(::g::Fuse::Controls::DatePick
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.TimePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/.uno/ux15/Fuse.Controls.TimePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class TimePicker.Template1 :49
 // {
@@ -31266,8 +31267,8 @@ TimePicker__Template1* TimePicker__Template1::New2(::g::Fuse::Controls::TimePick
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/.uno/ux15/Fuse.Controls.ScrollView.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/.uno/ux15/Fuse.Controls.ScrollView.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class ScrollView.Template1 :26
 // {
@@ -31340,8 +31341,8 @@ ScrollView__Template1* ScrollView__Template1::New2(::g::Fuse::Controls::ScrollVi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.DatePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/.uno/ux15/Fuse.Controls.DatePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class DatePicker.Template2 :68
 // {
@@ -31413,8 +31414,8 @@ DatePicker__Template2* DatePicker__Template2::New2(::g::Fuse::Controls::DatePick
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Switch.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Switch.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Switch.Template2 :192
 // {
@@ -31487,8 +31488,8 @@ Switch__Template2* Switch__Template2::New2(::g::Fuse::Controls::Switch* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Button.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Button.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Button.Template2 :91
 // {
@@ -31560,8 +31561,8 @@ Button__Template2* Button__Template2::New2(::g::Fuse::Controls::Button* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/.uno/ux15/Fuse.Controls.TimePicker.g.uno
-// ----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/.uno/ux15/Fuse.Controls.TimePicker.g.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class TimePicker.Template2 :68
 // {
@@ -31633,8 +31634,8 @@ TimePicker__Template2* TimePicker__Template2::New2(::g::Fuse::Controls::TimePick
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.Slider.g.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.Slider.g.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial sealed class Slider.Template2 :196
 // {
@@ -31707,8 +31708,8 @@ Slider__Template2* Slider__Template2::New2(::g::Fuse::Controls::Slider* parent, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/Text.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/Text.uno
+// ----------------------------------------------------------------------------------
 
 // public class Text :15
 // {
@@ -31852,8 +31853,8 @@ Text* Text::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextAlignment :10
 uEnumType* TextAlignment_typeof()
@@ -31869,8 +31870,8 @@ uEnumType* TextAlignment_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextBlock.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextBlock.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class TextBlock :5
 // {
@@ -31987,17 +31988,17 @@ TextBlock* TextBlock::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextBox.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextBox.uno
+// -------------------------------------------------------------------------------------
 
 // public partial sealed class TextBox :12
 // {
 // static TextBox() :10
 static void TextBox__cctor_3_fn(uType* __type)
 {
-    TextBox::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
-    TextBox::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[134/*"Fill"*/]);
-    TextBox::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[142/*"text_box"*/]);
+    TextBox::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
+    TextBox::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[134/*"Fill"*/]);
+    TextBox::__selector2_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[142/*"text_box"*/]);
 }
 
 static void TextBox_build(uType* type)
@@ -32194,25 +32195,25 @@ TextBox* TextBox::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextControl.Forwarding.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextControl.Forwarding.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public interfacemodifiers class TextControl :7
 // {
 // static TextControl() :44
 static void TextControl__cctor_3_fn(uType* __type)
 {
-    TextControl::ValuePropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    TextControl::MaxLengthPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("MaxLength"));
-    TextControl::TextWrappingPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("TextWrapping"));
-    TextControl::LineSpacingPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("LineSpacing"));
-    TextControl::FontSizePropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("FontSize"));
-    TextControl::FontPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Font"));
-    TextControl::TextAlignmentPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("TextAlignment"));
-    TextControl::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[77/*"Color"*/]);
-    TextControl::TextColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[131/*"TextColor"*/]);
-    TextControl::TextTruncationPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("TextTruncation"));
-    TextControl::LoadAsyncPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("LoadAsync"));
+    TextControl::ValuePropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    TextControl::MaxLengthPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("MaxLength"));
+    TextControl::TextWrappingPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("TextWrapping"));
+    TextControl::LineSpacingPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("LineSpacing"));
+    TextControl::FontSizePropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("FontSize"));
+    TextControl::FontPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Font"));
+    TextControl::TextAlignmentPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("TextAlignment"));
+    TextControl::ColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[77/*"Color"*/]);
+    TextControl::TextColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[131/*"TextColor"*/]);
+    TextControl::TextTruncationPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("TextTruncation"));
+    TextControl::LoadAsyncPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("LoadAsync"));
 }
 
 static void TextControl_build(uType* type)
@@ -33276,24 +33277,24 @@ void TextControl::TextRendererFactory(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextEdit.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextEdit.uno
+// --------------------------------------------------------------------------------------
 
 // internal abstract class TextEdit :24
 // {
 // static generated TextEdit() :24
 static void TextEdit__cctor_4_fn(uType* __type)
 {
-    TextEdit::IsPasswordPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[144/*"IsPassword"*/]);
-    TextEdit::IsReadOnlyPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[145/*"IsReadOnly"*/]);
-    TextEdit::InputHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[146/*"InputHint"*/]);
-    TextEdit::CaretColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[147/*"CaretColor"*/]);
-    TextEdit::SelectionColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[148/*"SelectionCo...*/]);
-    TextEdit::ActionStylePropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[149/*"ActionStyle"*/]);
-    TextEdit::AutoCorrectHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[150/*"AutoCorrect...*/]);
-    TextEdit::AutoCapitalizationHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[151/*"AutoCapital...*/]);
-    TextEdit::PlaceholderTextPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[152/*"Placeholder...*/]);
-    TextEdit::PlaceholderColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[153/*"Placeholder...*/]);
+    TextEdit::IsPasswordPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[144/*"IsPassword"*/]);
+    TextEdit::IsReadOnlyPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[145/*"IsReadOnly"*/]);
+    TextEdit::InputHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[146/*"InputHint"*/]);
+    TextEdit::CaretColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[147/*"CaretColor"*/]);
+    TextEdit::SelectionColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[148/*"SelectionCo...*/]);
+    TextEdit::ActionStylePropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[149/*"ActionStyle"*/]);
+    TextEdit::AutoCorrectHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[150/*"AutoCorrect...*/]);
+    TextEdit::AutoCapitalizationHintPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[151/*"AutoCapital...*/]);
+    TextEdit::PlaceholderTextPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[152/*"Placeholder...*/]);
+    TextEdit::PlaceholderColorPropertyName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[153/*"Placeholder...*/]);
 }
 
 static void TextEdit_build(uType* type)
@@ -33941,8 +33942,8 @@ void TextEdit::SelectionColor(::g::Uno::Float4 value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextInput.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextInput.uno
+// ---------------------------------------------------------------------------------------
 
 // public class TextInput :98
 // {
@@ -34247,8 +34248,8 @@ TextInput* TextInput::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextInputControl.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextInputControl.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class TextInputActionArgs :10
 // {
@@ -34333,8 +34334,8 @@ TextInputActionArgs* TextInputActionArgs::New3(::g::Fuse::Visual* visual, int32_
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextInputControl.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextInputControl.uno
+// ----------------------------------------------------------------------------------------------
 
 // public delegate void TextInputActionHandler(object sender, Fuse.Controls.TextInputActionArgs args) :21
 uDelegateType* TextInputActionHandler_typeof()
@@ -34349,8 +34350,8 @@ uDelegateType* TextInputActionHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextInputActionStyle :22
 uEnumType* TextInputActionStyle_typeof()
@@ -34369,8 +34370,8 @@ uEnumType* TextInputActionStyle_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextInputActionType :17
 uEnumType* TextInputActionType_typeof()
@@ -34384,8 +34385,8 @@ uEnumType* TextInputActionType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextInputControl.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextInputControl.uno
+// ----------------------------------------------------------------------------------------------
 
 // public abstract class TextInputControl :26
 // {
@@ -34951,7 +34952,7 @@ void TextInputControl::SetValue(uString* v, uObject* origin)
     uPtr(_editor)->SetValue(v, origin);
 
     if (origin == this)
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]), (uObject*)this);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]), (uObject*)this);
 }
 
 // public Fuse.Controls.TextAlignment get_TextAlignment() [instance] :120
@@ -35039,8 +35040,8 @@ void TextInputControl::remove_ValueChanged(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextInputHint :32
 uEnumType* TextInputHint_typeof()
@@ -35060,8 +35061,8 @@ uEnumType* TextInputHint_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextTruncation :58
 uEnumType* TextTruncation_typeof()
@@ -35076,8 +35077,8 @@ uEnumType* TextTruncation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/TextInput.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/TextInput.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class TextView :160
 // {
@@ -35208,8 +35209,8 @@ TextView* TextView::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/TextEnums.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/TextEnums.uno
+// ----------------------------------------------------------------------
 
 // public enum TextWrapping :4
 uEnumType* TextWrapping_typeof()
@@ -35224,15 +35225,15 @@ uEnumType* TextWrapping_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/TimePicker.Docs.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/TimePicker.Docs.uno
+// --------------------------------------------------------------------------------
 
 // public partial sealed class TimePicker :57
 // {
 // static TimePicker() :86
 static void TimePicker__cctor_5_fn(uType* __type)
 {
-    TimePicker::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("self"));
+    TimePicker::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("self"));
 }
 
 static void TimePicker_build(uType* type)
@@ -35374,16 +35375,16 @@ TimePicker* TimePicker::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/TimePicker.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/TimePicker.uno
+// ---------------------------------------------------------------------------
 
 // public interfacemodifiers class TimePickerBase :23
 // {
 // static generated TimePickerBase() :23
 static void TimePickerBase__cctor_4_fn(uType* __type)
 {
-    TimePickerBase::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
-    TimePickerBase::_is24HourViewName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[154/*"Is24HourView"*/]);
+    TimePickerBase::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
+    TimePickerBase::_is24HourViewName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[154/*"Is24HourView"*/]);
 }
 
 static void TimePickerBase_build(uType* type)
@@ -35686,15 +35687,15 @@ void TimePickerBase::Value(::g::Uno::DateTime value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/ToggleControls/ToggleControl.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/ToggleControls/ToggleControl.uno
+// ---------------------------------------------------------------------------------------------
 
 // public class ToggleControl :35
 // {
 // static generated ToggleControl() :35
 static void ToggleControl__cctor_4_fn(uType* __type)
 {
-    ToggleControl::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
+    ToggleControl::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Value"*/]);
 }
 
 static void ToggleControl_build(uType* type)
@@ -35971,8 +35972,8 @@ ToggleControl* ToggleControl::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Backgrounds/TopFrameBackground.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Backgrounds/TopFrameBackground.uno
+// -------------------------------------------------------------------------------------------
 
 // public class TopFrameBackground :31
 // {
@@ -36079,7 +36080,7 @@ void TopFrameBackground__GetContentSize_fn(TopFrameBackground* __this, ::g::Fuse
     bool ret2;
     ::g::Uno::Float4 v = ::g::Uno::Float4__New1(0.0f);
 
-    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(__this->_caps)->Item(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &v, &ret2), ret2))
+    if (!(::g::Fuse::Marshal__TryToType_fn(::TYPES[2/*Fuse.Marshal.TryToType<float4>*/], uPtr(__this->_caps)->Item(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &v, &ret2), ret2))
         return *__retval = ::g::Uno::Float2__New1(0.0f), void();
 
     return *__retval = ::g::Uno::Float2__New2(0.0f, v.Y), void();
@@ -36136,8 +36137,8 @@ TopFrameBackground* TopFrameBackground::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/TreeRenderer.iOS.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/TreeRenderer.iOS.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed extern class TreeRenderer :13
 // {
@@ -36476,8 +36477,8 @@ TreeRenderer* TreeRenderer::New1(uDelegate* setRoot, uDelegate* clearRoot)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/TreeRendererPanel.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/TreeRendererPanel.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed extern class TreeRendererPanel :15
 // {
@@ -36637,8 +36638,8 @@ TreeRendererPanel* TreeRendererPanel::New4(uObject* nativeViewHost)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationControl.Pages.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationControl.Pages.uno
+// ----------------------------------------------------------------------------------------
 
 // private enum NavigationControl.UpdateFlags :67
 uEnumType* NavigationControl__UpdateFlags_typeof()
@@ -36656,8 +36657,8 @@ uEnumType* NavigationControl__UpdateFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/URISchemeEventArgs.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/URISchemeEventArgs.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class URISchemeEventArgs :3
 // {
@@ -36727,8 +36728,8 @@ URISchemeEventArgs* URISchemeEventArgs::New2(uString* url)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/Video.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/Video.uno
+// -----------------------------------------------------------------
 
 // public sealed class UrlVideoSource :37
 // {
@@ -36811,8 +36812,8 @@ UrlVideoSource* UrlVideoSource::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/VectorLayer.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/VectorLayer.uno
+// ------------------------------------------------------------------------
 
 // public sealed class VectorLayer :20
 // {
@@ -36974,8 +36975,8 @@ VectorLayer* VectorLayer::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/Video.ScriptClass.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/Video.ScriptClass.uno
+// -----------------------------------------------------------------------------
 
 // public partial sealed class Video :8
 // {
@@ -36983,9 +36984,9 @@ VectorLayer* VectorLayer::New3()
 static void Video__cctor_4_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    Video::_positionName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[156/*"Position"*/]);
-    Video::_durationName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[157/*"Duration"*/]);
-    Video::_progressName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[96/*"Progress"*/]);
+    Video::_positionName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[156/*"Position"*/]);
+    Video::_durationName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[157/*"Duration"*/]);
+    Video::_progressName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[96/*"Progress"*/]);
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[21/*Fuse.Scripting.ScriptMember[]*/], 4, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New4(::TYPES[103/*Fuse.Scripting.ScriptMethod<Fuse.Controls.Video>*/], ::STRINGS[158/*"getDuration"*/], uDelegate::New(::TYPES[104/*Uno.Func<Fuse.Scripting.Context, Fuse.Controls.Video, object[], object>*/], (void*)Video__getDuration_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[103/*Fuse.Scripting.ScriptMethod<Fuse.Controls.Video>*/], ::STRINGS[159/*"resume"*/], uDelegate::New(::TYPES[105/*Uno.Action<Fuse.Controls.Video>*/], (void*)Video__resume_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[103/*Fuse.Scripting.ScriptMethod<Fuse.Controls.Video>*/], ::STRINGS[160/*"pause"*/], uDelegate::New(::TYPES[105/*Uno.Action<Fuse.Controls.Video>*/], (void*)Video__pause_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[103/*Fuse.Scripting.ScriptMethod<Fuse.Controls.Video>*/], ::STRINGS[161/*"stop"*/], uDelegate::New(::TYPES[105/*Uno.Action<Fuse.Controls.Video>*/], (void*)Video__stop_fn))));
 }
 
@@ -37000,7 +37001,7 @@ static void Video_build(uType* type)
     ::STRINGS[161] = uString::Const("stop");
     ::STRINGS[162] = uString::Const("getDuration takes 0 arguments, but ");
     ::STRINGS[163] = uString::Const(" was supplied");
-    ::STRINGS[164] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/Video.ScriptClass.uno");
+    ::STRINGS[164] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/Video.ScriptClass.uno");
     ::TYPES[20] = ::g::Uno::Type_typeof();
     ::TYPES[21] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[103] = ::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(type, NULL);
@@ -38175,8 +38176,8 @@ void Video::stop(Video* v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/Video.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/Video.uno
+// -----------------------------------------------------------------
 
 // public abstract class VideoSource :11
 // {
@@ -38260,8 +38261,8 @@ void VideoSource::remove_SourceChanged(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Viewbox.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Viewbox.uno
+// -------------------------------------------------------------
 
 // public sealed class Viewbox :28
 // {
@@ -38550,8 +38551,8 @@ Viewbox* Viewbox::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno
+// ---------------------------------------------------------------------
 
 // public partial sealed class WebView :125
 // {
@@ -38559,7 +38560,7 @@ Viewbox* Viewbox::New3()
 static void WebView__cctor_4_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    WebView::_urlName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[165/*"Url"*/]);
+    WebView::_urlName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[165/*"Url"*/]);
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[21/*Fuse.Scripting.ScriptMember[]*/], 7, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[71/*"goto"*/], uDelegate::New(::TYPES[114/*Uno.Action<Fuse.Controls.WebView, object[]>*/], (void*)WebView__setUrl_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[166/*"goBack"*/], uDelegate::New(::TYPES[115/*Uno.Action<Fuse.Controls.WebView>*/], (void*)WebView__goBack_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[167/*"goForward"*/], uDelegate::New(::TYPES[115/*Uno.Action<Fuse.Controls.WebView>*/], (void*)WebView__goForward_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[44/*"reload"*/], uDelegate::New(::TYPES[115/*Uno.Action<Fuse.Controls.WebView>*/], (void*)WebView__reload_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[161/*"stop"*/], uDelegate::New(::TYPES[115/*Uno.Action<Fuse.Controls.WebView>*/], (void*)WebView__stop_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[168/*"loadHtml"*/], uDelegate::New(::TYPES[114/*Uno.Action<Fuse.Controls.WebView, object[]>*/], (void*)WebView__loadHtml_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::TYPES[113/*Fuse.Scripting.ScriptMethod<Fuse.Controls.WebView>*/], ::STRINGS[169/*"setBaseUrl"*/], uDelegate::New(::TYPES[114/*Uno.Action<Fuse.Controls.WebView, object[]>*/], (void*)WebView__setBaseUrl_fn))));
 }
 
@@ -38575,14 +38576,14 @@ static void WebView_build(uType* type)
     ::STRINGS[169] = uString::Const("setBaseUrl");
     ::STRINGS[14] = uString::Const("");
     ::STRINGS[170] = uString::Const("WebView.loadHtml takes either one url argument, or an url and a baseUrl argument");
-    ::STRINGS[171] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.ScriptClass.uno");
+    ::STRINGS[171] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.ScriptClass.uno");
     ::STRINGS[172] = uString::Const("about:blank");
     ::STRINGS[173] = uString::Const(":");
     ::STRINGS[174] = uString::Const("WebView.setBaseUrl requires 1 string argument");
     ::STRINGS[175] = uString::Const("WebView.setUrl requires 1 string argument");
     ::STRINGS[176] = uString::Const("setUrl");
     ::STRINGS[177] = uString::Const("ScrollEnabled cannot be changed once rooted");
-    ::STRINGS[178] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WebView.uno");
+    ::STRINGS[178] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WebView.uno");
     ::STRINGS[179] = uString::Const("ZoomEnabled cannot be changed once rooted");
     ::TYPES[20] = ::g::Uno::Type_typeof();
     ::TYPES[21] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -39709,8 +39710,8 @@ void WebView::stop(WebView* view)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/WrapPanel.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/WrapPanel.uno
+// ----------------------------------------------------------------------
 
 // public sealed class WrapPanel :34
 // {

@@ -13,7 +13,7 @@ namespace Outracks.Simulator
 		public GeneratedApplication()
 			: base(
 				new [] 
-				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("169.254.196.4"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("10.1.38.235"), 12124)},"/Users/kbs/development/albachain-App/albachain.unoproj",new string[] 
+				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("172.20.10.3"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("172.20.10.10"), 12124)},"/Users/jaeyounchae/Desktop/albachain-App/albachain.unoproj",new string[] 
 				{ })
 		{
 			Runtime.Bundle.Initialize("albachain");

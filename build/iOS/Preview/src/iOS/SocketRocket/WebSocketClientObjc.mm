@@ -1,4 +1,4 @@
-#import "iOS/SocketRocket/WebSocketClientObjc.h"
+#import "ios/SocketRocket/WebSocketClientObjc.h"
 #import "SRWebSocket.h"
 
 @interface WebSocketClientObjc () <SRWebSocketDelegate>
